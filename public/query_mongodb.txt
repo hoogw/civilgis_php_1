@@ -1,0 +1,53 @@
+
+$rectangle = array(array(array(-117.917461,33.665068),array(-117.917461,33.654423),array(-117.904415,33.654423),array(-117.904415,33.665068),array(-117.917461,33.665068)));
+$query = array('geometry' => array('$geowithin' => array('$geometry' =>array('type'=>'polygon','coordinates'=> $rectangle))));
+
+
+
+
+
+db.parcels.find(
+{
+   geometry: {
+      $geoWithin: {
+         $geometry: {
+           type: "Polygon" ,
+           coordinates: [[[-117.917461,33.665068],[-117.917461,33.654423],[-117.904415,33.654423],[-117.904415,33.665068],[-117.917461,33.665068] ] ]
+           
+         }
+      }
+   }
+}).count()
+
+
+
+-117.917461,33.665068,0.0 
+-117.917461,33.654423,0.0 
+-117.904415,33.654423,0.0 
+-117.904415,33.665068,0.0 
+-117.917461,33.665068,0.0 
+
+
+
+$lowerLeft = array($longBR,$latBR);
+$upperLeft = array($longBR,$latTL);
+$upperRight = array($longTL, $latTL);
+$lowerRight = array($longTL, $latBR);
+
+
+$longBR = null,  $latBR = null,  $longTL = null,$latTL = null )
+findbybox(-117.91733264923096,33.676568503347546,-117.90239810943604,33.68606772497501);
+
+
+db.parcels.find(
+{
+   geometry: {
+      $geoWithin: {
+         $geometry: {
+           type: "Polygon" ,
+           coordinates: [[[-117.91733264923096,33.676568503347546],[-117.91733264923096,33.68606772497501],[-117.90239810943604,33.68606772497501],[-117.90239810943604,33.676568503347546],[-117.91733264923096,33.676568503347546] ] ]
+           
+         }
+      }
+   }
+}).count()

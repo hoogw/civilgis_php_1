@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+//L.mapbox.accessToken = 'pk.eyJ1IjoiaG9vZ3ciLCJhIjoiYjdlZTA1Y2YyOGM4NjFmOWI2MjY3MmI5NWM3MmUyOWMifQ.gINCV5SXFGTG5wB8ouXxOw';
+L.mapbox.accessToken = 'pk.eyJ1IjoiaG9vZ3ciLCJhIjoiYjdlZTA1Y2YyOGM4NjFmOWI2MjY3MmI5NWM3MmUyOWMifQ.gINCV5SXFGTG5wB8ouXxOw';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -74.50], 9);
+  
+  
+  //map.addLayer(L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png'));  // original
+    
+    //tile image url:   http://localhost:8888/v2/cityadr/12/707/1640.png
+    // per suggestion
+    // http://support.mapbox.com/discussions/mapboxjs/1875-deploying-sqlite-database-via-tilestream
+   // map.addLayer(L.tileLayer('http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png'));
+  
+  
+  
+  
+ map.addLayer(L.tileLayer('http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png'));
+// map.addLayer(L.tileLayer('http://localhost:8888/v2/cityparcels/{z}/{x}/{y}.png'));
+// map.addLayer(L.tileLayer('http://localhost:8888/v2/citystr/{z}/{x}/{y}.png'));
+    
+  map.setView([33.65992448007282, -117.91505813598633 ], 12);  
+  
+  
+  
+  
+</script>
+</body>
+</html>
