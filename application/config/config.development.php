@@ -54,7 +54,7 @@ return array(
 	 */
 	'DB_TYPE' => 'mysql',
 	'DB_HOST' => '127.0.0.1',
-	'DB_NAME' => 'huge',
+	'DB_NAME' => 'civilgis',
        
 	'DB_USER' => 'root',
 	'DB_PASS' => 'aaaa1111',
