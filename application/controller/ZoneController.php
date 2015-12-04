@@ -1,6 +1,6 @@
 <?php
 
-class MapController extends Controller
+class ZoneController extends Controller
 {
     /**
      * Construct this object by extending the basic Controller class
@@ -37,10 +37,26 @@ class MapController extends Controller
          $data['area'] = 'city';
          
          
-        $this->View->render('map/city', $data);
+        $this->View->render_theme('gentelella','zone/city', $data);
     }
     
     
+     public function countyp($subject)
+    {
+        
+         // default route 
+         if (!isset($subject) || trim($subject)==='')
+         {
+             $subject = 'cities';
+         }
+        
+          $data['subject'] = $subject;
+         $data['area'] = 'county';
+         
+         
+         
+        $this->View->render('map/countyp', $data);
+    }
     
     
     
