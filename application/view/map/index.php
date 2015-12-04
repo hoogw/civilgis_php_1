@@ -213,7 +213,7 @@
                                     
                         
                         
-                         <div class="col-xs-12 col-sm-4">
+                         <div class="col-xs-12 col-sm-12">
                                             <div class="box">
                                                     <div class="box-header">
                                                             <div class="box-name">
@@ -234,10 +234,21 @@
                                                             <div class="no-move"></div>
                                                     </div>
                                                     <div class="box-content">
-                                                            
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>data/listPaged/newyork/'">New York Data Portal (paged)</button>
-                                                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>data/listScroller/newyork/'">New York Data Portal (scroller)</button>
-                                                            
+                                                        
+                                                        
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
+                                                        
+                                                        
+                                                        
                                                         <button type="button" class="btn btn-success">&nbsp;</button>
                                                         <button type="button" class="btn btn-info">&nbsp;</button>
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
