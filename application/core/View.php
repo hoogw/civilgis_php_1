@@ -20,7 +20,19 @@ class View
         require Config::get('PATH_VIEW') . '_templates/'.'footer_'.$theme.'.php';
     }
     
-    
+    public function renderwithsidebar($sidebar, $filename, $data = null)
+    {
+        if ($data) {
+            foreach ($data as $key => $value) {
+                $this->{$key} = $value;
+            }
+        }
+
+        require Config::get('PATH_VIEW') . '_templates/header.php';
+        require Config::get('PATH_VIEW') . $sidebar;
+        require Config::get('PATH_VIEW') . $filename . '.php';
+        require Config::get('PATH_VIEW') . '_templates/footer.php';
+    }
     
     
     /**

@@ -218,7 +218,7 @@
                                                     <div class="box-header">
                                                             <div class="box-name">
                                                                     <i class="fa fa-male"></i>
-                                                                    <span>Customer</span>
+                                                                    <span>Data Source</span>
                                                             </div>
                                                             <div class="box-icons">
                                                                     <a class="collapse-link">

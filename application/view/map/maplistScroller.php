@@ -5,12 +5,14 @@
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
          
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
+         
+          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
-          
+         
+         
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/list_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/maplist_scroller.js"></script>
          
          
    
@@ -75,7 +77,7 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/newyork" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/newyork" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">New York</span>
 					</a>
@@ -83,7 +85,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/chicago" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/chicago" >
 						<i class="fa fa-table"></i>
 						<span class="hidden-xs">Chicago</span>
 					</a>
@@ -93,7 +95,7 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/losangeles" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/losangeles" >
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Los Angeles</span>
 					</a>
@@ -118,9 +120,8 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/listScroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/listPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
-                                                <!-- li><a href="<?php echo Config::get('URL'); ?>data/Scroller/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li -->
                                         </ol>
                                 </div>
                         </div>
@@ -173,15 +174,17 @@
                                                                 <thead>
                                                                     <tr>
                                                                         
-
+                                                                        <th> Index </th>
                                                                         <th> Table of Content</th>
+                                                                        
+                                                                        
                                                                     </tr>
                                                                 </thead>
 
                                                                 <tfoot>
                                                                     <tr>
                                                                         
-
+                                                                        <th> Index </th>
                                                                         <th>Table of Content</th>
                                                                     </tr>
                                                                 </tfoot>
@@ -191,18 +194,7 @@
                                                      
                                                      
                                                      
-                                                    <!-- 
-                                                        <div id="map-canvas" class="box-content" style="height: 700px;"> </div>
-
-                                                        <div id="legend" class="alert alert-warning"></div>
-
-                                                        <div><img id="ajaxload" src="/civilgis/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" /></div>
-                                                        
-                                                        <div id="title_info" > </div>
-                                                        
-                                                        <div id="info-table"> </div>
-
-                                                    -->                                                        
+                                                                                        
                                                         
                                             
                                         </div>
