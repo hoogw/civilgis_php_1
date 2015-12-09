@@ -79,8 +79,8 @@
 						<span class="hidden-xs">Contact</span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;medyhzl@gmail.com</a></li>
-						<li><a href="#"><i class="fa fa-mobile"></i>&nbsp;&nbsp;310-710-6501</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;huguowen@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-mobile"></i>&nbsp;&nbsp;213-503-4305</a></li>
 						
 					</ul>
 				</li>
@@ -117,7 +117,109 @@
                      
                     
                     
+                        <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                            <div class="box">
+                                                    <div class="box-header">
+                                                            <div class="box-name">
+                                                                    <i class="fa fa-globe"></i>
+                                                                    <span>Map</span>
+                                                            </div>
+                                                            <div class="box-icons">
+                                                                    <a class="collapse-link">
+                                                                            <i class="fa fa-chevron-up"></i>
+                                                                    </a>
+                                                                    <a class="expand-link">
+                                                                            <i class="fa fa-expand"></i>
+                                                                    </a>
+                                                                    <a class="close-link">
+                                                                            <i class="fa fa-times"></i>
+                                                                    </a>
+                                                            </div>
+                                                            <div class="no-move"></div>
+                                                    </div>
+                                                    <div class="box-content">
+                                                            
+                                                        <button type="button" class="btn btn-warning">Los Angeles</button>
+                                                        <button type="button" class="btn btn-primary">Newport Beach</button>
+                                                        <button type="button" class="btn btn-success">San Francisco</button>
+                                                        <button type="button" class="btn btn-info">Chicago</button>
+                                                        <button type="button" class="btn btn-warning">New York</button>
+                                                        <button type="button" class="btn btn-danger">Santa Monica</button>
+                                                        
+                                                    </div>
+                                            </div>
+                                    </div>
+                        
+                        
+                        </div>
                     
+                    
+                    
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-12">
+                                            <div class="box">
+                                                    <div class="box-header">
+                                                            <div class="box-name">
+                                                                    <i class="fa fa-globe"></i>
+                                                                    <span>Maps</span>
+                                                            </div>
+                                                            <div class="box-icons">
+                                                                    <a class="collapse-link">
+                                                                            <i class="fa fa-chevron-up"></i>
+                                                                    </a>
+                                                                    <a class="expand-link">
+                                                                            <i class="fa fa-expand"></i>
+                                                                    </a>
+                                                                    <a class="close-link">
+                                                                            <i class="fa fa-times"></i>
+                                                                    </a>
+                                                            </div>
+                                                            <div class="no-move"></div>
+                                                    </div>
+                                                    <div class="box-content">
+                                                        
+                                                        <button type="button" class="btn btn-warning">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-primary">
+                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-success">
+                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-info">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                        </button>
+                                                        
+                                                        <button type="button" class="btn btn-warning">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
+                                                        </button>
+                                                        
+                                                        <button type="button" class="btn btn-danger">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-success">&nbsp;</button>
+                                                        <button type="button" class="btn btn-info">&nbsp;</button>
+                                                        <button type="button" class="btn btn-warning">&nbsp;</button>
+                                                        <button type="button" class="btn btn-danger">&nbsp;</button>
+                                                        
+                                                    </div>
+                                            </div>
+                                    </div>
+                        
+                     </div>
                     
                         
                     <div class="row">
@@ -127,8 +229,8 @@
                                             <div class="box">
                                                     <div class="box-header">
                                                             <div class="box-name">
-                                                                    <i class="fa fa-globe"></i>
-                                                                    <span>Maps</span>
+                                                                    <i class="fa fa-map-marker"></i>
+                                                                    <span>Featured Maps</span>
                                                             </div>
                                                             <div class="box-icons">
                                                                     <a class="collapse-link">
@@ -173,6 +275,10 @@
                         
                         
                         </div>
+                    
+                    
+                    
+                    
                         <div class="row">
                                     <div class="col-xs-12 col-sm-12">
                                             <div class="box">
@@ -198,8 +304,8 @@
                                                             
                                                         <button type="button" class="btn btn-warning">Los Angeles</button>
                                                         <button type="button" class="btn btn-primary">Newport Beach</button>
-                                                        <button type="button" class="btn btn-success">&nbsp;</button>
-                                                        <button type="button" class="btn btn-info">&nbsp;</button>
+                                                        <button type="button" class="btn btn-success">San Francisco</button>
+                                                        <button type="button" class="btn btn-info">Chicago</button>
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
                                                         <button type="button" class="btn btn-danger">&nbsp;</button>
                                                         
@@ -209,16 +315,16 @@
                         
                         
                         </div>
+                    
+                    
+                    
                         <div class="row">
-                                    
-                        
-                        
-                         <div class="col-xs-12 col-sm-12">
+                                    <div class="col-xs-12 col-sm-12">
                                             <div class="box">
                                                     <div class="box-header">
                                                             <div class="box-name">
-                                                                    <i class="fa fa-male"></i>
-                                                                    <span>Data Source</span>
+                                                                    <i class="fa fa-th"></i>
+                                                                    <span>Tabular Data</span>
                                                             </div>
                                                             <div class="box-icons">
                                                                     <a class="collapse-link">
@@ -234,29 +340,43 @@
                                                             <div class="no-move"></div>
                                                     </div>
                                                     <div class="box-content">
+                                                            
+                                                        <button type="button" class="btn btn-warning">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
+                                                        </button>
                                                         
                                                         
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
+                                                        <button type="button" class="btn btn-primary">
+                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
+                                                        </button>
                                                         
                                                         
+                                                        <button type="button" class="btn btn-success">
+                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
+                                                        </button>
                                                         
                                                         
-                                                        <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
+                                                        <button type="button" class="btn btn-info">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                        </button>
                                                         
-                                                        
-                                                        
-                                                        <button type="button" class="btn btn-success">&nbsp;</button>
-                                                        <button type="button" class="btn btn-info">&nbsp;</button>
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
                                                         <button type="button" class="btn btn-danger">&nbsp;</button>
                                                         
                                                     </div>
                                             </div>
                                     </div>
+                        
+                        
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                        <div class="row">
+                                    
+                        
                         
                         
                             </div>    
