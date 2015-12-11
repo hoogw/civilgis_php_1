@@ -222,7 +222,7 @@ class ApiController extends Controller
        $maptable_name = $area . "_" .  $subject;
        $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
      
-        //if (strcmp($area, "city")==0)
+        /*
              if ($area == "city") 
                  { 
                     $maptable_name = $subject;
@@ -233,6 +233,8 @@ class ApiController extends Controller
                     $maptable_name = "oc_" . $subject;
                     
                  }
+         */ 
+         
              
             $collection = $geodatabase->$maptable_name;
        
@@ -312,7 +314,7 @@ class ApiController extends Controller
        $maptable_name = $area . "_" .  $subject;
        $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
      
-        //if (strcmp($area, "city")==0)
+        /*
              if ($area == "city") 
                  { 
                     $maptable_name = $subject;
@@ -323,6 +325,8 @@ class ApiController extends Controller
                     $maptable_name = "oc_" . $subject;
                     
                  }
+         */  
+         
              
             $collection = $geodatabase->$maptable_name;
        
@@ -501,7 +505,7 @@ class ApiController extends Controller
         $maptable_name = $area . "_" .  $subject;
         $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
      
-        //if (strcmp($area, "city")==0)
+        /*
              if ($area == "city") 
                  { 
                     $maptable_name = $subject;
@@ -512,6 +516,8 @@ class ApiController extends Controller
                     $maptable_name = "oc_" . $subject;
                     
                  }
+          */  
+         
              
             $collection = $geodatabase->$maptable_name;
             $cursor = null;
@@ -747,7 +753,7 @@ class ApiController extends Controller
         $maptable_name = $area . "_" .  $subject;
         $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
      
-        //if (strcmp($area, "city")==0)
+        /*
              if ($area == "city") 
                  { 
                     $maptable_name = $subject;
@@ -758,7 +764,7 @@ class ApiController extends Controller
                     $maptable_name = "oc_" . $subject;
                     
                  }
-             
+           */  
             $collection = $geodatabase->$maptable_name;
             $cursor = null;
        
@@ -1201,7 +1207,7 @@ class ApiController extends Controller
              
              $table_name = $area . "_" . $subject;
              
-            //if (strcmp($area, "city")==0)
+           /*
              if ($area == "city") 
                  { 
                     $table_name = $subject;
@@ -1212,6 +1218,7 @@ class ApiController extends Controller
                     $table_name = "oc_" . $subject;
                     
                  }
+             */
              
             $collection = $geodatabase->$table_name;
 
@@ -1281,7 +1288,7 @@ class ApiController extends Controller
              
              $table_name = $area . "_" . $subject;
              
-            //if (strcmp($area, "city")==0)
+            /*
              if ($area == "city") 
                  { 
                     $table_name = $subject;
@@ -1292,6 +1299,7 @@ class ApiController extends Controller
                     $table_name = "oc_" . $subject;
                     
                  }
+             */
              
             $collection = $geodatabase->$table_name;
 

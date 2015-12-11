@@ -91,15 +91,15 @@ function set_initial_location(_area) {
 function init_tiling(){
     
     //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
-    var _tile_baseURL = 'http://tile.transparentgov.net/v2/';
-    //var _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
+   // var _tile_baseURL = 'http://tile.transparentgov.net/v2/';
+    var _tile_baseURL = 'http://localhost:8888/v2/';
 
     city_address_MapType = new google.maps.ImageMapType({
                                                     getTileUrl: function(coord, zoom) {
 
                                                       
 
-                                                        return _tile_baseURL + 'cityadr' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+                                                        return _tile_baseURL + 'city_address' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
                                                        
 
                                                     },
@@ -116,7 +116,7 @@ function init_tiling(){
                                                                            
 
                                                                            
-                                                                            return _tile_baseURL +'cityparcels' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+                                                                            return _tile_baseURL +'city_parcels' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
                                                                            
 
                                                                         },
@@ -130,7 +130,7 @@ function init_tiling(){
                                                                         getTileUrl: function(coord, zoom) {
 
                                                                            
-                                                                            return _tile_baseURL +'citystr' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+                                                                            return _tile_baseURL +'city_streets' + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
 
                                                                         },
                                                                         tileSize: new google.maps.Size(256, 256),
