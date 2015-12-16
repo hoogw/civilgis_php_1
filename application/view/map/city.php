@@ -5,7 +5,7 @@
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary.js"></script>
+
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapcity.js"></script>
 
 

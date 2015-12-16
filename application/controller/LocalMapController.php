@@ -15,7 +15,7 @@ class LocalMapController extends Controller
     // maponly have multi form
     
     
-   public function localmaponly($area, $subject)
+   public function localsimplemap($area, $subject)
     {
          
         
@@ -28,7 +28,7 @@ class LocalMapController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localmaponly');
+         $multifiles = array($side_panel_path,'localmap/localsimplemap');
          
          
        
