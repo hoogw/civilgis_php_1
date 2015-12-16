@@ -115,7 +115,7 @@
                         </div>
                         
                      
-                    
+               <!--     
                     
                         <div class="row">
                                     <div class="col-xs-12 col-sm-12">
@@ -153,7 +153,7 @@
                         
                         
                         </div>
-                    
+                    -->
                     
                     
                     <div class="row">
@@ -179,9 +179,24 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
-                                                        <button type="button" class="btn btn-warning">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
+                                                        
+                                                        
+                                                        
+                                                         <button type="button" class="btn btn-success">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-info">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/la_county.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-danger">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
                                                         
                                                         
                                                         <button type="button" class="btn btn-primary">
@@ -195,7 +210,7 @@
                                                         
                                                         
                                                         <button type="button" class="btn btn-info">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
                                                         <button type="button" class="btn btn-warning">
@@ -285,7 +300,7 @@
                                                     <div class="box-header">
                                                             <div class="box-name">
                                                                     <i class="fa fa-table"></i>
-                                                                    <span>Tabular Data</span>
+                                                                    <span>Featured Tabular Data</span>
                                                             </div>
                                                             <div class="box-icons">
                                                                     <a class="collapse-link">
@@ -342,7 +357,7 @@
                                                     <div class="box-content">
                                                             
                                                         <button type="button" class="btn btn-warning">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_los_angeles.gif" alt=""/>
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
                                                         </button>
                                                         
                                                         
@@ -356,8 +371,8 @@
                                                         </button>
                                                         
                                                         
-                                                        <button type="button" class="btn btn-info">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
