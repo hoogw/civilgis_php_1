@@ -123,10 +123,9 @@ function feed_datatables(_geojson_obj){
                                                     
                                                      map.data.revertStyle();
                                                      map.data.overrideStyle(_feature, {
-                                                                            //strokeWeight: 8,
-                                                                            strokeColor: '#FFFF00',
-                                                                            fillOpacity: 0.3,
-                                                                            fillColor:'#FFFF00'
+                                                                                         strokeWeight: 5,
+                                                                                         strokeColor: 'blue',
+                                                                                         fillOpacity: 0
                                                                         });// overrideStyle
                                                     
                                                 }//
@@ -167,7 +166,7 @@ function feed_datatables(_geojson_obj){
                                        
                                         // remove all high light yellow the feature polygon on google map
                                        // Remove custom styles.
-                                       // map.data.setStyle({});
+                                       map.data.revertStyle();
                                         
                                         
                                         // empty bottom <div>
@@ -197,16 +196,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             add_tiles();
             
             
-            // before load new geoJSON feature, need to remove all current geoJSON feature.
-            
-                    var callback=function(feature) {
-                                        //If you want, check here for some constraints.
-                                            gmap.data.remove(feature);
-                                            };
-                            gmap.data.forEach(callback);
-            
-            
-          // alert(_apiURI);
+           
             
             
             // test url if return a number means too many polygon to show.otherwise add polygon to map.
@@ -215,11 +205,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
             // var promise    =  $.get(_apiURI);
             //    promise.then(function(data){
                         if(isNaN(data)){
-                           //------tile[2] ---------- returning geoJSON, need to remove previously tiling layers.  
-                            
-                           // map.overlayMapTypes.removeAt(0); // if no tile layer before, this will error, use clear() instead. solve the error
-                            map.overlayMapTypes.clear();
-                            
+                           
                             
                           
                             //gmap.data.loadGeoJson(_apiURI);
@@ -253,9 +239,36 @@ function ajax_GeoJSON(gmap,_apiURI) {
                                         //---------------------------------------------------------------
 
 
-                           _array_feature = map.data.addGeoJson(_geojson_object);
                            
-                           //alert(_array_feature[0]);
+                           
+                           //----------------  add new geojson, then remove last geojson --------------------
+
+                                         gmap.data.setStyle({
+                                             fillOpacity: 0,
+                                             strokeColor: 'yellow',
+                                             strokeWeight: 1
+
+                                         });
+                                         _last_geojson_layer = _current_geojson_layer;
+
+                                         _current_geojson_layer = gmap.data.addGeoJson(_geojson_object);
+
+                            // ---- after add new geojson, now remove last time old geojson -------------
+                            // don't use Array.ForEach is about 95% slower than for() in JavaScript.
+
+                                         if (_last_geojson_layer) {
+
+                                             for (var l = 0, len = _last_geojson_layer.length; l < len; l++) {
+
+                                                 gmap.data.remove(_last_geojson_layer[l]);
+
+                                             }// for
+                                         }// if
+
+
+                            //------------------------end add new geojson, then remove last geojson------------------------- ---------------
+                           
+                           
                            
                            feed_datatables(_geojson_object);
                            
@@ -291,7 +304,17 @@ function ajax_GeoJSON(gmap,_apiURI) {
                              // returning number of count, no geojson, clean the datatables
                         else{ 
                             
-                            
+                            // ---------- if return number, should remove last time geojson -----------
+                            _last_geojson_layer = _current_geojson_layer;
+                            if (_last_geojson_layer) {
+
+                                for (var l = 0, len = _last_geojson_layer.length; l < len; l++) {
+
+                                    gmap.data.remove(_last_geojson_layer[l]);
+
+                                }// for
+                            }// if
+                            //-------------------- end remove last geojson ------------------------------
                             
                             
                             $('#tabledata').dataTable().fnClearTable();

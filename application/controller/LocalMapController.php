@@ -37,6 +37,29 @@ class LocalMapController extends Controller
     
     
     
+    
+     public function localsimpleclustermap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localsimpleclustermap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
     public function localmaplistpaged($area)
     {
          

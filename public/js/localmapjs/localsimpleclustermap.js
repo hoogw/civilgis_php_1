@@ -28,6 +28,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
            
                         if(isNaN(data)){
                            
+                            
                           
                           // ---------   processing data(geoJson) to fill datatables -----------------
                           
