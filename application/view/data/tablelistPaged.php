@@ -1,31 +1,21 @@
         
-         
-          <!---- local DataTables CSS JS  must load after the Jquery.js -->
+          <!---- local DataTables CSS JS   -->
          
           <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
-          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
-          <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
-        <!--  
-          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.fixedColumns.min.js"></script>
-          <link href="<?php echo Config::get('URL'); ?>public/css/fixedColumns.dataTables.min.css" rel="stylesheet">
-          
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.tableTools.js"></script>
-         <link href="<?php echo Config::get('URL'); ?>public/css/dataTables.tableTools.css" rel="stylesheet">
-        -->
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/datatablejs_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/tabledata/tablelist_paged.js"></script>
          
          
-   
+        
          
          
          
          
     <!-- this hidden value carry the map subject from controller use it in javascript api call-->
-    <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
-    <input type="hidden" id="areaID" value=<?php echo $data['area'] ?>></input>
+   
+     <input type="hidden" id="areaID" value=<?php echo $data['area'] ?>></input>
     <input type="hidden" id="base_url" value=<?php echo Config::get('URL'); ?>></input>
     
     
@@ -55,8 +45,8 @@
                                                               
                                                             
 						</div>
-                                            
                                             -->
+                                            
 					</div>
                                     
                                     
@@ -80,7 +70,7 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/newyork" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/newyork" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">New York</span>
 					</a>
@@ -88,7 +78,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/chicago" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/chicago" >
 						<i class="fa fa-table"></i>
 						<span class="hidden-xs">Chicago</span>
 					</a>
@@ -98,7 +88,7 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/losangeles" >
+					<a href="<?php echo Config::get('URL'); ?>data/listPaged/losangeles" >
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Los Angeles</span>
 					</a>
@@ -123,9 +113,8 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/listScroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/listPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/scroller/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -144,7 +133,7 @@
                                                                         <div class="box-name">
                                                                                 <i class="fa fa-map-marker"></i>
 
-                                                                                <span><?php echo $data['subject'] ?></span>  
+                                                                                <span><?php echo $data['area'] ?></span>  
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -169,56 +158,34 @@
                                             
                                             
                                                
-                                                            <div id="tableDiv">
-                                                           
-
-                                                            </div>
-                                            
-                                                            <div id="info-table"> </div>
                                             
                                             
-                                                 <!--
+                                            
+                                                 
                                             
                                                             <table id="tabledata" class="display" cellspacing="0" width="100%">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>Id</th>
-                                                                        <th>Name</th>
-                                                                        <th>Position Title</th>
-                                                                        <th>Department</th>
+                                                                        
 
-                                                                        <th>Employee Annual Salary</th>
+                                                                        <th> Table of Content</th>
                                                                     </tr>
                                                                 </thead>
 
                                                                 <tfoot>
                                                                     <tr>
-                                                                        <th>Id</th>
-                                                                        <th>Name</th>
-                                                                        <th>Position Title</th>
-                                                                        <th>Department</th>
+                                                                        
 
-                                                                        <th>Employee Annual Salary</th>
+                                                                        <th>Table of Content</th>
                                                                     </tr>
                                                                 </tfoot>
                                                             </table>
-                                                     -->
                                                      
                                                      
                                                      
                                                      
-                                                    <!-- 
-                                                        <div id="map-canvas" class="box-content" style="height: 700px;"> </div>
-
-                                                        <div id="legend" class="alert alert-warning"></div>
-
-                                                        <div><img id="ajaxload" src="/civilgis/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" /></div>
-                                                        
-                                                        <div id="title_info" > </div>
-                                                        
-                                                        <div id="info-table"> </div>
-
-                                                    -->                                                        
+                                                     
+                                                                                        
                                                         
                                             
                                         </div>

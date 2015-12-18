@@ -20,7 +20,7 @@ class DataController extends Controller
     }
     
     
-     public function listPaged($area)
+     public function tablelistPaged($area)
     {
          // default route 
         
@@ -32,11 +32,11 @@ class DataController extends Controller
          
          $data['area'] = $area;
          
-        $this->View->render('data/listPaged', $data);
+        $this->View->render('data/tablelistPaged', $data);
     }
     
     
-     public function listScroller($area)
+     public function tablelistScroller($area)
     {
          // default route 
         
@@ -48,21 +48,21 @@ class DataController extends Controller
          
          $data['area'] = $area;
          
-        $this->View->render('data/listScroller', $data);
+        $this->View->render('data/tablelistScroller', $data);
     }
     
     
     
     
     
-     public function paged($area, $subject)
+     public function tablepaged($area, $subject)
     {
          // default route 
            
          if (!isset($subject) || trim($subject)==='')
          {
             // is only area provided, no subject provide, should re-direct to area table of contect list.
-              $re_url = "Location: ".Config::get('URL')."data/listPaged/".$area."/";
+              $re_url = "Location: ".Config::get('URL')."data/tablelistPaged/".$area."/";
              header($re_url);
              die();
          }
@@ -70,18 +70,18 @@ class DataController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-        $this->View->render('data/paged', $data);
+        $this->View->render('data/tablepaged', $data);
     }
     
     
     
-    public function scroller($area, $subject)
+    public function tablescroller($area, $subject)
     {
         
          // default route 
          if (!isset($subject) || trim($subject)==='')
          {
-              $re_url = "Location: ".Config::get('URL')."data/listPaged/".$area."/";
+              $re_url = "Location: ".Config::get('URL')."data/tablelistPaged/".$area."/";
              header($re_url);
              die();
          }
@@ -89,7 +89,7 @@ class DataController extends Controller
          $data['subject'] = $subject;
          $data['area'] =$area;
          
-        $this->View->render('data/scroller', $data);
+        $this->View->render('data/tablescroller', $data);
     }
     
     

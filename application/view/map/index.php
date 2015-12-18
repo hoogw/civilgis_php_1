@@ -278,8 +278,6 @@
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>map/city/general_landuse/'">General Land Use [color polygon]</button>
                                                             
                                                             
-                                                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>data/listScroller/chicago/'">Chicago Data Portal (scroller)</button>
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>data/listPaged/chicago/'">Chicago Data Portal (paged)</button>
                                                             
                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>map/county/fire_stations/'">Point Cluster [County Fire Stations]</button>
                                                             <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>map/county/fire_stations/'" >Point Cluster [County Fire Stations]</button>
@@ -317,6 +315,12 @@
                                                     </div>
                                                     <div class="box-content">
                                                             
+                                                        
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistScroller/chicago/'">Chicago Data Portal (scroller)</button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistPaged/chicago/'">Chicago Data Portal (paged)</button>
+                                                            
+                                                        
+                                                        
                                                         <button type="button" class="btn btn-warning">Los Angeles</button>
                                                         <button type="button" class="btn btn-primary">Newport Beach</button>
                                                         <button type="button" class="btn btn-success">San Francisco</button>

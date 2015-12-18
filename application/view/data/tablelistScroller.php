@@ -10,7 +10,7 @@
           
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/list_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/tabledata/tablelist_scroller.js"></script>
          
          
    
