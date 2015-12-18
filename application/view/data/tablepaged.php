@@ -75,7 +75,7 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listPaged/newyork" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistPaged/newyork" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">New York</span>
 					</a>
@@ -83,7 +83,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listPaged/chicago" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistPaged/chicago" >
 						<i class="fa fa-table"></i>
 						<span class="hidden-xs">Chicago</span>
 					</a>
@@ -93,7 +93,7 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>data/listPaged/losangeles" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistPaged/losangeles" >
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Los Angeles</span>
 					</a>
@@ -118,9 +118,9 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/listPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/tablelistPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/paged/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/tablepaged/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

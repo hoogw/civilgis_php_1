@@ -80,7 +80,7 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/newyork" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/newyork" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">New York</span>
 					</a>
@@ -88,7 +88,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/chicago" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/chicago" >
 						<i class="fa fa-table"></i>
 						<span class="hidden-xs">Chicago</span>
 					</a>
@@ -98,7 +98,7 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>data/listScroller/losangeles" >
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/losangeles" >
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Los Angeles</span>
 					</a>
@@ -123,9 +123,9 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/listScroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>data/scroller/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>data/tablescroller/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
