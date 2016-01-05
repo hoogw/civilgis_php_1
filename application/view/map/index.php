@@ -79,7 +79,7 @@
 						<span class="hidden-xs">Contact</span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;huguowen@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;medyhzl@gmail.com</a></li>
 						<li><a href="#"><i class="fa fa-mobile"></i>&nbsp;&nbsp;208-310-0875</a></li>
 						
 					</ul>

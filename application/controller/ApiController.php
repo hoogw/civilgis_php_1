@@ -216,98 +216,7 @@ class ApiController extends Controller
                                 
     }// listcontent
     
-    // version2 for mapadvp and mapadvs only
-    public function maptableheader2($area, $subject)
-    {
-       $maptable_name = $area . "_" .  $subject;
-       $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
-     
-        /*
-             if ($area == "city") 
-                 { 
-                    $maptable_name = $subject;
-                    
-                 }
-             if ($area == "county") 
-                 { 
-                    $maptable_name = "oc_" . $subject;
-                    
-                 }
-         */ 
-         
-             
-            $collection = $geodatabase->$maptable_name;
-       
-       
-       
-       
-       
-       
-       // get all the column name
-            
-            $columns = array(); 
-            
-            
-          // -------------  findone() ---------------  
-            $cursor_one = $collection->findOne();     
-            $propertiesObj = $cursor_one["properties"]; 
-                    
-           ksort($propertiesObj);
-           foreach($propertiesObj as $key => $value)
-               {
-                     $columns[] = $key;
-                }
-           
-               //sort($columns);
-                
-                        $columns[] ="Lat";
-                        $columns[] ="Long";
-                        $columns[] ="GeoFID";
-         //------------------------------------------------                       
-                       
-                   
-            
-           //================== above use findone(), below section use find().limit(1) both works. ===================
-          /*  
-            $_cursor = $collection->find()->limit(1);
-            
-            foreach ($_cursor as $doc) {
-                
-                       //var_dump(array_keys($doc));   // result array(4) { [0]=> string(3) "_id" [1]=> string(4) "type" [2]=> string(10) "properties" [3]=> string(8) "geometry" }
-                        //$geoIDobj = $doc["_id"];             
-                        //$geoFID = $geoID->$id;
-                        $propertiesObj = $doc["properties"]; 
-                        //$geometryObj = $doc["geometry"]; 
-                        
-                    
-                        
-                        foreach($propertiesObj as $key => $value)
-                                {
-                                  $columns[] = $key;
-                                }
-                        
-                        $columns[] ="Lat";
-                        $columns[] ="Long";
-                        $columns[] ="GeoFID";
-                       
-                    }// foreach doc
-            */
-            //==========================================================================================================
-            
-          
-         
-                                    
-                            $headers = array(
-                                                     "columns" => $columns   
-                                                    );
-                            echo json_encode($headers);  // send data as json format
-                     
-                
-                
-                                
-                                
-    }// tableheader
-   
+    
     
     public function maptableheader($area, $subject)
     {
@@ -492,250 +401,7 @@ class ApiController extends Controller
     }// tableheader
     
     
-    // mapdata return arry of object [{name:aaa}, {age:19}...]
-    // maptabledata return array [aaa, 19,....]
-    // when they feed to datatables, different type of datasource. 
-    // version2 for mapadvp and mapadvs only
-    public function maptabledata2($area, $subject)
-    {
     
-        // storing  request (ie, get/post) global array to a variable  
-        $requestData= $_REQUEST;
-        
-        $maptable_name = $area . "_" .  $subject;
-        $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
-     
-        /*
-             if ($area == "city") 
-                 { 
-                    $maptable_name = $subject;
-                    
-                 }
-             if ($area == "county") 
-                 { 
-                    $maptable_name = "oc_" . $subject;
-                    
-                 }
-          */  
-         
-             
-            $collection = $geodatabase->$maptable_name;
-            $cursor = null;
-       
-      
-
-              // -----------------  1 ------------  get all the column name  ----------------
-            
-                               
-
-                                $columns = array(); 
-
-                               /* 
-                             
-                                $cursor_one = $collection->findOne();     
-                                $propertiesObj = $cursor_one["properties"]; 
-
-                               foreach($propertiesObj as $key => $value)
-                                   {
-                                         $columns[] = $key;
-                                    }
-
-                                    sort($columns);
-
-                                           
-                                                   
-                                 */          
-
-
-                               //================== above use findone(), below section use find().limit(1) both works. ===================
-
-                                $_cursor = $collection->find()->limit(1);
-
-                                foreach ($_cursor as $doc) {
-
-                                            $propertiesObj = $doc["properties"]; 
-                                            ksort($propertiesObj);
-                                            
-                                            foreach($propertiesObj as $key => $value)
-                                                    {
-                                                      $columns[] = $key;
-                                                    }
-                                           
-                                        }// foreach doc
-
-                                
-          //  -------------------------END of 1  --------------- get all the column name  
-            
-            
-                            
-                           
-                            
-             // ------------- 2 --------------- getting total number records without any search
-                            
-                            
-                            $totalData = $collection->count();
-                            $totalFiltered = $totalData;  // when there is no search parameter then total number rows = total number filtered rows.
-                
-                            
-            // --------------  3   -------------- if there is search value, need to filter  --------------------------------------  
-                            
-                            
-                            
-                                  // ------ sort ---- order by ----------------
-                                   
-                                    
-                                    $_asc_desc = 1;
-                                    if (strtoupper($requestData['order'][0]['dir']) == 'ASC')
-                                    {
-                                        $_asc_desc = 1;
-                                    }else {
-                                        $_asc_desc = -1;
-                                    }
-                                    
-                                    $_sort_by_column =  'properties.'.$columns[$requestData['order'][0]['column']];
-                                    
-                                     $_sort_array = array( $_sort_by_column =>$_asc_desc);
-                            
-                            
-                            
-                            if( !empty($requestData['search']['value']) ) 
-                                {
-                                
-                                      $_search_value = $requestData['search']['value'];
-                                      $_search_Regex = '/'.$_search_value.'/i';
-
-                                
-                                    // if there is a search parameter
-                                 /* 
-                                  db.parks.find({"properties.NAME_ALF":/WILSON/})
-                                  
-                                  find(array('$or' => array(
-                                            array("brand" => "anti-clothes"),
-                                            array("allSizes" => "small")
-                                          )));
-                                   
-                                   $db->users->find(array("name" => new MongoRegex("/Joe/")));
-                                 */
-                                   
-                                   $_or_statment = array();
-                                   
-                                    for ($i = 0; $i < count($columns); ++$i) {
-                                        
-                                         // ---------- search method 1 regex can only search for text string typed column, can't search against double int column because search value has 
-                                        //  single quote, search int double column, the search value should not have single quote ----------------
-                                         $_properties_key = 'properties.'.$columns[$i];
-                                         $_or_item = array($_properties_key => new MongoRegex($_search_Regex));
-                                               
-                                         // use array_push($array, element); or use $array[]= element;  missing [] will cause error
-                                         $_or_statment[] = $_or_item;
-                                         //----------------------------- end ---------- 1 -----------------------------------------------------------------------
-                                            
-                                        }// for
-                                        
-                                        
-                                    $nosql = array(
-                                                    '$or' => $_or_statment
-                                                   ); 
-                                    
-                                   
-                                         
-                                        
-                                    
-                                    $totalFiltered = $collection->find($nosql)->count();  // when there is a search parameter then we have to modify total number filtered rows as per search result without limit in the query 
-                                    
-                                    
-                                     
-                                    $cursor = $collection->find($nosql)  
-                                                            ->sort($_sort_array)   
-                                                            ->limit($requestData['length'])                
-                                                            ->skip($requestData['start']);
-                                     
-                                   
-
-                                    
-                                } else 
-                                    {	
-                                    
-                                    $cursor = $collection->find()  
-                                                            ->sort($_sort_array)   
-                                                            ->limit($requestData['length'])                
-                                                            ->skip($requestData['start']);
-                                    
-                                    }
-                                    
-                            $data = array();
-                            
-                            
-                       //=================  iterate through cursor ===============     
-               foreach ($cursor as $doc) {
-                
-                       //var_dump(array_keys($doc));   // result array(4) { [0]=> string(3) "_id" [1]=> string(4) "type" [2]=> string(10) "properties" [3]=> string(8) "geometry" }
-                       
-                        //_id
-                        $geoIDobj = $doc["_id"];                                   
-                        $geoIDobjvar = get_object_vars($geoIDobj);
-                        $geoFID = array_values($geoIDobjvar)[0];
-                        
-                        
-                        // properties
-                        $propertiesObj = $doc["properties"]; 
-                        
-                        ksort($propertiesObj);
-                        
-                        $cells = array();
-                        foreach($propertiesObj as $key => $value)
-                                {
-                                  //$columns[] = $key; 
-                                  $cells[] = $value;
-                                }
-                        
-                         // geometry
-                        $geometryObj = $doc["geometry"];    
-                             
-                        $geometry_type = $geometryObj["type"];
-                           
-                        if ($geometry_type === "Polygon"){
-                                        $cells[] =$geometryObj["coordinates"][0][0][1];
-                                        $cells[] =$geometryObj["coordinates"][0][0][0];
-                        }elseif ($geometry_type === "LineString"){
-                                        $cells[] =$geometryObj["coordinates"][0][1];
-                                        $cells[] =$geometryObj["coordinates"][0][0];
-                                }elseif ($geometry_type === "Point"){
-                                        $cells[] =$geometryObj["coordinates"][1];
-                                        $cells[] =$geometryObj["coordinates"][0];
-                                         } else {
-                                             // no lat long found,put 0 by default
-                                             $cells[] = 999;
-                                             $cells[] = 999;
-                                             
-                                         }
-                        
-                        
-                        $cells[] =$geoFID;
-                        
-                        $data[] = $cells;
-                        
-                        unset($cells); // empty this row 
-                       
-                 }// foreach doc
-                    
-                    
-                   
-                    //===================================================
-                            
-                          
-                                    
-                                  
-                                    
-                            $json_data = array(
-                                                    "draw"            => intval( $requestData['draw'] ),   // for every request/draw by clientside , they send a number as a parameter, when they recieve a response/data they first check the draw number, so we are sending same number in draw. 
-                                                    "recordsTotal"    => intval( $totalData ),  // total number of records
-                                                    "recordsFiltered" => intval( $totalFiltered ), // total number of records after searching, if there is no searching then totalFiltered = totalData
-                                                    "data"            => $data   // total data array
-                                                    );
-                            echo json_encode($json_data);  // send data as json format
-    
-    }
     
     
     
@@ -1199,7 +865,7 @@ class ApiController extends Controller
     }
     
     
-     //load geojson data  
+     //Not in use, for may be for some old pages only.....load geojson data  
      public function load($area, $subject, $longBR,  $latBR,  $longTL, $latTL)
     {
              $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
@@ -1280,7 +946,7 @@ class ApiController extends Controller
     
     
     
-    // loadall generate large amount of data here compare to load()    
+    // currently in USE, loadall generate large amount of data here compare to load()    
     public function loadall($area, $subject, $longBR,  $latBR,  $longTL, $latTL)
     {
              $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
@@ -1288,34 +954,11 @@ class ApiController extends Controller
              
              $table_name = $area . "_" . $subject;
              
-            /*
-             if ($area == "city") 
-                 { 
-                    $table_name = $subject;
-                    
-                 }
-             if ($area == "county") 
-                 { 
-                    $table_name = "oc_" . $subject;
-                    
-                 }
-             */
+           
              
             $collection = $geodatabase->$table_name;
 
-            /*
-                if(!empty($latTL) && !empty($longTL) && !empty($latBR) && !empty($longBR)){
-
-                   //$query = GeoQuery::findbybox(-117.91733264923096,33.676568503347546,-117.90239810943604,33.68606772497501);
-                  $query = GeoQuery::findbybox($longBR,  $latBR,  $longTL, $latTL);
-                  $count_ = $collection->count($query);
-                }
-               else {
-                   // in case of not box coordinate provide, will find all record
-                   $query=null;
-                   $count_ = $collection->count();
-               }
-            */
+           
             
             $query = GeoQuery::findbybox($longBR,  $latBR,  $longTL, $latTL);
                 $count_ = $collection->count($query);
@@ -1326,7 +969,7 @@ class ApiController extends Controller
             
        // loadall generate large amount of data here.          
             if (($count_ > 0) and ($count_ < $_max_row_count)) {
-           // if (($count_ > 0) and ($count_ < 10000)) {    
+            
                 
                             if(!empty($latTL) && !empty($longTL) && !empty($latBR) && !empty($longBR)){
                                         $cursor = $collection->find($query);
@@ -1338,9 +981,7 @@ class ApiController extends Controller
                                 $result = "{ \"type\": \"FeatureCollection\",\"features\": [";
 
                                 foreach ($cursor as $document) {
-                                    //echo $document["properties"] . "\n";
-                                     //print_r($document);
-                                     //echo json_encode($document);
+                                    
                                     $result = $result.json_encode($document).",";
 
                                 }
@@ -1359,6 +1000,352 @@ class ApiController extends Controller
                 
             
     }// 
+    
+    
+    //==========================   NOT  IN  USE  ====================================
+    
+    
+    // mapdata return arry of object [{name:aaa}, {age:19}...]
+    // maptabledata return array [aaa, 19,....]
+    // when they feed to datatables, different type of datasource. 
+    // version2 for mapadvp and mapadvs only  ( Not in USE )
+    public function maptabledata2($area, $subject)
+    {
+    
+        // storing  request (ie, get/post) global array to a variable  
+        $requestData= $_REQUEST;
+        
+        $maptable_name = $area . "_" .  $subject;
+        $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
+     
+        /*
+             if ($area == "city") 
+                 { 
+                    $maptable_name = $subject;
+                    
+                 }
+             if ($area == "county") 
+                 { 
+                    $maptable_name = "oc_" . $subject;
+                    
+                 }
+          */  
+         
+             
+            $collection = $geodatabase->$maptable_name;
+            $cursor = null;
+       
+      
+
+              // -----------------  1 ------------  get all the column name  ----------------
+            
+                               
+
+                                $columns = array(); 
+
+                               /* 
+                             
+                                $cursor_one = $collection->findOne();     
+                                $propertiesObj = $cursor_one["properties"]; 
+
+                               foreach($propertiesObj as $key => $value)
+                                   {
+                                         $columns[] = $key;
+                                    }
+
+                                    sort($columns);
+
+                                           
+                                                   
+                                 */          
+
+
+                               //================== above use findone(), below section use find().limit(1) both works. ===================
+
+                                $_cursor = $collection->find()->limit(1);
+
+                                foreach ($_cursor as $doc) {
+
+                                            $propertiesObj = $doc["properties"]; 
+                                            ksort($propertiesObj);
+                                            
+                                            foreach($propertiesObj as $key => $value)
+                                                    {
+                                                      $columns[] = $key;
+                                                    }
+                                           
+                                        }// foreach doc
+
+                                
+          //  -------------------------END of 1  --------------- get all the column name  
+            
+            
+                            
+                           
+                            
+             // ------------- 2 --------------- getting total number records without any search
+                            
+                            
+                            $totalData = $collection->count();
+                            $totalFiltered = $totalData;  // when there is no search parameter then total number rows = total number filtered rows.
+                
+                            
+            // --------------  3   -------------- if there is search value, need to filter  --------------------------------------  
+                            
+                            
+                            
+                                  // ------ sort ---- order by ----------------
+                                   
+                                    
+                                    $_asc_desc = 1;
+                                    if (strtoupper($requestData['order'][0]['dir']) == 'ASC')
+                                    {
+                                        $_asc_desc = 1;
+                                    }else {
+                                        $_asc_desc = -1;
+                                    }
+                                    
+                                    $_sort_by_column =  'properties.'.$columns[$requestData['order'][0]['column']];
+                                    
+                                     $_sort_array = array( $_sort_by_column =>$_asc_desc);
+                            
+                            
+                            
+                            if( !empty($requestData['search']['value']) ) 
+                                {
+                                
+                                      $_search_value = $requestData['search']['value'];
+                                      $_search_Regex = '/'.$_search_value.'/i';
+
+                                
+                                    // if there is a search parameter
+                                 /* 
+                                  db.parks.find({"properties.NAME_ALF":/WILSON/})
+                                  
+                                  find(array('$or' => array(
+                                            array("brand" => "anti-clothes"),
+                                            array("allSizes" => "small")
+                                          )));
+                                   
+                                   $db->users->find(array("name" => new MongoRegex("/Joe/")));
+                                 */
+                                   
+                                   $_or_statment = array();
+                                   
+                                    for ($i = 0; $i < count($columns); ++$i) {
+                                        
+                                         // ---------- search method 1 regex can only search for text string typed column, can't search against double int column because search value has 
+                                        //  single quote, search int double column, the search value should not have single quote ----------------
+                                         $_properties_key = 'properties.'.$columns[$i];
+                                         $_or_item = array($_properties_key => new MongoRegex($_search_Regex));
+                                               
+                                         // use array_push($array, element); or use $array[]= element;  missing [] will cause error
+                                         $_or_statment[] = $_or_item;
+                                         //----------------------------- end ---------- 1 -----------------------------------------------------------------------
+                                            
+                                        }// for
+                                        
+                                        
+                                    $nosql = array(
+                                                    '$or' => $_or_statment
+                                                   ); 
+                                    
+                                   
+                                         
+                                        
+                                    
+                                    $totalFiltered = $collection->find($nosql)->count();  // when there is a search parameter then we have to modify total number filtered rows as per search result without limit in the query 
+                                    
+                                    
+                                     
+                                    $cursor = $collection->find($nosql)  
+                                                            ->sort($_sort_array)   
+                                                            ->limit($requestData['length'])                
+                                                            ->skip($requestData['start']);
+                                     
+                                   
+
+                                    
+                                } else 
+                                    {	
+                                    
+                                    $cursor = $collection->find()  
+                                                            ->sort($_sort_array)   
+                                                            ->limit($requestData['length'])                
+                                                            ->skip($requestData['start']);
+                                    
+                                    }
+                                    
+                            $data = array();
+                            
+                            
+                       //=================  iterate through cursor ===============     
+               foreach ($cursor as $doc) {
+                
+                       //var_dump(array_keys($doc));   // result array(4) { [0]=> string(3) "_id" [1]=> string(4) "type" [2]=> string(10) "properties" [3]=> string(8) "geometry" }
+                       
+                        //_id
+                        $geoIDobj = $doc["_id"];                                   
+                        $geoIDobjvar = get_object_vars($geoIDobj);
+                        $geoFID = array_values($geoIDobjvar)[0];
+                        
+                        
+                        // properties
+                        $propertiesObj = $doc["properties"]; 
+                        
+                        ksort($propertiesObj);
+                        
+                        $cells = array();
+                        foreach($propertiesObj as $key => $value)
+                                {
+                                  //$columns[] = $key; 
+                                  $cells[] = $value;
+                                }
+                        
+                         // geometry
+                        $geometryObj = $doc["geometry"];    
+                             
+                        $geometry_type = $geometryObj["type"];
+                           
+                        if ($geometry_type === "Polygon"){
+                                        $cells[] =$geometryObj["coordinates"][0][0][1];
+                                        $cells[] =$geometryObj["coordinates"][0][0][0];
+                        }elseif ($geometry_type === "LineString"){
+                                        $cells[] =$geometryObj["coordinates"][0][1];
+                                        $cells[] =$geometryObj["coordinates"][0][0];
+                                }elseif ($geometry_type === "Point"){
+                                        $cells[] =$geometryObj["coordinates"][1];
+                                        $cells[] =$geometryObj["coordinates"][0];
+                                         } else {
+                                             // no lat long found,put 0 by default
+                                             $cells[] = 999;
+                                             $cells[] = 999;
+                                             
+                                         }
+                        
+                        
+                        $cells[] =$geoFID;
+                        
+                        $data[] = $cells;
+                        
+                        unset($cells); // empty this row 
+                       
+                 }// foreach doc
+                    
+                    
+                   
+                    //===================================================
+                            
+                          
+                                    
+                                  
+                                    
+                            $json_data = array(
+                                                    "draw"            => intval( $requestData['draw'] ),   // for every request/draw by clientside , they send a number as a parameter, when they recieve a response/data they first check the draw number, so we are sending same number in draw. 
+                                                    "recordsTotal"    => intval( $totalData ),  // total number of records
+                                                    "recordsFiltered" => intval( $totalFiltered ), // total number of records after searching, if there is no searching then totalFiltered = totalData
+                                                    "data"            => $data   // total data array
+                                                    );
+                            echo json_encode($json_data);  // send data as json format
+    
+    }
+    
+    
+    
+    // version2 for mapadvp and mapadvs only ( Not in USE )
+    public function maptableheader2($area, $subject)
+    {
+       $maptable_name = $area . "_" .  $subject;
+       $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
+     
+        /*
+             if ($area == "city") 
+                 { 
+                    $maptable_name = $subject;
+                    
+                 }
+             if ($area == "county") 
+                 { 
+                    $maptable_name = "oc_" . $subject;
+                    
+                 }
+         */ 
+         
+             
+            $collection = $geodatabase->$maptable_name;
+       
+       
+       
+       
+       
+       
+       // get all the column name
+            
+            $columns = array(); 
+            
+            
+          // -------------  findone() ---------------  
+            $cursor_one = $collection->findOne();     
+            $propertiesObj = $cursor_one["properties"]; 
+                    
+           ksort($propertiesObj);
+           foreach($propertiesObj as $key => $value)
+               {
+                     $columns[] = $key;
+                }
+           
+               //sort($columns);
+                
+                        $columns[] ="Lat";
+                        $columns[] ="Long";
+                        $columns[] ="GeoFID";
+         //------------------------------------------------                       
+                       
+                   
+            
+           //================== above use findone(), below section use find().limit(1) both works. ===================
+          /*  
+            $_cursor = $collection->find()->limit(1);
+            
+            foreach ($_cursor as $doc) {
+                
+                       //var_dump(array_keys($doc));   // result array(4) { [0]=> string(3) "_id" [1]=> string(4) "type" [2]=> string(10) "properties" [3]=> string(8) "geometry" }
+                        //$geoIDobj = $doc["_id"];             
+                        //$geoFID = $geoID->$id;
+                        $propertiesObj = $doc["properties"]; 
+                        //$geometryObj = $doc["geometry"]; 
+                        
+                    
+                        
+                        foreach($propertiesObj as $key => $value)
+                                {
+                                  $columns[] = $key;
+                                }
+                        
+                        $columns[] ="Lat";
+                        $columns[] ="Long";
+                        $columns[] ="GeoFID";
+                       
+                    }// foreach doc
+            */
+            //==========================================================================================================
+            
+          
+         
+                                    
+                            $headers = array(
+                                                     "columns" => $columns   
+                                                    );
+                            echo json_encode($headers);  // send data as json format
+                     
+                
+                
+                                
+                                
+    }// tableheader
+   
+    
+    //===============================================================================
 }//class
 
 
