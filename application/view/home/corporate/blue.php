@@ -78,9 +78,9 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Home</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#portfolio">Sample Demo</a></li>
-                        <li><a href="#testimonials">Testimonial</a></li>
+                        <li><a href="#service">Feature</a></li>
+                        <li><a href="#portfolio">Demo</a></li>
+                    <!--    <li><a href="#testimonials">Testimonial</a></li> -->
                         <li><a href="#price">price</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -110,9 +110,9 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown">make all your map transparent  </h2>
+                                <h2 class="animated fadeInDown">publish all your map online  </h2>
                                 <span class="animated fadeInDown"></span>
-                                <a href="#" class="btn btn-blue btn-effect">See Sample Maps</a>
+                                <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample Maps Demo</a>
                             </div>
                         </div>
 						
@@ -123,9 +123,9 @@
 						<div class="bg-img bg-img-2"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>make all your tabular data transparent</h2>
+                                <h2>publish all your tabular data PDF document online</h2>
                                 <span></span>
-                                <a href="#" class="btn btn-blue btn-effect">See Sample tabular data</a>
+                                <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample document Demo </a>
                             </div>
                         </div>
 						
@@ -136,9 +136,9 @@
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>make all your ongoing project transparent</h2>
+                                <h2>publish all your ongoing project online</h2>
                                 <span></span>
-                                <a href="#" class="btn btn-blue btn-effect">See Sample ongoing Project</a>
+                                <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample ongoing Project Demo</a>
                             </div>
                         </div>
 
@@ -182,28 +182,47 @@
 					<div class="row">
 						<div class="col-md-4 wow animated fadeInLeft">
 							<div class="recent-works">
-								<h3>Recent Works</h3>
+								<h3>Transparent Government Initiative</h3>
 								<div id="works">
 									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> <br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+										<p>
+                                                                                    Public participation in government isn’t just a cornerstone of democracy. It’s how the government ensures that policies and practices reflect the ideas and expertise of the people.  
+                                                                                    
+                                                                                    <br> 
+                                                                                    <br> 
+                                                                                    The Administration is empowering the public through greater openness and new technologies to influence the decisions that affect their lives.
+                                                                                    
+                                                                                </p>
 									</div>
 									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+										<p>
+                                                                                    
+                                                                                    President Obama signed the Memorandum on Transparency and Open Government, ushering in a new era of open and accountable government meant to bridge the gap between the American people and their government.
+                                                                                    <br><br> 
+                                                                                    President Obama emphasized the importance of more inclusive and open government, directing federal agencies to “find new ways of tapping the knowledge and experience of ordinary Americans.”
+                                                                                </p>
 									</div>
 									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+										<p>
+                                                                                    On May 9, 2013, President Obama signed an executive order that made open and machine-readable data the new default for government information. Making information about government operations more readily available and useful is also core to the promise of a more efficient and transparent government.
+                                                                                    <br><br> 
+                                                                                    President Obama launched the Open Government Partnership (OGP) in 2011 at the U.N. General Assembly meeting with seven other heads of state and an equal number of leaders from civil society. The OGP has grown to a global coalition of 64 governments and hundreds of civil-society organizations.
+                                                                                </p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
 							<div class="welcome-block">
-								<h3>Welcome To Our Site</h3>								
+								<h3>Founder TransparentGov</h3>								
 						     	 <div class="message-body">
 									<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/member-1.jpg" class="pull-left" alt="member">
-						       		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						       		<p>
+                                                                    Welcome to TransparentGov which is a perfect platforms for individual local government to participate open government practice. The web site available on dot net, PHP, Java, Android and iOS. It provide public easy browsing and easy search capabilites on GIS dataset, tabular data and PDF document. 
+                                         
+                                                                </p>
 						     	 </div>
-						       	<a href="#" class="btn btn-border btn-effect pull-right">Read More</a>
+						       	<a href="<?php echo Config::get('URL'); ?>" class="btn btn-border btn-effect pull-right"> Demo </a>
 						    </div>
 						</div>
 					</div>
@@ -218,8 +237,8 @@
 					<div class="row">
 					
 						<div class="sec-title text-center">
-							<h2 class="wow animated bounceInLeft">Service</h2>
-							<p class="wow animated bounceInRight">The Key Features of our Job</p>
+							<h2 class="wow animated bounceInLeft">Features</h2>
+							<p class="wow animated bounceInRight">The Key Features</p>
 						</div>
 						
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
@@ -227,8 +246,8 @@
 								<div class="service-icon">
 									<i class="fa fa-home fa-3x"></i>
 								</div>
-								<h3>Support</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+								<h3>Mapping</h3>
+								<p>Browsing and Searching Maps on the fly</p>
 							</div>
 						</div>
 					
@@ -237,8 +256,8 @@
 								<div class="service-icon">
 									<i class="fa fa-tasks fa-3x"></i>
 								</div>
-								<h3>Well Documented</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+								<h3>Search Tabular Data </h3>
+								<p>Searching Sorting Tabular data on the fly </p>
 							</div>
 						</div>
 					
@@ -247,8 +266,8 @@
 								<div class="service-icon">
 									<i class="fa fa-clock-o fa-3x"></i>
 								</div>
-								<h3>Design UI/UX</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+								<h3>Full Text Search Document</h3>
+								<p> Searching Sorting PDF document on the fly</p>
 							</div>
 						</div>
 					
@@ -258,8 +277,8 @@
 									<i class="fa fa-heart fa-3x"></i>
 								</div>
 								
-								<h3>Web Security</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>							
+								<h3>Mayor's Project</h3>
+								<p>Browsing and Searching ongoing projects on the fly </p>							
 							</div>
 						</div>
 						
@@ -274,8 +293,10 @@
 					<div class="row">
 					
 						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>FEATURED PROJECTS</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h2>DEMO</h2>
+							<p>
+                                                             
+                                                        </p>
 						</div>
 						
 
@@ -358,7 +379,7 @@
 			</section>
 			<!-- end portfolio section -->
 			
-			<!-- Testimonial section -->
+			<!-- Testimonial section 
 			<section id="testimonials" class="parallax">
 				<div class="overlay">
 					<div class="container">
@@ -396,6 +417,7 @@
 					</div>
 				</div>
 			</section>
+   -->
 			<!-- end Testimonial section -->
 			
 			<!-- Price section -->
@@ -405,59 +427,58 @@
 					
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Price</h2>
-							<p>Our price for your company</p>
+							<p></p>
 						</div>
 						
 						<div class="col-md-4 wow animated fadeInUp">
-							<div class="price-table text-center">
-								<span>Silver</span>
+							<div class="price-table featured text-center">
+								<span>Initial Setup</span>
 								<div class="value">
+                                                                        
 									<span>$</span>
-									<span>24,35</span><br>
-									<span>month</span>
+									<span>5,000</span><br>
+									<span>One Time</span>
 								</div>
 								<ul>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li><a href="#">sign up</a></li>
+									<li>Free Upgrade</li>
+									<li>Free New Feature</li>
+									<li>Free Trial</li>
+									
+									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
 						</div>
 						
 						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
 							<div class="price-table featured text-center">
-								<span>Gold</span>
+								<span>Customization</span>
 								<div class="value">
 									<span>$</span>
-									<span>50,00</span><br>
-									<span>month</span>
+									<span>60</span><br>
+									<span>hour</span>
 								</div>
 								<ul>
+									<li>Free Upgrade</li>
+									<li>Free New Feature</li>
 									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li><a href="#">sign up</a></li>
+									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
 						</div>
 						
 						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
-							<div class="price-table text-center">
-								<span>Diamond</span>
+							<div class="price-table  featured text-center">
+								<span>Cloud Hosting</span>
 								<div class="value">
 									<span>$</span>
-									<span>123,12</span><br>
+									<span>200</span><br>
 									<span>month</span>
 								</div>
 								<ul>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li><a href="#">sign up</a></li>
+									<li>Free Upgrade</li>
+									<li>Free New Feature</li>
+									<li>Free Trial</li>
+									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
 						</div>
@@ -475,13 +496,13 @@
 						
 							<div class="sec-title text-center white wow animated fadeInDown">
 								<h2>FOLLOW US</h2>
-								<p>Beautifully simple follow buttons to help you get followers on</p>
+								<p></p>
 							</div>
 							
 							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>							
 							</ul>
 							
 						</div>
@@ -522,9 +543,9 @@
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>
-								<p><i class="fa fa-phone"></i>Phone: (415) 124-5678 </p>
-								<p><i class="fa fa-envelope"></i>website@yourname.com</p>
+								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Los Angeles </span><span>CA 90012</span></p><br>
+								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
+								<p><i class="fa fa-envelope"></i>medyhzl@gmail.com</p>
 							</address>
 						</div>
 			
@@ -533,9 +554,7 @@
 			</section>
 			<!-- end Contact section -->
 			
-			<section id="google-map">
-				<div id="map-canvas" class="wow animated fadeInUp"></div>
-			</section>
+			
 		
 		</main>
 		
@@ -544,28 +563,21 @@
 				<div class="row text-center">
 					<div class="footer-content">
 						<div class="wow animated fadeInDown">
-							<p>newsletter signup</p>
-							<p>Get Cool Stuff! We hate spam!</p>
+							<p></p>
+							<p></p>
 						</div>
-						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div class="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-								</button>
-							</div>
-						</form>
+						
 						<div class="footer-social">
 							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+								
 							</ul>
 						</div>
 						
-						<p>Design And developed By <a href="http://themefisher.com/">Themefisher</a>. All rights Reserved</p>
+						<p>Design And developed By <a href="#body">TransparentGov</a>. All rights Reserved</p>
 					</div>
 				</div>
 			</div>
