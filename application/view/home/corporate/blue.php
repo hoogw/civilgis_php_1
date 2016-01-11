@@ -21,24 +21,24 @@
 		================================================== -->
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-              
-		<!-- Font awesome Icon font -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/font-awesome.min.css">
+                
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/font-awesome.min.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/jquery.fancybox.css">
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/jquery.fancybox.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/bootstrap.min.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/owl.carousel.css">
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/owl.carousel.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/slit-slider.css">
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/slit-slider.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/animate.css">
-		<!-- Main Style sheet -->
-        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/css/theme/blue/main.css">
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>public/theme_template/blue/css/main.css">
 
 		<!-- Modernizer Script for old Browsers -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/modernizr-2.6.2.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/modernizr-2.6.2.min.js"></script>
 
     </head>
 	
@@ -436,7 +436,7 @@
 								<div class="value">
                                                                         
 									<span>$</span>
-									<span>5,000</span><br>
+									<span>9,999</span><br>
 									<span>One Time</span>
 								</div>
 								<ul>
@@ -454,13 +454,14 @@
 								<span>Customization</span>
 								<div class="value">
 									<span>$</span>
-									<span>60</span><br>
+									<span>79.99</span><br>
 									<span>hour</span>
 								</div>
 								<ul>
-									<li>Free Upgrade</li>
-									<li>Free New Feature</li>
-									<li>Free Trial</li>
+                                                                        <li>New Design </li>
+									<li>New Feature </li>
+									<li>New Function </li>
+									
 									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
@@ -471,12 +472,12 @@
 								<span>Cloud Hosting</span>
 								<div class="value">
 									<span>$</span>
-									<span>200</span><br>
+									<span>499</span><br>
 									<span>month</span>
 								</div>
 								<ul>
-									<li>Free Upgrade</li>
-									<li>Free New Feature</li>
+									<li>Free Tech Support</li>
+									<li>Free Data Update</li>
 									<li>Free Trial</li>
 									<li><a href="#contact">sign up</a></li>
 								</ul>
@@ -545,7 +546,7 @@
 								<h3>Contact Us</h3>						
 								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Los Angeles </span><span>CA 90012</span></p><br>
 								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
-								<p><i class="fa fa-envelope"></i>medyhzl@gmail.com</p>
+								<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>
 							</address>
 						</div>
 			
@@ -586,25 +587,23 @@
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery-1.11.1.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery-1.11.1.min.js"></script>
 		<!-- Twitter Bootstrap -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/bootstrap.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/bootstrap.min.js"></script>
 		<!-- Single Page Nav -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery.singlePageNav.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery.singlePageNav.min.js"></script>
 		<!-- jquery.fancybox.pack -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery.fancybox.pack.js"></script>
-		<!-- Google Map API -->
-		<script src="http://maps.google.com/maps/api/js"></script>
-		<!-- Owl Carousel -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/owl.carousel.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery.fancybox.pack.js"></script>
+		
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/owl.carousel.min.js"></script>
         <!-- jquery easing -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery.easing.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery.easing.min.js"></script>
         <!-- Fullscreen slider -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery.slitslider.js"></script>
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/jquery.ba-cond.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery.slitslider.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/jquery.ba-cond.min.js"></script>
 		<!-- onscroll animation -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/wow.min.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/wow.min.js"></script>
 		<!-- Custom Functions -->
-        <script src="<?php echo Config::get('URL'); ?>public/js/theme/blue/main.js"></script>
+        <script src="<?php echo Config::get('URL'); ?>public/theme_template/blue/js/main.js"></script>
     </body>
 </html>
