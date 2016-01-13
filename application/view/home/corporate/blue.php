@@ -216,7 +216,7 @@
 							<div class="welcome-block">
 								<h3>Founder TransparentGov</h3>								
 						     	 <div class="message-body">
-									<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/member-1.jpg" class="pull-left" alt="member">
+									<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/member-1.jpg" class="pull-left" alt="member">
 						       		<p>
                                                                     Welcome to TransparentGov which is a perfect platforms for individual local government to participate open government practice. The web site available on dot net, PHP, Java, Android and iOS. It provide public easy browsing and easy search capabilites on GIS dataset, tabular data and PDF document. 
                                          
@@ -302,7 +302,7 @@
 
 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -314,7 +314,7 @@
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -326,7 +326,7 @@
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -338,7 +338,7 @@
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -350,7 +350,7 @@
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -362,7 +362,7 @@
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
 								<figcaption class="mask">
 									<h3>Wall street</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
@@ -391,21 +391,21 @@
 							
 							<div id="testimonial" class=" wow animated fadeInUp">
 								<div class="testimonial-item text-center">
-									<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/member-1.jpg" alt="Our Clients">
+									<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
 										<span>Katty Flower</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									</div>
 								</div>
 								<div class="testimonial-item text-center">
-									<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/member-1.jpg" alt="Our Clients">
+									<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
 										<span>Katty Flower</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									</div>
 								</div>
 								<div class="testimonial-item text-center">
-									<img src="<?php echo Config::get('URL'); ?>public/img/theme/blue/img/member-1.jpg" alt="Our Clients">
+									<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
 										<span>Katty Flower</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -442,8 +442,8 @@
 								<ul>
 									<li>Free Upgrade</li>
 									<li>Free New Feature</li>
-									<li>Free Trial</li>
-									
+									<li>Free Data Update</li>
+									<li>Free Support</li>
 									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
@@ -458,10 +458,10 @@
 									<span>hour</span>
 								</div>
 								<ul>
-                                                                        <li>New Design </li>
-									<li>New Feature </li>
-									<li>New Function </li>
-									
+                                                                        <li>Customized Design </li>
+									<li>Customized Feature </li>
+									<li>Customized Function </li>
+									<li>Free Support</li>
 									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
@@ -476,9 +476,10 @@
 									<span>month</span>
 								</div>
 								<ul>
-									<li>Free Tech Support</li>
+									<li>Free Consult</li>
 									<li>Free Data Update</li>
-									<li>Free Trial</li>
+									<li>Free Upgrade</li>
+                                                                        <li>Free Support</li>
 									<li><a href="#contact">sign up</a></li>
 								</ul>
 							</div>
@@ -544,7 +545,7 @@
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Los Angeles </span><span>CA 90012</span></p><br>
+								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>
 								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
 								<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>
 							</address>

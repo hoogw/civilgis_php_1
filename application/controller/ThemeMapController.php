@@ -27,8 +27,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/themesimplemap');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localsimplemap');
          
          
        
@@ -50,8 +50,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/themesimpleclustermap');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localsimplemap');
          
          
        
@@ -69,8 +69,8 @@ class ThemeMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/thememaplistpaged');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localmaplistpaged');
          
          
        
@@ -87,8 +87,8 @@ class ThemeMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/thememaplistscroller');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localmaplistscroller');
          
          
        
@@ -109,8 +109,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/thememapclienttable');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localmapclienttable');
          
          
        
@@ -133,8 +133,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/thememapservertable');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localmapservertable');
          
          
        
@@ -155,8 +155,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/thememapclientservertable');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localmapclientservertable');
          
          
        
@@ -176,8 +176,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/themezoning');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localzoning');
          
          
        
@@ -199,8 +199,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/themegenerallanduse');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localgenerallanduse');
          
          
        
@@ -222,8 +222,8 @@ class ThemeMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'thememap/themezones');
+         $side_panel_path =  '_templates/'.$subject.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localzones');
          
          
        
