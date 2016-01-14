@@ -1236,9 +1236,9 @@ function datatablesX(){
                                              _click_point = new google.maps.Marker({
                                                 map: map,
                                                 
-                                                position: {lat: _geometry_coord[1], lng: _geometry_coord[0]},
+                                                position: {lat: _geometry_coord[1], lng: _geometry_coord[0]}
                                                 // icon: iconBase + 'custome_icon.png'
-                                                label: 'X'
+                                                //label: 'X'
                                              });
                                              
                                       _click_point.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
@@ -1255,7 +1255,7 @@ function datatablesX(){
                                   }
                                   else if (_geometry_type === 'No_Geometry'){
                                       
-                                      alert("No location");
+                                      //alert("No location");
                                       
                                   }
                                   
@@ -1276,7 +1276,253 @@ function datatablesX(){
                                 
                         } ); // click cell event  
                               
+                             
+                            //================Begin :  mouse over and mouse out event high light polygon or point feature, do not fly to zoom in,=======================
                             
+                            
+                            
+                                       
+                               $('#tabledataX tbody').on('mouseover', 'tr', function () 
+                                   {         
+                                          //------ click select the row --------------
+                                                    if ( $(this).hasClass('selected') ) {
+                                                      //  $(this).removeClass('selected');
+                                                    }
+                                                    else {
+                                                        table.$('tr.selected').removeClass('selected');
+                                                        $(this).addClass('selected');
+                                                    }
+                                       //-------------------------------------
+                                         
+                                                                                    
+                                      //------------ get current row data ( lat, long, geoFID)  -------------------------                                              
+                                           
+                                             var _rowIdx = table.row( this ).index();  
+                                                                                     
+                                           table.columns().every( function (cllmnIndex) 
+                                                {                                 
+                                                   // alert(table.cell(rowIdx, cllmnIndex ).data());
+                                                            
+                                                        var _header_tag_node = table.column(cllmnIndex).header();
+                                                  
+                                                        var _column_nm =   $(_header_tag_node).html();
+                                                         
+                                                        if (_column_nm === 'geometry_type')
+                                                        {
+                                                          _geometry_type = table.cell(_rowIdx, cllmnIndex ).data();
+                                                        }//  
+                                                      
+                                                       if (_column_nm === 'coordinate')
+                                                        {
+                                                          _geometry_coord = table.cell(_rowIdx, cllmnIndex ).data();
+                                                        //  alert(_geometry_coord);
+                                                          
+                                                        } 
+                                                      
+                                                        if (_column_nm === 'geoFID')
+                                                        {
+                                                          _geoFID = table.cell(_rowIdx, cllmnIndex ).data();
+                                                        }// if geoFID 
+                                                                      
+                                                } );// loop through each column for that specific row
+                                                  
+                                          //-----------------------------------------------------------------------  
+                                
+                                
+                                /*        
+                                 // this is another way to get _geometry_coord, by access last time json data. iterate through by geoFID.
+                                
+                                    var last_json = table.ajax.json();
+                                    var last_json_data = last_json.data;
+                                   // alert( json.data.length +' row(s) were loaded' );
+                                    for (i = 0, len = last_json_data.length; i < len; ++i) {
+                                           
+                                               var _current_row = last_json_data[i];
+                                               if (_current_row["geoFID"]===_geoFID )
+                                               {
+                                                   _geometry_coord = _current_row["coordinate"];
+                                                   break; 
+                                               }// if
+                                        }// for
+                                  */  
+                                  
+                                  
+                                  // --------------- draw polygon line marker on map (red) -------------------
+                                  
+                                  
+                                  
+                                  if (_geometry_type === 'Polygon'){
+                                      
+                                      
+                                     // alert(_geometry_coord[0].length);
+                                      
+                                      
+                                      _mouseover_coord = [];
+                                     // assume each coordinate has only 1 polygon,
+                                      for (i = 0, len = _geometry_coord[0].length; i < len; ++i) {
+                                           /*
+                                                   var triangleCoords = [
+                                                {lat: 25.774, lng: -80.190},
+                                                {lat: 18.466, lng: -66.118},
+                                                {lat: 32.321, lng: -64.757},
+                                                {lat: 25.774, lng: -80.190}
+                                              ];
+                                           */
+                                          
+                                         var  _new_lat = _geometry_coord[0][i][1];
+                                         var  _new_long = _geometry_coord[0][i][0];
+                                          var _latlng = {};
+                                                _latlng["lat"]=_new_lat; 
+                                                _latlng["lng"]=_new_long; 
+                                           _mouseover_coord.push(_latlng);   
+                                        }// for
+                                      
+                                      // Construct the polygon.
+                                      
+                                      if(_mouseover_polygon)  //if is not null then clear last polygon
+                                            {
+                                                _mouseover_polygon.setMap(null);
+
+                                             }
+                                        _mouseover_polygon = new google.maps.Polygon({
+                                          paths: _mouseover_coord,
+                                          strokeColor: '#F7D358',
+                                          strokeOpacity: 0.8,
+                                          strokeWeight: 12,
+                                          fillColor: '#FF0000',
+                                          fillOpacity: 0.01
+                                        });
+                                        _mouseover_polygon.setMap(map);
+                                      
+                                      
+                                      
+                                  }
+                                  else if (_geometry_type === 'LineString'){
+                                      
+                                        _mouseover_coord = [];
+                                        
+                                       // alert(_geometry_coord.length);
+                                       // alert(_geometry_coord[1][1]);
+                                     // assume each coordinate has only 1 polygon,
+                                      for (i = 0, len = _geometry_coord.length; i < len; ++i) {
+                                           /*
+                                                   var triangleCoords = [
+                                                {lat: 25.774, lng: -80.190},
+                                                {lat: 18.466, lng: -66.118},
+                                                {lat: 32.321, lng: -64.757},
+                                                {lat: 25.774, lng: -80.190}
+                                              ];
+                                           */
+                                          
+                                          var  _new_lat = _geometry_coord[i][1];
+                                          var  _new_long = _geometry_coord[i][0];
+                                          var _latlng = {};
+                                                _latlng["lat"]=_new_lat; 
+                                                _latlng["lng"]=_new_long; 
+                                           _mouseover_coord.push(_latlng);   
+                                           
+                                        }// for
+                                        
+                                        
+                                        
+                                       
+                                        
+                                        
+                                      
+                                      // Construct the polygon.
+                                      
+                                      if(_mouseover_line)  //if is not null then clear last polygon
+                                            {
+                                                _mouseover_line.setMap(null);
+
+                                             }
+                                       
+                                             
+                                        _mouseover_line = new google.maps.Polyline({
+                                          path: _mouseover_coord,
+                                          //geodesic: true,
+                                          strokeColor: '#F7D358',
+                                          strokeOpacity: 0.8,
+                                          strokeWeight: 12
+                                          
+                                        });
+                                        
+                                        _mouseover_line.setMap(map);
+                                      
+                                  }
+                                  else if (_geometry_type === 'Point'){
+                                      
+                                      
+                                       if(_mouseover_point)  //if marker is not null then clear last marker
+                                            {
+                                                _mouseover_point.setMap(null);
+
+                                             }
+                                     // add new marker 
+                                             _mouseover_point = new google.maps.Marker({
+                                                map: map,
+                                                
+                                                position: {lat: _geometry_coord[1], lng: _geometry_coord[0]},
+                                                // icon: iconBase + 'custome_icon.png'
+                                                
+                                             });
+                                             
+                                      _mouseover_point.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
+                                      
+                                     
+                                      
+                                      
+                                      
+                                  }
+                                  else if (_geometry_type === 'No_Geometry'){
+                                      
+                                      
+                                      
+                                  }
+                                  
+                                  
+                                  
+                                  
+                                  //--------------------------------------------------------------------------------
+                                                                   
+                                   } ); // click cell event    
+                            
+                            
+                        
+                         $('#tabledataX tbody').on('mouseout', 'tr', function () 
+                                   {              
+                                       
+                                        // remove all high light yellow the feature polygon on google map
+                                      if(_mouseover_polygon)  //if is not null then clear last polygon
+                                            {
+                                                _mouseover_polygon.setMap(null);
+
+                                             }
+                                             
+                                             
+                                             
+                                      if(_mouseover_point)  //if marker is not null then clear last marker
+                                            {
+                                                _mouseover_point.setMap(null);
+
+                                             }
+                                             
+                                             
+                                     if(_mouseover_line)  //if is not null then clear last polygon
+                                            {
+                                                _mouseover_line.setMap(null);
+
+                                             }             
+                             
+                            } );
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+  //=============================== end of mouse over mouse out ================================== 
                             
                             
                      /*   temperary  disable,    mouseover and mouseout event display row info on info-table div

@@ -134,7 +134,7 @@
                                                                         <div class="box-name">
                                                                                 <i class="fa fa-table"></i>
 
-                                                                                <span><?php echo $data['subject'] ?> [click any row FLY on map]</span>  
+                                                                                <span><?php echo $data['subject'] ?></span>  
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -239,7 +239,7 @@
                                                                         <div class="box-name">
                                                                                 <i class="fa fa-table"></i>
 
-                                                                                <span><?php echo $data['subject'] ?>  visible on current map viewport only</span>  
+                                                                                <span><?php echo $data['subject'] ?> </span>  
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
