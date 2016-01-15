@@ -9,7 +9,7 @@
         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
        
         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary.js"></script>
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mappaged.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localpagedfulltablemap.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
    
          
@@ -26,37 +26,7 @@
 
     
     
-    <header class="navbar">
-	<div class="container-fluid expanded-panel">
-		<div class="row">
-			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
-			</div>
-			<div id="top-panel" class="col-xs-12 col-sm-10">
-				<div class="row">
-					<div class="col-xs-8 col-sm-4">
-						<a href="#" class="show-sidebar">
-						  <i class="fa fa-bars"></i>
-						</a>
-                                            
-						<div id="search">
-							<input type="text"  id="addr_txt" placeholder="search address"/>
-                                                           
-                                                                
-                                                                    <i class="fa fa-search" id="search_addr"></i>
-                                                              
-                                                            
-						</div>
-                                            
-                                            
-					</div>
-                                    
-                                    
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+    
     
     
     
@@ -64,44 +34,7 @@
     
 
 
-<!--Start Container-->
-<div id="main" class="container-fluid">
-	<div class="row">
-		<div id="sidebar-left" class="col-xs-2 col-sm-2">
-			<ul class="nav main-menu">
-				
-                            
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>map/maplistPaged/newyork" >
-						<i class="fa fa-dashboard"></i>
-						<span class="hidden-xs">New York</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>map/maplistPaged/chicago" >
-						<i class="fa fa-table"></i>
-						<span class="hidden-xs">Chicago</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>map/maplistPaged/losangeles" >
-						<i class="fa fa-bar-chart-o"></i>
-						<span class="hidden-xs">Los Angeles</span>
-					</a>
-					
-				</li>
-                                
-                                
-			
-			</ul>
-		</div>
-            
+
             
 		<!--Start Content-->
 		<div id="content" class="col-xs-12 col-sm-10">
@@ -115,9 +48,9 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/maplistPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/mappaged/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -134,7 +67,7 @@
                                                                         <div class="box-name">
                                                                                 <i class="fa fa-table"></i>
 
-                                                                                <span><?php echo $data['subject'] ?> [click any row FLY on map]</span>  
+                                                                                <span><?php echo $data['subject'] ?> </span>  
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -239,7 +172,7 @@
                                                                         <div class="box-name">
                                                                                 <i class="fa fa-table"></i>
 
-                                                                                <span><?php echo $data['subject'] ?>  visible on current map viewport only</span>  
+                                                                                <span><?php echo $data['subject'] ?> </span>  
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">

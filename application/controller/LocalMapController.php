@@ -15,6 +15,7 @@ class LocalMapController extends Controller
     // maponly have multi form
     
     
+    //----------------------- simple map section -------------------------------
    public function localsimplemap($area, $subject)
     {
          
@@ -59,7 +60,13 @@ class LocalMapController extends Controller
     }
     
     
+    //----------------------- End simple map section -------------------------------
     
+    
+    
+    
+    
+   //-------------------------------- maplist section -------------------------------- 
     public function localmaplistpaged($area)
     {
          
@@ -95,9 +102,13 @@ class LocalMapController extends Controller
           $this->View->renderMulti($multifiles, $data);
     }
     
+   
+    //-------------------------------- End maplist section -------------------------------- 
     
     
-    public function localmapclienttable($area, $subject)
+    //----------------------- table map section -------------------------------
+    
+    public function localpagedclienttablemap($area, $subject)
     {
          
         
@@ -110,127 +121,130 @@ class LocalMapController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localmapclienttable');
+         $multifiles = array($side_panel_path,'localmap/localpagedclienttablemap');
          
          
        
           $this->View->renderMulti($multifiles, $data);
     }
+    
+    
+    
+    public function localpagedservertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localpagedservertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function localpagedfulltablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localpagedfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    
+    public function localscrollerclienttablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localscrollerclienttablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function localscrollerservertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localscrollerservertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function localscrollerfulltablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localscrollerfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
     
     
     
    
-    
-    public function localmapservertable($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localmapservertable');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-   
-    
-    public function localmapclientservertable($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localmapclientservertable');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    public function localzoning($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localzoning');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    
-    public function localgenerallanduse($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localgenerallanduse');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    
-    public function localzones($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localzones');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
+    //-----------------------End  table map section -------------------------------
     
    
     

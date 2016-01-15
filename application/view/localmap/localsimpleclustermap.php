@@ -33,11 +33,11 @@
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
                                               <!--  <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistpaged/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>  -->
-                                                  <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistscroller/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistpaged/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaponly/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localsimpleclustermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

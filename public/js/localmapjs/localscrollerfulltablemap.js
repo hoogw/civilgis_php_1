@@ -1469,7 +1469,7 @@ function datatablesX(){
                                                 
                                                 position: {lat: _geometry_coord[1], lng: _geometry_coord[0]},
                                                 // icon: iconBase + 'custome_icon.png'
-                                                 //label: ' ', 
+                                                //label: ' ', 
                                                                           // must set zIndex to bring this marker to front, on top of other markers.other wise, it will hide behind.
                                                                            zIndex: google.maps.Marker.MAX_ZINDEX + 1
                                              });
