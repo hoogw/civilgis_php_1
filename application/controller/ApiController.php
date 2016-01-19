@@ -405,7 +405,7 @@ class ApiController extends Controller
     
     
     
-    
+    // ======================== currently in USE ==========================================
     // mapdata return arry of object [{name:aaa}, {age:19}...]
     // maptabledata return array [aaa, 19,....]
     // when they feed to datatables, different type of datasource. 

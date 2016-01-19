@@ -1021,7 +1021,7 @@ function datatablesX(){
                                                                 // ------------ scroller section --------     
                                                               
                                                                 deferRender: true,
-                                                                scrollCollapse: true,
+                                                                //scrollCollapse: true, //only use it on client side, Do not use it on server side, it cause not draw, not send request to server until 25 record after 
                                                                 scroller: true
                                                                 
                                    // ------------ scroller section end--------  
