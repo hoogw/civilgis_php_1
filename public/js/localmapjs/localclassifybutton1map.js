@@ -28,7 +28,6 @@ function ajax_GeoJSON(gmap,_apiURI) {
            
                         if(isNaN(data)){
                            
-                            
                           
                           // ---------   processing data(geoJson) to fill datatables -----------------
                           
@@ -48,7 +47,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
                              var _geojson_object = JSON.parse(data);
 
                            //----- marker cluster  [2.1] ------each time before you add new point geojson, need to clear old last time marker clusters.
-                              markerClusterer.clearMarkers();
+                           //   markerClusterer.clearMarkers();
                            //--------------------------------------------   
 
                              
@@ -88,10 +87,12 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
 
                             //---------------marker cluster  [2.2]-------------------
-                            if(_cluster_in_use) {
+                           /*
+                           if(_cluster_in_use) {
                                   map.data.setMap(null);
                                   _cluster_in_use = false;
                             }
+                    */
                             //-------------------------------------------------------
                            
                            
@@ -140,9 +141,9 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             //-------------------- end remove last geojson ------------------------------
                                                                                             
                                                                                                         
-                            
+                             //---------------marker cluster  [2.2]-------------------
                             //  need to clear old last time marker clusters.
-                            markerClusterer.clearMarkers();
+                           // markerClusterer.clearMarkers();
                             
                             
                             document.getElementById("ajaxload").style.display = "none";
@@ -405,7 +406,14 @@ function clustering_point(){
 
 function initialize() {
     
+    
      add_area_boundary($("#areaID").val());
+    
+    
+    // load classification button
+    init_button();
+    
+    
     
     infowindow = new google.maps.InfoWindow();
         
@@ -438,8 +446,8 @@ function initialize() {
         
         
         
-        
-        clustering_point();
+        //---------- marker cluster [1]------------
+       // clustering_point();
         
         
         
@@ -552,6 +560,10 @@ function initialize() {
    
    
             
+        
+        
+        
+        
         
     }// initialize
     

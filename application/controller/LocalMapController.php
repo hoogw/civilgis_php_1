@@ -250,9 +250,31 @@ class LocalMapController extends Controller
     
     
     
+    
+    
+    //----------------------- classification map section -------------------------------
+   public function localclassifybutton1map($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localclassifybutton1map');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
    
     
-    
+    //-----------------------end  classification map section -------------------------------
     
     
     

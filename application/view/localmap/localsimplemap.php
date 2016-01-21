@@ -56,7 +56,8 @@
                                                         <div class="box-name">
                                                                 <i class="fa fa-map-marker"></i>
                                                                 
-                                                                <span><?php echo $data['title'] ?></span>  
+                                                                <span><?php echo $data['subject'] ?></span>  
+                                                                <img id="ajaxload" src="/civilgis/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
                                                         </div>
                                                     
                                                         <div class="box-icons">
@@ -82,7 +83,7 @@
                                            
                                             <div id="legend" class="alert alert-warning"></div>
                                             
-                                            <div><img id="ajaxload" src="/civilgis/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" /></div>
+                                            
                                             <div id="title_info" > </div>
                                             <div id="info-table">
           

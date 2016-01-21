@@ -111,14 +111,14 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             
                            
                             
-                            // styleFeature function is only in script block in city.cshtml
+                            /* styleFeature function is only in script block in city.cshtml
                                 if (($("#subjectID").val() === 'zoning') || ($("#subjectID").val() === 'general_landuse'))
                             {              
                                 // color the zoning and general land use.
                                 gmap.data.setStyle(styleFeature);
 
                             }
-                            
+                            */
                             
                           
                            
@@ -405,6 +405,9 @@ function clustering_point(){
 
 function initialize() {
     
+    add_area_boundary($("#areaID").val());
+    
+    
     infowindow = new google.maps.InfoWindow();
         
          //   base_url = '/civilgis/public/';
@@ -548,7 +551,7 @@ function initialize() {
         */
     
    
-    add_area_boundary($("#areaID").val());
+    
             
         
     }// initialize

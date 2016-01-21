@@ -754,7 +754,7 @@ function initialize() {
          
         // alert(base_url);
           
-            
+             add_area_boundary($("#areaID").val());
             initial_location = set_initial_location($("#areaID").val());
             
             
@@ -901,7 +901,7 @@ google.maps.Polygon.prototype.getBounds = function() {
             
         //--------------------------------------------------------------------------------------------------
     
-    add_area_boundary($("#areaID").val());
+    
         
     }// initialize
     

@@ -354,7 +354,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
 function initialize() {
     
-        
+        add_area_boundary($("#areaID").val());
          //   base_url = '/civilgis/public/';
          base_url = document.getElementById('base_url').value;
          
@@ -512,7 +512,7 @@ function initialize() {
             
         
         
-        add_area_boundary($("#areaID").val());
+        
     }// initialize
     
     

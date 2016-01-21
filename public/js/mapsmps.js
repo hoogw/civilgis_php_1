@@ -375,7 +375,7 @@ function initialize() {
          
         // alert(base_url);
           
-            
+            add_area_boundary($("#areaID").val());
             initial_location = set_initial_location($("#areaID").val());
             
             
@@ -525,7 +525,7 @@ function initialize() {
             ajax_GeoJSON(map,_url_init);
             
         
-        add_area_boundary($("#areaID").val());
+        
     }// initialize
     
     

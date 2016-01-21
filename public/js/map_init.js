@@ -76,6 +76,13 @@ var _current_geojson_layer;
 var _last_geojson_layer;
 
 
+//--------------classification-------------------------
+
+var _designation = [];
+
+//---------------------------------
+
+
 
 function add_area_boundary(_area){
     
