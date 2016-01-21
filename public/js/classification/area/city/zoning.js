@@ -7,9 +7,9 @@
 
 _designation['city_zoning']=[
     
-    {zone:R1,description:"Single Family Residential", color:"#FFFF00"}, 
-    {zone:R2_MD,description:"Multiple Family Residential (Medium Density)", color:"#D7DF01"},
-    {zone:R2_HD,description:"Multiple Family Residential (High Density)", color:"#5E610B"},
-    {zone:R3,description:Multiple_Family_Residential, color:"#5F4C0B"}
-    
+    {'zone':'R1','description':"Single Family Residential", 'color':"yellow1"}, 
+    {'zone':'R2_MD','description':"Multiple Family Residential (Medium Density)", 'color':"blue"},
+    {'zone':'R2_HD','description':"Multiple Family Residential (High Density)", 'color':"green"},
+    {'zone':'R3','description':'Multiple Family Residential', 'color':"gold"},
+    {'zone':'C1','description':'Local Business', 'color':"red"}
 ];

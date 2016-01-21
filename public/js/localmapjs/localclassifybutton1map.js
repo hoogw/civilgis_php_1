@@ -411,7 +411,7 @@ function initialize() {
     
     
     // load classification button
-    init_button();
+    init_classification_buttons($("#areaID").val(), $("#subjectID").val());
     
     
     

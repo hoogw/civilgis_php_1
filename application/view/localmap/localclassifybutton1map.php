@@ -91,76 +91,40 @@
                                             
                                             
                                                        <!-- checkbox button -->
-                                                                    <div class="well">
+                                                       
+                                                       
+                                                                    <div id="classification_section" class="well">
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
-                                                                                <div data-toggle="buttons">
+                                                                                <div id="classification_buttons" data-toggle="buttons">
                                                                                     
-                                                                                    
-                                                                                                    <label id="R1" class="btn btn-yellow1">
-                                                                                                            <input type="checkbox"> R1 - Single Family Residential
+                                                                                    [ test 
+                                                                                                    <label id="label_1" class="btn btn-blue">
+                                                                                                            <input id="checkbox_1" type="checkbox"> KKKKKKKKKKKK
                                                                                                     </label>
 
 
 
-                                                                                                    <label id="R2-MD" class="btn btn-yellow2">
-                                                                                                            <input type="checkbox"> R2-MD Multiple Family Residential (Medium Density)
+                                                                                                    <label id="label_2" class="btn btn-green">
+                                                                                                            <input id="checkbox_2" type="checkbox"> PPPPPPPPPPPPPPPP
                                                                                                     </label>
 
 
 
-                                                                                                    <label id="R2-HD" class="btn btn-grey2">
-                                                                                                            <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
+                                                                                                    <label id="label_3" class="btn btn-red">
+                                                                                                            <input id="checkbox_3" type="checkbox"> OOOOOOOOOOOOOOOOO
                                                                                                     </label>
 
 
-                                                                                                    <label id="R3" class="btn btn-info">
-                                                                                                                <input type="checkbox"> R3 - Multiple_Family_Residential
+                                                                                                    <label id="label_4" class="btn btn-gold">
+                                                                                                                <input id="checkbox_4" type="checkbox"> TTTTTTTTTTTTTTT
                                                                                                         </label>
 
-
-
-                                                                                                    <label class="btn btn-red1">
-                                                                                                                <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
-                                                                                                        </label>
-
-                                                                                                    <label class="btn btn-D7DF01">
-                                                                                                                <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
-                                                                                                        </label>
-
-
-                                                                                                    <label class="btn btn-FFFF00">
-                                                                                                                <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
-                                                                                                        </label>
-
-                                                                                                    <label class="btn btn-primary">
-                                                                                                                <input type="checkbox"> Option 8
-                                                                                                        </label>
-
-
-                                                                                                    <label class="btn btn-primary">
-                                                                                                                <input type="checkbox"> Option 15
-                                                                                                        </label>
-
-                                                                                                    <label class="btn btn-primary">
-                                                                                                                <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
-                                                                                                        </label>
-
-
-                                                                                                    <label class="btn btn-primary">
-                                                                                                                <input type="checkbox"> Option 17
-                                                                                                    </label>
-
-                                                                                                     <label class="btn btn-primary">
-                                                                                                            <input type="checkbox"> R2-HD Multiple Family Residential (High Density)
-                                                                                                    </label>                            
-                                                                                    
-                            
-                            
+                                                                                        - end test ]
                             
                                                                                             </div>
                                                                                     </div>
                                             
-                                                                  <!--  End of checkbox button -->
+                                                <!--  End of checkbox button -->
                                             
                                                                   
                                                                   
