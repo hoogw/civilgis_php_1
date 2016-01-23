@@ -6,8 +6,8 @@
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifybutton1map.js"></script>
-<script src="<?php echo Config::get('URL'); ?>/public/js/classification/checkboxbutton1.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifycheckboxbuttonmap.js"></script>
+<script src="<?php echo Config::get('URL'); ?>/public/js/classification/checkboxbutton.js" type="text/javascript"></script>
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_botton_style.css" rel="stylesheet" type="text/css"/>
 
 
@@ -97,7 +97,7 @@
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
                                                                                 <div id="classification_buttons" data-toggle="buttons">
                                                                                     
-                                                                                    [ test 
+                                                                                    <!-- test 
                                                                                                     <label id="label_1" class="btn btn-blue">
                                                                                                             <input id="checkbox_1" type="checkbox"> KKKKKKKKKKKK
                                                                                                     </label>
@@ -119,7 +119,7 @@
                                                                                                                 <input id="checkbox_4" type="checkbox"> TTTTTTTTTTTTTTT
                                                                                                         </label>
 
-                                                                                        - end test ]
+                                                                                        - end test -->
                             
                                                                                             </div>
                                                                                     </div>

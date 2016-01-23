@@ -253,7 +253,7 @@ class LocalMapController extends Controller
     
     
     //----------------------- classification map section -------------------------------
-   public function localclassifybutton1map($area, $subject)
+   public function localclassifycheckboxbuttonmap($area, $subject)
     {
          
         
@@ -266,13 +266,37 @@ class LocalMapController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'localmap/localclassifybutton1map');
+         $multifiles = array($side_panel_path,'localmap/localclassifycheckboxbuttonmap');
          
          
        
           $this->View->renderMulti($multifiles, $data);
     }
    
+    
+    
+    public function localclassifyradiobuttonmap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'localmap/localclassifyradiobuttonmap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
     
     //-----------------------end  classification map section -------------------------------
     

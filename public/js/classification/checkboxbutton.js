@@ -28,7 +28,7 @@ function init_classification_buttons(_area, _subject) {
                 
                         var _buttons_group="";
                         
-                        var _zone ="";
+                        var _code ="";
                         var _description ="";                       
                         var _color="";
                         
@@ -51,17 +51,17 @@ function init_classification_buttons(_area, _subject) {
                                              {
                                                  
                                                  
-                                                     _zone =    parentArray[i]['zone'];
+                                                     _code =    parentArray[i]['code'];
                                                      _description =  parentArray[i]['description'];
                                                      _color =  parentArray[i]['color'];
                                                                    
                                                     
                                                     
                                                     
-                                                     _labelID = 'label_'+ _zone;
+                                                     _labelID = 'label_'+ _code;
                                                      _label_Class = 'btn btn-'+ _color;
-                                                     _checkboxID = 'checkbox_'+_zone;
-                                                     _checkbox_Value = _zone + " - " + _description;
+                                                     _checkboxID = 'checkbox_'+_code;
+                                                     _checkbox_Value = _code + " - " + _description;
                                                     
                                                     var _this_button = '<label id="'+_labelID + '" class="' + _label_Class+ '">   <input id="' + _checkboxID + '" type="checkbox">' + _checkbox_Value + '</label>';
                                                              
@@ -88,32 +88,55 @@ function init_classification_buttons(_area, _subject) {
                                              {
                                                  
                                                  
-                                                     _zone =    parentArray[j]['zone'];
+                                                     _code =    parentArray[j]['code'];
                                                      _description =  parentArray[j]['description'];
                                                      _color =  parentArray[j]['color'];
                                                                    
                                                     
-                                                    _label_selector = '#label_'+_zone;
-                                                    _checkbox_selector = '#checkbox_'+_zone;
+                                                    _label_selector = '#label_'+_code;
                                                     
-                                                    //alert(_label_selector);
+                                                    
+                                                    
                                                     
                                                      $(_label_selector).mouseover(function(){
         
-                                                                                        // alert("mouse over ");
-                                                                                        alert(this);
+                                                                                       
+                                                                                        //alert($(this).attr('id'));
+                                                                                        var _label_current_ID = $(this).attr('id');
+                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
+                                                                                        
+                                                                                        //alert(_checkbox_current_ID);
+                                                                                        
+                                                                                        
+                                                                                        
                                                                                          });
 
 
                                                      $(_label_selector).mouseout(function(){
 
-                                                                                       //  alert(_checkbox_selector);
+                                                                                     
+                                                                                       
+                                                                                        var _label_current_ID = $(this).attr('id');
+                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
+                                                                                        
+                                                                                       // alert(_checkbox_current_ID);
+                                                                                       
+                                                                                       
                                                                                          });
+
+
+
 
                                                      $(_label_selector).click(function(){
                                                                                         // alert($('#checkbox_R1').is(':checked'));
+                                                                                        
+                                                                                        // ---------  must use $(this) to get which label being clicked.
+                                                                                        
+                                                                                        var _label_current_ID = $(this).attr('id');
+                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
+                                                                                          _checkbox_selector = '#'+_checkbox_current_ID;
 
-                                                                                         alert(_label_selector);
+                                                                                         //alert(_label_selector);
 
                                                                                         if ($(_checkbox_selector).is(':checked')){
                                                                                             alert(" Un do it ");
@@ -147,8 +170,8 @@ function init_classification_buttons(_area, _subject) {
     
     
     
-    
-    //-------------------- mouse over click event ---------------------------
+    /*
+    //--------------------test  mouse over click event ---------------------------
     
     $('#label_1').mouseover(function(){
         
@@ -232,6 +255,6 @@ function init_classification_buttons(_area, _subject) {
      //----------------------------------------------------------                                   
                                         
                                         
-    
+    */
    
 }  //function init_classification_buttons
