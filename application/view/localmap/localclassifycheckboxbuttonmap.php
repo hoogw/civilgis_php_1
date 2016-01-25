@@ -7,8 +7,8 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifycheckboxbuttonmap.js"></script>
-<script src="<?php echo Config::get('URL'); ?>/public/js/classification/checkboxbutton.js" type="text/javascript"></script>
-<link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_botton_style.css" rel="stylesheet" type="text/css"/>
+
+<link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
 
    
@@ -97,9 +97,15 @@
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
                                                                                 <div id="classification_buttons" data-toggle="buttons">
                                                                                     
-                                                                                    <!-- test 
-                                                                                                    <label id="label_1" class="btn btn-blue">
-                                                                                                            <input id="checkbox_1" type="checkbox"> KKKKKKKKKKKK
+                                                                                      <!-- test 
+                                                                                                    <label id="label_highlight" class="btn btn-block btn-black">
+                                                                                                            <input id="checkbox_highlight" type="checkbox">  
+                                                                                                    </label>
+                                                                                    
+                                                                                    
+                                                                                  
+                                                                                                    <label id="label_R1" class="btn btn-blue">
+                                                                                                            <input id="checkbox_R1" type="checkbox"> R1 - single family
                                                                                                     </label>
 
 

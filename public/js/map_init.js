@@ -79,6 +79,10 @@ var _last_geojson_layer;
 //--------------classification-------------------------
 
 var _designation = [];
+var _code_column_name ='';
+
+var _current_classifycheckbox_class;
+
 
 //---------------------------------
 
