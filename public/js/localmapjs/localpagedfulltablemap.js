@@ -160,7 +160,7 @@ function feed_datatables(_geojson_obj){
                                                                                        });// overrideStyle
 
                                                                    }//else
-                                                }//map foreach
+                                                }// if 
                                                 
                                                 /*
                                                         var _a="";

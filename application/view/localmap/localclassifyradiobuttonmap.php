@@ -7,7 +7,7 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifyradiobuttonmap.js"></script>
-<script src="<?php echo Config::get('URL'); ?>/public/js/classification/radiobutton.js" type="text/javascript"></script>
+
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
 

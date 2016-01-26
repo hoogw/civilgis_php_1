@@ -82,8 +82,8 @@ var _designation = [];
 var _code_column_name ='';
 
 var _current_classifycheckbox_class;
-
-
+var _designation_key;
+var _designation_parentArray;
 //---------------------------------
 
 

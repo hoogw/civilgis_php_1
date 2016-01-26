@@ -34,13 +34,17 @@ function init_classification_buttons(_area, _subject) {
                         var _checkbox_Value="";
                           
                         var _label_selector = "";  
-                        var _checkbox_selector = "";  
+                       // var _checkbox_selector = "";  
                         
                         
                         
                           
-                                            var _designation_key = _area + "_"+ _subject;
-                                            var parentArray = _designation[_designation_key];
+                                             _designation_key = _area + "_"+ _subject;
+                                             _designation_parentArray = _designation[_designation_key];
+                                            var parentArray = _designation_parentArray;
+
+
+
 
                                   // -----------  Start  for loop append checkbox button ---------------------
                                              for(var i = 0; i < parentArray.length; i++)
@@ -70,8 +74,12 @@ function init_classification_buttons(_area, _subject) {
 
                     
                     
-                                             //------- append the last high light black button ----------------                      
+                                             //------- append the last high light black(php) button ----------------                      
                                              _buttons_group = _buttons_group + '<label id="label_highlight" class="btn btn-block btn-black"><input id="checkbox_highlight" type="checkbox"> </label>';
+                                            //------- append the last high light white(.net) button ----------------                      
+                                            //_buttons_group = _buttons_group + '<br><br>' + '<label id="label_highlight" class="btn btn-block btn-white"><input id="checkbox_highlight" type="checkbox"> </label>';
+
+                    
                     
                     
                                              $("#classification_buttons").append(_buttons_group);
@@ -102,52 +110,208 @@ function init_classification_buttons(_area, _subject) {
         
                                                                                        
                                                                                         //alert($(this).attr('id'));
-                                                                                        var _label_current_ID = $(this).attr('id');
-                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
+                                                                                        var _label_current_mouseover = $(this).attr('id');
+                                                                                        var _checkbox_current_mouseover = _label_current_mouseover.replace('label','checkbox');
+                                                                                        var  _checkbox_current_selector = '#'+_checkbox_current_mouseover;
+                                                                                        var _current_code_mouseover = _label_current_mouseover.replace('label_','');
                                                                                         
-                                                                                        //alert(_checkbox_current_ID);
+                                                                                       // alert(_current_code);
                                                                                         
                                                                                         
                                                                                         
-                                                                                         });
+                                                                                         if ($(_checkbox_current_selector).is(':checked'))
+                                                                                         {
+                                                                                             // if button clicked(check box checked), do nothing. mouse over disable.
+                                                                                         }
+                                                                                         else {
+                                                                                                                    // loop through all current featurs on map 
+                                                                                                                    map.data.forEach( function(_feature)
+                                                                                                                    {
+
+                                                                                                                                if (_feature.getProperty(_code_column_name) == _current_code_mouseover)
+                                                                                                                                {
+
+                                                                                                                                    //map.data.revertStyle();
+                                                                                                                                    map.data.overrideStyle(_feature, {
+                                                                                                                                                                          strokeWeight: 1,
+                                                                                                                                                                         strokeColor: 'white',
+                                                                                                                                                                         fillColor:'white',
+                                                                                                                                                                         fillOpacity: 0.7
+                                                                                                                                                                       });// overrideStyle
+
+
+                                                                                                                                    }//if
+                                                                                                                     });// map.data.foreach
+
+                                                                                                                    
+
+                                                                                                 }// else if not checked, not clicked, do mouse over change color
+
+
+
+                                                                                           });  // end mouseover 
+
 
 
                                                      $(_label_selector).mouseout(function(){
 
                                                                                      
                                                                                        
-                                                                                        var _label_current_ID = $(this).attr('id');
-                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
+                                                                                        var _label_current_mouseout = $(this).attr('id');
+                                                                                        var _checkbox_current_mouseout = _label_current_mouseout.replace('label','checkbox');
+                                                                                        var  _checkbox_current_selector = '#'+_checkbox_current_mouseout;
+                                                                                        var _current_code_mouseout = _label_current_mouseout.replace('label_','');
                                                                                         
-                                                                                       // alert(_checkbox_current_ID);
+                                                                                       // alert(_current_code);
+                                                                                       
+                                                                                       if ($(_checkbox_current_selector).is(':checked'))
+                                                                                         {
+                                                                                             // if button clicked(check box checked), do nothing. mouse over disable.
+                                                                                         }
+                                                                                         else {
+                                                                                       
+                                                                                                        // loop through all current featurs on map 
+                                                                                                        map.data.forEach( function(_feature)
+                                                                                                        {
+
+                                                                                                                    if (_feature.getProperty(_code_column_name) == _current_code_mouseout)
+                                                                                                                    {
+
+                                                                                                                        //map.data.revertStyle();
+                                                                                                                        map.data.overrideStyle(_feature, {
+                                                                                                                                                              fillOpacity: 0,
+                                                                                                                                                              strokeColor: 'yellow',
+                                                                                                                                                              strokeWeight: 1
+                                                                                                                                                           });// overrideStyle
+
+
+                                                                                                                        }//if
+                                                                                                         });// map.data.foreach
+                                                                                        
+                                                                                              
+                                                                                         }// else
                                                                                        
                                                                                        
-                                                                                         });
+                                                                                       
+                                                                                       
+                                                                                         }); // end mouseout
 
 
 
 
-                                                     $(_label_selector).click(function(){
+
+
+
+
+
+
+                                                     $(_label_selector).click(function()
+                                                     {
                                                                                         // alert($('#checkbox_R1').is(':checked'));
                                                                                         
                                                                                         // ---------  must use $(this) to get which label being clicked.
                                                                                         
-                                                                                        var _label_current_ID = $(this).attr('id');
-                                                                                        var _checkbox_current_ID = _label_current_ID.replace('label','checkbox');
-                                                                                          _checkbox_selector = '#'+_checkbox_current_ID;
+                                                                                        var _label_current_click = $(this).attr('id');
+                                                                                        var _checkbox_current_click = _label_current_click.replace('label','checkbox');
+                                                                                        var  _checkbox_current_selector = '#'+_checkbox_current_click;
+                                                                                        var _current_code_click = _label_current_click.replace('label_','');
+                                                                                        
+                                                                                        //alert(_current_code);
 
-                                                                                         //alert(_label_selector);
 
-                                                                                        if ($(_checkbox_selector).is(':checked')){
-                                                                                            alert(" Un do it ");
-                                                                                        }
+
+
+
+
+                                                                                        if ($(_checkbox_current_selector).is(':checked'))
+                                                                                        {
+                                                                                               //alert(" Un do it ");
+
+                                                                                               // alert($(_checkbox_current_selector).is(':checked'));
+
+                                                                                                     // loop through all current featurs on map, un do color, revert to origianl, remove color
+                                                                                                        map.data.forEach( function(_feature)
+                                                                                                        {
+
+                                                                                                                    if (_feature.getProperty(_code_column_name) == _current_code_click)
+                                                                                                                    {
+
+                                                                                                                        //map.data.revertStyle();
+                                                                                                                        map.data.overrideStyle(_feature, {
+                                                                                                                                                               fillOpacity: 0,
+                                                                                                                                                              strokeColor: 'yellow',
+                                                                                                                                                              strokeWeight: 1
+                                                                                                                                                           });// overrideStyle
+
+
+                                                                                                                        }//if
+                                                                                                         });// map.data.foreach
+
+
+
+
+
+
+
+                                                         
+                                                         
+                                                                                        } // if end un do it
+                                                                                        
                                                                                         else {
-                                                                                            alert("  Do it ");
+                                                                                                    //alert("  Do it ");
+                                                                                                    //alert($(_checkbox_current_selector).is(':checked'));
+                                                                                            
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                                    // get the feature fill color
+                                                                                                    
+                                                                                                    var _feature_fill_color = '';
+                                                                                                    var parentArray = _designation_parentArray;
 
-                                                                                        }
+                                                                                                   
+                                                                                                               for(var i = 0; i < parentArray.length; i++)
+                                                                                                               {
 
 
-                                                                                         });
+                                                                                                                       if (parentArray[i]['code'] == _current_code_click) {
+                                                                                                                           _feature_fill_color = parentArray[i]['color'];
+                                                                                                                       }
+
+                                                                                                                }// outer for
+                                                                                            
+                                                                                            
+                                                                                            
+                                                                                            
+                                                                                                     // loop through all current featurs on map 
+                                                                                                        map.data.forEach( function(_feature)
+                                                                                                        {
+
+                                                                                                                    if (_feature.getProperty(_code_column_name) == _current_code_click)
+                                                                                                                    {
+
+                                                                                                                        //map.data.revertStyle();
+                                                                                                                        map.data.overrideStyle(_feature, {
+                                                                                                                                                               strokeWeight: 1,
+                                                                                                                                                               strokeColor: _feature_fill_color,
+                                                                                                                                                                fillColor:_feature_fill_color,
+                                                                                                                                                                fillOpacity: 0.7
+                                                                                                                                                           });// overrideStyle
+
+
+                                                                                                                        }//if
+                                                                                                         });// map.data.foreach
+                                                                                            
+                                                                                            
+                                                                                            
+
+                                                                                        }// else end do it
+
+
+                                                        });// end click
+                                                    
+                                                    
+                                                    
                                                     
                                                     
                                                     
@@ -169,97 +333,34 @@ function init_classification_buttons(_area, _subject) {
     
     
     
-    
-    /*
-    //--------------------test  mouse over click event ---------------------------
-    
-    $('#label_1').mouseover(function(){
-        
-                                       // alert("mouse over ");
-                                        });
-                                        
-                                        
-    $('#label_1').mouseout(function(){
-        
-                                       // alert("mouse OUT ");
-                                        });
-    
-    $('#label_1').click(function(){
-                                       // alert($('#checkbox_R1').is(':checked'));
-                                       
-                                       if ($('#checkbox_1').is(':checked')){
-                                           alert(" Un do it ");
-                                       }
-                                       else {
-                                           alert("  Do it ");
-                                           
-                                       }
-                                       
-                                       
-                                        });
-                                       
-                                       
-                                       
-   $('#label_2').mouseover(function(){
-        
-                                       // alert("mouse over ");
-                                        });
-                                        
-                                        
-    $('#label_2').mouseout(function(){
-        
-                                       // alert("mouse OUT ");
-                                        });
-    
-    $('#label_2').click(function(){
-                                       // alert($('#checkbox_R1').is(':checked'));
-                                       
-                                       if ($('#checkbox_2').is(':checked')){
-                                           alert(" Un do it ");
-                                       }
-                                       else {
-                                           alert("  Do it ");
-                                           
-                                       }
-                                       
-                                       
-                                        });
-                                       
-                                       
-
-    
-    $('#label_3').mouseover(function(){
-        
-                                       // alert("mouse over ");
-                                        });
-                                        
-                                        
-    $('#label_3').mouseout(function(){
-        
-                                       // alert("mouse OUT ");
-                                        });
-    
-    $('#label_3').click(function(){
-                                       // alert($('#checkbox_R1').is(':checked'));
-                                       
-                                       if ($('#checkbox_3').is(':checked')){
-                                           alert(" Un do it ");
-                                       }
-                                       else {
-                                           alert("  Do it ");
-                                           
-                                       }
-                                       
-                                       
-                                        });
-     //----------------------------------------------------------                                   
-                                        
-                                        
-    */
+   
    
 }  //function init_classification_buttons
 
+function uncheck_all_checkbox_button(){
+                                           
+   
+    
+                                    var pArray = _designation_parentArray;
 
+                                  // -----------  Start  for loop  checkbox button ---------------------
+                                             for(var i = 0; i < pArray.length; i++)
+                                             {
+                                                 
+                                                     var _label_selector = '#label_'+ pArray[i]['code'];
+                                                     var _checkbox_selector = '#checkbox_'+ pArray[i]['code'];
+                                                        
+                                                    //a class active is added to the label (not the checkbox input) when the button is clicked. 
+                                                    //change both the appearance of the button and the checked property of the checkbox within
+                                                   if ($(_checkbox_selector).is(':checked'))
+                                                   {
+                                                        $(_label_selector).removeClass('active');
+                                                        $(_checkbox_selector).removeAttr('checked')
+                                                    }
+                                                                  
+                                              }// outer for
+    
+}
 
 
 
@@ -276,7 +377,9 @@ function ajax_GeoJSON(gmap,_apiURI) {
              //------tile[3] ---------
                      add_tiles();
             
+            
            
+            
             
             
             // test url if return a number means too many polygon to show.otherwise add polygon to map.
@@ -300,7 +403,11 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
 
 
-                             var _geojson_object = JSON.parse(data);
+                             
+                              _geojson_object = JSON.parse(data);
+
+
+
 
                            //----- marker cluster  [2.1] ------each time before you add new point geojson, need to clear old last time marker clusters.
                            //   markerClusterer.clearMarkers();
@@ -377,6 +484,8 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             */
                             
                             
+                            
+                            
                           
                            
                         }
@@ -448,6 +557,9 @@ function get_map_bound(){
                   ajax_GeoJSON(map,_url);
     
     
+    
+     //---- uncheck all the check box button --------             
+            uncheck_all_checkbox_button();
     
 }
 
@@ -753,7 +865,7 @@ function initialize() {
               {   
                   
                   
-                  map.data.revertStyle();                 
+                 // map.data.revertStyle();                 
                   map.data.overrideStyle(event.feature, {
                       strokeWeight: 8,
                       //strokeColor: '#fff',
@@ -838,7 +950,10 @@ function initialize() {
               {
                 
                   
-                        map.data.revertStyle();
+                      map.data.revertStyle(event.feature);
+                        
+                       
+                       
 
                          // empty bottom <div>
                          document.getElementById("info-table").innerHTML = "";
