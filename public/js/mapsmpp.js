@@ -430,7 +430,7 @@ function initialize() {
   
             // mouse over listener
               map.data.addListener('mouseover', function (event) {                  
-                  map.data.revertStyle();                 
+                  //map.data.revertStyle();                 
                   map.data.overrideStyle(event.feature, {
                       strokeWeight: 8,
                       strokeColor: '#fff',
@@ -453,7 +453,7 @@ function initialize() {
 
                 // mouse out listener
               map.data.addListener('mouseout', function (event) {
-                  map.data.revertStyle();
+                  map.data.revertStyle(event.feature);
                   
                    // empty bottom <div>
                document.getElementById("info-table").innerHTML = "";

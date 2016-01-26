@@ -9,7 +9,8 @@ function init_classification_buttons(_area, _subject) {
     
     
                 var _classification_js = base_url+"public/js/classification/area/"+_area + "/"+_subject+".js";
-	
+	       //var _classification_js = "/Scripts/classification/area/" + _area + "/" + _subject + ".js";
+        
                 $.when(
                          $.getScript(_classification_js)
                  /*
@@ -177,13 +178,14 @@ function init_classification_buttons(_area, _subject) {
                                                                                                                     if (_feature.getProperty(_code_column_name) == _current_code_mouseout)
                                                                                                                     {
 
-                                                                                                                        //map.data.revertStyle();
+                                                                                                                        map.data.revertStyle(_feature);
+                                                                                                                        /*
                                                                                                                         map.data.overrideStyle(_feature, {
                                                                                                                                                               fillOpacity: 0,
                                                                                                                                                               strokeColor: 'yellow',
                                                                                                                                                               strokeWeight: 1
                                                                                                                                                            });// overrideStyle
-
+                                                                                                                         */
 
                                                                                                                         }//if
                                                                                                          });// map.data.foreach
@@ -236,13 +238,15 @@ function init_classification_buttons(_area, _subject) {
                                                                                                                     if (_feature.getProperty(_code_column_name) == _current_code_click)
                                                                                                                     {
 
-                                                                                                                        //map.data.revertStyle();
-                                                                                                                        map.data.overrideStyle(_feature, {
+                                                                                                                        map.data.revertStyle(_feature);
+                                                                                                                        /*
+                                                                                                                         map.data.overrideStyle(_feature, {
+                                                                                                                      
                                                                                                                                                                fillOpacity: 0,
                                                                                                                                                               strokeColor: 'yellow',
                                                                                                                                                               strokeWeight: 1
                                                                                                                                                            });// overrideStyle
-
+                                                                                                                          */ 
 
                                                                                                                         }//if
                                                                                                          });// map.data.foreach
@@ -292,6 +296,7 @@ function init_classification_buttons(_area, _subject) {
 
                                                                                                                         //map.data.revertStyle();
                                                                                                                         map.data.overrideStyle(_feature, {
+                                                                                                                            
                                                                                                                                                                strokeWeight: 1,
                                                                                                                                                                strokeColor: _feature_fill_color,
                                                                                                                                                                 fillColor:_feature_fill_color,
@@ -558,7 +563,7 @@ function get_map_bound(){
     
     
     
-     //---- uncheck all the check box button --------             
+     //---- uncheck all the check box button ----------------classification [4]-----------                 
             uncheck_all_checkbox_button();
     
 }
