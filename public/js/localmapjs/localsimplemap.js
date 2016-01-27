@@ -237,7 +237,40 @@ function back_full_extend() {
 
 
 
+
+
+
+function add_map_listener_idle(){
+    
+     listener_idle =  map.addListener('idle', function() {   
+
+                        get_map_bound();
+
+
+                    });
+                    
+                    
+                    
+                     // ---------  map click event [1] ------ search for a single feature where clicked ------------
+         listener_click = map.addListener('click', function (click_event_location) {
+
+             get_click_latlng(click_event_location.latLng.lat(), click_event_location.latLng.lng());
+         });
+
+
+         listener_rightclick = map.addListener('rightclick', function () {
+
+             back_full_extend();
+         });
+
+    //--------------------------End  map right click event ---------- back to full extend ----------------------
+                    
+                  
+    
+}
 //------------------ End map click event [2] -------------------------------
+
+
 
 
 
@@ -263,19 +296,7 @@ function add_map_listener(){
              });
     
     
-      // ---------  map click event [1] ------ search for a single feature where clicked ------------
-         listener_click = map.addListener('click', function (click_event_location) {
-
-             get_click_latlng(click_event_location.latLng.lat(), click_event_location.latLng.lng());
-         });
-
-
-         listener_rightclick = map.addListener('rightclick', function () {
-
-             back_full_extend();
-         });
-
-    //--------------------------End  map right click event ---------- back to full extend ----------------------
+     
     
     
     
@@ -285,6 +306,66 @@ function add_map_listener(){
 }
 
 
+
+function add_mapdata_listener(){
+    
+      // click listener
+            map.data.addListener('click', function(event) {
+                //var myHTML = event.feature.getProperty("NAME_ABV_A");
+
+                // map.data.overrideStyle(event.feature, {fillColor: 'yellow'});
+
+                // info window table style
+                var popup ="<table>";                
+                event.feature.forEachProperty(function(_value, _property){
+                    popup = popup + "<tr><td>"+ _property + "</td><td>"+  _value + "</td></tr>";
+                  });            
+                 popup = popup + "</table>";
+
+                infowindow.setContent("<div style='width:200px; height:150px;text-align: center;'>"+ popup +"</div>");
+                infowindow.setPosition(event.latLng);
+                infowindow.open(map);
+
+                });    // click listener
+  
+  
+ 
+  
+  
+            // mouse over listener
+              map.data.addListener('mouseover', function (event) {                  
+                  //map.data.revertStyle();                 
+                  map.data.overrideStyle(event.feature, {
+                      strokeWeight: 8,
+                      strokeColor: '#fff',
+                      fillOpacity: 0.01
+                      //fillColor:''
+                  });
+                  
+                    var instant_info = "<ul>";
+                    event.feature.forEachProperty(function(_value, _property){                  
+                    instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;"+ _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" +_value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ "</li>";
+                    });                            
+                    instant_info = instant_info + "</ul>";
+                  
+                  
+                  // update bottom <div>
+                    document.getElementById("info-table").innerHTML = instant_info;
+                
+              });
+
+
+                // mouse out listener
+              map.data.addListener('mouseout', function (event) {
+                  map.data.revertStyle(event.feature);
+                  
+                   // empty bottom <div>
+               document.getElementById("info-table").innerHTML = "";
+               //infowindow.close();
+               
+              });
+    
+}
 
 
 
@@ -342,73 +423,9 @@ function initialize() {
      
  
      
-            // click listener
-            map.data.addListener('click', function(event) {
-                //var myHTML = event.feature.getProperty("NAME_ABV_A");
-
-                // map.data.overrideStyle(event.feature, {fillColor: 'yellow'});
-
-                // info window table style
-                var popup ="<table>";                
-                event.feature.forEachProperty(function(_value, _property){
-                    popup = popup + "<tr><td>"+ _property + "</td><td>"+  _value + "</td></tr>";
-                  });            
-                 popup = popup + "</table>";
-
-                infowindow.setContent("<div style='width:200px; height:150px;text-align: center;'>"+ popup +"</div>");
-                infowindow.setPosition(event.latLng);
-                infowindow.open(map);
-
-                });    // click listener
-  
-  
- 
-  
-  
-            // mouse over listener
-              map.data.addListener('mouseover', function (event) {                  
-                  //map.data.revertStyle();                 
-                  map.data.overrideStyle(event.feature, {
-                      strokeWeight: 8,
-                      //strokeColor: '#fff',
-                      fillOpacity: 0.01
-                      //fillColor:''
-                  });
-                  
-                    var instant_info = "<ul>";
-                    event.feature.forEachProperty(function(_value, _property){                  
-                    instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;"+ _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" +_value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ "</li>";
-                    });                            
-                    instant_info = instant_info + "</ul>";
-                  
-                  
-                  // update bottom <div>
-                    document.getElementById("info-table").innerHTML = instant_info;
-                
-              });
-
-
-                // mouse out listener
-              map.data.addListener('mouseout', function (event) {
-                  map.data.revertStyle(event.feature);
-                  
-                   // empty bottom <div>
-               document.getElementById("info-table").innerHTML = "";
-               //infowindow.close();
+            add_mapdata_listener();
                
-              });
-
-         
-               
-             
-      // ----- idle event conflict with marker cluster. so if you use marker cluster, then do not use idle , use  add map listener instead.   =====   
-      
-            add_map_listener();
-            
-           // initial load all geoJSON feature.    
-            var _url_init = base_url+ 'api/loadall/'+$("#areaID").val() + '/'+$("#subjectID").val() + initial_location[4];
-            ajax_GeoJSON(map,_url_init, false);
-      //---------------------------------------------------------------------------------------------------------------------------------------------- 
+           add_map_listener_idle();
    
     
     }// initialize

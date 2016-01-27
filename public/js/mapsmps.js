@@ -46,7 +46,7 @@ function feed_datatables(_geojson_obj){
       Object.keys(_properties).forEach(function(k) 
                         {
                             //alert(k);
-                            _dt_columns.push(k);
+                            //_dt_columns.push(k);
                             
                             tableHeaders += "<th>" + k + "</th>";
                             
@@ -84,7 +84,7 @@ function feed_datatables(_geojson_obj){
                                    columns: _column_def,
                                     
                                     
-                                   // "pagingType": "full_numbers",    
+                                  //  "pagingType": "full_numbers",    
                                     
                                     // resize the datatables height here scrollY:150
                                     scrollY: 200,
@@ -98,8 +98,6 @@ function feed_datatables(_geojson_obj){
                                                                 scroller: true
                                                                 
                                    // ------------ scroller section end--------  
-                                    
-                                    
                                     
                                                     
                             }); // datatable
@@ -127,18 +125,49 @@ function feed_datatables(_geojson_obj){
                                             map.data.forEach( function(_feature)
                                             {
                                                 
-                                                if (_feature.getProperty('GeoFeatureID') === _geo_ID){
+                                                if (_feature.getProperty('GeoFeatureID') === _geo_ID)
+                                                {
                                                     
-                                                    //alert(_feature.getProperty('GeoFeatureID'));
+                                                            //alert(_feature.getProperty('GeoFeatureID'));
                                                     
-                                                     map.data.revertStyle();
-                                                     map.data.overrideStyle(_feature, {
-                                                                                         strokeWeight: 5,
+                                                            if(_feature.getProperty('GeoFeatureType') === 'Point')
+                                                            {
+                                                                    
+                                                              // if (_feature instanceof google.maps.Data.Point) {
+                                                                        if(_highlight_marker)
+                                                                        {
+                                                                               _highlight_marker.setMap(null);
+                                                                           }
+                                                                       // alert(_feature.getGeometry());
+                                                                      var _feature_geometry = _feature.getGeometry();
+                                                                      var _latlng = _feature_geometry.get();
+                                                                        _highlight_marker = new google.maps.Marker({
+                                                                           map: map,
+                                                                           position: _latlng,
+                                                                           // icon: iconBase + 'custome_icon.png'
+                                                                           //label: ' ', 
+                                                                          // must set zIndex to bring this marker to front, on top of other markers.other wise, it will hide behind.
+                                                                           zIndex: google.maps.Marker.MAX_ZINDEX + 1
+                                                                           
+                                                                        }); // marker
+                                                                        _highlight_marker.setIcon('http://maps.google.com/mapfiles/ms/icons/grn-pushpin.png');
+                                                               //  }//if feature
+                                                                    
+                                                                      
+                                                            
+                                                               
+
+                                                            }
+                                                            else{
+                                                                    map.data.revertStyle();
+                                                                    map.data.overrideStyle(_feature, {
+                                                                                           strokeWeight: 5,
                                                                                          strokeColor: 'blue',
                                                                                          fillOpacity: 0
-                                                                        });// overrideStyle
-                                                    
-                                                }//
+                                                                                       });// overrideStyle
+
+                                                                   }//else
+                                                }//map foreach
                                                 
                                                 /*
                                                         var _a="";
@@ -198,16 +227,19 @@ function feed_datatables(_geojson_obj){
 
 
 
-function ajax_GeoJSON(gmap,_apiURI) {
+
+function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
     
     // Load a GeoJSON from the server 
    
-   
-             //------tile[3] ---------
+            
+            //------tile[3] ---------
                             add_tiles();
             
-           
             
+            
+            
+               
             
             // test url if return a number means too many polygon to show.otherwise add polygon to map.
             // 
@@ -215,7 +247,8 @@ function ajax_GeoJSON(gmap,_apiURI) {
             // var promise    =  $.get(_apiURI);
             //    promise.then(function(data){
                         if(isNaN(data)){
-                            
+                             
+                        
                           
                             //gmap.data.loadGeoJson(_apiURI);
 
@@ -239,6 +272,9 @@ function ajax_GeoJSON(gmap,_apiURI) {
                                                   _id_obj = eachFeatueItem['_id'];
                                                   _id_obj_id = _id_obj['$id'];
                                                  _propty_obj = eachFeatueItem['properties'];
+                                                 var _geo_type = eachFeatueItem['geometry'];
+                                                 
+                                                 _propty_obj['GeoFeatureType']=_geo_type['type'];
                                                  _propty_obj['GeoFeatureID']=_id_obj_id;
 
                                              });// features_array_foreach
@@ -248,8 +284,9 @@ function ajax_GeoJSON(gmap,_apiURI) {
                                         //---------------------------------------------------------------
 
 
-                           
-                           //----------------  add new geojson, then remove last geojson --------------------
+                          
+                          
+                          //----------------  add new geojson, then remove last geojson --------------------
 
                                          gmap.data.setStyle({
                                              fillOpacity: 0,
@@ -275,9 +312,11 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
 
                             //------------------------end add new geojson, then remove last geojson------------------------- ---------------
-                           
-                           
-                           
+                          
+                          
+                          
+                          
+                          
                            
                            feed_datatables(_geojson_object);
                            
@@ -298,13 +337,15 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             
                            
                             
-                            // styleFeature function is only in script block in city.cshtml
-                                if (($("#subjectID").val() === 'zoning') || ($("#subjectID").val() === 'general_landuse'))
-                            {              
-                                // color the zoning and general land use.
-                                gmap.data.setStyle(styleFeature);
-
-                            }
+                            // ------------- map click event [3] -------------------
+                            if (_map_click_event)
+                                {
+                                            }
+                                else{
+                                    _mapclick_in_use = false;
+                                }
+                            
+                          //-------------------------------------------------------------
                             
                             
                           
@@ -313,9 +354,7 @@ function ajax_GeoJSON(gmap,_apiURI) {
                              // returning number of count, no geojson, clean the datatables
                         else{ 
                             
-                           
-                           
-                           // ---------- if return number, should remove last time geojson -----------
+                            // ---------- if return number, should remove last time geojson -----------
                             _last_geojson_layer = _current_geojson_layer;
                             if (_last_geojson_layer) {
 
@@ -326,17 +365,14 @@ function ajax_GeoJSON(gmap,_apiURI) {
                                 }// for
                             }// if
                             //-------------------- end remove last geojson ------------------------------
-                           
-                           
-                           
-                           
-                           
                             
-                            $('#tabledata').dataTable().fnClearTable();
                             
                             document.getElementById("ajaxload").style.display = "none";
                             document.getElementById("title_info").style.display = "inline";
                             document.getElementById("legend").style.display = "inline";
+                            
+                            // empty bottom data table
+                            $('#tabledata').dataTable().fnClearTable();
                             
                             if (data > 0) {
                                     
@@ -346,22 +382,241 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
                                      } else {
                                              // data = 0 nothing found clear datatables
-                                             //$('#tabledata').dataTable().fnClearTable();
+                                            // $('#tabledata').dataTable().fnClearTable();
                                              //$('#tabledata').dataTable().clear();  // this is api bug, for some reason it failed to clean data.
                                              //$('#tabledata').dataTable().clear().draw();
                                              
                                             document.getElementById("title_info").innerHTML = "Nothing found";
                                             document.getElementById("legend").innerHTML = "Nothing found";
                                 }
+                                
+                                
+                                 // ------------- map click event [4] -------------------
+
+                            _mapclick_in_use = true;
+
+                            //-------------------------------------------------------------
+                                
+                                
+                                
                         }// if else
 
 
 
                      });// get // promist.then
     
-    
+                 
+                
+                
+                
+                
+                
 }// function ajax_GeoJSON
 
+
+
+
+
+function get_map_bound(){
+    
+      //document.getElementById("title_info").innerHTML = "MAP BOUNDS [SouthWest, NorthEast] "+ map.getBounds();
+              // get current map bounds as URL parameters. 
+                 
+                 
+                 
+                 
+                 
+                 bounds = map.getBounds();
+                 southWest = bounds.getSouthWest();
+                 northEast = bounds.getNorthEast();
+                 SWlong = southWest.lng();
+                 SWlat = southWest.lat();
+                 NElong = northEast.lng();
+                 NElat = northEast.lat();
+                  
+                  // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
+                var _url=base_url+ 'api/loadall/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
+            
+                  document.getElementById("ajaxload").style.display = "block";
+                  ajax_GeoJSON(map,_url,false);
+    
+    
+    
+     //---- uncheck all the check box button ----------------classification [4]-----------                 
+     //       uncheck_all_checkbox_button();
+    
+}
+
+
+
+
+// ---------  map click event [2] -------------------------------
+
+function get_click_latlng(_click_event_lat, _click_event_lng) {
+
+
+    if (_mapclick_in_use) {
+        
+        //alert('ok');
+        // --- current use 2X2 grid boundary (as click event latlong is on center point), you can use 3x3 grid or adjust house length to make larger/smaller select area. 
+        var _square_house_length = 0.0004;
+        
+
+        SWlong = _click_event_lng - _square_house_length;
+        SWlat = _click_event_lat - _square_house_length;
+        NElong = _click_event_lng + _square_house_length;
+        NElat = _click_event_lat + _square_house_length;
+
+       
+
+         var _url_click_event=base_url+ 'api/loadall/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
+        //var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+
+        document.getElementById("ajaxload").style.display = "block";
+        ajax_GeoJSON(map, _url_click_event,true);
+        
+
+
+    }
+    
+
+
+
+}
+
+
+
+function back_full_extend() {
+
+    map.setZoom(initial_location[3]);
+    map.setCenter(new google.maps.LatLng(initial_location[1], initial_location[2]));
+}
+
+
+
+
+
+
+function add_map_listener_idle(){
+    
+     listener_idle =  map.addListener('idle', function() {   
+
+                        get_map_bound();
+
+
+                    });
+                    
+                    
+                    
+                     // ---------  map click event [1] ------ search for a single feature where clicked ------------
+         listener_click = map.addListener('click', function (click_event_location) {
+
+             get_click_latlng(click_event_location.latLng.lat(), click_event_location.latLng.lng());
+             
+         });
+
+
+         listener_rightclick = map.addListener('rightclick', function () {
+
+             back_full_extend();
+         });
+
+    //--------------------------End  map right click event ---------- back to full extend ----------------------
+                    
+                  
+    
+}
+//------------------ End map click event [2] -------------------------------
+
+
+
+function add_map_listener(){
+    
+      //map.addListener('bounds_changed', function() {  // does not work well
+          listener_dragend =  map.addListener('dragend', function() {   
+                
+                 get_map_bound();
+                 
+                 
+             });
+         
+         
+         
+             
+         
+         
+         listener_zoom_changed = map.addListener('zoom_changed', function() {   
+              
+               get_map_bound();
+             });
+    
+    
+    
+    
+}
+
+
+
+
+function add_mapdata_listener(){
+    
+      // click listener
+            map.data.addListener('click', function(event) {
+                //var myHTML = event.feature.getProperty("NAME_ABV_A");
+
+                // map.data.overrideStyle(event.feature, {fillColor: 'yellow'});
+
+                // info window table style
+                var popup ="<table>";                
+                event.feature.forEachProperty(function(_value, _property){
+                    popup = popup + "<tr><td>"+ _property + "</td><td>"+  _value + "</td></tr>";
+                  });            
+                 popup = popup + "</table>";
+
+                infowindow.setContent("<div style='width:200px; height:150px;text-align: center;'>"+ popup +"</div>");
+                infowindow.setPosition(event.latLng);
+                infowindow.open(map);
+
+                });    // click listener
+  
+  
+ 
+  
+  
+            // mouse over listener
+              map.data.addListener('mouseover', function (event) {                  
+                  //map.data.revertStyle();                 
+                  map.data.overrideStyle(event.feature, {
+                      strokeWeight: 8,
+                      strokeColor: '#fff',
+                      fillOpacity: 0.01
+                      //fillColor:''
+                  });
+                  
+                    var instant_info = "<ul>";
+                    event.feature.forEachProperty(function(_value, _property){                  
+                    instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;"+ _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" +_value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ "</li>";
+                    });                            
+                    instant_info = instant_info + "</ul>";
+                  
+                  
+                  // update bottom <div>
+                    document.getElementById("info-table").innerHTML = instant_info;
+                
+              });
+
+
+                // mouse out listener
+              map.data.addListener('mouseout', function (event) {
+                  map.data.revertStyle(event.feature);
+                  
+                   // empty bottom <div>
+               document.getElementById("info-table").innerHTML = "";
+               //infowindow.close();
+               
+              });
+    
+}
 
 
 
@@ -419,110 +674,10 @@ function initialize() {
      
  
      
-            // click listener
-            map.data.addListener('click', function(event) {
-                //var myHTML = event.feature.getProperty("NAME_ABV_A");
-
-                // map.data.overrideStyle(event.feature, {fillColor: 'yellow'});
-
-                // info window table style
-                var popup ="<table>";                
-                event.feature.forEachProperty(function(_value, _property){
-                    popup = popup + "<tr><td>"+ _property + "</td><td>"+  _value + "</td></tr>";
-                  });            
-                 popup = popup + "</table>";
-
-                infowindow.setContent("<div style='width:200px; height:150px;text-align: center;'>"+ popup +"</div>");
-                infowindow.setPosition(event.latLng);
-                infowindow.open(map);
-
-                });    // click listener
-  
-  
- 
-  
-  
-            // mouse over listener
-              map.data.addListener('mouseover', function (event) {                  
-                  //map.data.revertStyle();                 
-                  map.data.overrideStyle(event.feature, {
-                      strokeWeight: 8,
-                      strokeColor: '#fff',
-                      fillOpacity: 0.01
-                      //fillColor:''
-                  });
-                  
-                    var instant_info = "<ul>";
-                    event.feature.forEachProperty(function(_value, _property){                  
-                    instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;"+ _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" +_value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ "</li>";
-                    });                            
-                    instant_info = instant_info + "</ul>";
-                  
-                  
-                  // update bottom <div>
-                    document.getElementById("info-table").innerHTML = instant_info;
-                
-              });
-
-
-                // mouse out listener
-              map.data.addListener('mouseout', function (event) {
-                  map.data.revertStyle(event.feature);
-                  
-                   // empty bottom <div>
-               document.getElementById("info-table").innerHTML = "";
-               //infowindow.close();
-               
-              });
+            add_mapdata_listener();
 
          
-               
-             //map.addListener('bounds_changed', function() {  // does not work well
-             map.addListener('dragend', function() {   
-                  //document.getElementById("title_info").innerHTML = "MAP BOUNDS [SouthWest, NorthEast] "+ map.getBounds();
-              // get current map bounds as URL parameters. 
-                 bounds = map.getBounds();
-                 southWest = bounds.getSouthWest();
-                 northEast = bounds.getNorthEast();
-                 SWlong = southWest.lng();
-                 SWlat = southWest.lat();
-                 NElong = northEast.lng();
-                 NElat = northEast.lat();
-                  
-                  // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
-                var _url=base_url+ 'api/load/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
-            
-                  document.getElementById("ajaxload").style.display = "block";
-                  ajax_GeoJSON(map,_url);
-             });
-         
-         
-         
-              map.addListener('zoom_changed', function() {   
-               //   document.getElementById("title_info").innerHTML = "MAP BOUNDS [SouthWest, NorthEast] "+ map.getBounds();
-              // get current map bounds as URL parameters. 
-                 bounds = map.getBounds();
-                 southWest = bounds.getSouthWest();
-                 northEast = bounds.getNorthEast();
-                 SWlong = southWest.lng();
-                 SWlat = southWest.lat();
-                 NElong = northEast.lng();
-                 NElat = northEast.lat();
-                  
-                  // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
-                var _url=base_url+ 'api/load/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
-            
-                  document.getElementById("ajaxload").style.display = "block";
-                  ajax_GeoJSON(map,_url);
-             });
-         
-         
-         
-         
-         // initial load all geoJSON feature.
-            
-            var _url_init = base_url+ 'api/load/'+$("#areaID").val() + '/'+$("#subjectID").val() + initial_location[4];
-            ajax_GeoJSON(map,_url_init);
+           add_map_listener_idle();
             
         
         
@@ -558,38 +713,4 @@ function initialize() {
     
     
     
-    
-
-/*    
-function addMarker(i, lat, lng, img, name, price) {
-    
-    var base_url = '/civilgis/public/';
-    
-    
-    if (lat !== null && lng !== null) {
-        myLatLng = new google.maps.LatLng(lat, lng);
-        bounds = new google.maps.LatLngBounds();
-        var imageUrl = base_url+ 'img/marker.png';
-        var markerImage = new google.maps.MarkerImage(imageUrl, null, null, null, new google.maps.Size(20, 36));
-        eval('var marker' + i + ' = new google.maps.Marker({ position: myLatLng,  map: map, icon: markerImage, zIndex: i});');
-        var marker_obj = eval('marker' + i);
-        bounds.extend(marker_obj.position);
-        markersArray.push(eval('marker' + i));
-        marker_obj.title = name;
-        var li_obj = '.js-map-num' + i;
-        image = '';
-        if(img !== ''){
-          // image = '<img src="'+base_url+'img/'+img+'" class="img-responsive img-thumbnail" />';
-          image = '<img src="'+base_url+'img/'+img+'" height="200" width="300" class="img-responsive img-thumbnail" />';
-        }
-        var content = '<div class="">'+image+'<h4>' + name + '</h4><h4><span class="label label-danger"> $'+ price +'</span></h4></div>';
-        eval('var infowindow' + i + ' = new google.maps.InfoWindow({ content: content,  maxWidth: 370});');
-        var infowindow_obj = eval('infowindow' + i);
-        var marker_obj = eval('marker' + i);
-        google.maps.event.addListener(marker_obj, 'click', function () {
-            infowindow_obj.open(map, marker_obj);
-        });
-    }
-}// add marker
-*/
-
+ 
