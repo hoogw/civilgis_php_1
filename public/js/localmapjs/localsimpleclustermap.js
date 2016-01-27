@@ -1,5 +1,5 @@
 
-
+// cluster map conflict with map click event. so cluster map does not have map click event .
 
 
 

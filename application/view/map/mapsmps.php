@@ -167,7 +167,7 @@
                                                      
                                                      
                                                     
-                                                        <div id="map-canvas" class="box-content" style="height: 400px;"> </div>
+                                                        <div id="map-canvas" class="box-content" style="height: 1000px;"> </div>
 
                                                         <div id="legend" class="alert alert-warning"></div>
 

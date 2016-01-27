@@ -1,7 +1,6 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
+
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>

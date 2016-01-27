@@ -354,13 +354,13 @@ function ajax_GeoJSON(gmap,_apiURI) {
 
 function initialize() {
     
-        add_area_boundary($("#areaID").val());
+        
          //   base_url = '/civilgis/public/';
          base_url = document.getElementById('base_url').value;
          
         // alert(base_url);
           
-            
+            add_area_boundary($("#areaID").val());
             initial_location = set_initial_location($("#areaID").val());
             
             

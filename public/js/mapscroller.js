@@ -474,7 +474,7 @@ function ajax_sync_GeoJSON(gmap,_apiURI) {
 }// function ajax_GeoJSON
 
 
-function ajax_GeoJSON(gmap,_apiURI) {
+function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
     
     // Load a GeoJSON from the server 
    
@@ -583,13 +583,15 @@ function ajax_GeoJSON(gmap,_apiURI) {
                             
                            
                             
-                            // styleFeature function is only in script block in city.cshtml
-                                if (($("#subjectID").val() === 'zoning') || ($("#subjectID").val() === 'general_landuse'))
-                            {              
-                                // color the zoning and general land use.
-                                gmap.data.setStyle(styleFeature);
-
-                            }
+                            // ------------- map click event [3] -------------------
+                            if (_map_click_event)
+                                {
+                                            }
+                                else{
+                                    _mapclick_in_use = false;
+                                }
+                            
+                          //-------------------------------------------------------------
                             
                             
                           
@@ -633,6 +635,16 @@ function ajax_GeoJSON(gmap,_apiURI) {
                                             document.getElementById("title_info").innerHTML = "Nothing found";
                                             document.getElementById("legend").innerHTML = "Nothing found";
                                 }
+                                
+                                
+                                 // ------------- map click event [4] -------------------
+
+                            _mapclick_in_use = true;
+
+                            //-------------------------------------------------------------
+                                
+                                
+                                
                         }// if else
 
 
@@ -703,7 +715,7 @@ function get_map_bound(){
                 var _url=base_url+ 'api/load/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
             
                   document.getElementById("ajaxload").style.display = "block";
-                  ajax_GeoJSON(map,_url);
+                  ajax_GeoJSON(map,_url,false);
     
     
     
@@ -715,6 +727,91 @@ function remove_map_listener(){
      google.maps.event.removeListener(listener_zoom_changed);
     
 }
+
+
+
+
+
+
+// ---------  map click event [2] -------------------------------
+
+function get_click_latlng(_click_event_lat, _click_event_lng) {
+
+
+    if (_mapclick_in_use) {
+        
+        
+        // --- current use 2X2 grid boundary (as click event latlong is on center point), you can use 3x3 grid or adjust house length to make larger/smaller select area. 
+        var _square_house_length = 0.0004;
+        
+
+        SWlong = _click_event_lng - _square_house_length;
+        SWlat = _click_event_lat - _square_house_length;
+        NElong = _click_event_lng + _square_house_length;
+        NElat = _click_event_lat + _square_house_length;
+
+       
+
+         var _url_click_event=base_url+ 'api/loadall/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
+        //var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+
+        document.getElementById("ajaxload").style.display = "block";
+        ajax_GeoJSON(map, _url_click_event,true);
+        
+    }
+    
+
+}
+
+
+
+
+
+function back_full_extend() {
+
+    map.setZoom(initial_location[3]);
+    map.setCenter(new google.maps.LatLng(initial_location[1], initial_location[2]));
+}
+
+
+
+
+ function add_map_listener_idle(){   
+    
+    
+    
+    listener_idle =  map.addListener('idle', function() {   
+
+                        get_map_bound();
+
+
+                    });
+    
+    
+     // ---------  map click event [1] ------ search for a single feature where clicked ------------
+         listener_click = map.addListener('click', function (click_event_location) {
+
+             get_click_latlng(click_event_location.latLng.lat(), click_event_location.latLng.lng());
+         });
+
+
+         listener_rightclick = map.addListener('rightclick', function () {
+
+             back_full_extend();
+         });
+
+    //--------------------------End  map right click event ---------- back to full extend ----------------------
+    
+    
+}
+
+
+//------------------ End map click event [2] -------------------------------
+
+
+
+
+
 
 function add_map_listener(){
     
@@ -892,12 +989,7 @@ google.maps.Polygon.prototype.getBounds = function() {
                 // so I put it in idle event, this event is fired when the map becomes idle after panning or zooming
                 
            
-                listener_idle =  map.addListener('idle', function() {   
-
-                        get_map_bound();
-
-
-                    });
+                 add_map_listener_idle();
             
         //--------------------------------------------------------------------------------------------------
     
