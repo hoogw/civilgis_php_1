@@ -64,7 +64,7 @@ function init_classification_buttons(_area, _subject) {
                                                      _checkboxID = 'checkbox_'+_code;
                                                      _checkbox_Value = _code + " - " + _description;
                                                     
-                                                    var _this_button = '<label id="'+_labelID + '" class="' + _label_Class+ '">   <input id="' + _checkboxID + '" type="checkbox">' + _checkbox_Value + '</label>';
+                                                    var _this_button = '<label id="'+_labelID + '" class="' + _label_Class+ '">   <input id="' + _checkboxID + '" type="radio" name="classification_radios">' + _checkbox_Value + '</label>';
                                                              
                                                       // alert(_this_button);      
                                                              
@@ -221,16 +221,17 @@ function init_classification_buttons(_area, _subject) {
                                                                                         //alert(_current_code);
 
 
-
-
-
+                                                                                        
+                                                                                        
+                                                                                                                       
+                                                                                                        
+                                                                                        
 
                                                                                         if ($(_checkbox_current_selector).is(':checked'))
                                                                                         {
                                                                                                //alert(" Un do it ");
 
-                                                                                               // alert($(_checkbox_current_selector).is(':checked'));
-
+                                                                                              /*
                                                                                                      // loop through all current featurs on map, un do color, revert to origianl, remove color
                                                                                                         map.data.forEach( function(_feature)
                                                                                                         {
@@ -239,32 +240,20 @@ function init_classification_buttons(_area, _subject) {
                                                                                                                     {
 
                                                                                                                         map.data.revertStyle(_feature);
-                                                                                                                        /*
-                                                                                                                         map.data.overrideStyle(_feature, {
-                                                                                                                      
-                                                                                                                                                               fillOpacity: 0,
-                                                                                                                                                              strokeColor: 'yellow',
-                                                                                                                                                              strokeWeight: 1
-                                                                                                                                                           });// overrideStyle
-                                                                                                                          */ 
-
+                                                                                                                        
                                                                                                                         }//if
                                                                                                          });// map.data.foreach
+                                                                                                 */
 
-
-
-
-
-
-
-                                                         
                                                          
                                                                                         } // if end un do it
                                                                                         
                                                                                         else {
                                                                                                     //alert("  Do it ");
-                                                                                                    //alert($(_checkbox_current_selector).is(':checked'));
+                                                                                                    
                                                                                             
+                                                                                             //---------------radio button click, should turn other color off --------------
+                                                                                             map.data.revertStyle();
                                                                                              
                                                                                              
                                                                                              
@@ -334,6 +323,35 @@ function init_classification_buttons(_area, _subject) {
     
     
     
+    // high light off button  
+       $('#label_high_light_off').click(function()
+            {
+                  map.data.forEach( function(_feature)
+                     {          
+                         map.data.revertStyle(_feature);                                                              
+                      });// map.data.foreach         
+            });
+    
+    
+    
+    
+    // color_tiles_switch button
+                    // init on off switch button  
+                    $("[name='color_tiles_switch']").bootstrapSwitch();
+         
+                    $('input[name="color_tiles_switch"]').on('switchChange.bootstrapSwitch', function(event, state) {
+                       // console.log(this); // DOM element
+                        //console.log(event); // jQuery event
+                       // console.log(state); // true | false
+                       if (state){
+                          
+                           add_tiles();
+                       }
+                         else {
+                            
+                             remove_tiles();
+                         }
+                      });
     
     
     
@@ -438,9 +456,10 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
    
    
              //------tile[3] ---------
+                     if ( $('input[name="color_tiles_switch"]').bootstrapSwitch('state')){
                      add_tiles();
-            
-            
+                     
+                 }
            
             
             
@@ -458,9 +477,9 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
                             //----------------  add new geojson, then remove last geojson --------------------
 
                               gmap.data.setStyle({
-                                  fillOpacity: 0,
-                                  strokeColor: 'yellow',
-                                  strokeWeight: 1
+                                  fillOpacity: _classfiy_fillOpacity,
+                                  strokeColor: _classfiy_strokeColor,
+                                  strokeWeight: _classfiy_strokeWeight
 
                               });
 
@@ -751,9 +770,9 @@ function add_mapdata_listener(){
                   
                  // map.data.revertStyle();                 
                   map.data.overrideStyle(event.feature, {
-                      strokeWeight: 8,
+                      strokeWeight: _highlight_strokeWeight,
                       //strokeColor: '#fff',
-                      fillOpacity: 0.01
+                      fillOpacity: _highlight_fillOpacity
                       //fillColor:''
                   });
                   

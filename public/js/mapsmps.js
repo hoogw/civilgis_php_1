@@ -289,9 +289,9 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
                           //----------------  add new geojson, then remove last geojson --------------------
 
                                          gmap.data.setStyle({
-                                             fillOpacity: 0,
-                                             strokeColor: 'yellow',
-                                             strokeWeight: 1
+                                             fillOpacity: _default_fillOpacity,
+                                                strokeColor: _default_strokeColor,
+                                                strokeWeight: _default_strokeWeight
 
                                          });
                                          _last_geojson_layer = _current_geojson_layer;
@@ -436,7 +436,9 @@ function get_map_bound(){
                   
                   // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
                 var _url=base_url+ 'api/loadall/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
-            
+               //var _url = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+               
+               
                   document.getElementById("ajaxload").style.display = "block";
                   ajax_GeoJSON(map,_url,false);
     
@@ -587,9 +589,9 @@ function add_mapdata_listener(){
               map.data.addListener('mouseover', function (event) {                  
                   //map.data.revertStyle();                 
                   map.data.overrideStyle(event.feature, {
-                      strokeWeight: 8,
-                      strokeColor: '#fff',
-                      fillOpacity: 0.01
+                      strokeWeight: _highlight_strokeWeight,
+                      strokeColor: _highlight_strokeColor,
+                      fillOpacity: _highlight_fillOpacity
                       //fillColor:''
                   });
                   

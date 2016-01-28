@@ -334,8 +334,24 @@ function init_classification_buttons(_area, _subject) {
     
     
     
-    
-    
+         // color_tiles_switch button
+                    // init on off switch button  
+                    $("[name='color_tiles_switch']").bootstrapSwitch();
+         
+                    $('input[name="color_tiles_switch"]').on('switchChange.bootstrapSwitch', function(event, state) {
+                       // console.log(this); // DOM element
+                        //console.log(event); // jQuery event
+                       // console.log(state); // true | false
+                       if (state){
+                          
+                           add_tiles();
+                       }
+                         else {
+                            
+                             remove_tiles();
+                         }
+                      });
+               
     
     
    
@@ -438,7 +454,11 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
    
    
              //------tile[3] ---------
+            
+             if ( $('input[name="color_tiles_switch"]').bootstrapSwitch('state')){
                      add_tiles();
+                     
+                 }
             
             
            
@@ -458,9 +478,9 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
                             //----------------  add new geojson, then remove last geojson --------------------
 
                               gmap.data.setStyle({
-                                  fillOpacity: 0,
-                                  strokeColor: 'yellow',
-                                  strokeWeight: 1
+                                  fillOpacity: _classfiy_fillOpacity,
+                                  strokeColor: _classfiy_strokeColor,
+                                  strokeWeight: _classfiy_strokeWeight
 
                               });
 
@@ -751,9 +771,9 @@ function add_mapdata_listener(){
                   
                  // map.data.revertStyle();                 
                   map.data.overrideStyle(event.feature, {
-                      strokeWeight: 8,
+                      strokeWeight: _highlight_strokeWeight,
                       //strokeColor: '#fff',
-                      fillOpacity: 0.01
+                      fillOpacity: _highlight_fillOpacity
                       //fillColor:''
                   });
                   

@@ -1,7 +1,5 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
@@ -9,6 +7,9 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifycheckboxbuttonmap.js"></script>
 
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
+
+<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
+<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
 
 
    
@@ -89,13 +90,21 @@
                                             
                                             
                                             
-                                            
+                                             
                                                        <!-- checkbox button -->
                                                        
                                                        
                                                                     <div id="classification_section" class="well">
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
                                                                                 <div id="classification_buttons" data-toggle="buttons">
+                                                                                    
+                                                                                                    
+                                                                                    <input type="checkbox" name="color_tiles_switch" checked>
                                                                                     
                                                                                       <!-- test 
                                                                                                     <label id="label_highlight" class="btn btn-block btn-black">
