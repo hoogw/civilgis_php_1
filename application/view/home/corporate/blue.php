@@ -79,8 +79,8 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Home</a></li>
                         <li><a href="#service">Feature</a></li>
-                        <li><a href="#portfolio">Demo</a></li>
-                    <!--    <li><a href="#testimonials">Testimonial</a></li> -->
+                        <!-- li><a href="<?php echo Config::get('URL'); ?>" >Demo</a></li -->
+                    
                         <li><a href="#price">price</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -176,59 +176,7 @@
         End Home SliderEnd
         ==================================== -->
 			
-			<!-- about section -->
-			<section id="about" >
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 wow animated fadeInLeft">
-							<div class="recent-works">
-								<h3>Transparent Government Initiative</h3>
-								<div id="works">
-									<div class="work-item">
-										<p>
-                                                                                    Public participation in government isn’t just a cornerstone of democracy. It’s how the government ensures that policies and practices reflect the ideas and expertise of the people.  
-                                                                                    
-                                                                                    <br> 
-                                                                                    <br> 
-                                                                                    The Administration is empowering the public through greater openness and new technologies to influence the decisions that affect their lives.
-                                                                                    
-                                                                                </p>
-									</div>
-									<div class="work-item">
-										<p>
-                                                                                    
-                                                                                    President Obama signed the Memorandum on Transparency and Open Government, ushering in a new era of open and accountable government meant to bridge the gap between the American people and their government.
-                                                                                    <br><br> 
-                                                                                    President Obama emphasized the importance of more inclusive and open government, directing federal agencies to “find new ways of tapping the knowledge and experience of ordinary Americans.”
-                                                                                </p>
-									</div>
-									<div class="work-item">
-										<p>
-                                                                                    On May 9, 2013, President Obama signed an executive order that made open and machine-readable data the new default for government information. Making information about government operations more readily available and useful is also core to the promise of a more efficient and transparent government.
-                                                                                    <br><br> 
-                                                                                    President Obama launched the Open Government Partnership (OGP) in 2011 at the U.N. General Assembly meeting with seven other heads of state and an equal number of leaders from civil society. The OGP has grown to a global coalition of 64 governments and hundreds of civil-society organizations.
-                                                                                </p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
-							<div class="welcome-block">
-								<h3>Founder TransparentGov</h3>								
-						     	 <div class="message-body">
-									<img src="<?php echo Config::get('URL'); ?>public/theme_template/blue/img/member-1.jpg" class="pull-left" alt="member">
-						       		<p>
-                                                                    Welcome to TransparentGov which is a perfect platforms for individual local government to participate open government practice. The web site available on dot net, PHP, Java, Android and iOS. It provide public easy browsing and easy search capabilites on GIS dataset, tabular data and PDF document. 
-                                         
-                                                                </p>
-						     	 </div>
-						       	<a href="<?php echo Config::get('URL'); ?>" class="btn btn-border btn-effect pull-right"> Demo </a>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end about section -->
+			
 			
 			
 			<!-- Service section -->
@@ -238,7 +186,7 @@
 					
 						<div class="sec-title text-center">
 							<h2 class="wow animated bounceInLeft">Features</h2>
-							<p class="wow animated bounceInRight">The Key Features</p>
+							<p class="wow animated bounceInRight"></p>
 						</div>
 						
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
@@ -287,7 +235,9 @@
 			</section>
 			<!-- end Service section -->
 			
-			<!-- portfolio section -->
+                        
+                        
+			<!-- portfolio section 
 			<section id="portfolio">
 				<div class="container">
 					<div class="row">
@@ -377,8 +327,11 @@
 					</div>
 				</div>
 			</section>
+           -->             
 			<!-- end portfolio section -->
 			
+                        
+                        
 			<!-- Testimonial section 
 			<section id="testimonials" class="parallax">
 				<div class="overlay">
@@ -420,6 +373,10 @@
    -->
 			<!-- end Testimonial section -->
 			
+                        
+                        
+                        
+                        
 			<!-- Price section -->
 			<section id="price">
 				<div class="container">
@@ -472,7 +429,7 @@
 								<span>Cloud Hosting</span>
 								<div class="value">
 									<span>$</span>
-									<span>299</span><br>
+									<span>499</span><br>
 									<span>Month</span>
 								</div>
 								<ul>
@@ -497,14 +454,23 @@
 						<div class="row">
 						
 							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>FOLLOW US</h2>
+								<h2>Transparent Gov Cross Platform</h2>
 								<p></p>
 							</div>
-							
+                                                   
 							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>							
+                                                            
+                                                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="http://transparentgov.net"><i class="fa fa-windows fa-2x"></i></a></li>
+                                                                <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="<?php echo Config::get('URL'); ?>">PHP</a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1s"><a href="<?php echo Config::get('URL'); ?>">JAVA</a></li>
+								
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <li class="wow animated zoomIn" data-wow-delay="1.5s"><a href="#"><i class="fa fa-apple fa-2x"></i></a></li>	
+                                                                
+                                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <li class="wow animated zoomIn" data-wow-delay="2s"><a href="#"><i class="fa fa-android fa-2x"></i></a></li>	
+                                                                
+                                                                
 							</ul>
 							
 						</div>
@@ -518,34 +484,12 @@
 				<div class="container">
 					<div class="row">
 						
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Contact</h2>
-							<p>Leave a Message</p>
-						</div>
 						
-						
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
-								<div class="input-field">
-									<input type="text" name="name" class="form-control" placeholder="Your Name...">
-								</div>
-								<div class="input-field">
-									<input type="email" name="email" class="form-control" placeholder="Your Email...">
-								</div>
-								<div class="input-field">
-									<input type="text" name="subject" class="form-control" placeholder="Subject...">
-								</div>
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-							</form>
-						</div>
 						
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
-								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>
+								<h3>TransparentGov.net</h3>						
+								<p><i class="fa fa-pencil"></i>TransparentGov.net <span></span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>
 								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
 							<!--	<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>  -->
 							</address>
@@ -572,14 +516,16 @@
 						<div class="footer-social">
 							<ul>
 								
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="http://transparentgov.net"><i class="fa fa-windows fa-3x"></i></a></li>
+                                                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="<?php echo Config::get('URL'); ?>">PHP</a></li>
+                                                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="<?php echo Config::get('URL'); ?>">JAVA</a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-apple fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-android fa-3x"></i></a></li>
 								
 							</ul>
 						</div>
 						
-						<p>Design And developed By <a href="#body">TransparentGov</a>. All rights Reserved</p>
+						<p>Design And developed By <a href="<?php echo Config::get('URL'); ?>">TransparentGov</a>. All rights Reserved</p>
 					</div>
 				</div>
 			</div>
