@@ -43,46 +43,34 @@
                             
                             
                                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue" class="dropdown-toggle">
 						<i class="fa fa-globe"></i>
 						<span class="hidden-xs">Product</span>
 					</a>
                                     
-                                        <ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-globe"></i>&nbsp;&nbsp;Maps</a></li>
-						<li><a href="#"><i class="fa fa-table"></i>&nbsp;&nbsp;Tabular Data</a></li>
-						
-					</ul>
+                                        
 				</li>
                                 
                                 
                                 
                                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#price" class="dropdown-toggle">
 						<i class="fa fa-usd"></i>
 						<span class="hidden-xs">Pricing</span>
 					</a>
                                     
-                                        <ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-road"></i>&nbsp;&nbsp;Initial Setup &nbsp;&nbsp;$5000</a></li>
-						<li><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;Customize &nbsp;&nbsp;$60/hour</a></li>
-						<li><a href="#"><i class="fa fa-cloud-upload"></i>&nbsp;&nbsp;Cloud Hosting &nbsp;&nbsp;$150/month</a></li>
-					</ul>
+                                       
 				</li>
                                 
                                 
                                 
                                 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#contact" class="dropdown-toggle">
 						<i class="fa fa-phone-square"></i>
 						<span class="hidden-xs">Contact</span>
 					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;medyhzl@gmail.com</a></li>
-						<li><a href="#"><i class="fa fa-mobile"></i>&nbsp;&nbsp;208-310-0875</a></li>
-						
-					</ul>
+					
 				</li>
                                 
                                 

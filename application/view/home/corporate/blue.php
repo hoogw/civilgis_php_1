@@ -110,7 +110,7 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown">publish all your map online  </h2>
+                                <h2 class="animated fadeInDown">Government Map Online  </h2>
                                 <span class="animated fadeInDown"></span>
                                 <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample Maps Demo</a>
                             </div>
@@ -123,7 +123,7 @@
 						<div class="bg-img bg-img-2"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>publish all your tabular data PDF document online</h2>
+                                <h2>Government Data Document Online</h2>
                                 <span></span>
                                 <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample document Demo </a>
                             </div>
@@ -136,7 +136,7 @@
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>publish all your ongoing project online</h2>
+                                <h2>government ongoing project online</h2>
                                 <span></span>
                                 <a href="<?php echo Config::get('URL'); ?>" class="btn btn-blue btn-effect">Sample ongoing Project Demo</a>
                             </div>
@@ -244,41 +244,41 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-home fa-3x"></i>
+									<i class="fa fa-globe fa-3x"></i>
 								</div>
 								<h3>Mapping</h3>
-								<p>Browsing and Searching Maps on the fly</p>
+								<p>Browsing and Searching Maps</p>
 							</div>
 						</div>
 					
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-tasks fa-3x"></i>
+									<i class="fa fa-file-text-o fa-3x"></i>
 								</div>
-								<h3>Search Tabular Data </h3>
-								<p>Searching Sorting Tabular data on the fly </p>
+								<h3>Tabular Data </h3>
+								<p>Searching Sorting Tabular Data</p>
 							</div>
 						</div>
 					
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-clock-o fa-3x"></i>
+									<i class="fa fa-file-pdf-o fa-3x"></i>
 								</div>
-								<h3>Full Text Search Document</h3>
-								<p> Searching Sorting PDF document on the fly</p>
+								<h3>Document</h3>
+								<p> Full Text Searching PDF Document</p>
 							</div>
 						</div>
 					
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
+									<i class="fa fa-hospital-o fa-3x"></i>
 								</div>
 								
-								<h3>Mayor's Project</h3>
-								<p>Browsing and Searching ongoing projects on the fly </p>							
+								<h3>Project</h3>
+								<p>Browsing And Searching Ongoing Projects</p>							
 							</div>
 						</div>
 						
@@ -444,7 +444,7 @@
 									<li>Free New Feature</li>
 									<li>Free Data Update</li>
 									<li>Free Support</li>
-									<li><a href="#contact">sign up</a></li>
+									<li><a href="#contact"><i class="fa fa-phone"></i> 208-310-0875</a></li>
 								</ul>
 							</div>
 						</div>
@@ -455,14 +455,14 @@
 								<div class="value">
 									<span>$</span>
 									<span>79.99</span><br>
-									<span>hour</span>
+									<span>Hour</span>
 								</div>
 								<ul>
                                                                         <li>Customized Design </li>
 									<li>Customized Feature </li>
 									<li>Customized Function </li>
 									<li>Free Support</li>
-									<li><a href="#contact">sign up</a></li>
+									<li><a href="#contact"><i class="fa fa-phone"></i> 208-310-0875</a></li>
 								</ul>
 							</div>
 						</div>
@@ -472,15 +472,15 @@
 								<span>Cloud Hosting</span>
 								<div class="value">
 									<span>$</span>
-									<span>499</span><br>
-									<span>month</span>
+									<span>299</span><br>
+									<span>Month</span>
 								</div>
 								<ul>
 									<li>Free Consult</li>
 									<li>Free Data Update</li>
 									<li>Free Upgrade</li>
                                                                         <li>Free Support</li>
-									<li><a href="#contact">sign up</a></li>
+									<li><a href="#contact"><i class="fa fa-phone"></i> 208-310-0875</a></li>
 								</ul>
 							</div>
 						</div>
@@ -547,7 +547,7 @@
 								<h3>Contact Us</h3>						
 								<p><i class="fa fa-pencil"></i>TransparentGov Inc.<span> </span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>
 								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
-								<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>
+							<!--	<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>  -->
 							</address>
 						</div>
 			
