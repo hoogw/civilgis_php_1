@@ -33,14 +33,4 @@ _designation['city_zoning']=[
     {'code':'MP','description':'Industrial Park', 'color':"BlueViolet"}
     
     
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
 ];
