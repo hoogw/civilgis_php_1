@@ -11,26 +11,26 @@ _code_column_name ='ZONE_CODE';
 
 _designation['city_zoning']=[
     
-    {'code':'R1','description':"Single Family Residential", 'color':"Yellow"}, 
-    {'code':'R2-MD','description':"Multiple Family Residential (Medium Density)", 'color':"Coral"},
-    {'code':'R2-HD','description':"Multiple Family Residential (High Density)", 'color':"Chocolate"},
-    {'code':'R3','description':'Multiple Family Residential', 'color':"Brown"},
+    {'code':'R1','description':"Single Family Residential", 'color':"yellow"}, 
+    {'code':'R2-MD','description':"Multiple Family Residential (Medium Density)", 'color':"coral"},
+    {'code':'R2-HD','description':"Multiple Family Residential (High Density)", 'color':"chocolate"},
+    {'code':'R3','description':'Multiple Family Residential', 'color':"brown"},
     
-    {'code':'AP','description':'Administrative and Professional', 'color':"Cornsilk"},
-    {'code':'CL','description':'Commercial Limited', 'color':"Purple"},
-    {'code':'C1-S','description':'Shopping Cener', 'color':"Plum"},
-    {'code':'C1','description':'Local Business', 'color':"Red"},
+    {'code':'AP','description':'Administrative and Professional', 'color':"cornsilk"},
+    {'code':'CL','description':'Commercial Limited', 'color':"purple"},
+    {'code':'C1-S','description':'Shopping Cener', 'color':"plum"},
+    {'code':'C1','description':'Local Business', 'color':"red"},
     
-    {'code':'C2','description':'General Business', 'color':"Tomato"},
-    {'code':'TC','description':'Town Center', 'color':"Violet"},
-    {'code':'PDR-LD','description':'Planned Development Residential-Low_Density', 'color':"PapayaWhip"},
-    {'code':'PDR-MD','description':'Planned Development Residential-Medium_Density', 'color':"PeachPuff"},
-    {'code':'PDR-HD','description':'Planned Development Residential-High Density', 'color':"SaddleBrown"},
-    {'code':'PDC','description':'Planned Development Commercial', 'color':"Orange"},
-    {'code':'PDI','description':'Planned Development Industrial', 'color':"SkyBlue"},
-    {'code':'I&R','description':'I&R-Institutional and Recreationalshp', 'color':"Green"},
-    {'code':'MG','description':'General Industrial', 'color':"Blue"},
-    {'code':'MP','description':'Industrial Park', 'color':"BlueViolet"}
+    {'code':'C2','description':'General Business', 'color':"tomato"},
+    {'code':'TC','description':'Town Center', 'color':"violet"},
+    {'code':'PDR-LD','description':'Planned Development Residential-Low_Density', 'color':"papayawhip"},
+    {'code':'PDR-MD','description':'Planned Development Residential-Medium_Density', 'color':"peachpuff"},
+    {'code':'PDR-HD','description':'Planned Development Residential-High Density', 'color':"saddlebrown"},
+    {'code':'PDC','description':'Planned Development Commercial', 'color':"orange"},
+    {'code':'PDI','description':'Planned Development Industrial', 'color':"skyblue"},
+    {'code':'I&R','description':'I&R-Institutional and Recreationalshp', 'color':"green"},
+    {'code':'MG','description':'General Industrial', 'color':"blue"},
+    {'code':'MP','description':'Industrial Park', 'color':"blueviolet"}
     
     
 ];
