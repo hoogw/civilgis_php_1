@@ -83,7 +83,7 @@
                                                                                                     var _remove_area = _area+"_";
                                                                                                     var trunk_name =   full_name.replace(_remove_area,"");
                                                                                         
-                                                                                      return '<a href="'+ base_url+'map/mappaged/'+ _area + "/" +trunk_name+'">' + data + '</a>';
+                                                                                      return '<a href="'+ base_url+'localmap/localsimplemap/'+ _area + "/" +trunk_name+'">' + data + '</a>';
                                                                                     }
                                                                                   } ]
                                                                               
@@ -119,7 +119,7 @@
                                                                          var _remove = _area+"_";
                                                                          var trunk_name =   full_name.replace(_remove,"");
                    
-                                                                        var _url_new_tab = base_url+ "map/mappaged/"+ _area + "/"+ trunk_name + "/";
+                                                                        var _url_new_tab = base_url+ "localmap/localsimplemap/"+ _area + "/"+ trunk_name + "/";
                                                                          var win = window.open(_url_new_tab, '_self');
                                                                         win.focus();
                                                                          
