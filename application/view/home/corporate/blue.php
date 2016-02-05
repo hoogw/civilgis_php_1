@@ -69,7 +69,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="#body">Transparent Gov</a>
+						<a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -77,9 +77,9 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="#body">Home</a></li>
+                        
                         <li><a href="#service">Feature</a></li>
-                        <!-- li><a href="<?php echo Config::get('URL'); ?>" >Demo</a></li -->
+                       
                     
                         <li><a href="#price">price</a></li>
                         <li><a href="#contact">Contact</a></li>
