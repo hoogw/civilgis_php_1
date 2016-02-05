@@ -38,7 +38,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistpaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

@@ -35,11 +35,11 @@
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistpaged/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -61,7 +61,7 @@
                                                                 
                                                                 
                                                                 <span><?php echo $data['subject'] ?></span> 
-                                                                <img id="ajaxload" src="/civilgis/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
+                                                                <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
                                                         </div>
                                                     
                                                         <div class="box-icons">

@@ -113,7 +113,7 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/maplistPaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 

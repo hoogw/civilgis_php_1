@@ -31,7 +31,17 @@ class HomeController extends Controller
            $data['area'] = $area;
          
         $local_home_page =   'home/local/'.$area;
-        $this->View->renderWithoutHeaderAndFooter($local_home_page, $data);
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
     }
     
     

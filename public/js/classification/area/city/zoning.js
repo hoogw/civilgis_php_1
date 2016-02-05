@@ -3,7 +3,8 @@
  special char '&' is not allowed in code, must replace by '-'. For example I&R should be I-R here, however in database, it could have I&R.
  Other similar case do the same process.
  
- 
+ '&' fail the button and all button after. so in database, should not use '&', instead use '-' replace it. 
+
  */
 
 _code_column_name ='ZONE_CODE';
@@ -15,6 +16,8 @@ _designation['city_zoning']=[
     {'code':'R2-MD','description':"Multiple Family Residential (Medium Density)", 'color':"coral"},
     {'code':'R2-HD','description':"Multiple Family Residential (High Density)", 'color':"chocolate"},
     {'code':'R3','description':'Multiple Family Residential', 'color':"brown"},
+    
+    
     
     {'code':'AP','description':'Administrative and Professional', 'color':"cornsilk"},
     {'code':'CL','description':'Commercial Limited', 'color':"purple"},
@@ -28,9 +31,11 @@ _designation['city_zoning']=[
     {'code':'PDR-HD','description':'Planned Development Residential-High Density', 'color':"saddlebrown"},
     {'code':'PDC','description':'Planned Development Commercial', 'color':"orange"},
     {'code':'PDI','description':'Planned Development Industrial', 'color':"skyblue"},
-    {'code':'I&R','description':'I&R-Institutional and Recreationalshp', 'color':"green"},
+    {'code':'I-R','description':'I and R-Institutional and Recreationalshp', 'color':"green"},
+    
     {'code':'MG','description':'General Industrial', 'color':"blue"},
     {'code':'MP','description':'Industrial Park', 'color':"blueviolet"}
+    
     
     
 ];
