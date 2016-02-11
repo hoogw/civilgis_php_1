@@ -19,7 +19,7 @@ _designation['city_zoning']=[
     
     
     
-    {'code':'AP','description':'Administrative and Professional', 'color':"cornsilk"},
+    {'code':'AP','description':'Administrative and Professional', 'color':"firebrick"},
     {'code':'CL','description':'Commercial Limited', 'color':"purple"},
     {'code':'C1-S','description':'Shopping Cener', 'color':"plum"},
     {'code':'C1','description':'Local Business', 'color':"red"},
