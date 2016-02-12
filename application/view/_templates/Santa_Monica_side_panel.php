@@ -50,9 +50,9 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Address" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localjusttiles/Santa_Monica/Buildings" >
 						
-						<span class="hidden-xs">Address</span>
+						<span class="hidden-xs">Buildings</span>
 					</a>
 					
 				</li>
@@ -67,7 +67,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Parcels" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -76,7 +76,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Streets" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Streets" >
 						
 						<span class="hidden-xs">Streets</span>
 					</a>
@@ -84,9 +84,9 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localjusttiles/Newport_Beach/Right_Of_Way" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Speed_Limit" >
 						
-						<span class="hidden-xs">Right of Way</span>
+						<span class="hidden-xs">Speed Limit</span>
 					</a>
 				</li>
                                 
@@ -96,17 +96,27 @@
                                 
                                 
 				<li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Newport_Beach/Parks" >
+					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Street_Sweeping" >
 						
-						<span class="hidden-xs"> Parks</span>
+						<span class="hidden-xs">Street Sweeping</span>
 					</a>
 					
 				</li>
                                 
                                
+                                <li>
+					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Santa_Monica/Bike_Route" >
+						
+						<span class="hidden-xs">Bike Route</span>
+					</a>
+					
+				</li>
+                                
+                                
+                                
                                 
                                  <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/Zoning" >
+					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning" >
 						
 						<span class="hidden-xs">Zoning [check box button]</span>
 					</a>
@@ -115,20 +125,14 @@
 
                                    
                                 <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/Zoning" >
+					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning" >
 						
 						<span class="hidden-xs">Zoning [radio button]</span>
 					</a>
 					
 				</li>
 
-                               <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_landuse" >
-						
-						<span class="hidden-xs">General Land Use</span>
-					</a>
-					
-				</li>
+                               
                                 
                                  
 			

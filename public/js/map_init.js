@@ -124,7 +124,7 @@ function add_area_boundary(_area){
 	 _multi_polyline = 'No';
         var _js_url = base_url+"public/js/area_boundary/"+_area + ".js";
 	
-   
+   //alert(_js_url);
 	
     
     
@@ -263,12 +263,13 @@ function set_initial_location(_area) {
              if  ($("#subjectID").val() === "parks"){  _flyto_zoomlevel = 16 }
              
          
-
+            //SWlong/SWlat/NElong/NElat/
         // current location array ["area", init_Lat, init_long, init_zoom level, "init_bounding_box"]
         
         _area_db["county"] = ["county", 33.693495, -117.793350, 9, "/-118.191605/33.367237/-117.406769/33.970698/"];
         _area_db["city"] = ["city", 33.65992448007282, -117.91505813598633, 12, "/-117.963690/33.634180/-117.854780/33.702970/"];
-        
+        _area_db["Newport_Beach"] = ["Newport_Beach", 33.616478, -117.875748, 12, "/-117.979259/33.559278/-117.811031/33.679068/"];
+        _area_db["Santa_Monica"] = ["Santa_Monica", 34.023143, -118.475275, 12, "/-118.523083/33.982656/-118.431931/34.073280/"];
         
         return _area_db[_area];
         
