@@ -7,7 +7,7 @@
 
  */
 
-_code_column_name ='ZONE_UPD';
+_code_column_name ='ZONING_UPD';
 
 
 _designation['Newport_Beach_zoning']=[
@@ -25,8 +25,8 @@ _designation['Newport_Beach_zoning']=[
     
     {'code':'OA','description':'Office Airport', 'color':"firebrick"},
     {'code':'OG','description':'Office General', 'color':"fuchsia"},
-    {'code':'OM','description':'Office Medical', 'color':""},
-    {'code':'OR','description':'Office Regional Commercial', 'color':""},
+    {'code':'OM','description':'Office Medical', 'color':"wheat"},
+    {'code':'OR','description':'Office Regional Commercial', 'color':"tan"},
     
     {'code':'OS','description':'Open Space', 'color':"skyblue"},
     {'code':'PC','description':'Newport Coast', 'color':"orange"},
@@ -40,19 +40,9 @@ _designation['Newport_Beach_zoning']=[
      
      {'code':'R-1','description':"Single-Unit Residential", 'color':"yellow"}, 
      
-    
-    {'code':'PDR-HD','description':'Planned Development Residential-High Density', 'color':"saddlebrown"},
-    
-    
-   
-    
-    
-    {'code':'MP','description':'Industrial Park', 'color':"blueviolet"},
-    
-     
     {'code':'R-1-10000','description':"Single-Unit Residential (10000 indicates minimum lot area)", 'color':"coral"},
     {'code':'R-1-6000','description':"Single-Unit Residential (6000 indicates minimum lot area)", 'color':"chocolate"},
-    {'code':'R-1-7200','description':"Single-Unit Residential (7200 indicates minimum lot area)", 'color':"chocolate"},
+    {'code':'R-1-7200','description':"Single-Unit Residential (7200 indicates minimum lot area)", 'color':"blueviolet"},
     
     
     
@@ -68,10 +58,10 @@ _designation['Newport_Beach_zoning']=[
     
     {'code':'RM-D','description':'Multi-Unit Residential Detached', 'color':"olive"},
     
-    {'code':'ROW','description':'Right of Way', 'color':""},
+    {'code':'ROW','description':'Right of Way', 'color':"aquamarine"},
     
-    {'code':'SP-7','description':'Santa Ana Heights Specific Plan', 'color':""},
+    {'code':'SP-7','description':'Santa Ana Heights Specific Plan', 'color':"saddlebrown"},
     
-    {'code':'WATER','description':'WATER', 'color':""}
+    {'code':'WATER','description':'WATER', 'color':"aqua"}
     
 ];
