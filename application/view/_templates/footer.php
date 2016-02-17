@@ -9,7 +9,7 @@
     <div class="row">
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
-			<li><a href="#"><i class="fa fa-copyright"></i> <?php echo date("Y"); ?> - TransparentGov </a></li>
+			<li><a href="#"> Copyright<i class="fa fa-copyright"></i> &copy;<?php echo date("Y"); ?> - TransparentGov </a></li>
 			<li><a href="http://transparentgov.net"><i class="fa fa-windows"></i> .Net</a></li>
 			<li><a href="http://phpmap.transparentgov.net"> PHP</a></li>
                         <li><a href="#"><i class="fa fa-apple"></i> ios</a></li>

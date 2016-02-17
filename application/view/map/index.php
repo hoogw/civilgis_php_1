@@ -129,6 +129,7 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
+                                                        
                                                          <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
                                                         </button>
@@ -139,11 +140,18 @@
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
                                                         </button>
                                                         
-                                                       
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
+                                                        </button>
                                                         
                                                          <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
                                                         
                                                         
                                                         <!--
@@ -153,9 +161,7 @@
                                                         </button>
                                                         
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
-                                                        </button>
+                                                       
                                                         
                                                         
                                                         

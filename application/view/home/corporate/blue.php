@@ -448,6 +448,7 @@
 			<!-- end Price section -->
 			
 			<!-- Social section -->
+                        <!--
 			<section id="social" class="parallax">
 				<div class="overlay">
 					<div class="container">
@@ -477,6 +478,7 @@
 					</div>
 				</div>
 			</section>
+                        -->
 			<!-- end Social section -->
 			
 			<!-- Contact section -->
@@ -489,9 +491,9 @@
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>TransparentGov.net</h3>						
-								<p><i class="fa fa-pencil"></i>TransparentGov.net <span></span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>
+								<!-- <p><i class="fa fa-pencil"></i>TransparentGov.net <span></span> <span>201 N Figueroa St, Suite 608, Los Angeles </span><span>CA 90012</span></p><br>  -->
 								<p><i class="fa fa-phone"></i>Phone: 208-310-0875 </p>
-							<!--	<p><i class="fa fa-envelope"></i>medyhzl@transparentgov.net</p>  -->
+								<p><i class="fa fa-envelope"></i>medyhzl@gmail.com</p>
 							</address>
 						</div>
 			
@@ -517,7 +519,7 @@
 							<ul>
 								
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="http://transparentgov.net"><i class="fa fa-windows fa-3x"></i></a></li>
-                                                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="<?php echo Config::get('URL'); ?>">PHP</a></li>
+                                                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="http://phpmap.transparentgov.net">PHP</a></li>
                                                                 <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="<?php echo Config::get('URL'); ?>">JAVA</a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-apple fa-3x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-android fa-3x"></i></a></li>
