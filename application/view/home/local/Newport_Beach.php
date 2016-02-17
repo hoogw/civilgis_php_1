@@ -139,7 +139,9 @@
                                                         
                                                         <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
                                                         <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_landuse'">General Land Use</button>
+                                                        
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
                                                     </div>
                                             </div>
                                     </div>

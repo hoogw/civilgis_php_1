@@ -81,7 +81,7 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>map/city/general_landuse" >
+					<a href="<?php echo Config::get('URL'); ?>map/city/general_land_use" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">General land use</span>
 					</a>

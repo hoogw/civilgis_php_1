@@ -96,7 +96,7 @@
                                 
                                 
 				<li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Street_Sweeping" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets_Sweeping" >
 						
 						<span class="hidden-xs">Street Sweeping</span>
 					</a>
@@ -105,7 +105,7 @@
                                 
                                
                                 <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Santa_Monica/Bike_Route" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/Santa_Monica/Bike_Route" >
 						
 						<span class="hidden-xs">Bike Route</span>
 					</a>
@@ -116,7 +116,7 @@
                                 
                                 
                                  <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning" >
 						
 						<span class="hidden-xs">Zoning [check box button]</span>
 					</a>
@@ -125,7 +125,7 @@
 
                                    
                                 <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning" >
 						
 						<span class="hidden-xs">Zoning [radio button]</span>
 					</a>

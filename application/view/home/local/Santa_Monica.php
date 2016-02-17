@@ -64,7 +64,7 @@
                                                        
                                                          <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
                                                          
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Street_Sweeping'">Street Sweeping</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
                                                         
                                                     </div>
                                             </div>

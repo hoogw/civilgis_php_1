@@ -96,7 +96,7 @@
                                 
                                 
 				<li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/hospitals" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/hospitals" >
 						
 						<span class="hidden-xs"> Hospitals</span>
 					</a>
@@ -106,7 +106,7 @@
                                
                                 
                                  <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations" >
 						
 						<span class="hidden-xs">Fire station</span>
 					</a>

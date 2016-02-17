@@ -345,10 +345,14 @@ function init_classification_buttons(_area, _subject) {
                        if (state){
                           
                            add_tiles();
+                           
+                          
                        }
                          else {
                             
                              remove_tiles();
+                             
+                          
                          }
                       });
                

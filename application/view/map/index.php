@@ -129,13 +129,24 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
+                                                         <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
+                                                        </button>
                                                         
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/city/'">City</button>
                                                         
+                                                         <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Santa_Monica/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
+                                                        </button>
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Orange_County/'">
+                                                       
+                                                        
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
                                                         
+                                                        
+                                                        <!--
                                                         
                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles_County/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/la_county.png" alt=""/>
@@ -163,20 +174,14 @@
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Santa_Monica/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
-                                                        </button>
-                                                        
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
-                                                        </button>
+                                                       -->
                                                         
                                                         
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/city/'">City</button>
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">County</button>
+                                                        
+                                                       
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
                                                         <button type="button" class="btn btn-danger">&nbsp;</button>
                                                         
@@ -267,7 +272,10 @@
                                                             <div class="no-move"></div>
                                                     </div>
                                                     <div class="box-content">
-                                                            
+                                                        
+                                                        
+                                                       <!--     
+                                                        
                                                         <button type="button" class="btn btn-warning">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
                                                         </button>
@@ -286,6 +294,9 @@
                                                         <button type="button" class="btn btn-danger">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
+                                                        
+                                                        
+                                                        -->
                                                         
                                                         <button type="button" class="btn btn-warning">&nbsp;</button>
                                                         <button type="button" class="btn btn-danger">&nbsp;</button>

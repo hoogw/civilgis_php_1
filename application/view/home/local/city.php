@@ -107,7 +107,9 @@
                                                             
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use'">General Land Use</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
+                                                            
                                                             
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/neighbor'">Neighbor</button>
                                                             

@@ -99,9 +99,18 @@
                                 <li>
 					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use" >
 						
-						<span class="hidden-xs">General land use</span>
+						<span class="hidden-xs">General land use (check box)</span>
 					</a>
 				</li>
+                                
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/general_land_use" >
+						
+						<span class="hidden-xs">General land use (radio)</span>
+					</a>
+				</li>
+                                
                                 
                                 
                                 	<li class="active dropdown">
@@ -181,7 +190,7 @@
                                 
                                 
 				<li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/neighbor" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/neighbor" >
 						
 						<span class="hidden-xs"> Neighbor</span>
 					</a>
@@ -191,7 +200,7 @@
                                
                                 
                                  <li>
-					<a href="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/parks" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/parks" >
 						
 						<span class="hidden-xs"> Parks</span>
 					</a>
