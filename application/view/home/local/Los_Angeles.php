@@ -58,17 +58,19 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
-                                                        
+                                                        <!--
                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning_Overlook'">Zoning Overlook - check box button</button>
                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning_Overlook'">Zoning Overlook - radio button</button>
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning'">Zoning - Parcel based </button>
-                                                            
-                                                        
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use_Overlook'">General Land Use Overlook - check box button</button>
                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use_Overlook'">General Land Use Overlook  - radio button</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - Parcel based </button>
+                                                        -->
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning'">Zoning - check box </button>
+                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning'">Zoning - radio </button>
                                                         
                                                             
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - check box </button>
+                                                        
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - radio </button>
                                                        
                                                         
                                                     </div>

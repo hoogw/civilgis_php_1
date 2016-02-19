@@ -57,6 +57,9 @@
 				</li>
                             
                             
+                                
+                               <!--
+                                
                                 <li>
 					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning_Overlook" >
 						
@@ -83,12 +86,7 @@
                                 
                                 
                                 
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning" >
-						
-						<span class="hidden-xs">Zoning - Parcel based</span>
-					</a>
-				</li>
+                                
                                 
                                 
                                 <li>
@@ -110,17 +108,42 @@
 					</a>
 					
 				</li>
-                                
+                                -->
                                
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning" >
+						
+						<span class="hidden-xs">Zoning - check box</span>
+					</a>
+				</li>
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning" >
+						
+						<span class="hidden-xs">Zoning - radio</span>
+					</a>
+				</li>
                                 
                                  <li>
 					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use" >
 						
-						<span class="hidden-xs">General Land Use  - Parcel based</span>
+						<span class="hidden-xs">General Land Use  - check box</span>
 					</a>
 					
 				</li>
 
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use" >
+						
+						<span class="hidden-xs">General Land Use  - radio</span>
+					</a>
+					
+				</li>
+                                
+                                
+                                
                                    
                                 <li>
 					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Area_Planning_Commissions" >
