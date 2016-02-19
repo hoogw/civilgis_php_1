@@ -154,11 +154,7 @@
                                                         
                                                         
                                                         
-                                                        <!--
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles_County/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/la_county.png" alt=""/>
-                                                        </button>
                                                         
                                                         
                                                        
@@ -180,7 +176,11 @@
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
-                                                       -->
+                                                       
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles_County/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/la_county.png" alt=""/>
+                                                        </button>
+                                                        
                                                         
                                                         
                                                         
