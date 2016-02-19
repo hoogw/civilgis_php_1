@@ -111,6 +111,7 @@
                                                         
                                                          <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
                                                          <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
+                                                    
                                                     </div>
                                             </div>
                                     </div>

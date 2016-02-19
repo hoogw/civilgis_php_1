@@ -573,6 +573,8 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                         <a class="fancybox"  title="The Special Scenic View District (SV) is intended to prevent obstruction of outstanding scenic views as seen from a public park, esplanade or mapped public place. No buildings or structures are allowed to penetrate a scenic view plane except by special permit of the City Planning Commission. The Brooklyn Heights Scenic View District (SV-1) extends over an area west of the Brooklyn Heights Promenade to protect the views of the Lower Manhattan skyline, Governors Island, the Statue of Liberty and the Brooklyn Bridge.">
 					                       SV
 				                        </a>
+                                                        
+                                                   <!--     
                                                         &nbsp;&nbsp;
                                                         
                                                         <a class="fancybox"  title="">
@@ -605,9 +607,9 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                          <a class="fancybox"  title="">
 					                       
 				                        </a>
-                                                        
+                                                    -->
                                                          
-                                                       
+                                                       </div>
                                                         
                                                     </div>
                                             </div>
@@ -623,32 +625,27 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                     <div class="box-header">
                                                             <div class="box-name">
                                                                     
-                                                                    <span>Economic Development Areas</span>
+                                                                    <span>Parcels - Owner Address Zone</span>
                                                             </div>
                                                         
-                                                        <!--
-                                                            <div class="box-icons">
-                                                                    <a class="collapse-link">
-                                                                            <i class="fa fa-chevron-up"></i>
-                                                                    </a>
-                                                                    <a class="expand-link">
-                                                                            <i class="fa fa-expand"></i>
-                                                                    </a>
-                                                                    <a class="close-link">
-                                                                            <i class="fa fa-times"></i>
-                                                                    </a>
-                                                            </div>
-                                                            <div class="no-move"></div>
-                                                        
-                                                        -->
+                                                       
                                                     </div>
                                                     <div class="box-content">
                                                               
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Federal_Renewal_Community'">Federal Renewal Community</button>
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/State_Enterprise_Zone'">State Enterprise Zone</button>
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Business_Improvement_District'">Business Improvement District</button>
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Targeted_Neighborhood_Initiative'">Targeted Neighborhood Initiative</button>
+                                                          <button type="button" class="btn btn-primary"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Bronx/Zoning'">Parcels - Bronx </button>
                                                             
+                                                           
+                                                            &nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Brooklyn/Zoning'">Parcels - Brooklyn </button>
+                                                        
+                                                            &nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Manhattan/Zoning'">Parcels - Manhattan </button>
+                                                        
+                                                            &nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Queens/Zoning'">Parcels - Queens  </button>
+                                                       
+                                                            &nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Staten_Island/Zoning'">Parcels - Staten Island  </button>
                                                         
                                                         
                                                       
