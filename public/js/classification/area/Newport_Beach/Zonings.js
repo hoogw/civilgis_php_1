@@ -4,7 +4,6 @@
  Other similar case do the same process.
  
  '&' fail the button and all button after. so in database, should not use '&', instead use '-' replace it. 
-
  */
 
 _code_column_name ='ZONING_UPD';
