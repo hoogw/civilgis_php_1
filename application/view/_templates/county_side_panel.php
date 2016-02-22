@@ -67,7 +67,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/county/parks" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/parks" >
 						
 						<span class="hidden-xs">Parks</span>
 					</a>

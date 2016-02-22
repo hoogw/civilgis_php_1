@@ -50,9 +50,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/address'">Address</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/parcels'">Parcels</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/streets'">Streets</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/streets'">Streets</button>
                                                        
                                                         
                                                     </div>
@@ -115,7 +115,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/parks'">Parks</button>
                                                             
                                                             
                                                         
@@ -143,7 +143,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/schools'">Schools</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/schools'">Schools</button>
                                                         
                                                     </div>
                                             </div>

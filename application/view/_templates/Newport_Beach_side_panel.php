@@ -50,7 +50,7 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Address" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address" >
 						
 						<span class="hidden-xs">Address</span>
 					</a>
@@ -67,7 +67,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Parcels" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -76,7 +76,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Streets" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Streets" >
 						
 						<span class="hidden-xs">Streets</span>
 					</a>
@@ -96,7 +96,7 @@
                                 
                                 
 				<li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Newport_Beach/Parks" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Newport_Beach/Parks" >
 						
 						<span class="hidden-xs"> Parks</span>
 					</a>

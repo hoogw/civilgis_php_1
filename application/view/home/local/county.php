@@ -73,7 +73,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/county/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/parks'">Parks</button>
                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/water'">Water</button>    
                                                             
                                                         

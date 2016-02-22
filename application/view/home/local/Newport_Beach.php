@@ -45,11 +45,11 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address'">Address</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Newport_Beach/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
                                                        
                                                          <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localjusttiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
                                                         
@@ -76,7 +76,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Newport_Beach/Parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
                                                          
                                                             
                                                         

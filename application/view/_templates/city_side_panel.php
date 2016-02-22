@@ -50,7 +50,7 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/parcels" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -59,7 +59,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/address" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/address" >
 						
 						<span class="hidden-xs"> Address</span>
 					</a>
@@ -68,7 +68,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/streets" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/streets" >
 						
 						<span class="hidden-xs"> Streets</span>
 					</a>
@@ -200,7 +200,7 @@
                                
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/parks" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/parks" >
 						
 						<span class="hidden-xs"> Parks</span>
 					</a>
@@ -209,7 +209,7 @@
 
                                    
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/city/schools" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/schools" >
 						
 						<span class="hidden-xs"> Schools</span>
 					</a>

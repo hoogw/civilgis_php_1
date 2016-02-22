@@ -67,7 +67,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Parcels" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -76,7 +76,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Streets" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets" >
 						
 						<span class="hidden-xs">Streets</span>
 					</a>

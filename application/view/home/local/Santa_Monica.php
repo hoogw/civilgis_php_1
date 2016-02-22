@@ -47,9 +47,9 @@
                                                         
                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localjusttiles/Santa_Monica/Buildings'">Buildings</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/Santa_Monica/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets'">Streets</button>
                                                        
                                                          <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
                                                          
