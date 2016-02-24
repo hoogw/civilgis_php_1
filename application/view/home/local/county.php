@@ -48,8 +48,12 @@
                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/cities'">Cities</button>
                                                         
                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/rails'">Rails</button>
-                                                       
                                                         
+                                                        <button disabled="disabled" type="button" class="btn btn-default"   onclick="location.href = '#'">Address</button>
+                                                       
+                                                        <button disabled="disabled" type="button" class="btn btn-default"   onclick="location.href = '#'">Streets</button>
+                                                        
+                                                       
                                                     </div>
                                             </div>
                                     </div>
