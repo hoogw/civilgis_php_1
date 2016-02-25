@@ -122,7 +122,7 @@
                                                     <div class="box-content">
                                                         
                                                         
-                                                         <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
                                                         </button>
                                                         
@@ -131,7 +131,7 @@
                                                           &nbsp;&nbsp;
                                                         
                                                          <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Santa_Monica/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.png" alt=""/>
                                                         </button>
                                                         
                                                           
@@ -172,15 +172,15 @@
                                                             
                                                               &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Chicago/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Chicago/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
                                                               
                                                                 &nbsp;&nbsp;
                                                             
                                                             
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
+                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
                                                               
