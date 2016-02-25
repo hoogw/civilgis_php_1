@@ -59,7 +59,13 @@
                                 
                                 
                                
-                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/rails" >
+						
+						<span class="hidden-xs">Rails</span>
+					</a>
+					
+				</li>
                                 
                                 
                             

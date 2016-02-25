@@ -78,18 +78,18 @@
                                                             
                                                             
                                                        
-                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York_Bronx/Zoning'">Bronx Zoning - check box </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York_Bronx/Zoning'">Bronx Zoning </button>
                                                             
                                                             &nbsp;&nbsp;
                                                             
-                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York_Brooklyn/Zoning'">Brooklyn Zoning - radio </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York_Brooklyn/Zoning'">Brooklyn Zoning  </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York_Queens/Zoning'">Queens Zoning  - radio </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York_Queens/Zoning'">Queens Zoning  </button>
                                                        
                                                             &nbsp;&nbsp;
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York_Staten_Island/Zoning'">Staten Island Zoning - check box </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York_Staten_Island/Zoning'">Staten Island Zoning </button>
                                                         
                                                     </div>
                                             </div>
