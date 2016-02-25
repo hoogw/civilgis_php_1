@@ -48,6 +48,15 @@
 				
                             
                             
+                            <li>
+					<a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?>
+						
+						<span class="hidden-xs"> </span>
+                                        </a>
+					
+				</li>
+                            
+                            
                             
                                 <li>
 					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/cities" >

@@ -58,57 +58,7 @@
                             
                             
                                 
-                               <!--
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning_Overlook" >
-						
-						<span class="hidden-xs">Zoning Overlook - check box button</span>
-					</a>
-					
-				</li>
-                                
-                                
                                
-                                
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning_Overlook" >
-						
-						<span class="hidden-xs">Zoning Overlook - radio button</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use_Overlook" >
-						
-						<span class="hidden-xs">General Land Use Overlook - check box button</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use_Overlook" >
-						
-						<span class="hidden-xs"> General Land Use Overlook  - radio button</span>
-					</a>
-					
-				</li>
-                                -->
                                
                                 
                                 <li>
@@ -144,9 +94,27 @@
                                 
                                 
                                 
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities" >
+						
+						<span class="hidden-xs">Communities</span>
+					</a>
+					
+				</li>
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Neighborhood_Councils" >
+						
+						<span class="hidden-xs">Neighborhood Councils</span>
+					</a>
+					
+				</li>
+                                
+                                
+                                
                                    
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Area_Planning_Commissions" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Area_Planning_Commissions" >
 						
 						<span class="hidden-xs">Area Planning Commissions</span>
 					</a>
@@ -154,7 +122,7 @@
 				</li>
 
                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Communities_And_Planning_Areas" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas" >
 						
 						<span class="hidden-xs">Communities and Planning Areas</span>
 					</a>
@@ -163,7 +131,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Specific_Plans" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Specific_Plans" >
 						
 						<span class="hidden-xs">Specific Plans</span>
 					</a>
@@ -175,7 +143,7 @@
                                
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Other_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Other_Districts" >
 						
 						<span class="hidden-xs">Other Districts</span>
 					</a>
@@ -184,7 +152,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone" >
 						
 						<span class="hidden-xs">Historic Preservation Overlay Zone</span>
 					</a>
@@ -193,7 +161,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/Los_Angeles/Historic_Cultural_Monuments" >
+					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments" >
 						
 						<span class="hidden-xs">Historic Cultural Monuments</span>
 					</a>

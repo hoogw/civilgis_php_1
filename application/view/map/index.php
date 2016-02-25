@@ -1,4 +1,6 @@
 
+ <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapjs/map_index.js"></script>
+
 
    
     <!-- this hidden value carry the map subject from controller use it in javascript api call-->
@@ -114,18 +116,8 @@
                                                                     <i class="fa fa-globe"></i>
                                                                     <span>Local Maps</span>
                                                             </div>
-                                                            <div class="box-icons">
-                                                                    <a class="collapse-link">
-                                                                            <i class="fa fa-chevron-up"></i>
-                                                                    </a>
-                                                                    <a class="expand-link">
-                                                                            <i class="fa fa-expand"></i>
-                                                                    </a>
-                                                                    <a class="close-link">
-                                                                            <i class="fa fa-times"></i>
-                                                                    </a>
-                                                            </div>
-                                                            <div class="no-move"></div>
+                                                           
+                                                            
                                                     </div>
                                                     <div class="box-content">
                                                         
@@ -134,19 +126,23 @@
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
                                                         </button>
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/city/'">City</button>
+                                                        
+                                                        
+                                                          &nbsp;&nbsp;
                                                         
                                                          <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Santa_Monica/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.jpg" alt=""/>
                                                         </button>
                                                         
+                                                          
+                                                            &nbsp;&nbsp;
+                                                          
                                                         <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
                                                         </button>
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
-                                                        </button>
+                                                            
+                                                            
                                                         
                                                         
                                                         
@@ -159,37 +155,41 @@
                                                         
                                                        
                                                         
-                                                        
+                                                          &nbsp;&nbsp;
                                                         
                                                         
                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/New_York/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
                                                         </button>
                                                         
+                                                          
+                                                            &nbsp;&nbsp;
                                                         
                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/San_Francisco/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
                                                         </button>
                                                         
+                                                            
+                                                              &nbsp;&nbsp;
                                                         
                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Chicago/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.jpg" alt=""/>
                                                         </button>
                                                         
-                                                       
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles_County/'">
-                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/la_county.png" alt=""/>
+                                                              
+                                                                &nbsp;&nbsp;
+                                                            
+                                                            
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
+                                                              
+                                                              
+                                                                 &nbsp;&nbsp;
                                                         
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/city/'">Sample City</button>
                                                         
                                                        
-                                                        <button type="button" class="btn btn-warning">&nbsp;</button>
-                                                        <button type="button" class="btn btn-danger">&nbsp;</button>
                                                         
                                                     </div>
                                             </div>
@@ -198,58 +198,99 @@
                      </div>
                     
                         
-                    <div class="row">
-                        
-                        
-                        <div class="col-xs-12 col-sm-12">
-                                            <div class="box">
-                                                    <div class="box-header">
-                                                            <div class="box-name">
-                                                                    <i class="fa fa-map-marker"></i>
-                                                                    <span>Featured Maps</span>
-                                                            </div>
-                                                            <div class="box-icons">
-                                                                    <a class="collapse-link">
-                                                                            <i class="fa fa-chevron-up"></i>
-                                                                    </a>
-                                                                    <a class="expand-link">
-                                                                            <i class="fa fa-expand"></i>
-                                                                    </a>
-                                                                    <a class="close-link">
-                                                                            <i class="fa fa-times"></i>
-                                                                    </a>
-                                                            </div>
-                                                            <div class="no-move"></div>
-                                                    </div>
-                                                    <div class="box-content">
-                                                        
+       <div class="row">
+                 
+             <div class="col-xs-12 col-sm-12">
+		<div class="box">
+			<div class="box-header">
+				<div class="box-name">
+					<i class="fa fa-search"></i>
+					<span>Featured Maps</span>
+				</div>
+				
+			</div>
+			<div class="box-content" id="accordion">
+				<h5>Zoning Land Use</h5>
+				<div>
+                                    
+                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
+                                         
+                                           &nbsp;&nbsp;
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
+                                         
+                                    
+                                     &nbsp;&nbsp;
+                                    
+					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
+                                         
+                                           &nbsp;&nbsp;
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
+                                           &nbsp;&nbsp;
+                                         
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
+                                                    &nbsp;&nbsp;          
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
+                                           &nbsp;&nbsp;
+                                         
+                                         
+                                         
+				</div>
+				<h5>Parcels</h5>
+				<div>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
+                                      &nbsp;&nbsp;
+					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
+                                                  &nbsp;&nbsp;             
+                                         
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
+                                         
+                                         
+                                         
+                                         
+                                         
+				</div>
+				<h5>Address And Streets</h5>
+				<div>
+					
+                                   
+                                     
+                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
+                                            &nbsp;&nbsp;
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
+                                             &nbsp;&nbsp;      
+                                     
+                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/address'">Sample City Address </button>
+                                            &nbsp;&nbsp;
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
+                                       &nbsp;&nbsp;
+                                    
+				</div>
+				<h5>Others</h5>
+				<div>
+					                 
                                                             
                                                             
-                                                           
-                                                            
-                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/address'">address point</button>
-                                                          
-                                                             <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localpagedfulltablemap/city/parcels'" >parcel polygon </button>
-                                                             
-                                                            
-                                                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
-                                                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_landuse'">General Land Use</button>
-                                                            
-                                                            
+                               
+                                    
+                                    
+                                    
                                                             
                                                             <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
-                                                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
-                                                            
-                                                              <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/map/city/streets'" >street lines</button>
-                                                            
-                                                            <button type="button" class="btn btn-danger">...</button>
-                                                    </div>
-                                            </div>
-                                    </div>
+                                                             &nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
+                                                              &nbsp;&nbsp;
+                                                             
+                                                            <button type="button" class="btn btn-info">...</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
                         
                         
-                        </div>
+                        
+                        
+                  </div>
                     
                     
                     
@@ -264,18 +305,7 @@
                                                                     <i class="fa fa-th"></i>
                                                                     <span>Tabular Data</span>
                                                             </div>
-                                                            <div class="box-icons">
-                                                                    <a class="collapse-link">
-                                                                            <i class="fa fa-chevron-up"></i>
-                                                                    </a>
-                                                                    <a class="expand-link">
-                                                                            <i class="fa fa-expand"></i>
-                                                                    </a>
-                                                                    <a class="close-link">
-                                                                            <i class="fa fa-times"></i>
-                                                                    </a>
-                                                            </div>
-                                                            <div class="no-move"></div>
+                                                           
                                                     </div>
                                                     <div class="box-content">
                                                         
@@ -304,8 +334,15 @@
                                                         
                                                         -->
                                                         
-                                                        <button type="button" class="btn btn-warning">&nbsp;</button>
-                                                        <button type="button" class="btn btn-danger">&nbsp;</button>
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/Chicago/'">Chicago </button>
+                                &nbsp;&nbsp;
+
+                                <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/New_York/'">New York</button>
+                                &nbsp;&nbsp;
+
+                                <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/San_Francisco/'">San Francisco</button>
+                                                        
+                                                      
                                                         
                                                     </div>
                                             </div>
