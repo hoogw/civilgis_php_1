@@ -47,6 +47,80 @@ class HomeController extends Controller
     
     
     
+    
+    
+    
+    
+    // no header footer, local home page is self-contained one page
+    public function bing($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/bing/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
+    
+    public function leaflet($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/leaflet/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    public function openlayers($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/openlayers/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     public function index()
     {
         
