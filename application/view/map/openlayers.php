@@ -148,7 +148,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href=".">TransparentGov</a></li>
-                                                <li><a href=".">Google Map</a></li>
+                                                <li><a href=".">Openlayers</a></li>
                                                
                                         </ol>
                                 </div>

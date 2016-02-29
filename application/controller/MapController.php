@@ -21,13 +21,39 @@ class MapController extends Controller
     
     
     
-     
+     public function bingmap()
+    {
+        
+          $data['title'] = 'bingmap';
+         
+        $this->View->render('map/bingmap', $data);
+    }
+    
+    
+    
+    public function leaflet()
+    {
+        
+          $data['title'] = 'leaflet';
+         
+        $this->View->render('map/leaflet', $data);
+    }
+    
+    
+    
+     public function openlayers()
+    {
+        
+          $data['title'] = 'openlayers';
+         
+        $this->View->render('map/openlayers', $data);
+    }
     
     
     
     
     
-    
+     // -------------   below are old, testing only, not in use --------------------------  
     
      public function city($subject)
     {
@@ -203,6 +229,21 @@ class MapController extends Controller
          
         $this->View->render('map/mapadvp', $data);
     }
+    
+    
+    
+    
+    
+     //--------------------above testing only, not in use --------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }// map controller
