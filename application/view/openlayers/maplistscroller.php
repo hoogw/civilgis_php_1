@@ -12,7 +12,7 @@
          
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapquest/maplist_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/openlayers/maplist_scroller.js"></script>
          
          
    
@@ -45,7 +45,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapquest/maplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>openlayers/maplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

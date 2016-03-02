@@ -1,21 +1,12 @@
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
-
-
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
-          <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
-
-
-
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/clusterscrollerclienttablemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/simpleclustermap.js"></script>
 
 
    
@@ -41,11 +32,10 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
-                                                
+                                            <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/clusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>leaflet/simpleclustermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -93,40 +83,6 @@
                                             
                                             
                                             <div id="title_info" > </div>
-                                            
-                                            
-                                                 <div id="tableDiv">
-                                                          
-                                                            <!--
-                                                                    <table id="tabledata" class="display" cellspacing="0" width="100%">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Id</th>
-                                                                                <th>Name</th>
-                                                                                <th>Position Title</th>
-                                                                                <th>Department</th>
-
-
-                                                                            </tr>
-                                                                        </thead>
-
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <th>Id</th>
-                                                                                <th>Name</th>
-                                                                                <th>Position Title</th>
-                                                                                <th>Department</th>
-
-
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
-                                                               -->
-                                                        </div>
-                                            
-                                            
-                                            
-                                            
                                             <div id="info-table">
           
                                             </div>

@@ -3,19 +3,14 @@
 <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
-          <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
-
-
-
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/openlayers.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/clusterscrollerclienttablemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/openlayers/clusterpagedclienttablemap.js"></script>
 
 
    
@@ -39,13 +34,14 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
+                                               <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                             
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/openlayers/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/clusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>openlayers/clusterpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

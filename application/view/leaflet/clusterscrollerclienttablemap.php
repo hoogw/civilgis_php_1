@@ -13,9 +13,9 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/clusterscrollerclienttablemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/clusterscrollerclienttablemap.js"></script>
 
 
    
@@ -41,11 +41,11 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/clusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

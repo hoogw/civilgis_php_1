@@ -12,10 +12,10 @@
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
          
          
-        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/googlemap.js"></script>
+        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapquest.js"></script>
        
         
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/googlemap/scrollerclienttablemap.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapquest/scrollerclienttablemap.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
    
          
@@ -54,9 +54,9 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                               <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                               <li><a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

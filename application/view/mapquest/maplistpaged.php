@@ -1,11 +1,11 @@
         
-          <!---- googlemap DataTables CSS JS   -->
+          <!---- mapquest DataTables CSS JS   -->
          
           <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/googlemap/maplist_paged.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapquest/maplist_paged.js"></script>
          
          
    
@@ -38,7 +38,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>googlemap/maplistpaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapquest/maplistpaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

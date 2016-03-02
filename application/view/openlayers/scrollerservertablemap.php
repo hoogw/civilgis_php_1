@@ -7,14 +7,19 @@
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
          
-          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
+         
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
          
          
-        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
+         
+         
+         
+         
+        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/openlayers.js"></script>
        
         
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/scrollerfulltablemap.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/openlayers/scrollerservertablemap.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
    
          
@@ -51,11 +56,11 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/openlayers/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>openlayers/scrollerservertablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -73,7 +78,7 @@
                                                                                 <i class="fa fa-table"></i>
 
                                                                                  <span><?php echo $data['subject'] ?></span>  
-                                                                
+                                                               
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -125,7 +130,7 @@
                                                                                 <i class="fa fa-map-marker"></i>
 
                                                                                 <span><?php echo $data['subject'] ?> </span> 
-                                                                                <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />  
+                                                                                 <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -151,7 +156,7 @@
                                             <div class="box-content">
                                                 
                                                         
-                                                        <div id="map-canvas" class="box-content" style="height: 400px;"> </div>
+                                                        <div id="map-canvas" class="box-content" style="height: 800px;"> </div>
 
                                                         <div id="legend" class="alert alert-warning"></div>
 
@@ -171,72 +176,6 @@
                                               </div> 
                                             
                                         </div>  <!--  box for map -->
-                                        
-                                        
-                                         <div class="box">
-                                            
-                                                                <div class="box-header">
-                                                                        <div class="box-name">
-                                                                                <i class="fa fa-table"></i>
-
-                                                                                <span><?php echo $data['subject'] ?> </span>  
-                                                                        </div>
-                                                                    
-                                                                        <div class="box-icons">
-                                                                             
-                                                                                <a class="collapse-link">
-                                                                                        <i class="fa fa-chevron-up"></i>
-                                                                                </a>
-                                                                                
-                                                                                <a class="expand-link">
-                                                                                        <i class="fa fa-expand"></i>
-                                                                                </a>
-                                                                                <a class="close-link">
-                                                                                        <i class="fa fa-times"></i>
-                                                                                </a>
-                                                                        </div>
-
-                                                                        <div class="no-move"></div>
-                                                                     
-                                                                     
-                                                                     
-                                                                </div>
-                                            
-                                            <div class="box-content">
-                                        
-                                                <div id="tableDiv">
-                                                          
-                                                            <!--
-                                                                    <table id="tabledata" class="display" cellspacing="0" width="100%">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Id</th>
-                                                                                <th>Name</th>
-                                                                                <th>Position Title</th>
-                                                                                <th>Department</th>
-
-
-                                                                            </tr>
-                                                                        </thead>
-
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <th>Id</th>
-                                                                                <th>Name</th>
-                                                                                <th>Position Title</th>
-                                                                                <th>Department</th>
-
-
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
-                                                               -->
-                                                        </div>
-                                                
-                                        
-                                            </div> 
-                                            
-                                        </div>  <!--  box  for bottom datatables-->
                                         
                                         
                                     

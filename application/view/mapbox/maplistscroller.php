@@ -12,7 +12,7 @@
          
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/googlemap/maplist_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/maplist_scroller.js"></script>
          
          
    
@@ -45,7 +45,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>googlemap/maplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/maplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

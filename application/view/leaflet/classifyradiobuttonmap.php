@@ -2,16 +2,15 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapquest.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapquest/classifycheckboxbuttonmap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
+
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/classifyradiobuttonmap.js"></script>
 
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
 <script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
 <link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
-
-
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
@@ -33,14 +32,14 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -90,7 +89,7 @@
                                             
                                             
                                             
-                                             
+                                            
                                                        <!-- checkbox button -->
                                                        
                                                        
@@ -98,43 +97,34 @@
                                                                         
                                                                         
                                                                         
-                                                                        
-                                                                        
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
                                                                                 <div id="classification_buttons" data-toggle="buttons">
                                                                                     
-                                                                                                    
                                                                                     <input type="checkbox" name="color_tiles_switch" checked>
                                                                                     
-                                                                                      <!-- test 
-                                                                                                    <label id="label_highlight" class="btn btn-block btn-black">
-                                                                                                            <input id="checkbox_highlight" type="checkbox">  
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                                    <label id="label_high_light_off" class="btn btn-black">
+                                                                                                            <input name="high_light_off" id="radio_high_light_off" type="radio">Highlight OFF
                                                                                                     </label>
-                                                                                    
-                                                                                    
-                                                                                  
-                                                                                                    <label id="label_R1" class="btn btn-blue">
-                                                                                                            <input id="checkbox_R1" type="checkbox"> R1 - single family
-                                                                                                    </label>
-
-
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+<!--
 
                                                                                                     <label id="label_2" class="btn btn-green">
-                                                                                                            <input id="checkbox_2" type="checkbox"> PPPPPPPPPPPPPPPP
+                                                                                                            <input name="classification_radios" id="radio_2" type="radio"> PPPPPPPPPPPPPPPP
                                                                                                     </label>
 
 
 
                                                                                                     <label id="label_3" class="btn btn-red">
-                                                                                                            <input id="checkbox_3" type="checkbox"> OOOOOOOOOOOOOOOOO
+                                                                                                            <input name="classification_radios" id="radio_3" type="radio"> OOOOOOOOOOOOOOOOO
                                                                                                     </label>
 
 
                                                                                                     <label id="label_4" class="btn btn-gold">
-                                                                                                                <input id="checkbox_4" type="checkbox"> TTTTTTTTTTTTTTT
+                                                                                                                <input name="classification_radios" id="radio_4" type="radio"> TTTTTTTTTTTTTTT
                                                                                                         </label>
 
-                                                                                        - end test -->
+                                                                                         end test -->
                             
                                                                                             </div>
                                                                                     </div>
