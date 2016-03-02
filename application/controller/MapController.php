@@ -21,12 +21,51 @@ class MapController extends Controller
     
     
     
+    
+    
+     public function googlemap()
+    {
+        
+          $data['title'] = 'googlemap';
+         
+        $this->View->render('map/googlemap', $data);
+    }
+    
+    
+     public function heremap()
+    {
+        
+          $data['title'] = 'heremap';
+         
+        $this->View->render('map/heremap', $data);
+    }
+    
+    
+    
      public function bingmap()
     {
         
           $data['title'] = 'bingmap';
          
         $this->View->render('map/bingmap', $data);
+    }
+    
+    
+     public function mapbox()
+    {
+        
+          $data['title'] = 'mapbox';
+         
+        $this->View->render('map/mapbox', $data);
+    }
+    
+    
+    public function mapquest()
+    {
+        
+          $data['title'] = 'mapquest';
+         
+        $this->View->render('map/mapquest', $data);
     }
     
     

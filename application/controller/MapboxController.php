@@ -28,7 +28,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/simplemap');
          
          
@@ -49,7 +49,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/justtiles');
          
          
@@ -70,7 +70,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class MapboxController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class MapboxController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class MapboxController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapbox/classifyradiobuttonmap');
          
          

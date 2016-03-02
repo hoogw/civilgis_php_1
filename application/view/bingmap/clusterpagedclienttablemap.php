@@ -8,9 +8,9 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclusterpagedclienttablemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/clusterpagedclienttablemap.js"></script>
 
 
    
@@ -37,11 +37,11 @@
                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localclusterpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/clusterpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

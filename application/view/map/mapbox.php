@@ -55,7 +55,7 @@
                                 
                                 
                                 <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/googlemap" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/googlemap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Google Map </span>
 					</a>
@@ -67,7 +67,7 @@
                                 
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/bingmap" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/bingmap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Bing Map </span>
 					</a>
@@ -78,7 +78,7 @@
                                 
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/leaflet" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/leaflet" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Leaflet </span>
 					</a>
@@ -88,7 +88,7 @@
                                 
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/openlayers" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/openlayers" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Openlayers </span>
 					</a>
@@ -99,7 +99,7 @@
                                 
                                 
                                 <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/mapbox/" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/mapbox/" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; MapBox </span>
 					</a>
@@ -109,7 +109,7 @@
                                 
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/mapquest/" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/mapquest/" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  MapQuest</span>
 					</a>
@@ -119,7 +119,7 @@
                                 
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/map/heremap" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/heremap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  Here Map</span>
 					</a>
@@ -177,7 +177,7 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#contact" class="dropdown-toggle">
+					<a href="#" class="dropdown-toggle">
 						<i class="fa fa-envelope-square"></i>
 						<span class="hidden-xs">huguowen@gmail.com</span>
 					</a>
@@ -205,8 +205,8 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href=".">TransparentGov</a></li>
-                                                <li><a href=".">Mapbox</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/index">TransparentGov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/mapbox">MapBox</a></li>
                                                
                                         </ol>
                                 </div>

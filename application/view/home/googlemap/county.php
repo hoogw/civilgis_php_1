@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
                                                
                                         </ol>
                                 </div>
@@ -45,9 +45,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/cities'">Cities</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/cities'">Cities</button>
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/rails'">Rails</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/county/rails'">Rails</button>
                                                         
                                                         <button disabled="disabled" type="button" class="btn  btn-default"   onclick="location.href = '#'">Address</button>
                                                        
@@ -77,8 +77,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/parks'">Parks</button>
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/water'">Water</button>    
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/county/water'">Water</button>    
                                                             
                                                         
                                                         
@@ -105,8 +105,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/education_facility'">Education Facility</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/hospitals'">Hospitals</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/education_facility'">Education Facility</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/county/hospitals'">Hospitals</button>
                                                         
                                                     </div>
                                             </div>
@@ -134,7 +134,7 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations'">Fire station</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/fire_stations'">Fire station</button>
                                                         
                                                         
                                                     </div>

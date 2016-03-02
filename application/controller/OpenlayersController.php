@@ -28,7 +28,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/simplemap');
          
          
@@ -49,7 +49,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/justtiles');
          
          
@@ -70,7 +70,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class OpenlayersController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class OpenlayersController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class OpenlayersController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'openlayers/classifyradiobuttonmap');
          
          

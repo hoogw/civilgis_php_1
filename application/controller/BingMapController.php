@@ -28,7 +28,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/simplemap');
          
          
@@ -49,7 +49,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/justtiles');
          
          
@@ -70,7 +70,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class BingMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class BingMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class BingMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'bingmap/classifyradiobuttonmap');
          
          

@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?> - Department of City Planning </a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?> - Department of City Planning </a></li>
                                                
                                         </ol>
                                 </div>
@@ -59,14 +59,14 @@
                                                     <div class="box-content">
                                                         
                                                        
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning'">Zoning - check box </button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Los_Angeles/Zoning'">Zoning - check box </button>
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning'">Zoning - radio </button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Los_Angeles/Zoning'">Zoning - radio </button>
                                                         
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - check box </button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - check box </button>
                                                          &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - radio </button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - radio </button>
                                                        
                                                         
                                                     </div>
@@ -2394,7 +2394,7 @@
  
    All signs permitted in the P Zone may be illuminated but shall comply with the requirements set forth in Sec. 62.200 of this Code and shall not contain any flashing, moving or animated parts or features.
  
-   (3)   All such signs abutting a major or secondary highway or a local street shall be placed clear of the ultimate street dedication line determined in accordance with the current Standard Street Dimensions adopted by the City Planning Commission.
+   (3)   All such signs abutting a major or secondary highway or a googlemap street shall be placed clear of the ultimate street dedication line determined in accordance with the current Standard Street Dimensions adopted by the City Planning Commission.
  
    (4)   Where the sign area has been previously determined and the lot frontage subsequently altered either by sale, division of land, or other means, a new determination based on the new lot frontages must be made by the Department of City Planning for allowable sign areas in accordance with the provisions of this section. Notwithstanding any other provision of this article, any existing signs which are in excess of the size limitations contained in this section may be maintained, provided that the owner or owners of record of all lots whose frontages were included in the original frontage, record in the office of the County Recorder a covenant or covenants, running with the land, in which said owner or owners agree to erect no new signs until the existing signs which are in excess of the size limitations contained in this section have been removed or are made to conform to said size limitations. A copy of said recorded covenant or covenants shall be filed with the Department of Building and Safety by said owner or owners. Further, if said covenant or covenants are not recorded, any existing signs which are in excess of the size limitations contained in this section must be removed or made to conform to said size limitations within six months of the date on which the frontage was altered. In addition, the applicant shall advise the Superintendent of Building and Safety in writing within six months that the existing signs which are in excess of the size limitations have been removed.
  
@@ -2501,23 +2501,23 @@
                                                     </div>
                                                     <div class="box-content">
                                                             
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities'">Communities</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Communities'">Communities</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Neighborhood_Councils'">Neighborhood Councils</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Neighborhood_Councils'">Neighborhood Councils</button>
                                                          &nbsp;&nbsp;
                                                          
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Area_Planning_Commissions'">Area Planning Commissions</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Area_Planning_Commissions'">Area Planning Commissions</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas'">Communities and Planning Areas</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas'">Communities and Planning Areas</button>
                                                          &nbsp;&nbsp;
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Specific_Plans'">Specific Plans</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Specific_Plans'">Specific Plans</button>
                                                         &nbsp;&nbsp;
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Other_Districts'">Other Districts</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Other_Districts'">Other Districts</button>
                                                         &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone'">Historic Preservation Overlay Zone</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone'">Historic Preservation Overlay Zone</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments'">Historic Cultural Monuments</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments'">Historic Cultural Monuments</button>
                                                         
                                                         
                                                     </div>
@@ -2541,10 +2541,10 @@
                                                     </div>
                                                     <div class="box-content">
                                                               
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Federal_Renewal_Community'">Federal Renewal Community</button>
-                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/State_Enterprise_Zone'">State Enterprise Zone</button>
-                                                         &nbsp;&nbsp; <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Business_Improvement_District'">Business Improvement District</button>
-                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Targeted_Neighborhood_Initiative'">Targeted Neighborhood Initiative</button>
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Federal_Renewal_Community'">Federal Renewal Community</button>
+                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/State_Enterprise_Zone'">State Enterprise Zone</button>
+                                                         &nbsp;&nbsp; <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Business_Improvement_District'">Business Improvement District</button>
+                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Targeted_Neighborhood_Initiative'">Targeted Neighborhood Initiative</button>
                                                             
                                                         
                                                         

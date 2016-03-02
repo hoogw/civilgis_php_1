@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
                                                
                                         </ol>
                                 </div>
@@ -45,15 +45,15 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localjusttiles/Santa_Monica/Buildings'">Buildings</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/Santa_Monica/Buildings'">Buildings</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Streets'">Streets</button>
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
                                                          
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
                                                         
                                                     </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/Santa_Monica/Bike_Route'">Bike Route</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/Santa_Monica/Bike_Route'">Bike Route</button>
                                                          
                                                             
                                                         
@@ -106,8 +106,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning'">Zoning [radio button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Santa_Monica/Zoning'">Zoning [radio button]</button>
                                                          
                                                     </div>
                                             </div>

@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
                                                
                                         </ol>
                                 </div>
@@ -45,13 +45,13 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Address'">Address</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localjusttiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
                                                         
                                                     </div>
                                             </div>
@@ -76,7 +76,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
                                                          
                                                             
                                                         
@@ -106,11 +106,11 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
                                                         
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
                                                     
                                                     </div>
                                             </div>

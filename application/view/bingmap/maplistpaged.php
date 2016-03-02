@@ -1,11 +1,11 @@
         
-          <!---- local DataTables CSS JS   -->
+          <!---- bingmap DataTables CSS JS   -->
          
           <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localmaplist_paged.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/maplist_paged.js"></script>
          
          
    
@@ -38,7 +38,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistpaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/maplistpaged/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

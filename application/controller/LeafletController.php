@@ -28,7 +28,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/simplemap');
          
          
@@ -49,7 +49,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/justtiles');
          
          
@@ -70,7 +70,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class LeafletController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class LeafletController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class LeafletController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'leaflet/classifyradiobuttonmap');
          
          

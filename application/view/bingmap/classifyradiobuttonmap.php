@@ -3,9 +3,9 @@
 
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifyradiobuttonmap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/classifyradiobuttonmap.js"></script>
 
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
@@ -35,11 +35,11 @@
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

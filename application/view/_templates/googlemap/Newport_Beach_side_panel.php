@@ -49,9 +49,9 @@
                             
                             
                             <li>
-					<a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?>
+					<a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> </span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  -  Google Map </span>
                                         </a>
 					
 				</li>
@@ -60,7 +60,7 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Address" >
 						
 						<span class="hidden-xs">Address</span>
 					</a>
@@ -77,7 +77,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -86,7 +86,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Streets" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Newport_Beach/Streets" >
 						
 						<span class="hidden-xs">Streets</span>
 					</a>
@@ -94,7 +94,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localjusttiles/Newport_Beach/Right_Of_Way" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/Newport_Beach/Right_Of_Way" >
 						
 						<span class="hidden-xs">Right of Way</span>
 					</a>
@@ -106,7 +106,7 @@
                                 
                                 
 				<li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Newport_Beach/Parks" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Newport_Beach/Parks" >
 						
 						<span class="hidden-xs"> Parks</span>
 					</a>
@@ -116,7 +116,7 @@
                                
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Newport_Beach/Zoning" >
 						
 						<span class="hidden-xs">Zoning [check box button]</span>
 					</a>
@@ -125,7 +125,7 @@
 
                                    
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Newport_Beach/Zoning" >
 						
 						<span class="hidden-xs">Zoning [radio button]</span>
 					</a>
@@ -133,7 +133,7 @@
 				</li>
 
                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Newport_Beach/General_Land_Use" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Newport_Beach/General_Land_Use" >
 						
 						<span class="hidden-xs">General Land Use [check box button]</span>
 					</a>
@@ -142,7 +142,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Newport_Beach/General_Land_Use" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Newport_Beach/General_Land_Use" >
 						
 						<span class="hidden-xs">General Land Use [radio button]</span>
 					</a>

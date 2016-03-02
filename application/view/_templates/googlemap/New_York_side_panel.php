@@ -49,9 +49,9 @@
                             
                             
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?>
+					<a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> </span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  -  Google Map </span>
                                         </a>
 					
 				</li>
@@ -63,7 +63,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York/Zone_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Zone_Districts" >
 						
 						<span class="hidden-xs">New York Zone Districts - check box</span>
 					</a>
@@ -71,7 +71,7 @@
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York/Zone_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Zone_Districts" >
 						
 						<span class="hidden-xs">New York Zone Districts - radio</span>
 					</a>
@@ -80,7 +80,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York/Commercial_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Commercial_Zone" >
 						
 						<span class="hidden-xs">New York Commercial Zone - check box</span>
 					</a>
@@ -89,7 +89,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York/Commercial_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Commercial_Zone" >
 						
 						<span class="hidden-xs">New York Commercial Zone - radio</span>
 					</a>
@@ -99,7 +99,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/New_York_Manhattan/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York_Manhattan/Zoning" >
 						
 						<span class="hidden-xs">Manhattan Zoning - check box</span>
 					</a>
@@ -107,7 +107,7 @@
 				</li>
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/New_York_Manhattan/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York_Manhattan/Zoning" >
 						
 						<span class="hidden-xs">Manhattan Zoning - radio</span>
 					</a>
@@ -116,7 +116,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Manhattan/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Manhattan/Zoning" >
 						
 						<span class="hidden-xs">Parcels - Manhattan</span>
 					</a>
@@ -126,7 +126,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York/Project_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Project_Zone" >
 						
 						<span class="hidden-xs">New York Project Zone</span>
 					</a>
@@ -134,7 +134,7 @@
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York/Limited_Height_District" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Limited_Height_District" >
 						
 						<span class="hidden-xs">New York Limited Height District</span>
 					</a>
@@ -143,7 +143,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York/Special_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Districts" >
 						
 						<span class="hidden-xs">New York Special Districts</span>
 					</a>
@@ -152,7 +152,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York/Special_Subdistricts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Subdistricts" >
 						
 						<span class="hidden-xs">New York Special Subdistricts</span>
 					</a>
@@ -161,7 +161,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Boroughs" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Boroughs" >
 						
 						<span class="hidden-xs">New York Boroughs</span>
 					</a>
@@ -169,7 +169,7 @@
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/New_York/Neighborhoods" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Neighborhoods" >
 						
 						<span class="hidden-xs">New York Neighborhoods</span>
 					</a>
@@ -178,7 +178,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/New_York/Community_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Community_Districts" >
 						
 						<span class="hidden-xs">New York Community Districts</span>
 					</a>
@@ -187,7 +187,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Building_Demolition" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Building_Demolition" >
 						
 						<span class="hidden-xs">New York Building Demolition</span>
 					</a>
@@ -196,7 +196,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localjusttiles/New_York/Building" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/New_York/Building" >
 						
 						<span class="hidden-xs">New York Building</span>
 					</a>
@@ -204,7 +204,7 @@
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York/Parks" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Parks" >
 						
 						<span class="hidden-xs">New York Parks</span>
 					</a>
@@ -213,7 +213,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/New_York/Parking_Lots" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Parking_Lots" >
 						
 						<span class="hidden-xs">New York Parking Lots</span>
 					</a>

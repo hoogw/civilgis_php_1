@@ -1,15 +1,15 @@
 
 
          
-          <!---- local DataTables CSS JS  must load after the Jquery.js -->
+          <!----  DataTables CSS JS  must load after the Jquery.js -->
          
           <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
          <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
          
-        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
+        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
        
-        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary.js"></script>
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localpagedclienttablemap.js"></script>
+       
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/pagedclienttablemap.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
    
          
@@ -48,9 +48,9 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/pagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

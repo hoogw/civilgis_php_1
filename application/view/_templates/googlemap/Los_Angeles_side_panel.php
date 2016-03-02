@@ -49,9 +49,9 @@
                             
                             
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?>
+					<a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> - Department of City Planning</span>
+						<span class="hidden-xs">  <?php echo $data['area'] ?>  -  Google Map </span>
                                         </a>
 					
 				</li>
@@ -62,21 +62,21 @@
                                
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Los_Angeles/Zoning" >
 						
 						<span class="hidden-xs">Zoning - check box</span>
 					</a>
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/Zoning" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Los_Angeles/Zoning" >
 						
 						<span class="hidden-xs">Zoning - radio</span>
 					</a>
 				</li>
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Los_Angeles/General_Land_Use" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Los_Angeles/General_Land_Use" >
 						
 						<span class="hidden-xs">General Land Use  - check box</span>
 					</a>
@@ -85,7 +85,7 @@
 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Los_Angeles/General_Land_Use" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Los_Angeles/General_Land_Use" >
 						
 						<span class="hidden-xs">General Land Use  - radio</span>
 					</a>
@@ -95,7 +95,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Communities" >
 						
 						<span class="hidden-xs">Communities</span>
 					</a>
@@ -103,7 +103,7 @@
 				</li>
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Neighborhood_Councils" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Neighborhood_Councils" >
 						
 						<span class="hidden-xs">Neighborhood Councils</span>
 					</a>
@@ -114,7 +114,7 @@
                                 
                                    
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Area_Planning_Commissions" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Area_Planning_Commissions" >
 						
 						<span class="hidden-xs">Area Planning Commissions</span>
 					</a>
@@ -122,7 +122,7 @@
 				</li>
 
                                <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas" >
 						
 						<span class="hidden-xs">Communities and Planning Areas</span>
 					</a>
@@ -131,7 +131,7 @@
                                 
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Specific_Plans" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Specific_Plans" >
 						
 						<span class="hidden-xs">Specific Plans</span>
 					</a>
@@ -143,7 +143,7 @@
                                
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Other_Districts" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Other_Districts" >
 						
 						<span class="hidden-xs">Other Districts</span>
 					</a>
@@ -152,7 +152,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone" >
 						
 						<span class="hidden-xs">Historic Preservation Overlay Zone</span>
 					</a>
@@ -161,7 +161,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments" >
 						
 						<span class="hidden-xs">Historic Cultural Monuments</span>
 					</a>
@@ -170,7 +170,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Federal_Renewal_Community" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Federal_Renewal_Community" >
 						
 						<span class="hidden-xs">Federal Renewal Community</span>
 					</a>
@@ -179,7 +179,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/State_Enterprise_Zone" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/State_Enterprise_Zone" >
 						
 						<span class="hidden-xs">State Enterprise Zone</span>
 					</a>
@@ -188,7 +188,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Business_Improvement_District" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Business_Improvement_District" >
 						
 						<span class="hidden-xs">Business Improvement District</span>
 					</a>
@@ -197,7 +197,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/Los_Angeles/Targeted_Neighborhood_Initiative" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/Los_Angeles/Targeted_Neighborhood_Initiative" >
 						
 						<span class="hidden-xs">Targeted Neighborhood Initiative</span>
 					</a>

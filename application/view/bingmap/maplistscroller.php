@@ -12,7 +12,7 @@
          
          
          <!-- our js -->
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localmaplist_scroller.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/maplist_scroller.js"></script>
          
          
    
@@ -45,7 +45,7 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localmaplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/maplistscroller/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
                                                 
                                         </ol>
                                 </div>

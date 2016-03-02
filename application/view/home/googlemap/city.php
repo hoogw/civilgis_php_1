@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
                                                
                                         </ol>
                                 </div>
@@ -50,9 +50,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/address'">Address</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/parcels'">Parcels</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/streets'">Streets</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/city/address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/city/parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/city/streets'">Streets</button>
                                                        
                                                         
                                                     </div>
@@ -83,13 +83,13 @@
                                                            
                                                              
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
                                                             
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/neighbor'">Neighbor</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/neighbor'">Neighbor</button>
                                                             
                                                             
                                                     </div>
@@ -115,7 +115,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/city/parks'">Parks</button>
                                                             
                                                             
                                                         
@@ -143,7 +143,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/city/schools'">Schools</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/city/schools'">Schools</button>
                                                         
                                                     </div>
                                             </div>
@@ -167,12 +167,12 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/law_agency'">Law agency</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/law_reportarea'">Law report area</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/law_agency'">Law agency</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/law_reportarea'">Law report area</button>
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/law_geoproximity'">Law geoproximity</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/law_district'">Law district</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/law_beat'">Law beat</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/law_geoproximity'">Law geoproximity</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/law_district'">Law district</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/law_beat'">Law beat</button>
                                                         
                                                         
                                                     </div>
@@ -201,10 +201,10 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/fire_station_boundary'">Fire station boundary</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/fire_geoproximity'">Fire geoproximity</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/fire_district'">Fire district</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localsimplemap/city/fire_agency'">Fire agency</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/fire_station_boundary'">Fire station boundary</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/fire_geoproximity'">Fire geoproximity</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/fire_district'">Fire district</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/city/fire_agency'">Fire agency</button>
                                                     </div>
                                             </div>
                                     </div>

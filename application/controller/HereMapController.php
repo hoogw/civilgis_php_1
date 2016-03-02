@@ -28,7 +28,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/simplemap');
          
          
@@ -49,7 +49,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/justtiles');
          
          
@@ -70,7 +70,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class HereMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class HereMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class HereMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'heremap/classifyradiobuttonmap');
          
          

@@ -13,9 +13,9 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclusterscrollerclienttablemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/clusterscrollerclienttablemap.js"></script>
 
 
    
@@ -41,11 +41,11 @@
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/clusterscrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

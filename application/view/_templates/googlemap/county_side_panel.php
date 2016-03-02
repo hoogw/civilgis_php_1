@@ -49,9 +49,9 @@
                             
                             
                             <li>
-					<a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?>
+					<a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> </span>
+						<span class="hidden-xs">  <?php echo $data['area'] ?>  -  Google Map</span>
                                         </a>
 					
 				</li>
@@ -59,7 +59,7 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/cities" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/cities" >
 						
 						<span class="hidden-xs">Cities</span>
 					</a>
@@ -69,7 +69,7 @@
                                 
                                
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/rails" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/rails" >
 						
 						<span class="hidden-xs">Rails</span>
 					</a>
@@ -82,7 +82,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localscrollerclienttablemap/county/parks" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/parks" >
 						
 						<span class="hidden-xs">Parks</span>
 					</a>
@@ -91,7 +91,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/water" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/water" >
 						
 						<span class="hidden-xs">Water</span>
 					</a>
@@ -99,7 +99,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/education_facility" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/education_facility" >
 						
 						<span class="hidden-xs">Education Facility</span>
 					</a>
@@ -111,7 +111,7 @@
                                 
                                 
 				<li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localsimplemap/county/hospitals" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/hospitals" >
 						
 						<span class="hidden-xs"> Hospitals</span>
 					</a>
@@ -121,7 +121,7 @@
                                
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations" >
+					<a href="<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/fire_stations" >
 						
 						<span class="hidden-xs">Fire station</span>
 					</a>

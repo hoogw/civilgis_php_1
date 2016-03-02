@@ -2,9 +2,9 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/localmapjs/localclassifycheckboxbuttonmap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/bingmap/classifycheckboxbuttonmap.js"></script>
 
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
@@ -36,11 +36,11 @@
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>home/local/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

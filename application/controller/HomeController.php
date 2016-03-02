@@ -59,7 +59,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/googlemap/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -79,7 +79,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/mapbox/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapbox/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -99,7 +99,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/mapquest/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -121,7 +121,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/bingmap/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/bingmap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -144,7 +144,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/leaflet/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/leaflet/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -164,7 +164,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/openlayers/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/openlayers/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          
@@ -184,7 +184,7 @@ class HomeController extends Controller
          
         $local_home_page =   'home/heremap/'.$area;
         
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/heremap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
          
          

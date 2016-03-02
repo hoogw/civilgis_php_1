@@ -28,7 +28,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/simplemap');
          
          
@@ -49,7 +49,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/justtiles');
          
          
@@ -70,7 +70,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class GoogleMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class GoogleMapController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class GoogleMapController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/googlemap/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'googlemap/classifyradiobuttonmap');
          
          

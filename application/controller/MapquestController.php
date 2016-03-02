@@ -28,7 +28,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/simplemap');
          
          
@@ -49,7 +49,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/justtiles');
          
          
@@ -70,7 +70,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/simpleclustermap');
          
          
@@ -92,7 +92,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/clusterpagedclienttablemap');
          
          
@@ -113,7 +113,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/clusterscrollerclienttablemap');
          
          
@@ -139,7 +139,7 @@ class MapquestController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/maplistpaged');
          
          
@@ -157,7 +157,7 @@ class MapquestController extends Controller
         
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/maplistscroller');
          
          
@@ -183,7 +183,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/pagedclienttablemap');
          
          
@@ -205,7 +205,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/pagedservertablemap');
          
          
@@ -227,7 +227,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/pagedfulltablemap');
          
          
@@ -250,7 +250,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/scrollerclienttablemap');
          
          
@@ -272,7 +272,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/scrollerservertablemap');
          
          
@@ -294,7 +294,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/scrollerfulltablemap');
          
          
@@ -328,7 +328,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/classifycheckboxbuttonmap');
          
          
@@ -350,7 +350,7 @@ class MapquestController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $side_panel_path = '_templates/mapquest/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,'mapquest/classifyradiobuttonmap');
          
          
