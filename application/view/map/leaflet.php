@@ -55,7 +55,7 @@
                                 
                                 
                                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>/map/googlemap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Google Map </span>
 					</a>
@@ -98,12 +98,47 @@
                                 
                                 
                                 
+                                <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>/map/mapbox/" class="dropdown-toggle">
+						
+						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; MapBox </span>
+					</a>
+                                    
+                                        
+				</li>
+                                
+                                
+                                 <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>/map/mapquest/" class="dropdown-toggle">
+						
+						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  MapQuest</span>
+					</a>
+                                    
+                                        
+				</li>
+                                
+                                
+                                 <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>/map/heremap" class="dropdown-toggle">
+						
+						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  Here Map</span>
+					</a>
+                                    
+                                        
+				</li>
+                                
+                                
+                                
+                               
                                 
                                 
                                 
                                 
                                 
                                 
+                                
+                                
+                                <!--
                                 
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#price" class="dropdown-toggle">
@@ -125,9 +160,32 @@
 					
 				</li>
                                 
-                                
+                                -->
                                 
                                  
+                                
+                                <li class="dropdown">
+					<a href="#" class="dropdown-toggle">
+						<i class="fa fa-phone-square"></i>
+						<span class="hidden-xs">310-710-6501</span>
+					</a>
+                                    
+                                       
+				</li>
+                                
+                                
+                                
+                                
+				<li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#contact" class="dropdown-toggle">
+						<i class="fa fa-envelope-square"></i>
+						<span class="hidden-xs">huguowen@gmail.com</span>
+					</a>
+					
+				</li>
+                                
+                                
+                                
                           
 			</ul>
 		</div>
@@ -172,7 +230,7 @@
                                                     <div class="box-content">
                                                         
                                                         
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Newport_Beach/'">
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/Newport_Beach/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
                                                         </button>
                                                         
@@ -180,14 +238,14 @@
                                                         
                                                           &nbsp;&nbsp;
                                                         
-                                                         <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Santa_Monica/'">
+                                                         <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/Santa_Monica/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.png" alt=""/>
                                                         </button>
                                                         
                                                           
                                                             &nbsp;&nbsp;
                                                           
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Los_Angeles/'">
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/Los_Angeles/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
                                                         </button>
                                                         
@@ -208,21 +266,21 @@
                                                           &nbsp;&nbsp;
                                                         
                                                         
-                                                        <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/New_York/'">
+                                                        <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/New_York/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
                                                         </button>
                                                         
                                                           
                                                             &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/San_Francisco/'">
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/San_Francisco/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
                                                         </button>
                                                         
                                                             
                                                               &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/Chicago/'">
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/Chicago/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
@@ -230,14 +288,14 @@
                                                                 &nbsp;&nbsp;
                                                             
                                                             
-                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/county/'">
+                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
                                                               
                                                               
                                                                  &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/local/city/'">Sample City</button>
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/leaflet/city/'">Sample City</button>
                                                         
                                                        
                                                         
@@ -263,23 +321,23 @@
 				<h5>Zoning Land Use</h5>
 				<div>
                                     
-                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
+                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
                                          
                                     
                                      &nbsp;&nbsp;
                                     
-					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
+					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
                                            &nbsp;&nbsp;
                                          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
                                                     &nbsp;&nbsp;          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclassifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
                                            &nbsp;&nbsp;
                                          
                                          
@@ -287,12 +345,12 @@
 				</div>
 				<h5>Parcels</h5>
 				<div>
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
                                       &nbsp;&nbsp;
-					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
+					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
                                                   &nbsp;&nbsp;             
                                          
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
                                          
                                          
                                          
@@ -304,14 +362,14 @@
 					
                                    
                                      
-                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
+                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
                                              &nbsp;&nbsp;      
                                      
-                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/address'">Sample City Address </button>
+                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/city/address'">Sample City Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localscrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
                                        &nbsp;&nbsp;
                                     
 				</div>
@@ -325,9 +383,9 @@
                                     
                                     
                                                             
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>localmap/localclusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
                                                               &nbsp;&nbsp;
                                                              
                                                             <button type="button" class="btn btn-info">...</button>

@@ -206,7 +206,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href=".">TransparentGov</a></li>
-                                                <li><a href=".">Bing Map</a></li>
+                                                <li><a href=".">Mapbox</a></li>
                                                
                                         </ol>
                                 </div>
@@ -230,7 +230,7 @@
                                                     <div class="box-content">
                                                         
                                                         
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/Newport_Beach/'">
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/Newport_Beach/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
                                                         </button>
                                                         
@@ -238,14 +238,14 @@
                                                         
                                                           &nbsp;&nbsp;
                                                         
-                                                         <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/Santa_Monica/'">
+                                                         <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/Santa_Monica/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.png" alt=""/>
                                                         </button>
                                                         
                                                           
                                                             &nbsp;&nbsp;
                                                           
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/Los_Angeles/'">
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/Los_Angeles/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt=""/>
                                                         </button>
                                                         
@@ -266,21 +266,21 @@
                                                           &nbsp;&nbsp;
                                                         
                                                         
-                                                        <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/New_York/'">
+                                                        <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/New_York/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt=""/>
                                                         </button>
                                                         
                                                           
                                                             &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/San_Francisco/'">
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/San_Francisco/'">
                                                              <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
                                                         </button>
                                                         
                                                             
                                                               &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/Chicago/'">
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/Chicago/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt=""/>
                                                         </button>
                                                         
@@ -288,14 +288,14 @@
                                                                 &nbsp;&nbsp;
                                                             
                                                             
-                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/county/'">
+                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
                                                               
                                                               
                                                                  &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/bingmap/city/'">Sample City</button>
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapbox/city/'">Sample City</button>
                                                         
                                                        
                                                         
@@ -321,23 +321,23 @@
 				<h5>Zoning Land Use</h5>
 				<div>
                                     
-                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
+                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
                                          
                                     
                                      &nbsp;&nbsp;
                                     
-					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
+					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
                                            &nbsp;&nbsp;
                                          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
                                                     &nbsp;&nbsp;          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
+                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/classifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
                                            &nbsp;&nbsp;
                                          
                                          
@@ -345,12 +345,12 @@
 				</div>
 				<h5>Parcels</h5>
 				<div>
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
                                       &nbsp;&nbsp;
-					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
+					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
                                                   &nbsp;&nbsp;             
                                          
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
+                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
                                          
                                          
                                          
@@ -362,14 +362,14 @@
 					
                                    
                                      
-                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
+                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
                                              &nbsp;&nbsp;      
                                      
-                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/address'">Sample City Address </button>
+                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/city/address'">Sample City Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
+                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
                                        &nbsp;&nbsp;
                                     
 				</div>
@@ -383,9 +383,9 @@
                                     
                                     
                                                             
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/clusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapbox/clusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
                                                               &nbsp;&nbsp;
                                                              
                                                             <button type="button" class="btn btn-info">...</button>

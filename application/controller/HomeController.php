@@ -52,12 +52,74 @@ class HomeController extends Controller
     
     
     // no header footer, local home page is self-contained one page
-    public function bing($area)
+    public function googlemap($area)
     {
         
            $data['area'] = $area;
          
-        $local_home_page =   'home/bing/'.$area;
+        $local_home_page =   'home/googlemap/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    public function mapbox($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/mapbox/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    public function mapquest($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/mapquest/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
+    public function bingmap($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/bingmap/'.$area;
         
          $side_panel_path = '_templates/'.$area.'_side_panel'; 
          $multifiles = array($side_panel_path,$local_home_page);
@@ -115,7 +177,24 @@ class HomeController extends Controller
     }
     
     
-    
+    public function heremap($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/heremap/'.$area;
+        
+         $side_panel_path = '_templates/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
     
     
     
