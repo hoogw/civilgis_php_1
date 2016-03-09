@@ -46,7 +46,7 @@
                             
                                 <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
-						<i class="fa fa-globe"></i>
+						<img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/>
 						<span class="hidden-xs">Map Provider</span>
 					</a>
                                     
@@ -57,7 +57,8 @@
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/googlemap" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Google Map </span>
+						<span class="hidden-xs">
+                                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/google-maps-icon.png" alt=""/> Google Map </span>
 					</a>
                                     
                                         
@@ -69,7 +70,8 @@
                                  <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/bingmap" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Bing Map </span>
+						<span class="hidden-xs">
+                                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map </span>
 					</a>
                                     
                                         
@@ -80,7 +82,7 @@
                                  <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/leaflet" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Leaflet </span>
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/leaflet-logo.png" alt=""/> </span>
 					</a>
                                     
                                         
@@ -90,7 +92,7 @@
                                  <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/openlayers" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; Openlayers </span>
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/openlayers.png" alt=""/> </span>
 					</a>
                                     
                                         
@@ -101,7 +103,7 @@
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/mapbox/" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp; MapBox </span>
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/> </span>
 					</a>
                                     
                                         
@@ -111,7 +113,7 @@
                                  <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/mapquest/" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  MapQuest</span>
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapquest.png" alt=""/></span>
 					</a>
                                     
                                         
@@ -121,7 +123,7 @@
                                  <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/heremap" class="dropdown-toggle">
 						
-						<span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;  Here Map</span>
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/> Map</span>
 					</a>
                                     
                                         
@@ -166,7 +168,7 @@
                                 
                                 <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
-						<i class="fa fa-phone-square"></i>
+						<img src="<?php echo Config::get('URL'); ?>public/images/logo/phone.png" alt=""/> 
 						<span class="hidden-xs">310-710-6501</span>
 					</a>
                                     
@@ -178,7 +180,7 @@
                                 
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle">
-						<i class="fa fa-envelope-square"></i>
+						<img src="<?php echo Config::get('URL'); ?>public/images/logo/email.png" alt=""/> 
 						<span class="hidden-xs">huguowen@gmail.com</span>
 					</a>
 					
@@ -206,7 +208,8 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index">TransparentGov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/googlemap">Google Map</a></li>
+                                                <li> <a href="<?php echo Config::get('URL'); ?>map/googlemap">Google Map</a></li> 
+                                                &nbsp;&nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/google-maps-icon.png" alt=""/> 
                                                
                                         </ol>
                                 </div>
@@ -229,6 +232,46 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
+                                                     <!--   
+                                                        
+                                                        <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/Denver/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/Denver_logo.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        
+                                                          &nbsp;&nbsp;
+                                                        
+                                                        
+                                                          <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/Aurora/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/Aurora_logo.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        
+                                                          &nbsp;&nbsp;
+                                                        
+                                                        
+                                                          
+                                                          <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/Palo_Alto/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        
+                                                          &nbsp;&nbsp;
+                                                          
+                                                          
+                                                          
+                                                          <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/Bakersfield/'">
+                                                            <img src="<?php echo Config::get('URL'); ?>public/images/logo/Bakersfield_logo.png" alt=""/>
+                                                        </button>
+                                                        
+                                                        
+                                                        
+                                                          &nbsp;&nbsp;
+                                                          
+                                                        -->  
                                                         
                                                          <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/Newport_Beach/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt=""/>
@@ -288,7 +331,7 @@
                                                                 &nbsp;&nbsp;
                                                             
                                                             
-                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/county/'">
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/county/'">
                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" alt=""/>
                                                         </button>
                                                               
@@ -442,13 +485,19 @@
                                                         
                                                         -->
                                                         
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/Chicago/'">Chicago </button>
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/Chicago/'">
+                                                          <img src="<?php echo Config::get('URL'); ?>public/images/logo/chicago-room.png" alt=""/>
+                                                         </button>
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/New_York/'">New York</button>
+                                <button type="button" class="btn btn-warning" onclick="location.href = '/data/listscroller/New_York/'">
+                                   <img src="<?php echo Config::get('URL'); ?>public/images/logo/new-york.png" alt=""/>
+                                </button>
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/San_Francisco/'">San Francisco</button>
+                                <button type="button" class="btn btn-default" onclick="location.href = '/data/listscroller/San_Francisco/'">
+                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/san_francisco.png" alt=""/>
+                                </button>
                                                         
                                                       
                                                         
