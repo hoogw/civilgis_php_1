@@ -75,8 +75,8 @@
 				
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/newyork" >
-						<i class="fa fa-dashboard"></i>
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistpaged/new_york" >
+						
 						<span class="hidden-xs">New York</span>
 					</a>
 				</li>
@@ -84,7 +84,7 @@
                                 
                                 <li>
 					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/chicago" >
-						<i class="fa fa-table"></i>
+						
 						<span class="hidden-xs">Chicago</span>
 					</a>
 				</li>
@@ -93,9 +93,9 @@
                                 
                                 
 				<li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/losangeles" >
-						<i class="fa fa-bar-chart-o"></i>
-						<span class="hidden-xs">Los Angeles</span>
+					<a href="<?php echo Config::get('URL'); ?>data/tablelistScroller/san_francisco" >
+						
+						<span class="hidden-xs">San Francisco</span>
 					</a>
 					
 				</li>

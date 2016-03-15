@@ -36,7 +36,7 @@ class DataController extends Controller
     }
     
     
-     public function tablelistScroller($area)
+     public function tablelistscroller($area)
     {
          // default route 
         
@@ -48,7 +48,7 @@ class DataController extends Controller
          
          $data['area'] = $area;
          
-        $this->View->render('data/tablelistScroller', $data);
+        $this->View->render('data/tablelistscroller', $data);
     }
     
     

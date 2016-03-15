@@ -487,17 +487,17 @@
                                                         
                                                         -->
                                                         
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '/data/listscroller/Chicago/'">
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/chicago/'">
                                                           <img src="<?php echo Config::get('URL'); ?>public/images/logo/chicago-room.png" alt=""/>
                                                          </button>
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-warning" onclick="location.href = '/data/listscroller/New_York/'">
+                                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/new_york/'">
                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/new-york.png" alt=""/>
                                 </button>
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-default" onclick="location.href = '/data/listscroller/San_Francisco/'">
+                                <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/san_francisco/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/> 
                                 </button>
                                                         
