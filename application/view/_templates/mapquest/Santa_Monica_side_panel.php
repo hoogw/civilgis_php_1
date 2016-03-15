@@ -52,7 +52,7 @@
                             <li>
 					<a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs">  <?php echo $data['area'] ?>  -  Mapquest</span>
+						<span class="hidden-xs">  <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/mapquest.png" alt=""/></span>
                                         </a>
 					
 				</li>

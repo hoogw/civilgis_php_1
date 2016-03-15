@@ -54,6 +54,8 @@
 				</li>
                                 
                                 
+                              
+                                
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/googlemap" class="dropdown-toggle">
 						
@@ -164,7 +166,7 @@
                                 
                                 -->
                                 
-                                 
+                                 <hr>
                                 
                                 <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
@@ -317,7 +319,7 @@
                                                             &nbsp;&nbsp;
                                                         
                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/googlemap/San_Francisco/'">
-                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/>
+                                                             <img src="<?php echo Config::get('URL'); ?>public/images/logo/san_francisco.png" alt=""/>
                                                         </button>
                                                         
                                                             
@@ -496,7 +498,7 @@
                                 &nbsp;&nbsp;
 
                                 <button type="button" class="btn btn-default" onclick="location.href = '/data/listscroller/San_Francisco/'">
-                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/san_francisco.png" alt=""/>
+                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt=""/> 
                                 </button>
                                                         
                                                       

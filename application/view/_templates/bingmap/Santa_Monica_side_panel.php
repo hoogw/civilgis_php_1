@@ -52,7 +52,7 @@
                             <li>
 					<a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs">  <?php echo $data['area'] ?>  -  Bing Map</span>
+						<span class="hidden-xs">  <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map</span>
                                         </a>
 					
 				</li>

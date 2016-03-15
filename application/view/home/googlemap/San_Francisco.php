@@ -151,7 +151,7 @@
 
                             <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/San_Francisco/Curb_Island'">Curb and Island</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/San_Francisco/Building_Footprint'">Building Footprint</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/San_Francisco/Building'">Building Footprint</button>
                             &nbsp;&nbsp;
 
                                                     </div>
@@ -218,7 +218,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                       Permission for use of these proprietary data is granted by the City of Newport Beach. Copyright &copy; <?php echo date("Y"); ?> City of Newport Beach. All Rights Reserved
+                                                       Permission for use of these proprietary data is granted by the City of San Francisco. Copyright &copy; <?php echo date("Y"); ?> City of San Francisco. All Rights Reserved
                                                     </div>
                                             </div>
                                     </div>

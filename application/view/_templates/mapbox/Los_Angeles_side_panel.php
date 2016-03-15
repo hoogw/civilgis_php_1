@@ -51,7 +51,7 @@
                                  <li>
 					<a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs">  <?php echo $data['area'] ?>  -  Mapbox </span>
+						<span class="hidden-xs">  <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/> </span>
                                         </a>
 					
 				</li>
