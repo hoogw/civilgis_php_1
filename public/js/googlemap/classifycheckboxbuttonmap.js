@@ -60,7 +60,7 @@ function init_classification_buttons(_area, _subject) {
                                                     
                                                     
                                                      _labelID = 'label_'+ _code;
-                                                     _label_Class = 'btn btn-'+ _color;
+                                                     _label_Class = 'btn btn-xs btn-'+ _color;
                                                      _checkboxID = 'checkbox_'+_code;
                                                      _checkbox_Value = _code + " - " + _description;
                                                     

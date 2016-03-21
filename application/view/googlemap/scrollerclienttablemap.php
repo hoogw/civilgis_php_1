@@ -115,7 +115,7 @@
                                                         
                                                         <div id="title_info" > </div>
                                                         
-                                                       
+                                                      
                                                         
                                                         
                                                         
@@ -197,7 +197,7 @@
                                         
                                     
                                                 <!-- info-table must be out side of box -->
-                                    <div id="info-table"> </div>   
+                                     <div id="info-table"> </div>   
                                     
                                 </div>
                         </div>
