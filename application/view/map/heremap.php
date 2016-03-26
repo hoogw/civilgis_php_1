@@ -236,7 +236,7 @@
                                                         
                                                         
                                                         
-                                                         <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Shoreline/'">
+                                                         <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Shoreline/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/shoreline_logo.jpg" />
                             </button>
 
@@ -244,7 +244,7 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Santa_Monica'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Santa_Monica'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/santa_monica.png" alt="" />
                             </button>
 
@@ -254,7 +254,7 @@
 
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Palo_Alto/'">
+                            <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
                             </button>
 
@@ -263,7 +263,7 @@
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Stockton/'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Stockton/'">
 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/stockton.png" />
                             </button>
@@ -273,7 +273,7 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Newport_Beach'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Newport_Beach'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt="" />
                             </button>
 
@@ -285,7 +285,7 @@
                                  &nbsp;&nbsp;
 
 
-                                 <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Aurora/'">
+                                 <button type="button" class="btn btn-xs btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Aurora/'">
                                      <img src="<?php echo Config::get('URL'); ?>public/images/logo/Aurora_logo.png" alt="" />
                                  </button>
 
@@ -293,7 +293,7 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Denver/'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Denver/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Denver_logo.png" alt="" />
                             </button>
 
@@ -301,32 +301,32 @@
 
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/New_York'">
+                            <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/New_York'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt="" />
                             </button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/San_Francisco'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/San_Francisco'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/san_francisco.png" alt="" />
                             </button>
 
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Chicago'">
+                            <button type="button" class="btn btn-xs btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Chicago'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/city-of-chicago-logo.png" alt="" />
                             </button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Los_Angeles'">
+                            <button type="button" class="btn btn-xs btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Los_Angeles'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt="" />
                             </button>
 
 
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Seattle'">
+                            <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Seattle'">
                               
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/seattle_.png" />
                                 
@@ -335,14 +335,14 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" title="/Washington_DC" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Washington_DC/'">
+                            <button type="button" title="/Washington_DC" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Washington_DC/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/washington_dc_logo.png" />
 
                             </button>
 
 
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Portland'">
+                            <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Portland'">
 
 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/portland_oregon.png" />
@@ -353,7 +353,7 @@
 
 
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/San_Jose'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/San_Jose'">
 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/San_Jose_logo.png" />
 
@@ -365,7 +365,7 @@
 
 
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Orlando'">
+                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Orlando'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/orlando_logo.png" />
                                
 
@@ -376,7 +376,7 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button"  title="Orange County California" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/county'">
+                            <button type="button"  title="Orange County California" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/county'">
 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/orange_county.png" />
                             </button>
@@ -387,14 +387,14 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" title="City of Bakersfield California" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Bakersfield/'">
+                            <button type="button" title="City of Bakersfield California" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Bakersfield/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Bakersfield_logo.png" alt="" />
                             </button>
 
 
                             &nbsp;&nbsp;
 
-                            <button type="button" title="City of Philadelphia" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Philadelphia/'">
+                            <button type="button" title="City of Philadelphia" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Philadelphia/'">
 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/philadelphia.png" />
                             </button>
@@ -405,14 +405,14 @@
 
                             &nbsp;&nbsp;
 
-                            <button type="button" title="Baltimore" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Baltimore/'">
+                            <button type="button" title="Baltimore" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/Baltimore/'">
                                 
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/baltimore.png" />
                             </button>
 
                             <!--
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/city'">Sample city</button>
+                            <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/heremap/city'">Sample city</button>
 -->
 
                                                         
@@ -452,23 +452,23 @@
 				<h5>Zoning Land Use</h5>
 				<div>
                                     
-                                    <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
+                                    <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
+                                         <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
                                          
                                     
                                      &nbsp;&nbsp;
                                     
-					 <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
+					 <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/zoning'">Sample City Zoning - check box</button>
                                          
                                            &nbsp;&nbsp;
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
+                                         <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/zoning'">Sample City Zoning - radio</button>
                                            &nbsp;&nbsp;
                                          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
+                                         <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/general_land_use'">Sample City General Land Use - check box</button>
                                                     &nbsp;&nbsp;          
-                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
+                                         <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/general_land_use'">Sample City General Land Use - radio</button>
                                            &nbsp;&nbsp;
                                          
                                          
@@ -476,12 +476,12 @@
 				</div>
 				<h5>Parcels</h5>
 				<div>
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
+                                         <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Parcels'" >Newport Beach Parcels </button>
                                       &nbsp;&nbsp;
-					 <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
+					 <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/parcels'" >Sample City Parcels </button>
                                                   &nbsp;&nbsp;             
                                          
-                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
+                                         <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/New_York_Manhattan/Zoning'" >New York City Manhattan Parcels </button>
                                          
                                          
                                          
@@ -493,14 +493,14 @@
 					
                                    
                                      
-                                     <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
+                                     <button type="button" class="btn btn-xs btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Address'">Newport Beach Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
+                                     <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Streets'" >Santa Monica Street</button>
                                              &nbsp;&nbsp;      
                                      
-                                      <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/address'">Sample City Address </button>
+                                      <button type="button" class="btn btn-xs btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/address'">Sample City Address </button>
                                             &nbsp;&nbsp;
-                                     <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
+                                     <button type="button" class="btn btn-xs btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/streets'" >Sample City Street Lines</button>
                                        &nbsp;&nbsp;
                                     
 				</div>
@@ -514,12 +514,12 @@
                                     
                                     
                                                             
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
+                                                            <button type="button" class="btn btn-xs btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
+                                                            <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations'" >Point Cluster with scroller table [ Fire Stations]</button>
                                                               &nbsp;&nbsp;
                                                              
-                                                            <button type="button" class="btn btn-info">...</button>
+                                                            <button type="button" class="btn btn-xs btn-info">...</button>
 				</div>
 			</div>
 		</div>
@@ -550,34 +550,34 @@
                                                         
                                                         
                                                        
-                                <button type="button" class="btn btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/chicago/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/chicago/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/chicago-room.png" alt="" />
                                 </button>
                                 &nbsp;&nbsp;
 
                                
 
-                                <button type="button" class="btn btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/san_francisco/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/san_francisco/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/San-Francisco-Logo.png" alt="" />
                                 </button>
 
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-outline btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/new_york/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/new_york/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/new-york.png" alt="" />
                                 </button>
                                 
 
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/denver/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/denver/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/denver.gif" />
                                     
                                 </button>
 
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-outline btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/berkeley/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/berkeley/'">
 
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/berkeley_logo.png" />
                                 </button>
@@ -585,7 +585,7 @@
 
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/baltimore/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/baltimore/'">
 
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/baltimore_logo.png" />
                                 </button>
@@ -593,7 +593,7 @@
 
                                 &nbsp;&nbsp;
 
-                                <button type="button" class="btn btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/boston/'">
+                                <button type="button" class="btn btn-xs btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistpaged/boston/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/boston.png" />
                                 </button>
 

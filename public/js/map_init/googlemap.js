@@ -189,7 +189,7 @@ function add_area_boundary(_area){
     
 	
 	 _multi_polyline = 'No';
-        var _js_url = base_url+"public/js/area_boundary/"+_area + ".js";
+        var _js_url = base_url+"public/js/area_boundary/googlemap/"+_area + ".js";
 	
    //alert(_js_url);
 	

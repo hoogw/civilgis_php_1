@@ -1,3 +1,6 @@
+var base_map_tile_layer;
+var overlay_tile_layer;
+
 var _addr_info;
 var search_address_marker;
 var flyto_marker;
@@ -186,7 +189,7 @@ function add_area_boundary(_area){
     
 	
 	 _multi_polyline = 'No';
-        var _js_url = base_url+"public/js/area_boundary/"+_area + ".js";
+        var _js_url = base_url+"public/js/area_boundary/leaflet/"+_area + ".js";
 	
    //alert(_js_url);
 	
@@ -225,18 +228,7 @@ function add_area_boundary(_area){
                                                      
                                                      
                                                      
-                                                                    var  _area_polyline_multi = new google.maps.Polyline({
-
-                                                                                                                                                    path: parentArray[i],
-                                                                                                                                                    geodesic: true,
-                                                                                                                                                    strokeColor: '#FFA500',
-                                                                                                                                                    strokeOpacity: 0.8,
-                                                                                                                                                    strokeWeight: 5
-
-                                                                                                                                              });
-
-                                                                                    _area_polyline_multi.setMap(map);
-
+                                                                   var _area_polyline_multi = L.polyline(parentArray[i], { color: '#0000FF', weight: 5, opacity: 0.8 }).addTo(map);
 
 
                                                                    
@@ -250,16 +242,7 @@ function add_area_boundary(_area){
                                             
 
                                             // for only one line
-                                                            _area_polyline = new google.maps.Polyline({
-
-                                                                                                                                                    path: _area_polygon_coord[_area],
-                                                                                                                                                    geodesic: true,
-                                                                                                                                                    strokeColor: '#FFA500',
-                                                                                                                                                    strokeOpacity: 0.8,
-                                                                                                                                                    strokeWeight: 5
-
-                                                                                                                                              });
-                                                             _area_polyline.setMap(map);
+                                                           _area_polyline = L.polyline(_area_polygon_coord[_area], { color: '#0000FF', weight: 5, opacity: 0.8 }).addTo(map);
                                 }//else
                 
 
@@ -323,20 +306,14 @@ function init_tiling(){
      _tile_baseURL = 'http://tile.transparentgov.net/v2/';
    // _tile_baseURL = 'http://localhost:8888/v2/';
 
-   tile_MapType = new google.maps.ImageMapType({
-         getTileUrl: function (coord, zoom) {
+   var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+     var overlay_tile_Attrib = 'Map data &#169; <a href="http://transparentgov.net">transparentgov.net</a> contributors';
+     tile_MapType = new L.TileLayer(overlay_tile_Url, { minZoom: 3, maxZoom: 22, attribution: overlay_tile_Attrib });
+
+    
 
 
-
-             return _tile_baseURL + _areaID + '_' + _subjectID + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
-
-
-         },
-         tileSize: new google.maps.Size(256, 256),
-         maxZoom: 19,
-         minZoom: 0
-
-     });                                                           
+     overlay_tile_layer = map.addLayer(tile_MapType);                                                      
     
     
     
