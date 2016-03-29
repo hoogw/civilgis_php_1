@@ -1407,7 +1407,8 @@ function datatablesX(){
          base_url = document.getElementById('base_url').value;
 
 
-       
+       // load data for upper entire datatable
+          datatablesX();
 
 
        //  load data for google map and lower datatable 
@@ -1415,8 +1416,7 @@ function datatablesX(){
 
     
     
-        // load data for upper entire datatable
-          datatablesX();
+        
     
 
     }); // document ready function
