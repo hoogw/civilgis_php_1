@@ -1,3 +1,7 @@
+var _tile_exist = false;
+var _tile_list;
+
+
 var _addr_info;
 var search_address_marker;
 var flyto_marker;
@@ -157,7 +161,22 @@ function set_initial_location(_area) {
          _area_db["New_York_Staten_Island"] = ["New_York_Staten_Island", 40.60300547512703, -74.1353988647461, 13, "/-74.2679214477539/40.48795409096868/-74.04716491699219/40.657461921354866/"];
         
         
-         // resize map div height based on user's browser resolution.
+         _area_db["Arura"] = ["Arura", 39.723296392333026, -104.84081268310547, 13, "/-104.97127532958984/39.61573894281141/-104.501953125/39.818557296839344/"];
+    _area_db["Bakersfield"] = ["Bakersfield", 39.818557296839344, -104.501953125, 13, "/-119.19822692871094/35.266365060848436/-118.78177642822266/35.44808511462123/"];
+    _area_db["Baltimore"] = ["Baltimore", 35.44808511462123, -118.78177642822266, 13, "/-76.74568176269531/39.24714385893248/-76.42021179199219/39.44520783247914/"];
+    _area_db["Denver"] = ["Denver", 39.44520783247914, -76.42021179199219, 13, "/-105.10276794433594/39.612565174816254/-104.59259033203125/39.90657598772841/"];
+    _area_db["Orlando"] = ["Orlando", 39.90657598772841, -104.59259033203125, 13, "/-81.47872924804688/28.4463551910418/-81.265869140625/28.6080342113753/"];
+    _area_db["Palo_Alto"] = ["Palo_Alto", 28.6080342113753, -81.265869140625, 13, "/-122.22702026367188/37.339045928741186/-122.10411071777344/37.49529038649112/"];
+    _area_db["Philadelphia"] = ["Philadelphia", 37.49529038649112, -122.10411071777344, 13, "/-75.24845123291016/39.87048617098581/-74.95491027832031/40.13794057716276/"];
+    _area_db["Portland"] = ["Portland", 40.13794057716276, -74.95491027832031, 13, "/-122.75264739990234/45.433153642271414/-122.46803283691406/45.58473142874248/"];
+    _area_db["San_Jose"] = ["San_Jose", 45.58473142874248, -122.46803283691406, 13, "/-122.06428527832031/37.22076028799717/-121.82052612304688/37.45469273789926/"];
+    _area_db["Seattle"] = ["Seattle", 37.45469273789926, -121.82052612304688, 13, "/-122.43644714355469/47.514186307885765/-122.20745086669922/47.741863047356425/"];
+    _area_db["Shoreline"] = ["Shoreline", 47.75479043701335, -122.34392166137695, 13, "/-122.38700866699219/47.730202558631625/-122.27182388305664/47.77936670249429/"];
+    _area_db["Stockton"] = ["Stockton", 47.77936670249429, -122.27182388305664, 13, "/-121.42827987670898/37.890705366311686/-121.18932723999023/38.063635376296816/"];
+    _area_db["Washington_DC"] = ["Washington_DC", 38.063635376296816, -121.18932723999023, 13, "/-77.12041854858398/38.87900680425525/-76.88146591186523/39.0045114938785/"];
+        
+        
+        // resize map div height based on user's browser resolution.
 
     var browser_width = $(window).width();
     var browser_height = $(window).height();
@@ -167,6 +186,8 @@ function set_initial_location(_area) {
       
 
     // End of browser resize
+        
+        
         
         
         return _area_db[_area];
@@ -184,7 +205,7 @@ function add_area_boundary(_area){
     
 	
 	 _multi_polyline = 'No';
-        var _js_url = base_url+"public/js/area_boundary/"+_area + ".js";
+        var _js_url = base_url+"public/js/area_boundary/googlemap/"+_area + ".js";
 	
    //alert(_js_url);
 	
@@ -317,26 +338,55 @@ function add_area_boundary(_area){
 
 function init_tiling(){
     
-    //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
-     _tile_baseURL = 'http://tile.transparentgov.net/v2/';
-   // _tile_baseURL = 'http://localhost:8888/v2/';
-
-   tile_MapType = new google.maps.ImageMapType({
-         getTileUrl: function (coord, zoom) {
+    
+     // --------------------- dynamic load javascript file  ---------------------------
 
 
+    
+    var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.js";
 
-             return _tile_baseURL + _areaID + '_' + _subjectID + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+    $.when(
+             $.getScript(_tile_list_js)
+     /*
+    $.getScript( "/mypath/myscript1.js" ),
+    $.getScript( "/mypath/myscript2.js" ),
+    $.getScript( "/mypath/myscript3.js" ),
+    */
 
+    ).done(function () {
 
-         },
-         tileSize: new google.maps.Size(256, 256),
-         maxZoom: 19,
-         minZoom: 0
-
-     });                                                           
+        var  _tile_name = _areaID + "_" + _subjectID;
+        var _i = _tile_list.indexOf(_tile_name);
+        //alert(_tile_name);
+        if (_i >= 0) {
     
     
+    
+                        //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
+                         _tile_baseURL = 'http://tile.transparentgov.net/v2/';
+                       // _tile_baseURL = 'http://localhost:8888/v2/';
+
+                       tile_MapType = new google.maps.ImageMapType({
+                             getTileUrl: function (coord, zoom) {
+
+
+
+                                 return _tile_baseURL + _areaID + '_' + _subjectID + '/' + zoom + '/' + coord.x + '/' + coord.y + '.png';
+
+
+                             },
+                             tileSize: new google.maps.Size(256, 256),
+                             maxZoom: 22,
+                             minZoom: 0
+
+                         });                                                           
+    
+     _tile_exist = true;
+
+        }// if
+
+
+    }); // when done
     
     
     
@@ -346,6 +396,7 @@ function init_tiling(){
 
 function add_tiles(){
     
+     if (_tile_exist){
      // ---- if returning total number, not geoJOSN feature, then add tiling layer on top ---------------------------
      
      
@@ -355,15 +406,18 @@ function add_tiles(){
      
                             
                            map.overlayMapTypes.insertAt(0, tile_MapType);
+                           
+    }
+                           
 }
 
 
 function remove_tiles(){
-    
+     if (_tile_exist){
     map.overlayMapTypes.clear();
     //map.overlayMapTypes.pop();
     //map.overlayMapTypes.removeAt(0);
-    
+     }
 }
 
 
