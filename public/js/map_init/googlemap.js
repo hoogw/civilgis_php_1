@@ -379,7 +379,9 @@ function init_tiling(){
                              maxZoom: 22,
                              minZoom: 0
 
-                         });                                                           
+                         });    
+                         
+                          map.overlayMapTypes.insertAt(0, tile_MapType);
     
      _tile_exist = true;
 

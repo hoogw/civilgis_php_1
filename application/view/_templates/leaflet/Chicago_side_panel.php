@@ -17,6 +17,7 @@
 						<a href="#" class="show-sidebar">
 						  <i class="fa fa-bars"></i>
 						</a>
+						<!--
 						<div id="search">
 							<input type="text"  id="addr_txt" placeholder="search address example:1966 Harbor Blvd"/>
                                                            
@@ -25,6 +26,8 @@
                                                               
                                                             
 						</div>
+                                            
+                                            -->
 					</div>
                                     
                                     
