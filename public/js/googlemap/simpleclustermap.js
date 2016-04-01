@@ -17,8 +17,6 @@ function ajax_GeoJSON(gmap,_apiURI) {
    
    
    
-             //------tile[3] ---------
-                     add_tiles();
             
            
             
