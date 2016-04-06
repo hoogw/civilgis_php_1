@@ -16,7 +16,13 @@ class MapController extends Controller
         
           $data['title'] = 'index';
          
-        $this->View->render('map/index', $data);
+       // $this->View->render('map/index', $data);
+        
+          
+          $index_map_with_header_footer = ['_templates/index_header','map/index', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+       
     }
     
     
@@ -28,7 +34,14 @@ class MapController extends Controller
         
           $data['title'] = 'googlemap';
          
-        $this->View->render('map/googlemap', $data);
+       // $this->View->render('map/googlemap', $data);
+          
+          
+           $index_map_with_header_footer = ['_templates/index_header','map/googlemap', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+          
+          
     }
     
     
@@ -37,7 +50,13 @@ class MapController extends Controller
         
           $data['title'] = 'heremap';
          
-        $this->View->render('map/heremap', $data);
+       // $this->View->render('map/heremap', $data);
+          
+           $index_map_with_header_footer = ['_templates/index_header','map/heremap', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+          
+          
     }
     
     
@@ -47,7 +66,13 @@ class MapController extends Controller
         
           $data['title'] = 'bingmap';
          
-        $this->View->render('map/bingmap', $data);
+       // $this->View->render('map/bingmap', $data);
+          
+           $index_map_with_header_footer = ['_templates/index_header','map/bingmap', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+          
+          
     }
     
     
@@ -56,7 +81,12 @@ class MapController extends Controller
         
           $data['title'] = 'mapbox';
          
-        $this->View->render('map/mapbox', $data);
+       // $this->View->render('map/mapbox', $data);
+          
+           $index_map_with_header_footer = ['_templates/index_header','map/mapbox', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+          
     }
     
     
@@ -65,7 +95,9 @@ class MapController extends Controller
         
           $data['title'] = 'mapquest';
          
-        $this->View->render('map/mapquest', $data);
+         $index_map_with_header_footer = ['_templates/index_header','map/mapquest', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
     }
     
     
@@ -75,7 +107,9 @@ class MapController extends Controller
         
           $data['title'] = 'leaflet';
          
-        $this->View->render('map/leaflet', $data);
+         $index_map_with_header_footer = ['_templates/index_header','map/leaflet', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
     }
     
     
@@ -85,7 +119,9 @@ class MapController extends Controller
         
           $data['title'] = 'openlayers';
          
-        $this->View->render('map/openlayers', $data);
+        $index_map_with_header_footer = ['_templates/index_header','map/openlayers', '_templates/index_footer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
     }
     
     

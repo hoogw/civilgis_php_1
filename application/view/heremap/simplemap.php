@@ -29,7 +29,7 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">TransparentGov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/heremap/">TransparentGov</a></li>
                                                 
                                              
                                                   <li><a href="<?php echo Config::get('URL'); ?>home/heremap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
