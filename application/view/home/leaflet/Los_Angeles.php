@@ -22,7 +22,7 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/leaflet/">Transparent Gov</a></li>
                                                 <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?> - Department of City Planning </a></li>
                                                
                                         </ol>
