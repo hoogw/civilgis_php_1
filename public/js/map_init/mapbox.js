@@ -1,7 +1,7 @@
 var mapboxgl_accessToken = 'pk.eyJ1IjoiaG9vZ3ciLCJhIjoiYjdlZTA1Y2YyOGM4NjFmOWI2MjY3MmI5NWM3MmUyOWMifQ.gINCV5SXFGTG5wB8ouXxOw';
 
 
-
+var base_url; 
 var mapbox_geocoderControl;
 var leaflet_open_street_map_max_zoom_level = 19;
 var base_map_tile_layer;
@@ -329,8 +329,8 @@ function add_area_boundary(_area) {
 
 
     _multi_polyline = 'No';
-    var _js_url = "/Scripts/area_boundary/leaflet/" + _area + ".js";
-
+    //var _js_url = "/Scripts/area_boundary/leaflet/" + _area + ".js";
+var _js_url = base_url+"public/js/area_boundary/leaflet/" + _area + ".js";
 
 
 
@@ -446,7 +446,10 @@ function init_tiling() {
 
 
 
-    var _tile_list_js = "/Scripts/map_init/tile_list/googlemap_tile_list.js";
+    //var _tile_list_js = "/Scripts/map_init/tile_list/googlemap_tile_list.js";
+    var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.js";
+    
+    
 
     $.when(
              $.getScript(_tile_list_js)
@@ -537,8 +540,8 @@ function get_map_bound() {
     //alert(SWlong);
 
     // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
-    //var _url = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + '/' + SWlong + '/' + SWlat + '/' + NElong + '/' + NElat + '/';
-    var _url = "/api/geojson/feature/" + initial_location[0] + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+      var _url = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + '/' + SWlong + '/' + SWlat + '/' + NElong + '/' + NElat + '/';
+    //var _url = "/api/geojson/feature/" + initial_location[0] + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
 
     document.getElementById("ajaxload").style.display = "block";
     ajax_GeoJSON(map, _url, false);
@@ -567,7 +570,10 @@ function get_click_latlng(_click_event_lat, _click_event_lng) {
 
 
 
-        var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+        //var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+        var _url_click_event = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+
+
 
         document.getElementById("ajaxload").style.display = "block";
         ajax_GeoJSON(map, _url_click_event, true);

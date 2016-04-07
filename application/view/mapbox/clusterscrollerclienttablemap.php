@@ -1,4 +1,22 @@
 
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+
+
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+
+
+
+
+
+
+
+
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
 <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
 
@@ -8,9 +26,7 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
+
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
@@ -66,6 +82,10 @@
                                                                 
                                                                  <span><?php echo $data['subject'] ?></span>  
                                                                 <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" /> 
+                                                                
+                                                                 <div id="title_info" > </div>
+                                                                
+                                                                
                                                         </div>
                                                     
                                                         <div class="box-icons">
@@ -92,7 +112,7 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
-                                            <div id="title_info" > </div>
+                                           
                                             
                                             
                                                  <div id="tableDiv">

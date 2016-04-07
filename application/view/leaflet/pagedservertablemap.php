@@ -1,3 +1,14 @@
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.css" rel="stylesheet" />
+
+
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.control.geosearch.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.google.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.esri.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.bing.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.nokia.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/css/l.geosearch.css" rel="stylesheet" />
 
 
          
@@ -10,7 +21,7 @@
        
         
          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/pagedservertablemap.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+       
    
          
          
@@ -121,6 +132,10 @@
 
                                                                                 <span><?php echo $data['subject'] ?> </span> 
                                                                                  <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
+                                                                                 
+                                                                                  <div id="title_info" > </div>
+                                                                                 
+                                                                                 
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -152,7 +167,7 @@
 
                                                         
                                                         
-                                                        <div id="title_info" > </div>
+                                                       
                                                         
                                                        
                                                         

@@ -1,5 +1,6 @@
 
-
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
          
           <!----  DataTables CSS JS  must load after the Jquery.js -->
          
@@ -10,7 +11,7 @@
        
         
          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/pagedfulltablemap.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        
    
          
          
@@ -121,6 +122,9 @@
 
                                                                                 <span><?php echo $data['subject'] ?> </span> 
                                                                                  <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
+                                                                                 
+                                                                                  <div id="title_info" > </div>
+                                                                                 
                                                                         </div>
                                                                     
                                                                         <div class="box-icons">
@@ -152,7 +156,7 @@
 
                                                         
                                                         
-                                                        <div id="title_info" > </div>
+                                                       
                                                         
                                                        
                                                         
