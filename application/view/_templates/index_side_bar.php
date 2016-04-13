@@ -52,7 +52,7 @@
                                 <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
 						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
-                                            <h3>Raster Tile</h3>
+                                            <h5>Raster Tile</h5>
                                         
                                         </a>
                                     
@@ -154,7 +154,7 @@
                                  <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
 						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
-                                            <h3>Vector Tile</h3>
+                                            <h5>Vector Tile</h5>
                                         
                                         </a>
                                     
@@ -164,7 +164,7 @@
                                 
                                 
                                 <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>map/mapbox/" class="dropdown-toggle">
+					<a href="<?php echo Config::get('URL'); ?>map/mapboxgl/" class="dropdown-toggle">
 						
 						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  &nbsp; Mapbox GL</span>
 					</a>

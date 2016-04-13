@@ -1,5 +1,16 @@
 _tile_list = [
 
+    "Palo_Alto_Addresses",
+    "Palo_Alto_Building",
+    "Palo_Alto_Parcels",
+    "Palo_Alto_Right_of_way",
+    "Palo_Alto_Streets",
+    "Palo_Alto_Zoning",
+
+
+
+
+
 
     "Shoreline_Address_Central",
     "Shoreline_Buildings",
@@ -12,7 +23,9 @@ _tile_list = [
     "Shoreline_Pavement_Condition",
     "Shoreline_Sidewalk",
     "Shoreline_Street",
+    "Shoreline_Street_Light",
     "Shoreline_Tax_Parcel_Central",
+    "Shoreline_Traffic_Pave_Striping",
     "Shoreline_Zoning",
    
 
@@ -69,8 +82,8 @@ _tile_list = [
     "Santa_Monica_Speed_Limit",
     "Santa_Monica_Street_Sweeping",
     "Santa_Monica_Streets",
-    "Santa_Monica_Streets_Sweeping"
-    
+    "Santa_Monica_Streets_Sweeping",
+    "Santa_Monica_Zoning"
 
 
 

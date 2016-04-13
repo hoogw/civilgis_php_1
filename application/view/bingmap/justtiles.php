@@ -1,7 +1,8 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-
+<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
+<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
 
@@ -84,6 +85,10 @@
                                             
                                             
                                             <div id="title_info" > </div>
+                                            
+                                            
+                                             <input type="checkbox" name="color_tiles_switch" checked>
+                                            
                                             <div id="info-table">
           
                                             </div>

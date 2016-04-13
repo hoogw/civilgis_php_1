@@ -92,6 +92,30 @@ class HomeController extends Controller
     }
     
     
+    
+    
+    public function mapboxgl($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/mapboxgl/'.$area;
+        
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
     public function mapquest($area)
     {
         

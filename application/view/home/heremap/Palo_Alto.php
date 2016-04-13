@@ -139,7 +139,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                       Permission for use of these proprietary data is granted by the City of Santa Monica. Copyright &copy; <?php echo date("Y"); ?> City of Santa Monica. All Rights Reserved
+                                                       Permission for use of these proprietary data is granted by the City of Palo Alto. Copyright &copy; <?php echo date("Y"); ?> City of Palo Alto. All Rights Reserved
                                                     </div>
                                             </div>
                                     </div>

@@ -90,6 +90,22 @@ class MapController extends Controller
     }
     
     
+    
+    public function mapboxgl()
+    {
+        
+          $data['title'] = 'mapboxgl';
+         
+      
+          
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/mapboxgl'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+          
+    }
+    
+    
+    
     public function mapquest()
     {
         

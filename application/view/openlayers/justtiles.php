@@ -8,6 +8,13 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/openlayers/justtiles.js"></script>
 
 
+
+
+<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
+<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
+
+
+
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
@@ -82,6 +89,8 @@
                                            
                                             <div id="legend" class="alert alert-warning"></div>
                                             
+                                            
+                                             <input type="checkbox" name="color_tiles_switch" checked>
                                             
                                             <div id="title_info" > </div>
                                             <div id="info-table">

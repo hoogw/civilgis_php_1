@@ -6,6 +6,7 @@ function just_add_tiles() {
 
 
     init_tiling();
+tile_switch_button();
 
 
     document.getElementById("ajaxload").style.display = "none";

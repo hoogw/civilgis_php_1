@@ -2,6 +2,9 @@
 <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 
+<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
+<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
+
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
@@ -88,7 +91,7 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
-                                            
+                                             <input type="checkbox" name="color_tiles_switch" checked>
                                             <div id="info-table">
           
                                             </div>

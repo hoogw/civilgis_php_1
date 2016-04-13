@@ -3,6 +3,9 @@
 <link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.css" rel="stylesheet" />
 
 
+<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
+<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
+
 
 <script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.control.geosearch.js"></script>
 <script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
@@ -99,7 +102,7 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
-                                            
+                                             <input type="checkbox" name="color_tiles_switch" checked>
                                             <div id="info-table">
           
                                             </div>
