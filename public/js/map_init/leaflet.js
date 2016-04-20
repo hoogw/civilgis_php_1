@@ -1,4 +1,4 @@
-
+var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
 
 
 var base_url; 
@@ -95,7 +95,7 @@ var _cluster_in_use = false;
 
 
 var _multi_polyline;
-var _tile_baseURL;
+
 var _areaID;
 var _subjectID;
 var tile_MapType;
@@ -470,7 +470,7 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
 
 
                         //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
-                         _tile_baseURL = 'http://tile.transparentgov.net/v2/';
+                         //_tile_baseURL = 'http://tile.transparentgov.net/v2/';
                         // _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
 
 
