@@ -2,6 +2,8 @@ var mapboxgl_accessToken = 'pk.eyJ1IjoiaG9vZ3ciLCJhIjoiYjdlZTA1Y2YyOGM4NjFmOWI2M
 
 var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
 
+var base_layers;
+
 
 var base_url; 
 var mapbox_geocoderControl;
@@ -486,6 +488,7 @@ function init_tiling() {
 
             overlay_tile_layer = map.addLayer(tile_MapType);
 
+            tile_MapType.setZIndex(99);
 
             _tile_exist = true;
 
@@ -503,9 +506,8 @@ function add_tiles() {
 
 
 
-
-
-    tile_MapType.bringToFront();
+   tile_MapType.setZIndex(99);
+   // tile_MapType.bringToFront();
 
 
 }
@@ -678,6 +680,41 @@ function geocoding() {
 
 
 }
+
+
+function init_base_map() {
+
+    L.mapbox.accessToken = mapboxgl_accessToken;
+    map = L.mapbox.map('map-canvas', null)
+              .setView([initial_location[1], initial_location[2]], initial_location[3]);   // .setView([40, -74.50], 9);
+
+
+    base_layers = {
+        Satellite: L.mapbox.tileLayer('mapbox.satellite'),
+        Streets: L.mapbox.tileLayer('mapbox.streets'),
+        Light: L.mapbox.tileLayer('mapbox.light'),
+        Dark: L.mapbox.tileLayer('mapbox.dark'),
+        Streets_Basic: L.mapbox.tileLayer('mapbox.streets-basic'),
+
+        Emerald: L.mapbox.tileLayer('mapbox.emerald'),
+        Outdoors: L.mapbox.tileLayer('mapbox.outdoors'),
+        High_Contrast: L.mapbox.tileLayer('mapbox.high-contrast'),
+        Pencil: L.mapbox.tileLayer('mapbox.pencil'),
+        Comic: L.mapbox.tileLayer('mapbox.comic'),
+        Wheatpaste: L.mapbox.tileLayer('mapbox.wheatpaste')
+
+    };
+
+    base_layers.Satellite.addTo(map);
+    L.control.layers(base_layers).addTo(map);
+
+
+}
+
+
+
+
+
 
 //----------------End of leaflet basic simple map function  ------------------------
 
