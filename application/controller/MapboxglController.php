@@ -37,7 +37,8 @@ class MapboxglController extends Controller
     }
     
     
-     public function justtiles($area, $subject)
+    
+    public function simplecolormap($area, $subject)
     {
          
         
@@ -50,28 +51,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/justtiles');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-     public function simpleclustermap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/simpleclustermap');
+         $multifiles = array($side_panel_path,'mapboxgl/simplecolormap');
          
          
        
@@ -80,46 +60,9 @@ class MapboxglController extends Controller
     
     
     
-    public function clusterpagedclienttablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/clusterpagedclienttablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
     
     
-    public function clusterscrollerclienttablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/clusterscrollerclienttablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
+    
     
     
     
@@ -129,49 +72,12 @@ class MapboxglController extends Controller
     
     
     
-   //-------------------------------- maplist section -------------------------------- 
-    public function maplistpaged($area)
-    {
-         
-        
-        
-         
-        
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/maplistpaged');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    public function maplistscroller($area)
-    {
-         
-        
-        
-         
-        
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/maplistscroller');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
    
-    //-------------------------------- End maplist section -------------------------------- 
     
     
     //----------------------- table map section -------------------------------
     
-    public function pagedclienttablemap($area, $subject)
+    public function renderedfeaturepagedtablemap($area, $subject)
     {
          
         
@@ -184,7 +90,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/pagedclienttablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/renderedfeaturepagedtablemap');
          
          
        
@@ -193,7 +99,7 @@ class MapboxglController extends Controller
     
     
     
-    public function pagedservertablemap($area, $subject)
+    public function sourcefeaturepagedtablemap($area, $subject)
     {
          
         
@@ -206,7 +112,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/pagedservertablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/sourcefeaturepagedtablemap');
          
          
        
@@ -238,7 +144,7 @@ class MapboxglController extends Controller
     
     
     
-    public function scrollerclienttablemap($area, $subject)
+    public function renderedfeaturescrollertablemap($area, $subject)
     {
          
         
@@ -251,7 +157,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/scrollerclienttablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/renderedfeaturescrollertablemap');
          
          
        
@@ -260,7 +166,7 @@ class MapboxglController extends Controller
     
     
     
-    public function scrollerservertablemap($area, $subject)
+    public function sourcefeaturescrollertablemap($area, $subject)
     {
          
         
@@ -273,7 +179,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/scrollerservertablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/sourcefeaturescrollertablemap');
          
          
        

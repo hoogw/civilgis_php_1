@@ -7,13 +7,13 @@
 
 
 
-
+<link href="<?php echo Config::get('URL'); ?>public/js/classification/vector_layer_checkbox_menu_style.css" rel="stylesheet" type="text/css"/>
 
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapboxgl.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/simplemap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/simplecolormap.js"></script>
 
 
    
