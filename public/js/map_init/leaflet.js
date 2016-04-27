@@ -6,7 +6,7 @@ var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
 
 var base_layers;
 var baseMaps;
-
+var _tile_slider;
 
 var base_url; 
 
@@ -490,6 +490,25 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
 
                          overlay_tile_layer = map.addLayer(tile_MapType);
                          tile_MapType.setZIndex(99);
+                         
+                         
+                         
+                          //............................ bind opacity to slider ........................
+            
+                _tile_slider.noUiSlider.on('set', function (values, handle, unencoded, tap, positions) {
+
+
+                var _slider_handle_value = values[handle];
+                _slider_handle_value = Math.round(_slider_handle_value) / 100;
+
+                tile_MapType.setOpacity(_slider_handle_value);
+
+            });
+            //................End ....... bind opacity to slider ........................
+                         
+                         
+                         
+                         
 
                          _tile_exist = true;
 
@@ -795,6 +814,30 @@ function tile_switch_button() {
 
 
 
+
+
+
+}
+
+
+
+
+
+
+function tile_slider() {
+
+
+    _tile_slider = document.getElementById('tile_slider');
+
+    noUiSlider.create(_tile_slider, {
+        start: [100],
+        connect: 'lower',
+       //  tooltips: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
 
 
 
