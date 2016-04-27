@@ -9,8 +9,14 @@
 
 <link href="<?php echo Config::get('URL'); ?>/public/js/classification/classification_button_style.css" rel="stylesheet" type="text/css"/>
 
-<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
-<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
+
+<link href="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" />
+<script src="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.css" rel="stylesheet" />
+
+
+
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
@@ -88,19 +94,35 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
+                                             
                                             
                                             
-                                                       <!-- checkbox button -->
-                                                       
+                                            
+                                                      
                                                        
                                                                     <div id="classification_section" class="well">
                                                                         
+                                                                        
+                                                                        <div class="row">
+
+                                                                            <div class="col-lg-1">
+                                                                                <input type="checkbox" name="color_tiles_switch" checked>
+                                                                            </div>
+
+                                                                            <div class="col-lg-2" name="tile_slider" id="tile_slider">
+
+                                                                            </div>
+
+                                                                        </div>
+                                                                        
+                                                                     <!-- checkbox button -->
+                                                           
                                                                         
                                                                         
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
                                                                                 <div id="classification_buttons" data-toggle="buttons">
                                                                                     
-                                                                                    <input type="checkbox" name="color_tiles_switch" checked>
+                                                                                   
                                                                                     
                                                                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                                                                                     <label id="label_high_light_off" class="btn btn-black">

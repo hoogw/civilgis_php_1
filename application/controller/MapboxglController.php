@@ -60,7 +60,68 @@ class MapboxglController extends Controller
     
     
     
+    public function multilayersimplemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersimplemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
     
+    
+    
+    public function multilayersimplecolormap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersimplecolormap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    public function singlelayersimplemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayersimplemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
     
     
     
@@ -77,7 +138,7 @@ class MapboxglController extends Controller
     
     //----------------------- table map section -------------------------------
     
-    public function renderedfeaturepagedtablemap($area, $subject)
+    public function multilayerrenderedfeaturepagedtablemap($area, $subject)
     {
          
         
@@ -90,7 +151,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/renderedfeaturepagedtablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/multilayerrenderedfeaturepagedtablemap');
          
          
        
@@ -99,7 +160,7 @@ class MapboxglController extends Controller
     
     
     
-    public function sourcefeaturepagedtablemap($area, $subject)
+    public function multilayersourcefeaturepagedtablemap($area, $subject)
     {
          
         
@@ -112,74 +173,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/sourcefeaturepagedtablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-   
-    
-    public function pagedfulltablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/pagedfulltablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    
-    public function renderedfeaturescrollertablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/renderedfeaturescrollertablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    public function sourcefeaturescrollertablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/sourcefeaturescrollertablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersourcefeaturepagedtablemap');
          
          
        
@@ -188,7 +182,7 @@ class MapboxglController extends Controller
     
    
     
-    public function scrollerfulltablemap($area, $subject)
+    public function multilayerpagedfulltablemap($area, $subject)
     {
          
         
@@ -201,7 +195,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/scrollerfulltablemap');
+         $multifiles = array($side_panel_path,'mapboxgl/multilayerpagedfulltablemap');
          
          
        
@@ -210,6 +204,205 @@ class MapboxglController extends Controller
     
     
     
+    
+    public function multilayerrenderedfeaturescrollertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayerrenderedfeaturescrollertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function multilayersourcefeaturescrollertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersourcefeaturescrollertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function multilayerscrollerfulltablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayerscrollerfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    // ...................... single layer ...............
+    
+    
+     public function singlelayerrenderedfeaturepagedtablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayerrenderedfeaturepagedtablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function singlelayersourcefeaturepagedtablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayersourcefeaturepagedtablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function singlelayerpagedfulltablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayerpagedfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    
+    public function singlelayerrenderedfeaturescrollertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayerrenderedfeaturescrollertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function singlelayersourcefeaturescrollertablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayersourcefeaturescrollertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function singlelayerscrollerfulltablemap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayerscrollerfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
     
     
    
