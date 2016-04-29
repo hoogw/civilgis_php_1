@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -47,7 +47,7 @@ function initialize() {
 
                             init_checkbox_menu_simple($("#areaID").val(), $("#subjectID").val());
 
-                             init_vector_style($("#areaID").val(), $("#subjectID").val());
+                            init_vector_muiltilayer_highlight_layer($("#areaID").val(), $("#subjectID").val());
 
                          
 
@@ -80,8 +80,8 @@ function initialize() {
 $(document).ready(function () {
 
 
-
 base_url = document.getElementById('base_url').value;
+
 
     initialize();
 

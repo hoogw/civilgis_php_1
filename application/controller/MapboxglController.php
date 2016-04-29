@@ -15,7 +15,9 @@ class MapboxglController extends Controller
     // maponly have multi form
     
     
-    //----------------------- simple map section -------------------------------
+     //----------------------- simple map section -------------------------------
+
+                                        //................(1) Not highlight feature .......................     
    public function simplemap($area, $subject)
     {
          
@@ -103,7 +105,15 @@ class MapboxglController extends Controller
     }
     
     
-    public function singlelayersimplemap($area, $subject)
+    
+    
+                            //................End ........... Not highlight feature .......................    
+
+
+
+                                        //....................(2) with highlight feature ..........................
+    
+    public function singlelayersimplehighlightgeojsonmap($area, $subject)
     {
          
         
@@ -116,7 +126,7 @@ class MapboxglController extends Controller
          $data['area'] = $area;
          
          $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'mapboxgl/singlelayersimplemap');
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayersimplehighlightgeojsonmap');
          
          
        
@@ -127,7 +137,76 @@ class MapboxglController extends Controller
     
     
     
-    //----------------------- End simple map section -------------------------------
+    public function singlelayersimplehighlightlayermap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/singlelayersimplehighlightlayermap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function multilayersimplecolorhighlightlayermap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersimplecolorhighlightlayermap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function multilayersimplehighlightlayermap($area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         
+         $side_panel_path = '_templates/mapboxgl/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'mapboxgl/multilayersimplehighlightlayermap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+                   //....................End ............... with highlight feature ..........................
+
+
+        //----------------------- End simple map section -------------------------------
     
     
     

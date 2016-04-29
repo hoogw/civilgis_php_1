@@ -273,7 +273,7 @@
 				
 			</div>
 			<div class="box-content" id="accordion">
-				<h5>Zoning Land Use</h5>
+				<h5>Muilti-layers map</h5>
 				<div>
                                     
                                         
@@ -282,23 +282,26 @@
                                            
                                            
                                            
-                                           <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [check box button]</button>
+                                           <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplecolormap/city/overview'">Simple Color map</button>
 
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Santa_Monica/Zoning'">Santa Monica Zoning [radio button]</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/overview'">Simple map</button>
 
 
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Palo_Alto/Zoning'">Palo Alto Zoning - check box</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolormap/city/overview'">Muilti-layers Simple Color map</button>
 
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Palo_Alto/Zoning'">Palo Alto Zoning - radio</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplemap/city/overview'">Muilti-layers Simple map</button>
                                             &nbsp;&nbsp;
+                                            
+                                            
+                                             <br/>
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Shoreline/Zoning'">Shoreline General Land Use - check box</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightlayermap/city/overview'">Muilti-layers Simple Color highlightlayer map</button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Shoreline/Zoning'">Shoreline General Land Use - radio</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplehighlightlayermap/city/overview'">Muilti-layers Simple highlightlayer map</button>
                                             &nbsp;&nbsp;
 
                                            
@@ -306,44 +309,52 @@
                                          
                                          
 				</div>
-				<h5>Parcels</h5>
+				<h5>Single-layers map</h5>
 				<div>
-                                          <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Palo_Alto/Parcels'">Palo Alto Parcels</button>
+                                          <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/streets'">Single layer simple highlight-GEOJSON map - line</button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Parcels'">Newport Beach Parcels </button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/parcels'">Single layer simple highlight-GEOJSON map - polygon </button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Tax_Parcel_Central'">Shoreline Parcels </button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>/mapboxgl/singlelayersimplehighlightgeojsonmap/city/address'">Single layer simple highlight-GEOJSON map - point </button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/New_York_Manhattan/Zoning'">New York City Manhattan Parcels </button>
+                                            <br/>
+                                            
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/streets'">Single layer simple highlight-LAYER map - line</button>
+                                            
+                                            &nbsp;&nbsp;
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/parcels'">Single layer simple highlight-LAYER map - polygon</button>
+                                            &nbsp;&nbsp;
+                                            
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/address'">Single layer simple highlight-LAYER map - point</button>
 
                                          
                                          
                                          
 				</div>
-				<h5>Address And Streets</h5>
+				<h5>Multi-layer map with attribute table</h5>
 				<div>
 					
                                    
                                      
-                                     <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Address'"> Address </button>
+                                     <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Address'"> ... </button>
                                             &nbsp;&nbsp;
                
                                             
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/Palo_Alto/Addresses'">Cluster Address</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/Palo_Alto/Addresses'">...</button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Street'"> Shoreline Street</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Street'"> ...</button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Street_Light'">Shoreline StreetLight</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Street_Light'">...</button>
 
                                             &nbsp;&nbsp;
 
                                     
 				</div>
-				<h5>Others</h5>
+				<h5>Multi-layer map with attribute table</h5>
 				<div>
 					                 
                                                             
@@ -353,21 +364,21 @@
                                     
                                     
                                                             
-                                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterpagedclienttablemap/county/education_facility'">Point Cluster with paged table[ Education Facility]</button>
+                                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterpagedclienttablemap/county/education_facility'">...</button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations'">Point Cluster with scroller table [ Fire Stations]</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/county/fire_stations'">Point Cluster without table [ Fire Stations]</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations'">....</button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Palo_Alto/Building'">Buildings with table</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/county/fire_stations'">....</button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Shoreline/Buildings'">Buildings without table</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Palo_Alto/Building'">....</button>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Palo_Alto/Right_of_way'">Right of way</button>
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Shoreline/Buildings'">....</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Palo_Alto/Right_of_way'">.....</button>
                                             &nbsp;&nbsp;
 
 

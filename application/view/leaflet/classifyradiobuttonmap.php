@@ -25,13 +25,16 @@
 
 
 
-
+<!--
 <link href="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" />
 <script src="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.js"></script>
 <script src="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.js"></script>
 <link href="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.css" rel="stylesheet" />
 
+-->
 
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
 
 
    
@@ -124,6 +127,8 @@
                                                                     <div id="classification_section" class="well">
                                                                         
                                                                         
+                                                                        
+                                                                        <!--
                                                                         <div class="row">
 
                                                                             <div class="col-lg-1">
@@ -137,7 +142,7 @@
                                                                         </div>
                                                                         
                                                                         <br>
-                                                                        
+                                                                        -->
                                                                         
                                                                         
                                                                     <!--	<div class="btn-group" data-toggle="buttons">        btn-group cause not space between button -->
