@@ -19,7 +19,8 @@
 <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
 
 
-
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>

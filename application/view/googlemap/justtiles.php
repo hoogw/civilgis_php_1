@@ -5,14 +5,11 @@
 
 
 
-<link href="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" />
-<script src="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.css" rel="stylesheet" />
 
 
 
 
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/google_map_opacity_slider/ExtDraggableObject.js"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/googlemap.js"></script>
@@ -95,24 +92,24 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
+                                             <!-- google opacity slider -->
+                                                  <div id="opacityDiv" style='margin: 5px; overflow-x: hidden; overflow-y: hidden;  background: url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat; width: 71px; height: 21px; cursor: pointer;'> 
+                      
+
+                                                                    <div id="opacityKnobDiv" style='padding:0;margin:0;overflow-x:hidden;overflow-y:hidden;background:url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat -71px 0;width:14px;height:21px;'>
+                                                                    </div>
+
+
+                                                    </div>
+
+                                             <!--  End of google opacity slider -->
+                                            
+                                            
+                                            
+                                            
                                             <div id="title_info" > </div>
                                             
                                             
-                                                            <div class="well">
-                                                            <div class="row">
-
-                                                               <div class="col-lg-1">
-                                                                   <input type="checkbox" name="color_tiles_switch" checked>
-                                                               </div>
-
-                                                               <div class="col-lg-2" name="tile_slider" id="tile_slider">
-
-                                                               </div>
-
-                                                            </div>
-
-                                                            </div>
-                                             
                                              
                                              
                                             <div id="info-table">

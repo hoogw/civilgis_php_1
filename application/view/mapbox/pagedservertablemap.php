@@ -13,7 +13,8 @@
          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/pagedservertablemap.js"></script>
         
    
-         
+         <link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
          
          
          

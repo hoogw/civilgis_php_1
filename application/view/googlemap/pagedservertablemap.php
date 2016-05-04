@@ -14,6 +14,10 @@
    
          
          
+        <script src="<?php echo Config::get('URL'); ?>public/js/map_api/google_map_opacity_slider/ExtDraggableObject.js"></script>
+        
+        
+        
          
          
     <!-- this hidden value carry the map subject from controller use it in javascript api call-->
@@ -150,6 +154,20 @@
 
                                                         <div id="legend" class="alert alert-warning"></div>
 
+                                                        
+                                                         <!-- google opacity slider -->
+                                                  <div id="opacityDiv" style='margin: 5px; overflow-x: hidden; overflow-y: hidden;  background: url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat; width: 71px; height: 21px; cursor: pointer;'> 
+                      
+
+                                                                    <div id="opacityKnobDiv" style='padding:0;margin:0;overflow-x:hidden;overflow-y:hidden;background:url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat -71px 0;width:14px;height:21px;'>
+                                                                    </div>
+
+
+                                                    </div>
+
+                                             <!--  End of google opacity slider -->
+                                                        
+                                                        
                                                         
                                                         
                                                         <div id="title_info" > </div>

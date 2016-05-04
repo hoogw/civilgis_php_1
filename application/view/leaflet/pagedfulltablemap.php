@@ -31,6 +31,11 @@
    
          
          
+         <link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
+         
+         
+         
          
          
     <!-- this hidden value carry the map subject from controller use it in javascript api call-->

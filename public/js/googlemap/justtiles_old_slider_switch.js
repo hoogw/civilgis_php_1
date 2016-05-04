@@ -8,11 +8,11 @@
 function just_add_tiles() {
 
 
+tile_slider();
 
+    init_tiling__old_slider_switch();
 
-    init_tiling();
-
-
+tile_switch_button();
 
      
     document.getElementById("ajaxload").style.display = "none";

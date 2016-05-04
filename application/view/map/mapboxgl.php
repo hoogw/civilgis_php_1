@@ -25,7 +25,7 @@
                         
                      
               
-                    
+                    <!--
                   
                        <div class="row">
                          <div class="col-xs-12 col-sm-12">
@@ -107,7 +107,7 @@
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/city_of_los_angeles.png" alt="" />
                             </button>
 
-        <!--                         
+                                
                             
                             
                                <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Stockton/'">
@@ -237,7 +237,7 @@
                            
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/city'">Sample city</button>
                              &nbsp;&nbsp;
--->
+
 
                                                         
                                                         
@@ -259,6 +259,11 @@
                                     </div>
                         
                      </div>
+                    
+                    
+                    
+             -->       
+                    
                     
                         
                        <div class="row">
@@ -397,7 +402,7 @@
                     
                     
                     
-                    
+           <!--         
                     
                         <div class="row">
                                     <div class="col-xs-12 col-sm-12">
@@ -433,7 +438,7 @@
 
                                 &nbsp;&nbsp;
 
-          <!--                      
+                                
                                 <button type="button" class="btn btn-xs btn-outline btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>data/tablelistscroller/denver/'">
                                     <img src="<?php echo Config::get('URL'); ?>public/images/logo/denver.gif" />
                                     
@@ -462,7 +467,7 @@
                                 </button>
 
                               
-                     -->                                   
+                                                        
                                                       
                                                         
                                                     </div>
@@ -472,7 +477,7 @@
                         
                         </div>
                     
-                    
+              -->      
                     
                     
                     

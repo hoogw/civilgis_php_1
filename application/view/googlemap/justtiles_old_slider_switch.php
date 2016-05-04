@@ -1,26 +1,23 @@
 
-<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 
 
 
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+<link href="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" />
+<script src="<?php echo Config::get('URL'); ?>public/js/ui/bootstrap-switch/bootstrap-switch.js"></script>
+<script src="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/ui/noUiSlider.8.5.1/nouislider.min.css" rel="stylesheet" />
 
 
 
 
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
 
 
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/googlemap.js"></script>
 
-
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapbox.js"></script>
-
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapbox/simpleclustermap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/googlemap/justtiles_old_slider_switch.js"></script>
 
 
    
@@ -44,12 +41,14 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/mapbox/">Transparent Gov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/googlemap/">Transparent Gov</a></li>
                                                 
-                                            <li><a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                             
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/googlemap/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapbox/simpleclustermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -68,10 +67,8 @@
                                                         <div class="box-name">
                                                                 <i class="fa fa-map-marker"></i>
                                                                 
-                                                                 <span><?php echo $data['subject'] ?></span>  
-                                                                <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" /> 
-                                                                <div id="title_info" > </div>
-                                                                
+                                                                <span><?php echo $data['subject'] ?></span>  
+                                                                <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
                                                         </div>
                                                     
                                                         <div class="box-icons">
@@ -98,7 +95,26 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
+                                            <div id="title_info" > </div>
                                             
+                                            
+                                                            <div class="well">
+                                                            <div class="row">
+
+                                                               <div class="col-lg-1">
+                                                                   <input type="checkbox" name="color_tiles_switch" checked>
+                                                               </div>
+
+                                                               <div class="col-lg-2" name="tile_slider" id="tile_slider">
+
+                                                               </div>
+
+                                                            </div>
+
+                                                            </div>
+                                             
+                                             
+                                             
                                             <div id="info-table">
           
                                             </div>
