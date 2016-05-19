@@ -30,7 +30,7 @@ var _mouseover_line_style;
 var geojson_classification_mouseover_highlight_style;
 
 
-
+var utfgrid_tile_layer;
 var _tile_exist = false;
 var _tile_list;
 
@@ -495,18 +495,75 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
                          
                          
                          
-                          //............................ bind opacity to slider ........................
-            
-//                _tile_slider.noUiSlider.on('set', function (values, handle, unencoded, tap, positions) {
-//
-//
-//                var _slider_handle_value = values[handle];
-//                _slider_handle_value = Math.round(_slider_handle_value) / 100;
-//
-//                tile_MapType.setOpacity(_slider_handle_value);
-//
-//            });
-            //................End ....... bind opacity to slider ........................
+                         //===================add ========== UTFgrid =================================
+
+                         var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json?callback={cb}';
+                        // var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
+
+                         var utfGrid = new L.UtfGrid(utfGrid_tile_Url,  {
+                            // useJsonP: false
+                         });
+                         
+
+                         utfGrid.on('click', function (e) {
+                             if (e.data) {
+
+
+                                 var _utfgrid_info = "<ul>";
+                                 var _object = e.data;
+
+                                 for (var _property in _object) {
+                                     if (_object.hasOwnProperty(_property)) {
+
+                                         _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                                     }
+                                 }
+
+                                 _utfgrid_info = _utfgrid_info + "</ul>";
+                                 document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
+
+
+                                 
+                             } else {
+                                // document.getElementById('utfgrid_info').innerHTML = 'click: nothing';
+                             }
+                         });
+
+
+                         utfGrid.on('mouseover', function (e) {
+                             if (e.data) {
+                                 
+
+                                 var _utfgrid_info = "<ul>";
+                                 var _object = e.data;
+
+                                 for (var _property in _object) {
+                                     if (_object.hasOwnProperty(_property)) {
+                                         
+                                         _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+                                        
+                                     }
+                                 }
+
+                                 _utfgrid_info = _utfgrid_info + "</ul>";
+                                 document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
+
+                             } else {
+                                // document.getElementById('utfgrid_info').innerHTML = 'hover: nothing';
+                             }
+                            
+                         });
+
+
+                         utfGrid.on('mouseout', function (e) {
+                             document.getElementById('utfgrid_info').innerHTML = '';
+                         });
+
+                         utfgrid_tile_layer = map.addLayer(utfGrid);
+
+
+            //==================== End ========== UTFgrid =================================
                          
                          
                          

@@ -27,6 +27,8 @@
           <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
          
+          
+          <script src="<?php echo Config::get('URL'); ?>public/js/map_api/Leaflet_utfgrid/leaflet.utfgrid-src.js" type="text/javascript"></script>
          
         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
        
@@ -271,7 +273,11 @@
                                         
                                     
                                                 <!-- info-table must be out side of box -->
-                                    <div id="info-table"> </div>   
+                                    <div id="info-table"> </div>
+
+                    
+
+                                             <div id="utfgrid_info">  </div>
                                     
                                 </div>
                         </div>

@@ -32,7 +32,7 @@
 
 
 
-
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/Leaflet_utfgrid/leaflet.utfgrid-src.js" type="text/javascript"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
@@ -162,9 +162,11 @@
                                             
                                             
                                             
-                                            <div id="info-table">
-          
-                                            </div>
+                                            <div id="info-table"> </div>
+
+                    
+
+                                             <div id="utfgrid_info">  </div>
                                             
                                         </div>
                                 </div>

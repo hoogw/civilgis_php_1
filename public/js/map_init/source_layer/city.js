@@ -58,10 +58,13 @@ var city_zoning = {
 
 source_layer['all_layers'] = { city_zoning, city_parcels, city_streets, city_address };
 
-source_layer['city_overview'] = { city_zoning, city_parcels, city_streets, city_address };
+source_layer['city_overview'] = { city_address, city_parcels, city_streets, city_zoning };
 
 //source_layer_id['city_overview'] = [ 'city_zoning', 'city_parcels', 'city_streets', 'city_address' ];
 
   
 
 //source_layer['city_overview'] = { city_address, city_streets, city_parcels, city_zoning };
+
+
+

@@ -2,6 +2,12 @@
 
 
 
+
+
+
+
+
+
 function initialize() {
 
 
@@ -14,7 +20,7 @@ function initialize() {
 
     init_base_map();
 
-    
+
 
     // add var geocoder
     geocoder();
@@ -25,48 +31,67 @@ function initialize() {
 
 
 
-    
+
     // --------------------- dynamic load javascript file based on area and ---------------------------
 
 
-    
+
 
 
     var _vector_style_js = base_url + "public/js/map_init/source_layer/" + $("#areaID").val() + ".js";
     //var _vector_style_js = "/Scripts/map_init/source_layer/" + $("#areaID").val() + ".js";
 
-                $.when(
-                         $.getScript(_vector_style_js)
-                        
-
-                ).done(function () {
+    $.when(
+             $.getScript(_vector_style_js)
 
 
-    
-                            
+    ).done(function () {
 
-                            init_checkbox_menu_color($("#areaID").val(), $("#subjectID").val());
 
-                             init_vector_style($("#areaID").val(), $("#subjectID").val());
 
-                         
 
-                });//done
+
+        multilayer_checkbox_menu_color($("#areaID").val(), $("#subjectID").val());
+        //multilayer_checkbox_menu_simple($("#areaID").val(), $("#subjectID").val());
+
+        multilayer_property_tab($("#areaID").val(), $("#subjectID").val());
+
+        
      
+        multilayer_vector_property($("#areaID").val(), $("#subjectID").val());
+
+        //retired 
+        //init_vector_multilayer($("#areaID").val(), $("#subjectID").val());
+        
+
+        multilayer_rendered_feature_binding_paged_property_table();
+
+
+        
+
+
+        
+
+
+    });//done
+
 
 
     // --------------End of ------- dynamic load javascript file based on area and ---------------------------
 
 
-     
 
 
 
-                add_area_boundary($("#areaID").val());
-                
+
+    add_area_boundary($("#areaID").val());
+
 
    
-   
+
+    
+
+
 
 }// initialize
 
@@ -78,6 +103,15 @@ function initialize() {
 
 
 $(document).ready(function () {
+
+
+
+//$("#tabs").tabs();
+	
+
+
+
+
 
 
 
@@ -94,3 +128,11 @@ base_url = document.getElementById('base_url').value;
 
 
 
+
+    
+    
+    
+    
+    
+    
+    

@@ -21,8 +21,8 @@ function initialize() {
 
     //---------------- end of  init - mapboxGL -----------
 
-var _vector_style_js = base_url + "public/js/map_init/source_layer/" + $("#areaID").val() + ".js";
-   // var _vector_style_js = "/Scripts/map_init/source_layer/" + $("#areaID").val() + ".js";
+
+    var _vector_style_js = base_url + "public/js/map_init/source_layer/" + $("#areaID").val() + ".js";
 
     $.when(
              $.getScript(_vector_style_js)
@@ -31,7 +31,7 @@ var _vector_style_js = base_url + "public/js/map_init/source_layer/" + $("#areaI
     ).done(function () {
 
 
-        init_vector_singlelayer_highlight_layer($("#areaID").val(), $("#subjectID").val());
+        singlelayer_vector_highlight_layer($("#areaID").val(), $("#subjectID").val());
     
     });//done
 

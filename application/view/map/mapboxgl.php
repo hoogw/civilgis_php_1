@@ -25,7 +25,7 @@
                         
                      
               
-                    <!--
+                    
                   
                        <div class="row">
                          <div class="col-xs-12 col-sm-12">
@@ -262,7 +262,7 @@
                     
                     
                     
-             -->       
+                   
                     
                     
                         
@@ -278,6 +278,37 @@
 				
 			</div>
 			<div class="box-content" id="accordion">
+                            
+                                <h5>Zoning Map</h5>
+				<div>
+					
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon2overlay/city/zoning/address/parcels'">Zoning & 2 overlay(parcels, address)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/parcels'">Zoning & 1 overlay(parcels)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/address'">Zoning & 1 overlay(address)</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/city/zoning'">Simple Zoning with switch</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonsimple/city/zoning'">Simple Zoning</button>
+                                            &nbsp;&nbsp;
+                                     
+                                     
+
+                                    
+				</div>
+                            
+                            
+                            
+                            
+                            
 				<h5>Muilti-layers map</h5>
 				<div>
                                     
@@ -287,28 +318,67 @@
                                            
                                            
                                            
-                                           <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplecolormap/city/overview'">Simple Color map</button>
+                                           
+                                            
+                                            
+                                            Multi-layers Maps with attribute tables
 
+                                            <br />
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturepagedtablemap/city/overview'">multi-layer rendered feature paged table map</button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/overview'">Simple map</button>
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersourcefeaturepagedtablemap/city/overview'">multi-layer source feature paged table map</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturescrollertablemap/city/overview'">multi-layer rendered feature scroller table map</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersourcefeaturescrollertablemap/city/overview'">multi-layer source feature scroller table map</button>
+                                            &nbsp;&nbsp;
 
 
+
+                                            <br/>
+                                            Multi-layers Maps without attribute table, without highlight feature
+
+                                            <br />
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplecolormap/city/overview'">Simple Color map</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/overview'"> Simple map</button>
                                             &nbsp;&nbsp;
 
                                             <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolormap/city/overview'">Muilti-layers Simple Color map</button>
-
                                             &nbsp;&nbsp;
+
                                             <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplemap/city/overview'">Muilti-layers Simple map</button>
                                             &nbsp;&nbsp;
+
+
+                                            <br />
+                                            Multi-layers Maps without attribute table, with highlight feature
+
+                                            <br/>
+
                                             
-                                            
-                                             <br/>
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightgeojsonmap/city/overview'">Muilti-layers Simple Color highlight geojson map</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplehighlightgeojsonmap/city/overview'">Muilti-layers Simple highlight geojson map</button>
+                                            &nbsp;&nbsp;
 
                                             <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightlayermap/city/overview'">Muilti-layers Simple Color highlightlayer map</button>
                                             &nbsp;&nbsp;
+
                                             <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplehighlightlayermap/city/overview'">Muilti-layers Simple highlightlayer map</button>
                                             &nbsp;&nbsp;
 
+                                            <br />
+                                            
+                                            
+                                            
                                            
                                          
                                          
@@ -316,50 +386,91 @@
 				</div>
 				<h5>Single-layers map</h5>
 				<div>
-                                          <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/streets'">Single layer simple highlight-GEOJSON map - line</button>
-                                            &nbsp;&nbsp;
+                                           Single-layers Maps with  rendered featrue attribute tables
 
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/parcels'">Single layer simple highlight-GEOJSON map - polygon </button>
+                                            <br />
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/parcels'">single layer rendered feature scroller table highlight geojson map - polygon</button>
                                             &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>/mapboxgl/singlelayersimplehighlightgeojsonmap/city/address'">Single layer simple highlight-GEOJSON map - point </button>
+                                            
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/city/parcels'">single layer rendered feature scroller table highlight layer map - polygon</button>
                                             &nbsp;&nbsp;
+                                           
+
+
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/city/parcels'">single layer rendered feature paged table highlight geojson map - polygon</button>
+                                            &nbsp;&nbsp;
+                                            
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightlayermap/city/parcels'">single layer rendered feature paged table highlight layer map - polygon</button>
+                                            &nbsp;&nbsp;
+                                            <br />
+
+
+
+                                            Single-layers Maps with  source featrue attribute tables
+
+                                            <br />
+
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersourcefeaturescrollertablehighlightgeojsonmap/city/parcels'">single layer source feature scroller table highlight geojson map - polygon</button>
+                                            &nbsp;&nbsp;
+                                           
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersourcefeaturescrollertablehighlightlayermap/city/parcels'">single layer source feature scroller table highlight layer map - polygon</button>
+                                            &nbsp;&nbsp;
+                                           
+
+
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersourcefeaturepagedtablehighlightgeojsonmap/city/parcels'">single layer source feature paged table highlight geojson map - polygon</button>
+                                            &nbsp;&nbsp;
+                                            
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersourcefeaturepagedtablehighlightlayermap/city/parcels'">single layer source feature paged table highlight layer map - polygon</button>
+                                            &nbsp;&nbsp;
+                                            <br />
+
+                                            Single layer simple map, no attribute table
 
                                             <br/>
-                                            
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/streets'">Single layer simple highlight-LAYER map - line</button>
-                                            
-                                            &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/parcels'">Single layer simple highlight-LAYER map - polygon</button>
-                                            &nbsp;&nbsp;
-                                            
-                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/address'">Single layer simple highlight-LAYER map - point</button>
 
-                                         
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/streets'">Single layer simple highlight-GEOJSON map - line</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/parcels'">Single layer simple highlight-GEOJSON map - polygon</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/address'">Single layer simple highlight-GEOJSON map - point</button>
+                                            &nbsp;&nbsp;
+
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/streets'">Single layer simple highlight-LAYER map - line </button>
+                                            &nbsp;&nbsp;
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/parcels'">Single layer simple highlight-LAYER map - polygon</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightlayermap/city/address'">Single layer simple highlight-LAYER map - point</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <br />
+
                                          
                                          
 				</div>
-				<h5>Multi-layer map with attribute table</h5>
-				<div>
-					
-                                   
-                                     
-                                     <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Newport_Beach/Address'"> ... </button>
-                                            &nbsp;&nbsp;
-               
-                                            
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/Palo_Alto/Addresses'">...</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Street'"> ...</button>
-                                            &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Street_Light'">...</button>
-
-                                            &nbsp;&nbsp;
-
-                                    
-				</div>
-				<h5>Multi-layer map with attribute table</h5>
+				
+				<h5> more ....</h5>
 				<div>
 					                 
                                                             
@@ -369,22 +480,7 @@
                                     
                                     
                                                             
-                                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterpagedclienttablemap/county/education_facility'">...</button>
-                                            &nbsp;&nbsp;
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations'">....</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/county/fire_stations'">....</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Palo_Alto/Building'">....</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Shoreline/Buildings'">....</button>
-                                            &nbsp;&nbsp;
-
-                                            <button type="button" class="btn btn-xs btn-outline btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Palo_Alto/Right_of_way'">.....</button>
-                                            &nbsp;&nbsp;
+                                                            
 
 
                                             <button type="button" class="btn btn-xs btn-outline btn-info">...</button>
@@ -497,6 +593,16 @@
                                                 
                                                     <div class="box-content">
                                                             
+                                                        
+                                                        
+                                                        
+			
+				
+			
+                                                        
+                                                        
+                                                        
+                                                        
                                                         This application may contain and/or utilize information which was originally compiled by individual government agency for governmental purposes. 
                                                         The information may subsequently been modified by entity/entities other than original individual government agency. 
                                                         The original individual government agency make no representation as to the accuracy or usefulness of the information provided by this application or the information's suitability for any purpose and disclaim any liability for omissions or errors that may be contained therein. 

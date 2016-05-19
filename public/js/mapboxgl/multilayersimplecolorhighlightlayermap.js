@@ -33,7 +33,7 @@ function initialize() {
 
 
     var _vector_style_js = base_url + "public/js/map_init/source_layer/" + $("#areaID").val() + ".js";
-    //var _vector_style_js = "/Scripts/map_init/source_layer/" + $("#areaID").val() + ".js";
+   // var _vector_style_js = "/Scripts/map_init/source_layer/" + $("#areaID").val() + ".js";
 
     $.when(
              $.getScript(_vector_style_js)
@@ -45,7 +45,7 @@ function initialize() {
 
 
 
-        init_checkbox_menu_color($("#areaID").val(), $("#subjectID").val());
+        multilayer_checkbox_menu_color($("#areaID").val(), $("#subjectID").val());
 
         init_vector_muiltilayer_highlight_layer($("#areaID").val(), $("#subjectID").val());
 
