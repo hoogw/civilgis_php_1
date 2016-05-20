@@ -187,7 +187,9 @@
                                         
                                     
                                                 <!-- info-table must be out side of box -->
-                                    <div id="info-table"> </div>   
+                                    <div id="info-table"></div>
+
+                                             <div id="utfgrid_info">  </div> 
                                     
                                 </div>
                         </div>

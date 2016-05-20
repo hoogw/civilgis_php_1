@@ -1,6 +1,8 @@
 var mapboxgl_accessToken = 'pk.eyJ1IjoiaG9vZ3ciLCJhIjoiYjdlZTA1Y2YyOGM4NjFmOWI2MjY3MmI5NWM3MmUyOWMifQ.gINCV5SXFGTG5wB8ouXxOw';
 
 var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
+var _tile_baseURL_localhost = 'http://localhost:8888/v2/';
+
 
 var base_layers;
 var _tile_slider;
@@ -27,6 +29,11 @@ var _click_line_style;
 var _mouseover_polygon_style;
 var _mouseover_line_style;
 var geojson_classification_mouseover_highlight_style;
+
+
+var utfgrid_tile_layer;
+var utfGrid;
+var utfgrid_control;
 
 
 
@@ -476,6 +483,8 @@ function init_tiling() {
 
 
 
+// local testing only
+            _tile_baseURL = _tile_baseURL_localhost;
 
 
             //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
@@ -493,6 +502,85 @@ function init_tiling() {
             overlay_tile_layer = map.addLayer(tile_MapType);
 
             tile_MapType.setZIndex(99);
+            
+            
+            
+            
+             //===================add ========== UTFgrid =================================
+
+            //var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json?callback={cb}';
+              var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
+
+              var _tilejson_utfgrid = {
+                  "tilejson": "2.1.0",
+                  "tiles": [overlay_tile_Url],
+                  "grids": [utfGrid_tile_Url]
+       
+              };
+
+              utfGrid = L.mapbox.gridLayer(_tilejson_utfgrid).addTo(map);
+
+            
+            
+            utfGrid.on('click', function (e) {
+                if (e.data) {
+
+
+                    var _utfgrid_info = "<ul>";
+                    var _object = e.data;
+
+                    for (var _property in _object) {
+                        if (_object.hasOwnProperty(_property)) {
+
+                            _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                        }
+                    }
+
+                    _utfgrid_info = _utfgrid_info + "</ul>";
+                    document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
+
+
+
+                } else {
+                    // document.getElementById('utfgrid_info').innerHTML = 'click: nothing';
+                }
+            });
+
+
+            utfGrid.on('mouseover', function (e) {
+                if (e.data) {
+
+
+                    var _utfgrid_info = "<ul>";
+                    var _object = e.data;
+
+                    for (var _property in _object) {
+                        if (_object.hasOwnProperty(_property)) {
+
+                            _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                        }
+                    }
+
+                    _utfgrid_info = _utfgrid_info + "</ul>";
+                    document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
+
+                } else {
+                    // document.getElementById('utfgrid_info').innerHTML = 'hover: nothing';
+                }
+
+            });
+
+
+            utfGrid.on('mouseout', function (e) {
+                document.getElementById('utfgrid_info').innerHTML = '';
+            });
+           
+           
+          //  utfgrid_control = L.mapbox.gridControl(utfGrid).addTo(map);
+
+            //==================== End ========== UTFgrid =================================
             
             
             

@@ -174,6 +174,21 @@
                                 
                                 
                                 
+                                
+                                 <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>map/leafletmvt" class="dropdown-toggle">
+						
+						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/leaflet-logo.png" alt=""/> &nbsp; -&nbsp; MapboxVectorTile</span>
+					</a>
+                                    
+                                        
+				</li>
+                                
+                                
+                                
+                                
+                                
+                                
                                  <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
 						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
