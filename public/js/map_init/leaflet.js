@@ -1,7 +1,8 @@
 var heremap_app_id = "J5aP2hv9dOa9Us8e6OPn";
 var heremap_app_code = "oXTkvCJfsVdMTkD56CBy0g";
 
-var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
+//var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
+var _tile_baseURL = 'http://tile.transparentgov.net/v2/';
 var _tile_baseURL_localhost = 'http://localhost:8888/v2/';
 
 var base_layers;
@@ -483,7 +484,7 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
                         // _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
 
 // local testing only
-                          _tile_baseURL = _tile_baseURL_localhost;
+                        //  _tile_baseURL = _tile_baseURL_localhost;
 
 
                          var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.png';
@@ -504,7 +505,9 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
                         // var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
 
                          var utfGrid = new L.UtfGrid(utfGrid_tile_Url,  {
-                            // useJsonP: false
+                             maxRequests: 50,    // default is 4,  only send 4 request per time, then wait requesttimeout(default 1 min) to send another 4 grid request, should set to more than 20
+                             requestTimeout:500  // default is 1 min, most of request not found is less than 500 ms, 
+                              //useJsonP: false
                          });
                          
 
