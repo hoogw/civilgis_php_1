@@ -105,7 +105,22 @@ function feed_datatables(_geojson_obj){
                                                     
                             }); // datatable
                             
-                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             
                             
                            
@@ -128,37 +143,64 @@ function feed_datatables(_geojson_obj){
                                             
 
 
-                            // -----------leaflet --------------
-                                           
-                                                
+                            // -----------  **************   openlayers    ****************--------------
+                                           var highlight;
+                                           var feature;
+                                           var highlightStyleCache = {};
+
+
+
+                                           _highlight_featureOverlay = new ol.layer.Vector({
+                                               source: new ol.source.Vector(),
+                                               map: map,
+                                               style: _clienttable_mouseover_row_highlight_feature_style
+                                               
+                                              
+                                           });
+
+
+                           
+                                       
+
+
+                                           _geojson_vectorSource.forEachFeature(
+
+                                               function (_each_feature) {
+
+
+                                                   var click_row_geofeatureID = _each_feature.getProperties().GeoFeatureID;
+                                                   
+                                                   if (click_row_geofeatureID === _geo_ID) {
+
+
+                                                      // alert(click_row_geofeatureID);
+
+                                                       feature = _each_feature;
+
+                                                       if (feature !== highlight) {
+                                                           if (highlight) {
+                                                               _highlight_featureOverlay.getSource().removeFeature(highlight);
+
+                                                           }
+                                                           if (feature) {
+                                                               _highlight_featureOverlay.getSource().addFeature(feature);
+                                                           }
+                                                           highlight = feature;
+
+                                                           _current_highlight = highlight;
+                                                       }//if
+
+
+                                                   }// if
+
+                                               } );// forEachFeature
+
+
 
 
                             
-                                           _current_geojson_layer.eachLayer(
-                                                function (featureInstanceLayer) {
 
-                                                    var click_row_geofeatureID = featureInstanceLayer.feature.properties.GeoFeatureID;
-                                                    var click_row_geofeaturetype = featureInstanceLayer.feature.properties.GeoFeatureType;
-
-                                                        
-
-                                                        if (click_row_geofeatureID === _geo_ID) {
-
-
-                                                                featureInstanceLayer.setStyle(
-                                                                    geojson_clienttable_mouseover_highlight_style
-                                                                    );
-
-
-                                                        
-                                                    }// if
-
-                                                }// function
-
-                                                );
-
-
-                            //------------ end of leaflet ----------------
+                            // -----------End   **************   openlayers    ****************--------------
 
 
 
@@ -180,16 +222,17 @@ function feed_datatables(_geojson_obj){
                                                 // update bottom <div>
                                              document.getElementById("info-table").innerHTML = instant_info;   
                                                                    
-                                   } ); // click cell event    
+                                   } ); // mouseover cell event    
                             
                             
                          $('#tabledata tbody').on('mouseout', 'td', function () 
                                    {
                                        
-                                        // remove all high light yellow the feature polygon on google map
-                                       // Remove custom styles.
-                                        //map.data.revertStyle();
-                             _current_geojson_layer.setStyle(geojson_default_style);
+                                        // remove all high light feature 
+                                       
+                             if (_current_highlight) {
+                             _highlight_featureOverlay.getSource().removeFeature(_current_highlight);
+                             }
                                         
                                         // empty bottom <div>
                                          document.getElementById("info-table").innerHTML = "";
@@ -206,386 +249,292 @@ function feed_datatables(_geojson_obj){
 
 
 
-
-
-
 function ajax_GeoJSON(gmap, _apiURI, _map_click_event) {
-    
+
+
+
+
     // Load a GeoJSON from the server 
-   
-            
-          
-                            
-                            
-            
-            
-            
-               
-            
-            // test url if return a number means too many polygon to show.otherwise add polygon to map.
-           
-            $.get(_apiURI, function(data){
-           
-                        if(isNaN(data)){
-                             
-                        
-                          
-                           
 
-                            _geojson_object = JSON.parse(data);
 
 
 
-                            // ================= append two column GeoFeatureType GeoFeatureID to properties. =========================
-                            //-------------    php format add each _id:{"$id": "55e8c24e382f9fe337f0d8fe"}  to properties before draw on map. -------------
-                            //-------------asp.net format add each  {"_id" : "55c532cf21167708171b02a2"}  to properties before draw on map. -------------
 
-                                         var _features_array = _geojson_object['features'];
 
-                                         var _id_obj;
-                                         var _id_obj_id;
-                                         var _propty_obj;
 
-                                         _features_array.forEach( function (eachFeatueItem)
-                                             {
-                                                  
-                                             
-                                             
-                                               // --- php format ------
-                                               
-                                                  _id_obj = eachFeatueItem['_id'];
-                                                  _id_obj_id = _id_obj['$id'];
-                                                 _propty_obj = eachFeatueItem['properties'];
-                                                 var _geo_type = eachFeatueItem['geometry'];
-                                                 
-                                                 _propty_obj['GeoFeatureType']=_geo_type['type'];
-                                                 _propty_obj['GeoFeatureID'] = _id_obj_id;
+    // test url if return a number means too many polygon to show.otherwise add polygon to map.
+    $.get(_apiURI, function (data) {
 
+        if (isNaN(data)) {
 
 
-                                           
-                                                 // ---end  php format ------
-                                              
 
-/*
-                                             // ------ asp.net format -----------
-                                             var _geo_type = eachFeatueItem['geometry'];
+            // ---------   processing data(geoJson) to fill datatables -----------------
 
 
 
-                                             _propty_obj = eachFeatueItem['properties'];
 
-                                             _propty_obj['GeoFeatureType'] = _geo_type['type'];
-                                             _propty_obj['GeoFeatureID'] = eachFeatueItem['_id'];
 
-                                               // ------End of  asp.net format -----------
-           */     
+            _geojson_object = JSON.parse(data);
 
 
-                                             });// features_array_foreach
 
-                                         _geojson_object['features'] = {};
-                                         _geojson_object['features'] = _features_array;
-                                        //---------------------------------------------------------------
 
-                            // =================End of  append two column GeoFeatureType GeoFeatureID to properties. =========================
+            // ================= append two column GeoFeatureType GeoFeatureID to properties. =========================
+            //-------------    php format add each _id:{"$id": "55e8c24e382f9fe337f0d8fe"}  to properties before draw on map. -------------
+            //-------------asp.net format add each  {"_id" : "55c532cf21167708171b02a2"}  to properties before draw on map. -------------
 
+            var _features_array = _geojson_object['features'];
 
+            var _id_obj;
+            var _id_obj_id;
+            var _propty_obj;
 
+            _features_array.forEach(function (eachFeatueItem) {
 
-                            //----------------  add new geojson, then remove last geojson --------------------
 
-                                        
+                
+                  // --- php format ------
+                  
+                     _id_obj = eachFeatueItem['_id'];
+                     _id_obj_id = _id_obj['$id'];
+                    _propty_obj = eachFeatueItem['properties'];
+                    var _geo_type = eachFeatueItem['geometry'];
+                    
+                    _propty_obj['GeoFeatureType']=_geo_type['type'];
+                    _propty_obj['GeoFeatureID'] = _id_obj_id;
 
-                                         _last_geojson_layer = _current_geojson_layer;
 
-                                         _current_geojson_layer = L.geoJson(_geojson_object, {
 
+              
+                    // ---end  php format ------
+                 
 
 
-                                             // for point feature, by default it use marker, but instead of use marker, here change marker to polygon (circle marker) 
-                                             pointToLayer: function (feature, latlng) {
-                                                 return L.circleMarker(latlng, geojson_Marker_style_Options);
-                                             },
+                // ------ asp.net format -----------
+//                var _geo_type = eachFeatueItem['geometry'];
+//
+//
+//
+//                _propty_obj = eachFeatueItem['properties'];
+//
+//                _propty_obj['GeoFeatureType'] = _geo_type['type'];
+//                _propty_obj['GeoFeatureID'] = eachFeatueItem['_id'];
 
 
-                                             style: geojson_default_style,
+            });// features_array_foreach
 
-                                             onEachFeature: function onEachFeature(feature, layer) {
+            _geojson_object['features'] = {};
+            _geojson_object['features'] = _features_array;
+            //---------------------------------------------------------------
 
+            // =================End of  append two column GeoFeatureType GeoFeatureID to properties. =========================
 
 
 
 
 
 
-                                                 //bind click
-                                                 layer.on('mouseover', function (e) {
-                                                     // e = event
-                                                     // console.log(e); 
 
-                                                     // You can make your ajax call declaration here
-                                                     //$.ajax(... 
 
 
-                                                     layer.setStyle(geojson_mouseover_highlight_style);
 
 
 
-                                                     var instant_info = "<ul>";
 
 
-                                                     for (var _key in layer.feature.properties) {
-                                                         var _value = String(layer.feature.properties[_key]);
-                                                         instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _key + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + _value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
 
-                                                     }
 
 
-                                                     instant_info = instant_info + "</ul>";
+            //...................... openlayers  add new geojson, then remove last geojson..........................
 
 
-                                                     // update bottom <div>
-                                                     document.getElementById("info-table").innerHTML = instant_info;
-// hide 'utfgrid_info' <div>
-                        $('#utfgrid_info').hide();
+            _geojson_vectorSource = new ol.source.Vector({
+                features: (new ol.format.GeoJSON()).readFeatures(_geojson_object, { featureProjection: 'EPSG:3857' })
 
 
-                                                 });// layer.on mouseover
+            });
 
 
-                                                 layer.on('mouseout', function (e) {
 
-                                                     layer.setStyle(geojson_default_style);
+            _geojson_vectorLayer = new ol.layer.Vector({
+                source: _geojson_vectorSource,
+                style: styleFunction
+            });
 
-                                                     // empty bottom <div>
-                                                     document.getElementById("info-table").innerHTML = "";
-                                                     //infowindow.close();
 
-                                                 });// layer.on mouseout
+            map.addLayer(_geojson_vectorLayer);
+            _current_geojson_layer = true;
 
-                                             }// oneach function
 
-                                         }).bindPopup(function (layer) {
 
+            $('#utfgrid_info').hide();
 
-                                             // when user click each feature, it will popup a info window by the feature.
 
 
-                                             var popup = "<table>";
-                                             for (var _key in layer.feature.properties) {
-                                                 var _value = String(layer.feature.properties[_key]);
-                                                 // popup = popup + "<tr><td>" + _key + "</td><td>" + _value + "</td></tr>";
 
-                                                 popup = popup + "<tr><td><span style=\'background-color: #454545;\'><font color=\'white\'>" + _key + "</span>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;" + _value + "</td></tr>";
 
-                                             }
-                                             popup = popup + "</table>";
 
 
-                                             return popup;
 
 
-                                         }).addTo(map);
+            if (_last_geojson_layer) {
 
+                // layers start from 0 = base map, 1 = raster tile, 2 = utfgrid_tile, 3 = last time geojson,  4 = current geojson  / so 3 = array.lenghth - 2
 
-                                                 // ---- after add new geojson, now remove last time old geojson -------------
-                                                    // don't use Array.ForEach is about 95% slower than for() in JavaScript.
+                _all_layers = map.getLayers().getArray();
 
-                                         if (_last_geojson_layer) {
+                map.removeLayer(_all_layers[_all_layers.length - 2]);
 
-                                             //alert("remove last geojson");
+            }
+            else {
 
-                                             map.removeLayer(_last_geojson_layer);
+                _last_geojson_layer = true;
 
-                                         }// if
 
+            }// if
 
-                            //------------------------end add new geojson, then remove last geojson------------------------- ---------------
 
+            //---------------------------end    openlayers   add new geojson, then remove last geojson------------------------- ---------------
 
 
-                           
-                           feed_datatables(_geojson_object);
-                           
-                           
-                           
-                           // hidden the title_info
-                            document.getElementById("ajaxload").style.display = "none";
-                            document.getElementById("title_info").style.display = "none";
-                            document.getElementById("legend").style.display = "none";
 
+            feed_datatables(_geojson_object);
 
-                            // do not use this, because it have place holder for blank
-                            //document.getElementById("title_info").style.visibility = "hidden";
+            // hidden the title_info
+            document.getElementById("ajaxload").style.display = "none";
+            document.getElementById("title_info").style.display = "none";
+            document.getElementById("legend").style.display = "none";
 
 
-                            document.getElementById("title_info").innerHTML = "";
-                            document.getElementById("legend").innerHTML = "";
-                            
-                           
-                            
-                            // ------------- map click event [3] -------------------
-                            if (_map_click_event) {
-                            }
-                            else {
-                                _mapclick_in_use = false;
-                            }
+            // do not use this, because it have place holder for blank
+            //document.getElementById("title_info").style.visibility = "hidden";
 
-                            //-------------------------------------------------------------
-                            
-                            
-                          
-                           
-                        }
-                             // returning number of count, no geojson, clean the datatables
-                        else{ 
-                            
-                            // ---------- if return number, should remove last time geojson -----------
-                            _last_geojson_layer = _current_geojson_layer;
-                            if (_last_geojson_layer) {
 
-                                map.removeLayer(_last_geojson_layer);
+            document.getElementById("title_info").innerHTML = "";
+            document.getElementById("legend").innerHTML = "";
 
 
-                            }// if
-                            //-------------------- end remove last geojson ------------------------------
-                            
-                            
-                            // show 'utfgrid_info' <div>
+
+
+
+
+            // ------------- map click event [3] -------------------
+            if (_map_click_event) {
+            }
+            else {
+                _mapclick_in_use = false;
+            }
+
+            //-------------------------------------------------------------
+
+
+
+
+
+        }
+            // returning number of count
+        else {
+
+
+
+
+
+
+
+            // ---------- if return number, should remove last time geojson -----------
+
+            if (_last_geojson_layer) {
+
+
+                _all_layers = map.getLayers().getArray();
+
+
+                // layers start from 0 = base map, 1 = raster tile, 2 = utfgrid_tile, 3 = geojson = array.lenghth - 1
+
+
+                map.removeLayer(_all_layers[_all_layers.length - 1]);
+
+
+                _last_geojson_layer = false;
+                _current_geojson_layer = false;
+
+            }// if
+            //-------------------- end remove last geojson ------------------------------
+
+
+
+            // show 'utfgrid_info' <div>
             $('#utfgrid_info').show();
             // empty bottom <div>
             document.getElementById("info-table").innerHTML = "";
-                            
-                            
-                            
-                            
-                            document.getElementById("ajaxload").style.display = "none";
-                            document.getElementById("title_info").style.display = "inline";
-                            document.getElementById("legend").style.display = "inline";
-                            
-                            // empty bottom data table
-                            $('#tabledata').dataTable().fnClearTable();
-                            
-                            if (data > 0) {
-                                    
-                                            document.getElementById("title_info").innerHTML = "Found [ " + data + " ] records ZOOM IN for Details  ";
 
-                                         document.getElementById('legend').innerHTML = "Found [ " + data + " ] records ZOOM IN for Details ";
 
-                                     } else {
-                                             // data = 0 nothing found clear datatables
-                                            // $('#tabledata').dataTable().fnClearTable();
-                                             //$('#tabledata').dataTable().clear();  // this is api bug, for some reason it failed to clean data.
-                                             //$('#tabledata').dataTable().clear().draw();
-                                             
-                                            document.getElementById("title_info").innerHTML = "Nothing found";
-                                            document.getElementById("legend").innerHTML = "Nothing found";
-                                }
-                            // ------------- map click event [4] -------------------
+            document.getElementById("ajaxload").style.display = "none";
+            document.getElementById("title_info").style.display = "inline";
+            document.getElementById("legend").style.display = "inline";
 
-                            _mapclick_in_use = true;
 
-                            //-------------------------------------------------------------
+            // empty bottom data table
+            $('#tabledata').dataTable().fnClearTable();
 
 
 
+            if (data > 0) {
 
-                        }// if else
+                document.getElementById("title_info").innerHTML = "Found [ " + data + " ] records ZOOM IN for Details  ";
+
+                document.getElementById('legend').innerHTML = "Found [ " + data + " ] records ZOOM IN for Details ";
+
+            } else {
+
+                document.getElementById("title_info").innerHTML = "Nothing found";
+                document.getElementById("legend").innerHTML = "Nothing found";
+            }
 
 
 
-                     });// get // promist.then
-    
-                 
-                
-                
-                
-                
-                
+            // ------------- map click event [4] -------------------
+
+            _mapclick_in_use = true;
+
+            //-------------------------------------------------------------
+
+
+        }// else return number only
+
+    });// get
+
+
 }// function ajax_GeoJSON
 
 
 
 
-
-
-
-
-
-
-
-
 function initialize() {
-    
-       
-          
-         
+
 
 
     initial_location = set_initial_location($("#areaID").val());
 
 
-
-
-   init_base_map();
-    
-
-            //  ***** this add map listenner must be befor map.setView, *******************
-                    add_map_listener_idle();
-
-   
-                    map.setView(new L.LatLng(initial_location[1], initial_location[2]), initial_location[3]);
-
-           //  ***** end  **** this add map listenner must be befor map.setView, *******************
+    init_base_map_tiling();
 
 
 
-    add_area_boundary($("#areaID").val());
+}// initialize
 
 
 
-   
 
 
+$(document).ready(function () {
 
-    //------tile[1] ---------
-    init_tiling();
-    
-   
+base_url = document.getElementById('base_url').value;
 
-    geocoding();
+    initialize();
 
-
-
-        
-    }// initialize
-    
-    
-    
-    
-
-
-// datatables paged js
- $(document).ready(function () {
-
-
-base_url = document.getElementById('base_url').value;   
-
-     initialize();
-
-    
-
-    }); // document ready function
-    
-    
-    
-    
-    
-    
-    
-    
-    
+}); // document ready function
     
     
     

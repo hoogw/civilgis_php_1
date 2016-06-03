@@ -1,24 +1,31 @@
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.css" rel="stylesheet" />
-
-
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_providers/leaflet-providers.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://openlayers.org/en/v3.15.1/css/ol.css" type="text/css">
+<script src="http://openlayers.org/en/v3.15.1/build/ol.js"></script>
 
 
 
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.control.geosearch.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.google.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.esri.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.bing.js"></script>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/js/l.geosearch.provider.nokia.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_GeoSearch/css/l.geosearch.css" rel="stylesheet" />
+
+<!--           ol3-layerswitcher                             -->
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_layerswitcher/ol3-layerswitcher.css" rel="stylesheet" />
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_layerswitcher/ol3-layerswitcher.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_layerswitcher/scroll.css" rel="stylesheet" />
+
+<!--           ol3-geocoder                             -->
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_geocoder/ol3-geocoder.min.css" rel="stylesheet" />
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_geocoder/ol3-geocoder.js"></script>
 
 
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet.markercluster/working_leaflet.markercluster-src.js_for_1.0_beta_1.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet.markercluster/MarkerCluster.css" rel="stylesheet" />
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet.markercluster/MarkerCluster.Default.css" rel="stylesheet" />
 
+<!--           ol3-popup                             -->
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_popup/ol3-popup.css" rel="stylesheet" />
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_popup/ol3-popup.js"></script>
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/openlayers/ol3_popup/scroll.css" rel="stylesheet" />
+
+
+
+<!--          bootstrap_slider                                  -->
+
+<link href="<?php echo Config::get('URL'); ?>public/js/map_api/bootstrap_slider/bootstrap-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/bootstrap_slider/bootstrap-slider.js" type="text/javascript"></script>
 
 
 
@@ -30,19 +37,15 @@
 <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
 
 
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/Leaflet_utfgrid/leaflet.utfgrid-src.js" type="text/javascript"></script>
 
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/openlayers.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/clusterpagedclienttablemap.js"></script>
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/openlayers/clusterpagedclienttablemap.js"></script>
 
 
 
 
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.css" rel="stylesheet" type="text/css"/>
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
 
 
 
@@ -69,14 +72,14 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                               <li><a href="<?php echo Config::get('URL'); ?>map/leaflet/">Transparent Gov</a></li>
+                                               <li><a href="<?php echo Config::get('URL'); ?>map/openlayers/">Transparent Gov</a></li>
                                                 
                                              
-                                                  <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                                  <li><a href="<?php echo Config::get('URL'); ?>home/openlayers/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>leaflet/clusterpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>openlayers/clusterpagedclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -124,6 +127,8 @@
                                                     
                                                     
                                                 </div>
+                                            
+                                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="100" />
                                            
                                             <div id="legend" class="alert alert-warning"></div>
                                             

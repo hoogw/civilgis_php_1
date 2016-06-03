@@ -1,17 +1,19 @@
 var heremap_app_id = "J5aP2hv9dOa9Us8e6OPn";
 var heremap_app_code = "oXTkvCJfsVdMTkD56CBy0g";
+var mapquest_consumer_key = '7YyEJ1WeTzemrUYPKCuPJVx6a3kdDvlR';
+
 
 //var _tile_baseURL = 'http://166.62.80.50:8888/v2/';
 var _tile_baseURL = 'http://tile.transparentgov.net/v2/';
 var _tile_baseURL_localhost = 'http://localhost:8888/v2/';
 
+
 var base_layers;
 var baseMaps;
+
 var _tile_slider;
 var _slider_control;
 var _slidercontrol_handle_value;
-
-var base_url; 
 
 var leaflet_open_street_map_max_zoom_level = 19;
 var base_map_tile_layer;
@@ -31,7 +33,28 @@ var _mouseover_line_style;
 var geojson_classification_mouseover_highlight_style;
 
 
+
+
+
+
 var utfgrid_tile_layer;
+var utfgrid_layer;
+var utfgrid_source;
+var _view;
+var mapElement;
+var _area_boundaryline_vectorSource;
+var _area_boundaryline_layer;
+var _geojson_vectorSource;
+var _geojson_vectorLayer;
+var popup;
+var _raster_tile_layer;
+//var highlightStyleCache;
+var _highlight_featureOverlay;
+var _current_highlight = null;
+//var feature;
+
+
+
 var _tile_exist = false;
 var _tile_list;
 
@@ -109,9 +132,9 @@ var _multi_polyline;
 var _areaID;
 var _subjectID;
 var tile_MapType;
-var _current_geojson_layer = null;
-var _last_geojson_layer = null;
-
+var _current_geojson_layer = false;
+var _last_geojson_layer = false;
+var _all_layers;
 
 
 //--------------classification-------------------------
@@ -339,13 +362,10 @@ function add_area_boundary(_area) {
 
 
     _multi_polyline = 'No';
-              //var _js_url = "/Scripts/area_boundary/leaflet/" + _area + ".js";
-    var _js_url = base_url+"public/js/area_boundary/leaflet/" + _area + ".js";
+    //var _js_url = "/Scripts/area_boundary/openlayers/" + _area + ".js";
+    var _js_url = base_url+"public/js/area_boundary/openlayers/" + _area + ".js";
 
 
-
-
-    // NOTE:  Polyline use path: no S, while  polygon, use paths:   have S,   if you missing S will fail drawing
 
 
     $.when(
@@ -362,25 +382,25 @@ function add_area_boundary(_area) {
 
 
 
-        //if(_area_polygon_coord[_area][0] instanceof Array)
+
+       
         if (_multi_polyline == 'Yes') {
             // for multi line
 
 
+            _area_polyline_multi = new ol.Feature({ geometry: new ol.geom.MultiLineString(_area_polygon_coord[_area]) });
 
-            var parentArray = _area_polygon_coord[_area];
+            // must have this transform, otherwise, no line showup.
+            _area_polyline_multi.getGeometry().transform('EPSG:4326', 'EPSG:3857');
+
+            
 
 
-            for (var i = 0; i < parentArray.length; i++) {
+            _area_boundaryline_vectorSource = new ol.source.Vector({
+                features: [_area_polyline_multi]
+            });
 
-
-
-
-                var _area_polyline_multi = L.polyline(parentArray[i], { color: '#0000FF', weight: 5, opacity: 0.8 }).addTo(map);
-
-                   
-
-            }// outer for
+           
 
 
 
@@ -389,265 +409,168 @@ function add_area_boundary(_area) {
 
            
 
+            _area_polyline = new ol.Feature({ geometry : new ol.geom.LineString(_area_polygon_coord[_area]) });
+                                               
 
-            _area_polyline = L.polyline(_area_polygon_coord[_area], { color: '#0000FF', weight: 5, opacity: 0.8 }).addTo(map);
+            // must have this transform, otherwise, no line showup.
+            _area_polyline.getGeometry().transform('EPSG:4326', 'EPSG:3857');
 
            
+
+            _area_boundaryline_vectorSource = new ol.source.Vector({
+                features: [_area_polyline]
+            });
+
+
+           
+
+           
+
+            // ---------- another way,    but need transform('EPSG:4326', 'EPSG:3857');-------------------
+            //_area_polyline = new ol.layer.Vector({
+            //    source: new ol.source.Vector({
+            //        features: [new ol.Feature({
+            //            geometry: new ol.geom.LineString(_area_polygon_coord[_area]),
+            //            name: '_area_polyline'
+            //        })]
+            //    }),
+            //});
+
+            //map.addLayer(_area_polyline);
+            // ---------- another way,    but need transform('EPSG:4326', 'EPSG:3857');-------------------
+
+
+
 
            
         }//else
 
 
+
+        _area_boundaryline_layer = new ol.layer.Vector({
+
+            source: _area_boundaryline_vectorSource,
+
+            style: new ol.style.Style({
+                fill: new ol.style.Fill({
+                    color: 'rgba(255, 255, 255, 0.2)'
+                }),
+                stroke: new ol.style.Stroke({
+                    color: '#ffcc33',
+                    width: 8
+                }),
+
+                image: new ol.style.Circle({
+                    radius: 7,
+                    fill: new ol.style.Fill({
+                        color: '#ffcc33'
+                    })
+                })//image
+
+            })//style
+        })// vector
+
+
+
+        map.addLayer(_area_boundaryline_layer);
+
+
+
     }); // when done
-
-
-
-
-
-
-    /*
-    
-                                    For 2 dimenional Arrays:
-    
-                                    for(var i = 0; i < parentArray.length; i++){
-                                        for(var j = 0; j < parentArray[i].length; j++){
-    
-                                            console.log(parentArray[i][j]);
-                                        }
-                                    }
-                                    For arrays with an unknown number of dimensions you have to use recursion:
-    
-                                    function printArray(arr){
-                                        for(var i = 0; i < arr.length; i++){
-                                            if(arr[i] instanceof Array){
-                                                printArray(arr[i]);
-                                            }else{
-                                                console.log(arr[i]);
-                                            }
-                                        }
-                                    }
-    
-                                    or
-    
-                                    var printArray = function(arr) {
-                                        if ( typeof(arr) == "object") {
-                                            for (var i = 0; i < arr.length; i++) {
-                                                printArray(arr[i]);
-                                            }
-                                        }
-                                        else document.write(arr);
-                                    }
-    
-                                    printArray(parentArray);
-    
-    
-    
-    */
 
 
 
 }// function add_area_boundary
 
 
+function tile_opacity_slider(_layer_group_title) {
 
-function init_tiling(){
-    
-    // --------------------- dynamic load javascript file  ---------------------------
-
-
-    
-   // var _tile_list_js = "/Scripts/map_init/tile_list/googlemap_tile_list.js";
-var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.js";
-
-
-    $.when(
-             $.getScript(_tile_list_js)
-     /*
-    $.getScript( "/mypath/myscript1.js" ),
-    $.getScript( "/mypath/myscript2.js" ),
-    $.getScript( "/mypath/myscript3.js" ),
-    */
-
-    ).done(function () {
-
-        var  _tile_name = _areaID + "_" + _subjectID;
-        var _i = _tile_list.indexOf(_tile_name);
-        //alert(_tile_name);
-        if (_i >= 0) {
-
-
-
-
-
-                        //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
-                         //_tile_baseURL = 'http://tile.transparentgov.net/v2/';
-                        // _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
-
-// local testing only
-                          _tile_baseURL = _tile_baseURL_localhost;
-
-
-                         var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.png';
-                         var overlay_tile_Attrib = 'Map data &#169; <a href="http://transparentgov.net">transparentgov.net</a> contributors';
-                         tile_MapType = new L.TileLayer(overlay_tile_Url, { minZoom: 3, maxZoom: 22, errorTileUrl:'  ', unloadInvisibleTiles: true, reuseTiles:true, attribution: overlay_tile_Attrib });
-
-                        // ===== above must define errorTileUrl:'  ', must have some character or space in '  ' above. If not define this, missing tile will show a broken image icon on map everywhere, if define this, it just failed to load empty URL, not showing broken image icon
-
-
-                         overlay_tile_layer = map.addLayer(tile_MapType);
-                         tile_MapType.setZIndex(99);
-                         
-                         
-                         
-                         //===================add ========== UTFgrid =================================
-
-                         var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json?callback={cb}';
-                        // var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
-
-                         var utfGrid = new L.UtfGrid(utfGrid_tile_Url,  {
-                            // useJsonP: false
-                         });
-                         
-
-                         utfGrid.on('click', function (e) {
-                             if (e.data) {
-
-
-                                 var _utfgrid_info = "<ul>";
-                                 var _object = e.data;
-
-                                 for (var _property in _object) {
-                                     if (_object.hasOwnProperty(_property)) {
-
-                                         _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
-
-                                     }
-                                 }
-
-                                 _utfgrid_info = _utfgrid_info + "</ul>";
-                                 document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
-
-
-                                 
-                             } else {
-                                // document.getElementById('utfgrid_info').innerHTML = 'click: nothing';
-                             }
-                         });
-
-
-                         utfGrid.on('mouseover', function (e) {
-                             if (e.data) {
-                                 
-
-                                 var _utfgrid_info = "<ul>";
-                                 var _object = e.data;
-
-                                 for (var _property in _object) {
-                                     if (_object.hasOwnProperty(_property)) {
-                                         
-                                         _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
-                                        
-                                     }
-                                 }
-
-                                 _utfgrid_info = _utfgrid_info + "</ul>";
-                                 document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
-
-                             } else {
-                                // document.getElementById('utfgrid_info').innerHTML = 'hover: nothing';
-                             }
-                            
-                         });
-
-
-                         utfGrid.on('mouseout', function (e) {
-                             document.getElementById('utfgrid_info').innerHTML = '';
-                         });
-
-                         utfgrid_tile_layer = map.addLayer(utfGrid);
-
-
-            //==================== End ========== UTFgrid =================================
-                         
-                         
-                         
-                         
-                          //................. leaflet slider contral ............................
-
-                         _slider_control = L.control.slider(function (value) {
-
-
-                             
-                                                                            _slidercontrol_handle_value = Math.round(value) / 100;
-                                                                            tile_MapType.setOpacity(_slidercontrol_handle_value);
-
-                                                                               },
-
-                                 { id: _slider_control, position: 'bottomright',width:'400px', orientation: 'vertical', logo: 'O', min: 0, max: 100, value: 100, collapsed: false, step: 10 });
-
-                         map.addControl(_slider_control);
-
-
-            //................End....................... leaflet slider contral ............................
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-
-                         _tile_exist = true;
-
-                     }// if
-
-
-    }); // when done
-
-
-}// init tile
-
-
-
-function add_tiles(){
-    
    
-
-    
-    tile_MapType.setZIndex(99);
-    // tile_MapType.bringToFront();
-        
   
+   
+   // $('#ex1').slider({     //there is already a JQuery plugin named slider bound to the JQuery namespace, then this plugin will take on the alternate namespace bootstrapSlider
+   $('#ex1').bootstrapSlider({
+       
+       
+        formatter: function (value) {
+
+
+
+
+            var all_layer_groups = map.getLayers();
+            //var all_layer_groups = map.getLayerGroup();
+
+
+            var layer_group;
+
+            for (i = 0, n = all_layer_groups.getLength() ; i < n; i++) {
+
+                layer_group = all_layer_groups.item(i);
+
+
+
+                if (layer_group.get('title') == _layer_group_title) {
+
+                   
+
+                            if (layer_group.getLayers) {
+                                var _inner_layers = layer_group.getLayers().getArray();
+
+                                _raster_tile_layer = _inner_layers[0];  // 0 = tile raster image layer,   1 = utfgrid 
+                            }// if
+                    break;
+                }//if
+            }//for
+
+            if (_raster_tile_layer) {
+                // Do with layer
+
+               // alert(_raster_tile_layer.get('title'));
+
+                _raster_tile_layer.setOpacity(value/100)
+
+            }
+
+
+
+            
+
+
+
+
+
+            return  value + '%';
+        }
+    });
+
+
+
+
 }
 
-function remove_tiles() {
 
 
-    tile_MapType.bringToBack();
 
 
-}
 
-
-//------------- leaflet basic simple map function -----------------------------
+//------------- basic simple map function -----------------------------
 
 function get_map_bound() {
 
-    //document.getElementById("title_info").innerHTML = "MAP BOUNDS [SouthWest, NorthEast] "+ map.getBounds();
+    
     // get current map bounds as URL parameters. 
 
 
-
-
-
-
-    bounds = map.getBounds();
-    southWest = bounds.getSouthWest();
-    northEast = bounds.getNorthEast();
-    SWlong = southWest.lng;
-    SWlat = southWest.lat;
-    NElong = northEast.lng;
-    NElat = northEast.lat;
+    bounds = map.getView().calculateExtent(map.getSize());
+    bounds = ol.proj.transformExtent(bounds, 'EPSG:3857', 'EPSG:4326');
+    //bounds = ol.proj.toLonLat(bounds);
+    
+    southWest = ol.extent.getBottomLeft(bounds);
+    northEast = ol.extent.getTopRight(bounds);
+    SWlong = southWest[0];
+    SWlat = southWest[1];
+    NElong = northEast[0];
+    NElat = northEast[1];
 
     //alert(SWlong);
 
@@ -673,6 +596,7 @@ function get_click_latlng(_click_event_lat, _click_event_lng) {
         // --- current use 2X2 grid boundary (as click event latlong is on center point), you can use 3x3 grid or adjust house length to make larger/smaller select area. 
         var _square_house_length = 0.0004; // average is 0.0003-0.0004
 
+        
 
         SWlong = _click_event_lng - _square_house_length;
         SWlat = _click_event_lat - _square_house_length;
@@ -683,7 +607,8 @@ function get_click_latlng(_click_event_lat, _click_event_lng) {
 
 
         //var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
-        var _url_click_event = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+          var _url_click_event = base_url + 'api/loadall/' +$("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
+
 
         document.getElementById("ajaxload").style.display = "block";
         ajax_GeoJSON(map, _url_click_event, true);
@@ -701,7 +626,7 @@ function get_click_latlng(_click_event_lat, _click_event_lng) {
 
 function back_full_extend() {
 
-    map.setView(new L.LatLng(initial_location[1], initial_location[2]), initial_location[3]);
+    map.setView(_view);
 }
 
 
@@ -725,18 +650,176 @@ function add_map_listener_idle() {
 
 
 
+                                //.................  openlayer map add interaction ..................
+
+                                var select = null;  // ref to currently selected interaction
+                                var select1 = null;
+
+
+                                // select interaction working on "singleclick"
+                                var selectSingleClick = new ol.interaction.Select();
+
+                                // select interaction working on "click"
+                                var selectClick = new ol.interaction.Select({
+                                    condition: ol.events.condition.click
+                                });
+
+                                // select interaction working on "pointermove"
+                                var selectPointerMove = new ol.interaction.Select({
+                                    condition: ol.events.condition.pointerMove
+                                });
+
+                                var selectAltClick = new ol.interaction.Select({
+                                    condition: function (mapBrowserEvent) {
+                                        return ol.events.condition.click(mapBrowserEvent) &&
+                                            ol.events.condition.altKeyOnly(mapBrowserEvent);
+                                    }
+                                });
+
+
+                                var _feature_info = "";
+    
+
+
+                                              //...... mouse over event................
+                                                select = selectPointerMove;
+                                                map.addInteraction(select);
+                                                select.on('select', function(e) {
+
+
+        
+                                                    _feature_info = "<ul>";
+        
+                                                    e.selected.forEach(function (_feature) {
+
+                                                                            var _object = _feature.getProperties();
+
+                                                                            for (var _property in _object) {
+                                                                                if (_object.hasOwnProperty(_property)) {
+
+                                                                                    if (_property !== 'geometry') {
+
+                                                                                    _feature_info = _feature_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                                                                                   }// if 
+                                                                                }//if
+                                                                            }//for
+
+
+                                                                                                }); // for each 
+
+
+                                                    _feature_info = _feature_info + "</ul>";
+                                                    document.getElementById('info-table').innerHTML = _feature_info;
+        
+
+
+                                                 }); // select on select
+ 
+                                                 //......End.............. mouse over event................
+
+                                 
+
+                                              
+
+                                                //...... mouse click event................
+
+
+                                                   
+                                                popup = new ol.Overlay.Popup();
+                                                map.addOverlay(popup);
+                                               
+
+                                               
+                                                select1 = selectClick;
+                                                map.addInteraction(select1);
+                                                select1.on('select', function (e) {
+
+                                                   
+                                                   
+                                                    _feature_info = "<table>";
+                                                    var _show_popup = false;
+
+
+                                                    e.selected.forEach(function (_feature) {
+
+                                                        var _object = _feature.getProperties();
+
+                                                      
+
+
+                                                        for (var _property in _object) {
+                                                            if (_object.hasOwnProperty(_property)) {
+
+                                                                if (_property !== 'geometry') {
+
+                                                                    
+                                                                    //_feature_info = _feature_info + "<tr><td><span style=\'background-color: #454545;\'><font color=\'white\'>" + _property + "</span>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;" + String(_object[_property]) + "</td></tr>";
+                                                                    _feature_info = _feature_info + "<tr><td><span style=\'background-color: #454545;\'><font color=\'white\'>" + _property + "</span></td><td>" + String(_object[_property]) + "</td></tr>";
+
+                                                                    _show_popup = true;
+
+                                                                }// if 
+                                                            }//if
+                                                        }//for
+
+
+                                                    }); // for each 
+
+
+                                                    _feature_info = _feature_info + "</table>";
+                                                    
+                                                    // alert(e.mapBrowserEvent.coordinate);
+
+                                                    if (_show_popup){
+                                                        popup.show(e.mapBrowserEvent.coordinate, _feature_info);
+                                                    }
+
+
+
+                                                }); // select on select
+
+
+                                                
+
+                                               //......End.............. mouse click event................
+
+
+
+
+
+
+
+
+                            //.....................End ....... openlayer map add interaction ..................
+
+
+
+
+
+
+
+
+
 
 
 
     // ---------  map click event [1] ------ search for a single feature where clicked ------------
-    listener_click = map.on('click', function (click_event_location) {
+    listener_click = map.on('singleclick', function (click_event_location) {
 
-        // alert(click_event_location.latlng.lat);
-        get_click_latlng(click_event_location.latlng.lat, click_event_location.latlng.lng);
+
+        //'EPSG:4326' = lat long (geographic coordinate)    'EPSG:3857' = feet unit (projected coordinate)
+       // alert(click_event_location.coordinate[0]);
+       // alert(ol.proj.transform(click_event_location.coordinate, 'EPSG:4326', 'EPSG:3857')[0]);
+        // alert(ol.proj.toLonLat(click_event_location.coordinate, 'EPSG:3857')[0]);
+
+        var _event_lat = ol.proj.toLonLat(click_event_location.coordinate, 'EPSG:3857')[1];
+        var _event_lng = ol.proj.toLonLat(click_event_location.coordinate, 'EPSG:3857')[0];
+        get_click_latlng(_event_lat, _event_lng);
     });
 
 
-    listener_rightclick = map.on('rightclick', function () {
+    listener_rightclick = map.on('dblclick', function () {
 
         back_full_extend();
     });
@@ -746,23 +829,25 @@ function add_map_listener_idle() {
 
 
 
-}
+}// function
 
 
 function geocoding() {
 
     // --------  search address ------- geocoding -----------
-    new L.Control.GeoSearch({
+   
+
+     geocoder = new Geocoder('nominatim', {
+         provider: 'osm',     //'mapquest', 'google', 'photon', 'pelias'
+        key: mapquest_consumer_key,
+        lang: 'pt-BR', //en-US, fr-FR
+        placeholder: 'Search for ...',
+        limit: 5,
+        keepOpen: false
+    });
+    map.addControl(geocoder);
 
 
-        provider: new L.GeoSearch.Provider.Esri(),
-
-        // google and open streetmap is ok, but result zoom level is too high for open street map. 
-        //provider: new L.GeoSearch.Provider.Google(),
-        //provider: new L.GeoSearch.Provider.OpenStreetMap(),
-
-        retainZoomLevel: false
-    }).addTo(map);
 
     // ---------- End of search address ------- geocoding -----------
 
@@ -773,247 +858,713 @@ function geocoding() {
 
 
 
+function init_base_map_tiling() {
 
 
+    // local testing only
+    // _tile_baseURL = _tile_baseURL_localhost;
 
 
 
+     mapElement = document.getElementById('map-canvas');
+     _tile_name = _areaID + "_" + _subjectID;
+    var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.png';
 
-function init_base_map() {
 
-    
-    var OpenStreetMap_Mapnik = L.tileLayer.provider('OpenStreetMap.Mapnik');
-    var OpenStreetMap_BlackAndWhite = L.tileLayer.provider('OpenStreetMap.BlackAndWhite');
+    //var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json?callback={cb}';
+    //var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
 
-    var  OpenTopoMap= L.tileLayer.provider('OpenTopoMap');
-    var  MapQuestOpen_Aerial= L.tileLayer.provider('MapQuestOpen.Aerial');
-    var  MapQuestOpen_OSM= L.tileLayer.provider('MapQuestOpen.OSM');
-    var  Stamen_Toner= L.tileLayer.provider('Stamen.Toner');
-    var  Stamen_Terrain= L.tileLayer.provider('Stamen.Terrain');
-    var  Esri_WorldImagery= L.tileLayer.provider('Esri.WorldImagery');
-    var  Esri_WorldStreetMap= L.tileLayer.provider('Esri.WorldStreetMap');
-    var  Esri_WorldTopoMap= L.tileLayer.provider('Esri.WorldTopoMap');
-    var  Esri_NatGeoWorldMap= L.tileLayer.provider('Esri.NatGeoWorldMap');
+    // leaflet, and mapbox js, use above 2 verison of URL, but in openlayer, must use below URL version, no x,y,z
+     var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '.json';
 
 
-    var  HERE_hybridDay= L.tileLayer.provider('HERE.hybridDay', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
 
-    var  HERE_normalDay= L.tileLayer.provider('HERE.normalDay', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
-
-    var  HERE_basicMap= L.tileLayer.provider('HERE.basicMap', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
-
-
-    
-
-
-
-
-    var Stamen_Watercolor = L.tileLayer.provider('Stamen.Watercolor');
-
-
-
-
-     baseMaps = {
-        
-         
-
-         "Esri_WorldImagery": Esri_WorldImagery,
-         "Esri_WorldStreetMap":Esri_WorldStreetMap ,
-         "Esri_WorldTopoMap": Esri_WorldTopoMap,
-         "Esri_NatGeoWorldMap":Esri_NatGeoWorldMap ,
-         "OpenStreetMap_Mapnik": OpenStreetMap_Mapnik,
-         "OpenStreetMap_BlackAndWhite": OpenStreetMap_BlackAndWhite,
-
-         "MapQuestOpen_Aerial": MapQuestOpen_Aerial,
-         "MapQuestOpen_OSM":MapQuestOpen_OSM,
-         
-         "HERE_hybridDay": HERE_hybridDay,
-         "HERE_normalDay": HERE_normalDay,
-         "HERE_basicMap": HERE_basicMap,
-         
-
-
-         "OpenTopoMap": OpenTopoMap,
-         "Stamen_Toner":Stamen_Toner,
-         "Stamen_Terrain":Stamen_Terrain ,
-         "Stamen_Watercolor": Stamen_Watercolor
-
-    };
-
-
-    // set up the map
-    map = new L.Map('map-canvas');
-
-
-    // this is first time add base map layer
-    L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
-
-    L.control.layers(baseMaps).addTo(map);
-
-
-}
-
-
-
-
-
-
-
-
-
-
-//----------------End of leaflet basic simple map function  ------------------------
-
-
-
-
-
-
-// ############# retired ######################
-
-
-function tile_switch_button() {
-
-
-
-    // ----------- color_tiles_switch button --------------
-    // init on off switch button  
-    $("[name='color_tiles_switch']").bootstrapSwitch();
-
-    $('input[name="color_tiles_switch"]').on('switchChange.bootstrapSwitch', function (event, state) {
-        // console.log(this); // DOM element
-        //console.log(event); // jQuery event
-        // console.log(state); // true | false
-        if (state) {
-
-            add_tiles();
-        }
-        else {
-
-            remove_tiles();
-        }
-    });
-
-    // ----------End of  color_tiles_switch button          --------------
-
-
-
-
-
-
-}
-
-
-
-function tile_slider() {
-
-
-    _tile_slider = document.getElementById('tile_slider');
-
-    noUiSlider.create(_tile_slider, {
-        start: [100],
-        connect: 'lower',
-       //  tooltips: true,
-        range: {
-            'min': 0,
-            'max': 100
-        }
-    });
-
-
-
-}
-
-
-
-function init_tiling_old_slider_switch(){
-    
     // --------------------- dynamic load javascript file  ---------------------------
 
 
-    
-   // var _tile_list_js = "/Scripts/map_init/tile_list/googlemap_tile_list.js";
-var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.js";
 
-
-    $.when(
-             $.getScript(_tile_list_js)
-     /*
-    $.getScript( "/mypath/myscript1.js" ),
-    $.getScript( "/mypath/myscript2.js" ),
-    $.getScript( "/mypath/myscript3.js" ),
-    */
-
-    ).done(function () {
-
-        var  _tile_name = _areaID + "_" + _subjectID;
-        var _i = _tile_list.indexOf(_tile_name);
-        //alert(_tile_name);
-        if (_i >= 0) {
+     //var _tile_list_js = "/Scripts/map_init/tile_list/googlemap_tile_list.js";
+       var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.js";
 
 
 
+     $.when(
+              $.getScript(_tile_list_js)
+      /*
+     $.getScript( "/mypath/myscript1.js" ),
+     $.getScript( "/mypath/myscript2.js" ),
+     $.getScript( "/mypath/myscript3.js" ),
+     */
+
+     ).done(function () {
+
+         var _tile_name = _areaID + "_" + _subjectID;
+         var _i = _tile_list.indexOf(_tile_name);
+       
+         _view = new ol.View({
+             //center: ol.proj.transform([-0.92, 52.96], 'EPSG:4326', 'EPSG:3857'),
+
+             center: ol.proj.transform([initial_location[2], initial_location[1]], 'EPSG:4326', 'EPSG:3857'),
+             zoom: initial_location[3]
+         });
 
 
-                        //http://tile.transparentgov.net/v2/cityadr/{z}/{x}/{y}.png
-                         //_tile_baseURL = 'http://tile.transparentgov.net/v2/';
-                        // _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
 
 
-                         var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.png';
-                         var overlay_tile_Attrib = 'Map data &#169; <a href="http://transparentgov.net">transparentgov.net</a> contributors';
-                         tile_MapType = new L.TileLayer(overlay_tile_Url, { minZoom: 3, maxZoom: 22, errorTileUrl:'  ', unloadInvisibleTiles: true, reuseTiles:true, attribution: overlay_tile_Attrib });
-
-                        // ===== above must define errorTileUrl:'  ', must have some character or space in '  ' above. If not define this, missing tile will show a broken image icon on map everywhere, if define this, it just failed to load empty URL, not showing broken image icon
 
 
-                         overlay_tile_layer = map.addLayer(tile_MapType);
-                         tile_MapType.setZIndex(99);
-                         
-                         
-                         
-                          //............................ bind opacity to slider ........................
-            
-                _tile_slider.noUiSlider.on('set', function (values, handle, unencoded, tap, positions) {
+         if (_i >= 0) {
+
+             // tile exist, add overlay on base map.
 
 
-                var _slider_handle_value = values[handle];
-                _slider_handle_value = Math.round(_slider_handle_value) / 100;
 
-                tile_MapType.setOpacity(_slider_handle_value);
+                                 //............. utf layer and source ...............
 
-            });
-            //................End ....... bind opacity to slider ........................
-                         
-                         
-                         
-                         
+                                 //utfgrid_source = new ol.source.TileUTFGrid({
+                                 //    tileJSON: {
+                                 //        "tilejson": "2.1.0",
+                                 //        "tiles": [overlay_tile_Url],
+                                 //        "grids": [utfGrid_tile_Url]
+                                 //    }
+
+                                 //});
+
+
+                                 utfgrid_source = new ol.source.TileUTFGrid({
+                                     url: utfGrid_tile_Url
+                                    // url: 'http://api.tiles.mapbox.com/v3/mapbox.geography-class.json'
+                                 });
+
+
+
+
+                                 utfgrid_layer = new ol.source.XYZ({
+                                     url: overlay_tile_Url,
+                                     attribution: "Data copyright transparentgov.net"
+
+                                 });
+
+
+
+                                  //.........End .... utf layer and source ...............   
+
+
+
+
+
+             var thunderforestAttributions = [
+                 new ol.Attribution({
+                     html: 'Tiles &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>'
+                 }),
+                 ol.source.OSM.ATTRIBUTION
+             ];
+
+              map = new ol.Map({
+                  target: mapElement,
+                 layers: [
+                     new ol.layer.Group({
+                         'title': 'Base maps',
+                         layers: [
+
+
+
+
+
+                             new ol.layer.Tile({
+                                 title: 'Stamen - Water color',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.Stamen({
+                                     layer: 'watercolor'
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Stamen - Toner',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.Stamen({
+                                     layer: 'toner'
+                                 })
+                             }),
+
+
+
+                              new ol.layer.Tile({
+                                  title: 'MapQuest - Hybrid',
+                                  type: 'base',
+                                  visible: false,
+                                  source: new ol.source.MapQuest({
+                                      layer: 'hyb'
+                                  })
+                              }),
+
+                               new ol.layer.Tile({
+                                   title: 'MapQuest - OSM',
+                                   type: 'base',
+                                   visible: false,
+                                   source: new ol.source.MapQuest({
+                                       layer: 'osm'
+                                   })
+                               }),
+                             new ol.layer.Tile({
+                                 title: 'MapQuest - Satellite',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.MapQuest({
+                                     layer: 'sat'
+                                 })
+                             }),
+
+
+                               new ol.layer.Tile({
+                                   title: 'Thunderforest - OpenCycleMap',
+                                   type: 'base',
+                                   visible: false,
+                                   source: new ol.source.OSM({
+                                       url: 'http://{a-c}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png',
+                                       attributions: thunderforestAttributions
+                                   })
+                               }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Outdoors',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Landscape',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Transport',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/transport/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Transport Dark',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+
+
+
+
+
+
+                             new ol.layer.Tile({
+                                 title: 'OSM',
+                                 type: 'base',
+                                 visible: true,
+                                 source: new ol.source.OSM()
+                             })
+                         ]
+                     }),
+
+
+
+                    
+                     new ol.layer.Group({
+                         title: _tile_name,
+                         layers: [
+
+                             new ol.layer.Tile({
+                                 title: _tile_name+'_tile_layers',
+                                 source: utfgrid_layer
+                             }),
+
+
+                             new ol.layer.Tile({
+                                 title:_tile_name+'_UTFGrid',
+                                 source: utfgrid_source
+                             }),
+
+
+
+
+                         ]
+                     })
+                 ],
+
+
+
+
+                 view: _view
+             });
+
+
+
+              map.addControl(new ol.control.LayerSwitcher());
+
+
+
+             // ................NOT IN USE...... get utfgrid layers under layer group .................
+             
+
+              //var all_layer_groups = map.getLayers();
+              
+              //var layer_group;
+
+              //for (i = 0, n = all_layer_groups.getLength() ; i < n; i++) {
+
+              //    layer_group = all_layer_groups.item(i);
+
+                 
+
+              //    if (layer_group.get('title') == _tile_name) {
+                      
+              //                if (layer_group.getLayers) {
+              //                    var _inner_layers = layer_group.getLayers().getArray();
+
+              //                    utfgrid_layer = _inner_layers[1];
+              //                }// if
+              //        break;
+              //    }//if
+              //}//for
+
+              //if (utfgrid_layer) {
+              //    // Do with layer
+
+              //  //  alert(utfgrid_layer.get('title'));
+
+
+
+              //}
+
+
+
+             // ...............NOT IN USE................ End ......get utfgrid layers by name
+
+
+
+
+
+
+
+             // .............. utf grid control ..................
+
+             
+
+              var displayInfo = function (coordinate) {
+                  var viewResolution = /** @type {number} */ (_view.getResolution());
+                  
+                  utfgrid_source.forDataAtCoordinateAndResolution(coordinate, viewResolution,
+                      function (data) {
+
                           
-                         
-                         
-                         
-                         
-                         
-                         
+                          // If you want to use the template from the TileJSON,
+                          //  load the mustache.js library separately and call
+                          //  info.innerHTML = Mustache.render(gridSource.getTemplate(), data);
+                          mapElement.style.cursor = data ? 'pointer' : '';
 
-                         _tile_exist = true;
+                         
+                          if (data) {
+                             
+                            // there is info to display
 
-                     }// if
+                              var _utfgrid_info = "<ul>";
+                              var _object = data;
+
+                              for (var _property in _object) {
+                                  if (_object.hasOwnProperty(_property)) {
+
+                                     
+
+                                      _utfgrid_info = _utfgrid_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _property + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + String(_object[_property]) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                                  }
+                              }
 
 
-    }); // when done
+                             
+
+                              _utfgrid_info = _utfgrid_info + "</ul>";
+                              document.getElementById('utfgrid_info').innerHTML = _utfgrid_info;
 
 
-}// init tile
+
+
+                          }//if
+                          else {
+                              // data === null, no info to display
+
+
+                              document.getElementById('utfgrid_info').innerHTML = '';
+
+                          }
+
+
+
+                          
+                      });// function
+              }; // display
+
+
+
+
+
+
+
+
+              map.on('pointermove', function (evt) {
+                  if (evt.dragging) {
+                      return;
+                  }
+                  var coordinate = map.getEventCoordinate(evt.originalEvent);
+                  displayInfo(coordinate);
+                
+
+              });// pointermove
+
+
+
+
+              map.on('click', function (evt) {
+                  displayInfo(evt.coordinate);
+
+              }); // click
+
+
+             
+
+
+
+
+             // .........End..... utf grid control ..................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         }//if i>0
+
+         else {
+             // no tile exist, no overlay, only base map.
+
+
+
+             var thunderforestAttributions = [
+                new ol.Attribution({
+                    html: 'Tiles &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>'
+                }),
+                ol.source.OSM.ATTRIBUTION
+             ];
+
+              map = new ol.Map({
+                  target: mapElement,
+                 layers: [
+                     new ol.layer.Group({
+                         'title': 'Base maps',
+                         layers: [
+
+
+
+
+
+                             new ol.layer.Tile({
+                                 title: 'Stamen - Water color',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.Stamen({
+                                     layer: 'watercolor'
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Stamen - Toner',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.Stamen({
+                                     layer: 'toner'
+                                 })
+                             }),
+
+
+
+                              new ol.layer.Tile({
+                                  title: 'MapQuest - Hybrid',
+                                  type: 'base',
+                                  visible: false,
+                                  source: new ol.source.MapQuest({
+                                      layer: 'hyb'
+                                  })
+                              }),
+
+                               new ol.layer.Tile({
+                                   title: 'MapQuest - OSM',
+                                   type: 'base',
+                                   visible: false,
+                                   source: new ol.source.MapQuest({
+                                       layer: 'osm'
+                                   })
+                               }),
+                             new ol.layer.Tile({
+                                 title: 'MapQuest - Satellite',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.MapQuest({
+                                     layer: 'sat'
+                                 })
+                             }),
+
+
+                               new ol.layer.Tile({
+                                   title: 'Thunderforest - OpenCycleMap',
+                                   type: 'base',
+                                   visible: false,
+                                   source: new ol.source.OSM({
+                                       url: 'http://{a-c}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png',
+                                       attributions: thunderforestAttributions
+                                   })
+                               }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Outdoors',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Landscape',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Transport',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/transport/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+                             new ol.layer.Tile({
+                                 title: 'Thunderforest - Transport Dark',
+                                 type: 'base',
+                                 visible: false,
+                                 source: new ol.source.OSM({
+                                     url: 'http://{a-c}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png',
+                                     attributions: thunderforestAttributions
+                                 })
+                             }),
+
+
+
+
+
+
+                             new ol.layer.Tile({
+                                 title: 'OSM',
+                                 type: 'base',
+                                 visible: true,
+                                 source: new ol.source.OSM()
+                             })
+                         ]
+                     })
+
+
+                     
+                 ],
+
+
+
+
+                 view: _view
+             });
+
+              map.addControl(new ol.control.LayerSwitcher());
+
+         } //else 
+
+
+
+
+
+
+
+
+
+         add_area_boundary($("#areaID").val());
+
+         geocoding();
+
+         tile_opacity_slider(_tile_name);
+
+         add_map_listener_idle();
+
+
+
+     });// function done loading script
+
+
+
+}// init_base_map_tiling
+
+
+
+
+
+
+//----------------End of  basic simple map function  ------------------------
+
+
+
+
+//............. openlayer highlight style ...................
+
+
+var _clienttable_mouseover_row_highlight_feature_style = new ol.style.Style({
+
+    stroke: new ol.style.Stroke({
+        color: '#f00',
+        width: 9
+    }),
+
+    fill: new ol.style.Fill({
+        color: 'rgba(255,0,0,0.5)'
+    }),
+
+
+    image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,1)'
+        }),
+        stroke: new ol.style.Stroke({
+            color: '#f00',
+            width: 3
+        }),
+        radius: 7
+    }),
+
+})// new style
+
+
+
+
+
+//............END...... openlayer highlight  style ...................
+
+
+
+
+
+
+// =========== openlayer  geojson style =========================
+var image = new ol.style.Circle({
+    radius: 4,
+    fill: null,
+    stroke: new ol.style.Stroke({ color: 'red', width: 2 })
+});
+
+var styles = {
+    'Point': new ol.style.Style({
+        image: image
+    }),
+    'LineString': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'green',
+            width: 1
+        })
+    }),
+    'MultiLineString': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'green',
+            width: 1
+        })
+    }),
+    'MultiPoint': new ol.style.Style({
+        image: image
+    }),
+    'MultiPolygon': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'yellow',
+            width: 1
+        }),
+        fill: new ol.style.Fill({
+            color: 'rgba(255, 255, 0, 0.1)'
+        })
+    }),
+    'Polygon': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'blue',
+            lineDash: [4],
+            width: 1
+        }),
+        fill: new ol.style.Fill({
+            color: 'rgba(0, 0, 255, 0.1)'
+        })
+    }),
+    'GeometryCollection': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'magenta',
+            width: 2
+        }),
+        fill: new ol.style.Fill({
+            color: 'magenta'
+        }),
+        image: new ol.style.Circle({
+            radius: 10,
+            fill: null,
+            stroke: new ol.style.Stroke({
+                color: 'magenta'
+            })
+        })
+    }),
+    'Circle': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'red',
+            width: 2
+        }),
+        fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.2)'
+        })
+    })
+};
+
+var styleFunction = function (feature) {
+    return styles[feature.getGeometry().getType()];
+};
+
+//===========End =========openlayer = geojson style =========================
+
+
+
+
+
+
+
+// ############# testing and retired ######################
+
 
 
 
