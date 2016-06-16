@@ -46,13 +46,37 @@ var _area_boundaryline_vectorSource;
 var _area_boundaryline_layer;
 var _geojson_vectorSource;
 var _geojson_vectorLayer;
+var _geojson_vectorLayer_pointcluster;
+var last_geojson_vectorLayer;
+var last_geojson_vectorLayer_pointcluster;
 var popup;
 var _raster_tile_layer;
-//var highlightStyleCache;
-var _highlight_featureOverlay;
-var _current_highlight = null;
-//var feature;
+var clusterSource;
 
+
+var _highlight_featureOverlay;
+var _servertable_highlight_featureOverlay;
+var _servertable_click_highlight_featureOverlay;
+var _current_highlight = null;
+var _servertable_current_highlight = null;
+var _servertable_click_current_highlight = null;
+
+
+var _highlight_servertable_polygon;
+var _highlight_servertable_line;
+var _highlight_servertable_point;
+
+var _highlight_servertable_feature;
+var _highlight_servertable_vectorSource;
+var _highlight_servertable_vectorLayer;
+
+var _highlight_click_servertable_polygon;
+var _highlight_click_servertable_line;
+var _highlight_click_servertable_point;
+
+var _highlight_click_servertable_feature;
+var _highlight_click_servertable_vectorSource;
+var _highlight_click_servertable_vectorLayer;
 
 
 var _tile_exist = false;
@@ -1466,7 +1490,64 @@ var _clienttable_mouseover_row_highlight_feature_style = new ol.style.Style({
         radius: 7
     }),
 
-})// new style
+});// new style
+
+
+
+var _servertable_mouseover_row_highlight_feature_style = new ol.style.Style({
+
+    stroke: new ol.style.Stroke({
+        color: '#f00',
+        width: 9
+    }),
+
+    fill: new ol.style.Fill({
+        color: 'rgba(255,0,0,0.5)'
+    }),
+
+
+    image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+            color: 'rgba(0,0,255,1)'
+        }),
+        stroke: new ol.style.Stroke({
+            color: 'rgba(255, 255, 0, 1)',
+            width: 3
+        }),
+        radius: 5
+    }),
+
+});// new style
+
+
+
+
+var _servertable_click_row_highlight_feature_style = new ol.style.Style({
+
+    stroke: new ol.style.Stroke({
+        color: '#8B008B',
+        width: 16
+    }),
+
+    fill: new ol.style.Fill({
+        color: 'rgba(255,0,0,0)'
+    }),
+
+
+    image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+            color: 'rgba(255, 255, 0,1)'
+        }),
+        stroke: new ol.style.Stroke({
+            color: 'rgb(75, 0, 130)',
+            width: 3
+        }),
+        radius: 7
+    }),
+
+});// new style
+
+
 
 
 
