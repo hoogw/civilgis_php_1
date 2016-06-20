@@ -1,6 +1,11 @@
 
-<script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.js"></script>
-<link href="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet/leaflet.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+
+
+<script src="http://www.mapquestapi.com/sdk/leaflet/v2.s/mq-map.js?key=7YyEJ1WeTzemrUYPKCuPJVx6a3kdDvlR"></script>
+
 
 <script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_providers/leaflet-providers.js" type="text/javascript"></script>
 
@@ -27,10 +32,10 @@
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
          <script src="<?php echo Config::get('URL'); ?>public/js/map_api/Leaflet_utfgrid/leaflet.utfgrid-src.js" type="text/javascript"></script>
          
-        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/leaflet.js"></script>
+        <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapquest.js"></script>
        
         
-         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/leaflet/scrollerclienttablemap.js"></script>
+         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapquest/scrollerclienttablemap.js"></script>
        
    
          
@@ -73,11 +78,11 @@
                         <div class="row">
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
-                                                <li><a href="<?php echo Config::get('URL'); ?>map/leaflet/">Transparent Gov</a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>map/mapquest/">Transparent Gov</a></li>
                                                 
-                                               <li><a href="<?php echo Config::get('URL'); ?>home/leaflet/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
+                                               <li><a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li> 
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

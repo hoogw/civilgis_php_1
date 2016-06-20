@@ -484,7 +484,7 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
                         // _tile_baseURL = 'http://localhost:8888/v2/cityadr/{z}/{x}/{y}.png';
 
 // local testing only
-                          _tile_baseURL = _tile_baseURL_localhost;
+                        //  _tile_baseURL = _tile_baseURL_localhost;
 
 
                          var overlay_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.png';
@@ -505,7 +505,9 @@ var _tile_list_js = base_url+"public/js/map_init/tile_list/googlemap_tile_list.j
                         // var utfGrid_tile_Url = _tile_baseURL + _areaID + '_' + _subjectID + '/{z}/{x}/{y}.grid.json';
 
                          var utfGrid = new L.UtfGrid(utfGrid_tile_Url,  {
-                            // useJsonP: false
+                             maxRequests: 50,    // default is 4,  only send 4 request per time, then wait requesttimeout(default 1 min) to send another 4 grid request, should set to more than 20
+                             requestTimeout:500  // default is 1 min, most of request not found is less than 500 ms, 
+                              //useJsonP: false
                          });
                          
 
@@ -781,87 +783,46 @@ function geocoding() {
 
 function init_base_map() {
 
-    
-    var OpenStreetMap_Mapnik = L.tileLayer.provider('OpenStreetMap.Mapnik');
-    var OpenStreetMap_BlackAndWhite = L.tileLayer.provider('OpenStreetMap.BlackAndWhite');
-
-    var  OpenTopoMap= L.tileLayer.provider('OpenTopoMap');
-    var  MapQuestOpen_Aerial= L.tileLayer.provider('MapQuestOpen.Aerial');
-    var  MapQuestOpen_OSM= L.tileLayer.provider('MapQuestOpen.OSM');
-    var  Stamen_Toner= L.tileLayer.provider('Stamen.Toner');
-    var  Stamen_Terrain= L.tileLayer.provider('Stamen.Terrain');
-    var  Esri_WorldImagery= L.tileLayer.provider('Esri.WorldImagery');
-    var  Esri_WorldStreetMap= L.tileLayer.provider('Esri.WorldStreetMap');
-    var  Esri_WorldTopoMap= L.tileLayer.provider('Esri.WorldTopoMap');
-    var  Esri_NatGeoWorldMap= L.tileLayer.provider('Esri.NatGeoWorldMap');
-
-
-    var  HERE_hybridDay= L.tileLayer.provider('HERE.hybridDay', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
-
-    var  HERE_normalDay= L.tileLayer.provider('HERE.normalDay', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
-
-    var  HERE_basicMap= L.tileLayer.provider('HERE.basicMap', {
-        app_id: heremap_app_id,
-        app_code: heremap_app_code
-    });
-
 
     
 
 
+    //------------- mapquest ----------------
+    var mapLayer = MQ.mapLayer();
+   
+    map = L.map('map-canvas', {
+        layers: mapLayer
+           // center: [33.65992448007282, -117.91505813598633],
+           // zoom: 13
+        });
+   
+
+    
 
 
-    var Stamen_Watercolor = L.tileLayer.provider('Stamen.Watercolor');
+    L.control.layers({
+        'Map': mapLayer,
+        'Dark': MQ.darkLayer(),
+        'Light': MQ.lightLayer(),
+        'Satellite': MQ.satelliteLayer()
+    }).addTo(map);
 
 
 
 
-     baseMaps = {
-        
-         
 
-         "Esri_WorldImagery": Esri_WorldImagery,
-         "Esri_WorldStreetMap":Esri_WorldStreetMap ,
-         "Esri_WorldTopoMap": Esri_WorldTopoMap,
-         "Esri_NatGeoWorldMap":Esri_NatGeoWorldMap ,
-         "OpenStreetMap_Mapnik": OpenStreetMap_Mapnik,
-         "OpenStreetMap_BlackAndWhite": OpenStreetMap_BlackAndWhite,
-
-         "MapQuestOpen_Aerial": MapQuestOpen_Aerial,
-         "MapQuestOpen_OSM":MapQuestOpen_OSM,
-         
-         "HERE_hybridDay": HERE_hybridDay,
-         "HERE_normalDay": HERE_normalDay,
-         "HERE_basicMap": HERE_basicMap,
-         
+   
 
 
-         "OpenTopoMap": OpenTopoMap,
-         "Stamen_Toner":Stamen_Toner,
-         "Stamen_Terrain":Stamen_Terrain ,
-         "Stamen_Watercolor": Stamen_Watercolor
-
-    };
 
 
-    // set up the map
-    map = new L.Map('map-canvas');
 
 
-    // this is first time add base map layer
-    L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
 
-    L.control.layers(baseMaps).addTo(map);
+    //-------------End ------- mapquest ----------------
 
 
-}
-
+}// function
 
 
 
