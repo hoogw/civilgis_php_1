@@ -6,14 +6,16 @@
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />
 
 
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
+         <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
 
-<link href="<?php echo Config::get('URL'); ?>public/js/classification/vector_layer_checkbox_menu_style.css" rel="stylesheet" type="text/css"/>
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
+          <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapboxgl.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/multilayersimplecolorhighlightlayermap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap.js"></script>
 
 
    
@@ -44,7 +46,7 @@
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightlayermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -78,6 +80,11 @@
                                                <div id="map-canvas" style="position:relative; top:0; bottom:0; width:100%; height: 800px;"></div> 
                                                 <div id='geocoder-container' style="position: relative;top: 0;width: 100%;margin-top: 10px;"></div>
 
+                                                
+                                                
+                                                <div id="tableDiv"></div>
+                                                
+                                                
                                                 <div id="info-table"> </div>
                                                 
                                                 

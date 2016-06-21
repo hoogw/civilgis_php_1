@@ -44,7 +44,7 @@
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplehighlightlayermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>

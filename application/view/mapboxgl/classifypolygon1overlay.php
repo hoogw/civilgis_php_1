@@ -13,13 +13,14 @@
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapboxgl.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/multilayersimplecolorhighlightlayermap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/classifypolygon1overlay.js"></script>
 
 
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
      <input type="hidden" id="areaID" value=<?php echo $data['area'] ?>></input>
+     <input type="hidden" id="overlay1ID" value=<?php echo $data['overlay1'] ?>></input>
     <input type="hidden" id="base_url" value=<?php echo Config::get('URL'); ?>></input>
     
     
@@ -44,7 +45,7 @@
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightlayermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>/<?php echo $data['overlay1'] ?>"><?php echo $data['subject'] ?> & <?php echo $data['overlay1'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -57,24 +58,16 @@
                                     
                                         
                                             
-                                                 
-                                                 
-                                                <div class="box-header">
-                                                        
-                                                            
-                                                            
-                                                                 <div id="checkbox_menu">
+                                                
+                                    
+                                    
+                                                 <div id="checkbox_menu">
                        
                                                                                 </div>
-                                                                
-                                                                
-                                                                <div id="title_info" ></div>
-                                                                
-                                                       
-                                                       
-                                                </div>
+                                    
                                             
-                                                
+                                                 <div id="title_info" ></div>
+                                                 
                                                <div id="map-canvas" style="position:relative; top:0; bottom:0; width:100%; height: 800px;"></div> 
                                                 <div id='geocoder-container' style="position: relative;top: 0;width: 100%;margin-top: 10px;"></div>
 

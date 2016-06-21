@@ -13,7 +13,12 @@
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapboxgl.js"></script>
 
-<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/multilayersimplecolorhighlightlayermap.js"></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/multilayersourcefeaturepagedtablemap.js"></script>
+
+
+ <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/jquery.dataTables.js"></script>
+         <link href="<?php echo Config::get('URL'); ?>public/css/jquery.dataTables.css" rel="stylesheet">
+
 
 
    
@@ -44,7 +49,7 @@
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayersimplecolorhighlightlayermap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayersourcefeaturepagedtablemap/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>
                         </div>
@@ -78,6 +83,37 @@
                                                <div id="map-canvas" style="position:relative; top:0; bottom:0; width:100%; height: 800px;"></div> 
                                                 <div id='geocoder-container' style="position: relative;top: 0;width: 100%;margin-top: 10px;"></div>
 
+                                                
+                                                
+                                                
+                         
+                                                
+                                                
+                                                
+                                 <div id="feature_property_tabs" class="panel-body">
+
+                        <ul class="nav nav-tabs" id="feature_property_tab_navigation">
+                           
+                        </ul>
+
+
+                        <div class="tab-content" id="feature_property_tab_content">
+                            
+
+
+                        </div>
+                    </div>
+                    
+                   
+
+                            
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
                                                 <div id="info-table"> </div>
                                                 
                                                 
