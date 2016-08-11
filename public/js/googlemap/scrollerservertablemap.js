@@ -426,6 +426,10 @@ function ajax_GeoJSON(gmap,_apiURI,_map_click_event) {
 
 function initialize() {
     
+        // load data for upper entire datatable
+          datatablesX();
+        
+        
         
          //   base_url = '/civilgis/public/';
          //base_url = document.getElementById('base_url').value;
@@ -1202,11 +1206,10 @@ function datatablesX(){
 
 
        
-// load data for upper entire datatable
-          datatablesX();
+
 
        //  load data for google map and lower datatable 
-          google.maps.event.addDomListener(window, 'load', initialize);
+        //  google.maps.event.addDomListener(window, 'load', initialize);
 
     
     

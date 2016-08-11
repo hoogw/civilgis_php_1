@@ -1271,7 +1271,8 @@ function init_base_map_tiling() {
 
 
 
-
+                 // if tile exist, create slider
+              tile_opacity_slider(_tile_name);
 
 
 
@@ -1421,6 +1422,11 @@ function init_base_map_tiling() {
 
               map.addControl(new ol.control.LayerSwitcher());
 
+
+              // if no tile , hide slider control
+              $('#ex1').hide();
+
+
          } //else 
 
 
@@ -1435,7 +1441,7 @@ function init_base_map_tiling() {
 
          geocoding();
 
-         tile_opacity_slider(_tile_name);
+         //tile_opacity_slider(_tile_name);
 
          add_map_listener_idle();
 

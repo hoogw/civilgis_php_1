@@ -45,7 +45,11 @@
                                                 
                                                
                                                 
-                                                <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>/<?php echo $data['overlay1'] ?>"><?php echo $data['subject'] ?> & <?php echo $data['overlay1'] ?></a></li>
+                                             <!--   <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>/<?php echo $data['overlay1'] ?>"><?php echo $data['subject'] ?> & <?php echo $data['overlay1'] ?></a></li> -->
+                                        
+                                        <li><a href="javascript:window.location.href=window.location.href"><?php echo $data['subject'] ?> & <?php echo $data['overlay1'] ?></a></li>
+                                        
+                                        
                                         </ol>
                                 </div>
                         </div>
