@@ -1,6 +1,10 @@
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?branch=release&callback=initialize' async defer></script> 
 
+
+<!--          bootstrap_slider         -->                           
+<link href="<?php echo Config::get('URL'); ?>/public/js/map_api/bootstrap_slider/bootstrap-slider.css" rel="stylesheet" type="text/css"/>
+<script src="<?php echo Config::get('URL'); ?>/public/js/map_api/bootstrap_slider/bootstrap-slider.js" type="text/javascript"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/bingmap.js"></script>
@@ -59,6 +63,12 @@
                                                                 <img id="ajaxload" src="<?php echo Config::get('URL'); ?>/public/img/devoops_getdata.gif"  alt="Loading ... " style="top: 25px;left: 15px;color:#ebebeb;" />
                                                         </div>
                                                     
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
                                                         <div class="box-icons">
                                                                 <a class="collapse-link">
                                                                         <i class="fa fa-chevron-up"></i>
@@ -74,21 +84,47 @@
                                                         <div class="no-move"></div>
                                                 </div>
                                             
-                                                
+                                            
+                                            
+                                            
+                                            
+                                            
                                                 <div id="map-canvas" class="box-content" style="height: 800px;">
                                                     
                                                     
                                                 </div>
                                            
-                                            <div id="legend" class="alert alert-warning"></div>
                                             
                                             
-                                            <div id="title_info" > </div>
+                                            
+                                                <div id="title_info" > </div>
+                                            
+                                            
+                                            
+                                            
+                                             
+                                            
+                                            <div id='searchBoxContainer'>
+                        Search:<input type='text' id='searchBox' /> &nbsp; &nbsp; &nbsp;
+                        Opacity:<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="100" style="float:right;" />
+                    </div>    
+                                            
+                                            
+                                            
+                                            
                                             <div id="info-table">
           
                                             </div>
+                                                
+                                                
+                                                
+                                                
                                             
                                         </div>
+                                    
+                                    
+                                    
+                                    
                                 </div>
                         </div>
                         
