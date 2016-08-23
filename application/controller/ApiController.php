@@ -402,6 +402,41 @@ class ApiController extends Controller
     
     
     
+    public function maparealimit($area, $subject)
+    {
+        
+        
+         $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
+
+             
+             $table_name = $area . "_Limit";
+             
+          
+             
+            $collection = $geodatabase->$table_name;
+
+           
+            $cursor = $collection->find();
+                            
+
+                                // iterate through the results
+                                $result = "{ \"type\": \"FeatureCollection\",\"features\": [";
+
+                                foreach ($cursor as $document) {
+                                    //echo $document["properties"] . "\n";
+                                     //print_r($document);
+                                     //echo json_encode($document);
+                                    $result = $result.json_encode($document).",";
+
+                                }
+
+                                $result= substr($result, 0, -1);
+                                $result = $result."]}";
+
+                                echo $result;
+                
+    }//maparealimit
+    
     
     
     
