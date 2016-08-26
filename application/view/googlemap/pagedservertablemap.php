@@ -1,4 +1,3 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE&callback=initialize" async defer></script>
 
          
           <!----  DataTables CSS JS  must load after the Jquery.js -->
@@ -17,7 +16,8 @@
         <script src="<?php echo Config::get('URL'); ?>public/js/map_api/google_map_opacity_slider/ExtDraggableObject.js"></script>
         
         
-        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE&callback=initialize" async defer></script>
+
          
          
     <!-- this hidden value carry the map subject from controller use it in javascript api call-->
