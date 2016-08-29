@@ -1037,6 +1037,69 @@ class ApiController extends Controller
     }// 
     
     
+    
+    
+    
+    // currently in USE, for  mobile small amount max 300 
+    public function loadall_mobile($area, $subject, $longBR,  $latBR,  $longTL, $latTL)
+    {
+             $geodatabase = DatabaseFactory::getFactory()->getGeoConnection();
+
+             
+             $table_name = $area . "_" . $subject;
+             
+           
+             
+            $collection = $geodatabase->$table_name;
+
+           
+            
+            $query = GeoQuery::findbybox($longBR,  $latBR,  $longTL, $latTL);
+                $count_ = $collection->count($query);
+           // $count_ = $collection->getSize();
+           
+                
+                 $_max_row_count = Config::get('Max_Row_Count_mobile');
+            
+       // loadall generate large amount of data here.          
+            if (($count_ > 0) and ($count_ < $_max_row_count)) {
+            
+                
+                            if(!empty($latTL) && !empty($longTL) && !empty($latBR) && !empty($longBR)){
+                                        $cursor = $collection->find($query);
+                            } else {
+                                $cursor = $collection->find();
+                            }
+
+                                // iterate through the results
+                                $result = "{ \"type\": \"FeatureCollection\",\"features\": [";
+
+                                foreach ($cursor as $document) {
+                                    
+                                    $result = $result.json_encode($document).",";
+
+                                }
+
+                                $result= substr($result, 0, -1);
+                                $result = $result."]}";
+
+                                echo $result;
+                           
+                
+            }else {
+               
+                   echo $count_;
+                
+            }//else 
+                
+            
+    }// 
+    
+    
+    
+    
+    
+    
     //==========================   NOT  IN  USE  ====================================
     
     

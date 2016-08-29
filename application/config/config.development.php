@@ -68,6 +68,7 @@ return array(
 	'MongoDB_PASS' => 'aaaa1111',
 	'MongoDB_PORT' => '12701',
         'Max_Row_Count' => 3000,
+        'Max_Row_Count_mobile' => 300,
 	
 	/**
 	 * Configuration for: Captcha size
