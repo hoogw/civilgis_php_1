@@ -470,35 +470,7 @@
                     
                     
                     
-                         <div class="row">
-                                    <div class="col-xs-12 col-sm-12">
-                                            <div class="box">
-                                                
-                                                <div class="box-header">
-                                                            <div class="box-name">
-                                                                    
-                                                                    <span>Disclaimer</span>
-                                                            </div>
-                                                            
-                                                    </div>
-                                                
-                                                    
-                                                
-                                                    <div class="box-content">
-                                                            
-                                                        This application may contain and/or utilize information which was originally compiled by individual government agency for governmental purposes. 
-                                                        The information may subsequently been modified by entity/entities other than original individual government agency. 
-                                                        The original individual government agency make no representation as to the accuracy or usefulness of the information provided by this application or the information's suitability for any purpose and disclaim any liability for omissions or errors that may be contained therein. 
-                                                        The public is advised to observe posted signage for compliance with applicable laws and regulations.
-                                                        
-                                                        Permission for use of these proprietary data is granted by the original individual government agency. 
-                                                        
-                                                    </div>
-                                            </div>
-                                    </div>
                         
-                        
-                        </div>
                     
                     
                        
@@ -506,16 +478,4 @@
                     
                     
                     
-                    
-                        
-                    
-		</div>
-		<!--End Content-->
-	</div>
-</div>
-<!--End Container-->
-
-
-
-</body>
-</html>
+        
