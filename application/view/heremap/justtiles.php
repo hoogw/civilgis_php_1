@@ -1,27 +1,14 @@
 
 
-
+<script src="<?php echo Config::get('URL'); ?>public/js/map_api/google_map_opacity_slider/ExtDraggableObject.js"></script>
 
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/heremap.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/heremap/justtiles.js"></script>
 
-
-
-
-
-
-
-
-
-
-<script src="<?php echo Config::get('URL'); ?>public/js/bootstrap-switch.js" type="text/javascript"></script>
-<link href="<?php echo Config::get('URL'); ?>public/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
-
-
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE&callback=initialize" async defer></script>
+
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>
@@ -97,10 +84,26 @@
                                             <div id="legend" class="alert alert-warning"></div>
                                             
                                             
-                                             <input type="checkbox" name="color_tiles_switch" checked>
+                                             <!-- google opacity slider -->
+                                                  <div id="opacityDiv" style='margin: 5px; overflow-x: hidden; overflow-y: hidden;  background: url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat; width: 71px; height: 21px; cursor: pointer;'> 
+                      
+
+                                                                    <div id="opacityKnobDiv" style='padding:0;margin:0;overflow-x:hidden;overflow-y:hidden;background:url("../../../public/js/map_api/google_map_opacity_slider/opacity-slider3d14.png") no-repeat -71px 0;width:14px;height:21px;'>
+                                                                    </div>
+
+
+                                                    </div>
+
+                                             <!--  End of google opacity slider -->
+                                            
+                                            
+                                            
+                                            
                                             <div id="title_info" > </div>
                                             
                                             
+                                             
+                                             
                                             <div id="info-table">
           
                                             </div>
