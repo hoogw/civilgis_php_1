@@ -8,7 +8,7 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/markerclusterer.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/infobox.js"></script>
 
@@ -17,7 +17,7 @@
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/heremap/clusterscrollerclienttablemap.js"></script>
 
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE&callback=initialize" async defer></script>
    
      <!-- this hidden value carry the map subject from controller use it in javascript api call-->
     <input type="hidden" id="subjectID" value=<?php echo $data['subject'] ?>></input>

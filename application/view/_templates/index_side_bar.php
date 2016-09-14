@@ -238,7 +238,13 @@
 				</li>
                                  
                                
-                                 
+                                 <li class="dropdown">
+                                     
+					<a href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
+                                            <img style= "height:50px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
+                                        </a>
+					
+				</li>
                                  
                                  
                                  <hr>
