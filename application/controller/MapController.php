@@ -19,7 +19,7 @@ class MapController extends Controller
        // $this->View->render('map/index', $data);
         
           
-          $index_map_with_header_footer = ['_templates/index_side_bar','map/index'];
+          $index_map_with_header_footer = ['_templates/index_side_bar','map/index','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
        
@@ -37,7 +37,7 @@ class MapController extends Controller
        // $this->View->render('map/googlemap', $data);
           
           
-           $index_map_with_header_footer = ['_templates/index_side_bar','map/googlemap'];
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/googlemap','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
           
@@ -52,7 +52,7 @@ class MapController extends Controller
          
        // $this->View->render('map/heremap', $data);
           
-           $index_map_with_header_footer = ['_templates/index_side_bar','map/heremap'];
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/heremap','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
           
@@ -68,7 +68,7 @@ class MapController extends Controller
          
        // $this->View->render('map/bingmap', $data);
           
-           $index_map_with_header_footer = ['_templates/index_side_bar','map/bingmap'];
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/bingmap','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
           
@@ -83,7 +83,7 @@ class MapController extends Controller
          
        // $this->View->render('map/mapbox', $data);
           
-           $index_map_with_header_footer = ['_templates/index_side_bar','map/mapbox'];
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/mapbox','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
           
@@ -98,7 +98,7 @@ class MapController extends Controller
          
       
           
-           $index_map_with_header_footer = ['_templates/index_side_bar','map/mapboxgl'];
+           $index_map_with_header_footer = ['_templates/index_side_bar','map/mapboxgl','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
           
@@ -111,7 +111,7 @@ class MapController extends Controller
         
           $data['title'] = 'mapquest';
          
-         $index_map_with_header_footer = ['_templates/index_side_bar','map/mapquest'];
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/mapquest','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
     }
@@ -123,7 +123,7 @@ class MapController extends Controller
         
           $data['title'] = 'leaflet';
          
-         $index_map_with_header_footer = ['_templates/index_side_bar','map/leaflet'];
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/leaflet','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
     }
@@ -135,7 +135,7 @@ class MapController extends Controller
         
           $data['title'] = 'leafletmvt';
          
-         $index_map_with_header_footer = ['_templates/index_side_bar','map/leafletmvt'];
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/leafletmvt','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
     }
@@ -149,7 +149,7 @@ class MapController extends Controller
         
           $data['title'] = 'openlayers';
          
-        $index_map_with_header_footer = ['_templates/index_side_bar','map/openlayers'];
+        $index_map_with_header_footer = ['_templates/index_side_bar','map/openlayers','_templates/disclaimer'];
           
         $this->View->renderMulti($index_map_with_header_footer, $data);
     }
