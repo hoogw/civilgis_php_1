@@ -42,9 +42,21 @@
                                                         
                                                         
                                                         
-                                                         <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Shoreline/'">
-                                <img src="<?php echo Config::get('URL'); ?>public/images/logo/shoreline_logo.jpg" />
-                            </button>
+                                                         &nbsp;&nbsp;
+
+                            
+                            
+                            
+                           
+                            <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/city'">Sample city</button>
+                             &nbsp;&nbsp;
+                                                        
+                                                        
+                                                        
+                                                        
+                                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Newport_Beach'">
+                                <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt="" />
+                            </button>            
 
 
 
@@ -71,11 +83,11 @@
 
                            
 
-                            <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Newport_Beach'">
-                                <img src="<?php echo Config::get('URL'); ?>public/images/logo/newport_beach.png" alt="" />
-                            </button>
+                           
 
-                            
+                              <button type="button" class="btn btn-xs btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Shoreline/'">
+                                <img src="<?php echo Config::get('URL'); ?>public/images/logo/shoreline_logo.jpg" />
+                            </button>
                             
                             
                             &nbsp;&nbsp;
@@ -83,7 +95,7 @@
                              
 
 
-
+<!--
                             <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/New_York'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt="" />
                             </button>
@@ -229,18 +241,11 @@
 
 
 
-                            &nbsp;&nbsp;
-
-                            
-                            
-                            
                            
-                            <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/city'">Sample city</button>
-                             &nbsp;&nbsp;
 
 
                                                         
-                                                        
+                  -->                                      
 
                          
 

@@ -43,16 +43,17 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
-                                                        
+                                                         <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturescrollertablemap/city/overview'">Address Parcels Streets multi-layer with attribute table</button>
+                                            &nbsp;&nbsp;
                                                        
                                                         
                                                         
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/address'">Address</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/parcels'">Parcels</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/streets'">Streets</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/city/address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/city/streets'">Streets</button>
                                                        
                                                         
                                                     </div>
@@ -77,19 +78,29 @@
                                                     <div class="box-content">
                                                         
                                                             
+                                                             <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon2overlay/city/zoning/address/parcels'">Zoning & 2 overlay(parcels, address)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/parcels'">Zoning & 1 overlay(parcels)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/address'">Zoning & 1 overlay(address)</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/city/zoning'">Simple Zoning with switch</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonsimple/city/zoning'">Simple Zoning</button>
+                                            &nbsp;&nbsp;
                                                             
-                                                           
-                                                            
-                                                           
-                                                             
-                                                            
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
+                                                         <!--   <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/city/general_land_use'">General Land Use</button>  -->
                                                             
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/neighbor'">Neighbor</button>
+                                                            
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/neighbor'">Neighbor</button>
                                                             
                                                             
                                                     </div>
@@ -115,7 +126,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerclienttablemap/city/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/parks'">Parks</button>
                                                             
                                                             
                                                         
@@ -143,7 +154,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerclienttablemap/city/schools'">Schools</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/schools'">Schools</button>
                                                         
                                                     </div>
                                             </div>
@@ -167,12 +178,12 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_agency'">Law agency</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_reportarea'">Law report area</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_agency'">Law agency</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_reportarea'">Law report area</button>
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_geoproximity'">Law geoproximity</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_district'">Law district</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_beat'">Law beat</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_geoproximity'">Law geoproximity</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_district'">Law district</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_beat'">Law beat</button>
                                                         
                                                         
                                                     </div>
@@ -201,10 +212,10 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_station_boundary'">Fire station boundary</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_geoproximity'">Fire geoproximity</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_district'">Fire district</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_agency'">Fire agency</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_station_boundary'">Fire station boundary</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_geoproximity'">Fire geoproximity</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_district'">Fire district</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_agency'">Fire agency</button>
                                                     </div>
                                             </div>
                                     </div>
