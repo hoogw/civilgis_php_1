@@ -50,16 +50,16 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/parcels" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturescrollertablemap/city/overview" >
 						
-						<span class="hidden-xs">Parcels</span>
+						<span class="hidden-xs">Address Parcels Streets multi-layer with attribute table</span>
 					</a>
 					
 				</li>
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/address" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/city/address" >
 						
 						<span class="hidden-xs"> Address</span>
 					</a>
@@ -67,8 +67,20 @@
 				</li>
                                 
                                 
+                                
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/city/streets" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/parcels" >
+						
+						<span class="hidden-xs"> Parcels</span>
+					</a>
+					
+				</li>
+                                
+                                
+                                
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/city/streets" >
 						
 						<span class="hidden-xs"> Streets</span>
 					</a>
@@ -80,105 +92,113 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/city/zoning" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon2overlay/city/zoning/address/parcels" >
 						
-						<span class="hidden-xs">Zoning(check box)</span>
+						<span class="hidden-xs">Zoning & 2 overlay(parcels, address)</span>
 					</a>
 				</li>
                                 
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/city/zoning" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/parcels" >
 						
-						<span class="hidden-xs">Zoning(radio)</span>
+						<span class="hidden-xs">Zoning & 1 overlay(parcels)</span>
 					</a>
 				</li>
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/city/general_land_use" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/city/zoning/address" >
 						
-						<span class="hidden-xs">General land use (check box)</span>
+						<span class="hidden-xs">Zoning & 1 overlay(address)</span>
 					</a>
 				</li>
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/city/general_land_use" >
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/city/zoning" >
 						
-						<span class="hidden-xs">General land use (radio)</span>
+						<span class="hidden-xs">Simple Zoning with switch</span>
 					</a>
 				</li>
+                                
+                                
+                                
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonsimple/city/zoning" >
+						
+						<span class="hidden-xs">Simple Zoning</span>
+					</a>
+				</li>
+                                
+                                
+                                 <li>
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/neighbor" >
+						
+						<span class="hidden-xs">Neighbor</span>
+					</a>
+				</li>
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/parks" >
+						
+						<span class="hidden-xs">Parks</span>
+					</a>
+				</li>
+                                
+                                
+                                
+                                 <li>
+					<a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/city/schools" >
+						
+						<span class="hidden-xs">Schools</span>
+					</a>
+				</li>
+                                
                                 
                                 
                                 
                                 	<li class="active dropdown">
 					<a href="#" class="active dropdown-toggle">
 						
-						 <span class="hidden-xs">Zones</span>
+						 <span class="hidden-xs">Police & Fire</span>
                                         </a>
 					<ul class="active dropdown-menu">
 						                
 
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/c1">Local business (C1)</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_agency">Law agency</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/c1s">Shopping center (C1S)</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_reportarea">Law report area</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/c2">General business (C2)</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_geoproximity">Law geoproximity</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/cl">Commercial limited (CL)</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_district">Law district</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/tc">Town center (TC)</a>
-                                                                    </li>
-
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/mg">General industrial (MG)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/mp">Industrial park (MP)</a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/ir">Industrial and recreational and school (IRS)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/pdc">Planned development commercial (PDC)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/pdi">Planned development industrial (PDI)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/pdr_ld">Planned development residential low density (PDR-LD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/pdr_md">Planned development residential medium density (PDR-MD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/pdr_hd">Planned development residential high density (PDR-HD)</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/law_beat">Law beat</a>
                                                                     </li>
 
 
+                                                                    <li>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_station_boundary">Fire station boundary</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_geoproximity">Fire geoproximity</a>
+                                                                    </li>
 
                                                                     <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/ap">Administrative and professional</a>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_district">Fire district</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/singlelayersimplehighlightgeojsonmap/city/fire_agency">Fire agency</a>
                                                                     </li>
                                                                     
-                                                                    <li><a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/r1">Single family residential (R1)</a></li>
-								<li><a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/r2_md">Multiple family residential medium density (R2-MD)</a></li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/r2_hd">Multiple family residential high density (R2-HD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/r3">Multiple family residential (R3)</a>
-                                                                    </li>
-
                                                 
                                                 
 						
@@ -189,78 +209,7 @@
                                 
                                 
                                 
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/neighbor" >
-						
-						<span class="hidden-xs"> Neighbor</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/scrollerclienttablemap/city/parks" >
-						
-						<span class="hidden-xs"> Parks</span>
-					</a>
-					
-				</li>
-
-                                   
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>mapboxgl/scrollerclienttablemap/city/schools" >
-						
-						<span class="hidden-xs"> Schools</span>
-					</a>
-					
-				</li>
-
-                                
-				<li class="active dropdown">
-					<a href="#" class="active dropdown-toggle">
-						
-						 <span class="hidden-xs"> Police and Fire</span>
-					</a>
-					<ul class="active dropdown-menu">
-						
-                                                
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_agency">Law agency</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_reportarea">Law report area</a>
-                                                </li>
-
-
-
-
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_geoproximity">Law geoproximity</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_district">Law district</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/law_beat">Law beat</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_station_boundary">Fire station boundary</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_geoproximity">Fire geoproximity</a>
-                                                </li>
-
-
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_district">Fire district</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>mapboxgl/simplemap/city/fire_agency">Fire agency</a>
-                                                </li>
-                                                
-					</ul>
-				</li>
+				
                                 
                                 
                                  

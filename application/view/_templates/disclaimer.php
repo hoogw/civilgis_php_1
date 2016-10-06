@@ -43,7 +43,7 @@
                         
                         <li>
                             
-                            <a href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_1&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <a target="_blank" href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_1&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                                 <i class="fa fa-android"></i> android google map
                                 <img style= "height:20px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
                             </a>
@@ -52,7 +52,7 @@
                         
                         <li>
                             
-                            <a href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_2'>
+                            <a target="_blank" href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_2'>
                                 <i class="fa fa-android"></i> android mapbox vector tile
                                 <img style= "height:20px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
                             </a>
@@ -63,7 +63,7 @@
                         
                         <li>
                                      
-					<a href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
+					<a target="_blank" href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
                                             <i class="fa fa-apple"></i> ios google map
                                             <img style= "height:20px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
                                         </a>
@@ -73,7 +73,7 @@
                                 
                                 <li>
                                      
-					<a href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
+					<a target="_blank" href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
                                             <i class="fa fa-apple"></i> ios mapbox vector tile
                                             <img style= "height:20px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
                                         </a>
@@ -83,7 +83,7 @@
                                 
                                 <li>
                                      
-					<a href='https://itunes.apple.com/us/app/transparentgov-mapkit/id1153309156?ls=1&mt=8'>
+					<a target="_blank" href='https://itunes.apple.com/us/app/transparentgov-mapkit/id1153309156?ls=1&mt=8'>
                                             <i class="fa fa-apple"></i> ios apple map mapkit
                                             <img style= "height:20px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
                                         </a>
