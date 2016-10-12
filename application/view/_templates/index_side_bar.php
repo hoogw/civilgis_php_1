@@ -246,7 +246,7 @@
                                      
 					<a target="_blank" href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_2'>
                                             
-                                            <i class="fa fa-android"></i> android Vector Tiles
+                                            <i class="fa fa-android"></i> android Mapbox Vector Tiles
                                             <img style= "height:40px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
                                         </a>
 					
@@ -269,7 +269,7 @@
                                      
                                      
 					<a target="_blank" href='https://itunes.apple.com/us/app/transparentgov-mapbox/id1159510937'>
-                                            <i class="fa fa-apple"></i> ios Vector Tiles
+                                            <i class="fa fa-apple"></i> ios Mapbox Vector Tiles
                                             &nbsp;&nbsp;<img style= "height:20px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
                                         </a>
 					
