@@ -268,7 +268,7 @@
                                 <li class="dropdown">
                                      
                                      
-					<a target="_blank" href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
+					<a target="_blank" href='https://itunes.apple.com/us/app/transparentgov-mapbox/id1159510937'>
                                             <i class="fa fa-apple"></i> ios Vector Tiles
                                             &nbsp;&nbsp;<img style= "height:20px;" alt='Get it on Apple store' src='<?php echo Config::get('URL'); ?>public/images/logo/trgv_apple.svg'/>
                                         </a>
