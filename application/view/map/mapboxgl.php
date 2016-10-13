@@ -70,7 +70,7 @@
 
                             &nbsp;&nbsp;
 
-
+<!--
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -95,7 +95,7 @@
                              
 
 
-<!--
+
                             <button type="button" class="btn btn-xs btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>home/mapboxgl/New_York'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/nyc.png" alt="" />
                             </button>

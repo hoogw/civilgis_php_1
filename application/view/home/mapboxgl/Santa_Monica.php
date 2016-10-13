@@ -44,16 +44,27 @@
                                                     <div class="box-content">
                                                         
                                                         
-                                                        
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/justtiles/Santa_Monica/Buildings'">Buildings</button>
-                                                        
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Santa_Monica/Parcels'">Parcels</button>
-                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Santa_Monica/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturescrollertablemap/Santa_Monica/overview'">Parcels Streets Zoning multi-layer with attribute table</button>
+                                            &nbsp;&nbsp;
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
-                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/Santa_Monica/Buildings'">Buildings</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/Santa_Monica/Blocks'">Blocks</button>
+                                                        
+                                                        
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/Santa_Monica/Parcels'">Parcels</button>
+                                                        
+                                                        
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/Santa_Monica/Streets'">Streets</button>
+                                                       
+                                                        
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/Santa_Monica/Speed_Limit'">Speed_Limit</button>
+                                                          <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/Santa_Monica/Streets_Sweeping'">Streets_Sweeping</button>
+                                                        
                                                         
                                                     </div>
                                             </div>
@@ -65,32 +76,6 @@
                     
                     
                     
-                        <div class="row">
-                                    <div class="col-xs-12 col-sm-12">
-                                            <div class="box">
-                                                    <div class="box-header">
-                                                            <div class="box-name">
-                                                                    
-                                                                    <span>Parks & Recreation Map</span>
-                                                            </div>
-                                                            
-                                                    </div>
-                                                    <div class="box-content">
-                                                            
-                                                        
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/simplemap/Santa_Monica/Bike_Route'">Bike Route</button>
-                                                         
-                                                            
-                                                        
-                                                        
-                                                        
-                                                        
-                                                    </div>
-                                            </div>
-                                    </div>
-                        
-                        
-                        </div>
                     
                     
                      <div class="row">
@@ -106,9 +91,23 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/Santa_Monica/Zoning'">Zoning [radio button]</button>
-                                                         
+                                                       
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/Santa_Monica/Zoning/Parcels'">Zoning & 1 overlay(parcels)</button>
+                                            &nbsp;&nbsp;
+
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/Santa_Monica/Zoning'">Simple Zoning with switch</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonsimple/Santa_Monica/Zoning'">Simple Zoning</button>
+                                            &nbsp;&nbsp;
+                                                    
+                                                        
+                                                        
                                                     </div>
                                             </div>
                                     </div>

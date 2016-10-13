@@ -45,14 +45,16 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Newport_Beach/Address'">Address</button>
-                                                        
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
-                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
+                                                       <button type="button" class="btn btn-xs btn-outline btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/multilayerrenderedfeaturescrollertablemap/Newport_Beach/overview'">Address Parcels Streets multi-layer with attribute table</button>
+                                            &nbsp;&nbsp;
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/justtiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
                                                         
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap/Newport_Beach/Address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/Newport_Beach/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturepagedtablehighlightgeojsonmap/Newport_Beach/Streets'">Streets</button>
+                                                   
+                                                    
+                                                    
                                                     </div>
                                             </div>
                                     </div>
@@ -76,8 +78,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/scrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
-                                                         
+                                                        
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/singlelayerrenderedfeaturescrollertablehighlightgeojsonmap/Newport_Beach/Parks'">Parks</button>
+                                                            
+                                                            
                                                             
                                                         
                                                         
@@ -106,12 +110,26 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
+                                                         <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon2overlay/Newport_Beach/Zoning/Address/Parcels'">Zoning & 2 overlay(parcels, address)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/Newport_Beach/Zoning/Parcels'">Zoning & 1 overlay(parcels)</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygon1overlay/Newport_Beach/Zoning/Address'">Zoning & 1 overlay(address)</button>
+                                            &nbsp;&nbsp;
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonswitch/Newport_Beach/Zoning'">Simple Zoning with switch</button>
+                                            &nbsp;&nbsp;
+
+
+                                            <button type="button" class="btn btn-xs btn-outline btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifypolygonsimple/Newport_Beach/Zoning'">Simple Zoning</button>
+                                            &nbsp;&nbsp;
+                                                      
                                                         
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapboxgl/classifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
-                                                    
+                                                        
                                                     </div>
                                             </div>
                                     </div>
