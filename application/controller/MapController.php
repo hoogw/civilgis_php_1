@@ -158,6 +158,20 @@ class MapController extends Controller
     
     
     
+    public function arcgis()
+    {
+        
+          $data['title'] = 'arcgis';
+         
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/arcgis','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+    
+    
+    
      // -------------   below are old, testing only, not in use --------------------------  
     
      public function city($subject)

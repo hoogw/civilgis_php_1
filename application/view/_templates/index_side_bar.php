@@ -48,18 +48,6 @@
                             
                             
                             
-                            
-                                <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
-						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
-                                            <h5>Raster Tile</h5>
-                                        
-                                        </a>
-                                    
-                                        
-				</li>
-                                
-                                
                               
                                 
                                 <li class="dropdown">
@@ -138,60 +126,56 @@
 				</li>
                                 
                                 
-                                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
-						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
-                                            <h1>&nbsp;</h1>
-                                        
-                                        </a>
-                                    
-                                        
-				</li>
+                               
                                 
                                  <hr>
                                 
                                
-                                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle">
-						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
-                                            <h5>Vector Tile</h5>
-                                        
-                                        </a>
-                                    
-                                        
-				</li>
-                                
+                               
                                 
                                 
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>map/mapboxgl/" class="dropdown-toggle">
 						
-						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  &nbsp; Mapbox GL</span>
+						<span class="hidden-xs">  <img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  &nbsp; Mapbox GL Powered by Vector Tile</span>
 					</a>
                                     
                                         
 				</li>
                                 
                                 
-                                <!--
+                               
+                                <hr>
+                                
+                                
                                 
                                  <li class="dropdown">
-					<a href="<?php echo Config::get('URL'); ?>map/leafletmvt" class="dropdown-toggle">
-						
-						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/leaflet-logo.png" alt=""/> &nbsp; -&nbsp; MapboxVectorTile</span>
-					</a>
+					<a href="<?php echo Config::get('URL'); ?>map/arcgis/" class="dropdown-toggle">
+                                            
+                                            <span class="hidden-xs">
+					 <img style= "height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Esri_logo.svg.png" alt=""/> 
+                                           &nbsp;&nbsp;&nbsp; Powered by ESRI ArcGIS Server Rest API
+                                             </span>
+                                        </a>
                                     
                                         
 				</li>
                                 
-                                -->
+                                
+                                
+                             
                                 
                                 
                                 
+                                
+                                
+                                
+                                
+                                 <!--
                                 
                                  <li class="dropdown">
 					<a href="#" class="dropdown-toggle">
-						<!-- <img src="<?php echo Config::get('URL'); ?>public/images/logo/globe-blue.png" alt=""/> -->
+						
                                             <h1>&nbsp;</h1>
                                         
                                         </a>
@@ -200,7 +184,7 @@
 				</li>
                                 
                                 
-                                <!--
+                               
                                 
                                 <li class="dropdown">
 					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#price" class="dropdown-toggle">
