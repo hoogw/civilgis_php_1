@@ -6,6 +6,14 @@ var _tile_baseURL = 'http://166.62.80.50:8887/v2/';
 //var _tile_baseURL = 'http://tile.transparentgov.net/v2/';
 
 
+
+//for arcgis online rest api tile service
+//var _tile_baseURL = 'http://services3.arcgis.com/VILr8UqX00eNAkeO/ArcGIS/rest/services/';
+
+var max_return_feature_limit = 1000;
+
+
+
 var _tile_exist = false;
 var _tile_list;
 
@@ -471,6 +479,10 @@ function init_tiling() {
                      return _tile_baseURL + _areaID + '_' + _subjectID + '/' + coord.zoom + '/' + coord.x + '/' + coord.y + '.png';
 
 
+ // for arcgis rest api tile service( Note: the order is /zoom/y/x, no '.png'   format is: <mapservice-url>/tile/<level>/<row>/<column>
+                               // return _tile_baseURL + _areaID + '_' + _subjectID + '/MapServer/tile/' + zoom + '/' + coord.y + '/' + coord.x;
+
+
                  },
 
                 minZoom: 0,
@@ -661,11 +673,37 @@ function get_map_bound() {
     NElat = bounds.getNorth();
 
     // http://localhost:10/civilgis/api/load/general_landuse/SWlong/SWlat/NElong/NElat/   This is sample URI
-    var _url = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + '/' + SWlong + '/' + SWlat + '/' + NElong + '/' + NElat + '/';
+    // 
+// php
+   // var _url = base_url + 'api/loadall/' + $("#areaID").val() + '/' + $("#subjectID").val() + '/' + SWlong + '/' + SWlat + '/' + NElong + '/' + NElat + '/';
+    
+    // asp.net
     //var _url = "/api/geojson/feature/" + initial_location[0] + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
 
-    document.getElementById("ajaxload").style.display = "block";
-    ajax_GeoJSON(map, _url, false);
+
+      
+        //-------------- arcgis online server, rest API --------------------------------
+           
+             // this is bad request, should not use layerDefs={"0":""}, instead should use FeatureServer/0/query?...
+            // http://services3.arcgis.com/VILr8UqX00eNAkeO/arcgis/rest/services/Parcels/FeatureServer/query?layerDefs={"0":""}&returnGeometry=true&f=json&geometryType=esriGeometryEnvelope&geometry={"xmin" : -117.923158, "ymin" : 33.644081, "xmax" : -117.921436, "ymax" : 33.645157,"spatialReference" : {"wkid" : 4326}}
+  
+  
+           //var _envelope = '{"xmin" : -117.923158, "ymin" : 33.644081, "xmax" : -117.921436, "ymax" : 33.645157,"spatialReference" : {"wkid" : 4326}}';
+           var _envelope = '{"xmin" : '+ SWlong +', "ymin" : '+ SWlat + ', "xmax" : '+NElong +', "ymax" : '+ NElat + ',"spatialReference" : {"wkid" : 4326}}';
+            
+             
+             // Note: must specify outFields=*, in order to get all properties, without this, properties= null
+            var _url='http://services3.arcgis.com/VILr8UqX00eNAkeO/arcgis/rest/services/'+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=true&outSR=4326&f=pgeojson&outFields=*&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
+            var _url_returncountonly ='http://services3.arcgis.com/VILr8UqX00eNAkeO/arcgis/rest/services/'+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=false&returnCountOnly=true&outSR=4326&f=geojson&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
+            
+            
+        //--------- End ----- arcgis online server, rest API --------------------------------
+            
+            
+            
+            
+              document.getElementById("ajaxload").style.display = "block";
+                  ajax_GeoJSON(map,_url_returncountonly, _url,false);
 
 
 

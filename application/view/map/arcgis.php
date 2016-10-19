@@ -45,7 +45,7 @@
                                                     <div class="box-content">
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/city/parks'">test_parks</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/city/parcels'">city_parcels</button>
                                                          <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/city/address'">test_address</button>
                                                          
                                                          <hr>
