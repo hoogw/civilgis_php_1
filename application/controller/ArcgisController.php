@@ -38,7 +38,7 @@ class ArcgisController extends Controller
     }
     
     
-     public function justtiles($area, $subject)
+     public function justtiles($frontmap, $area, $subject)
     {
          
         
@@ -49,9 +49,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/justtiles');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/justtiles');
          
          
        
@@ -59,7 +60,7 @@ class ArcgisController extends Controller
     }
     
     
-     public function simpleclustermap($area, $subject)
+     public function simpleclustermap($frontmap, $area, $subject)
     {
          
         
@@ -70,9 +71,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/simpleclustermap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/simpleclustermap');
          
          
        
@@ -81,7 +83,7 @@ class ArcgisController extends Controller
     
     
     
-    public function clusterpagedclienttablemap($area, $subject)
+    public function clusterpagedclienttablemap($frontmap, $area, $subject)
     {
          
         
@@ -92,9 +94,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/clusterpagedclienttablemap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/clusterpagedclienttablemap');
          
          
        
@@ -102,7 +105,7 @@ class ArcgisController extends Controller
     }
     
     
-    public function clusterscrollerclienttablemap($area, $subject)
+    public function clusterscrollerclienttablemap($frontmap, $area, $subject)
     {
          
         
@@ -113,9 +116,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/clusterscrollerclienttablemap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/clusterscrollerclienttablemap');
          
          
        
@@ -139,9 +143,10 @@ class ArcgisController extends Controller
          
         
          $data['area'] = $area;
+        
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/maplistpaged');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/maplistpaged');
          
          
        
@@ -157,9 +162,10 @@ class ArcgisController extends Controller
          
         
          $data['area'] = $area;
+        
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/maplistscroller');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/maplistscroller');
          
          
        
@@ -172,7 +178,7 @@ class ArcgisController extends Controller
     
     //----------------------- table map section -------------------------------
     
-    public function pagedclienttablemap($area, $subject)
+    public function pagedclienttablemap($frontmap, $area, $subject)
     {
          
         
@@ -183,9 +189,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/pagedclienttablemap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/pagedclienttablemap');
          
          
        
@@ -194,7 +201,7 @@ class ArcgisController extends Controller
     
     
     
-    public function pagedservertablemap($area, $subject)
+    public function pagedservertablemap($frontmap, $area, $subject)
     {
          
         
@@ -205,76 +212,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/pagedservertablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-   
-    
-    public function pagedfulltablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/pagedfulltablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    
-    public function scrollerclienttablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/scrollerclienttablemap');
-         
-         
-       
-          $this->View->renderMulti($multifiles, $data);
-    }
-    
-    
-    
-    public function scrollerservertablemap($area, $subject)
-    {
-         
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'parks';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/scrollerservertablemap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/pagedservertablemap');
          
          
        
@@ -283,7 +224,7 @@ class ArcgisController extends Controller
     
    
     
-    public function scrollerfulltablemap($area, $subject)
+    public function pagedfulltablemap($frontmap, $area, $subject)
     {
          
         
@@ -294,9 +235,80 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/scrollerfulltablemap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/pagedfulltablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    
+    public function scrollerclienttablemap($frontmap, $area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
+         
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/scrollerclienttablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+    
+    
+    public function scrollerservertablemap($frontmap, $area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
+         
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/scrollerservertablemap');
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+    }
+    
+   
+    
+    public function scrollerfulltablemap($frontmap, $area, $subject)
+    {
+         
+        
+         if (!isset($subject) || trim($subject)==='')
+         {
+             //$subject = 'parks';
+         }
+         
+         $data['subject'] = $subject;
+         $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
+         
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/scrollerfulltablemap');
          
          
        
@@ -317,7 +329,7 @@ class ArcgisController extends Controller
     
     
     //----------------------- classification map section -------------------------------
-   public function classifycheckboxbuttonmap($area, $subject)
+   public function classifycheckboxbuttonmap($frontmap, $area, $subject)
     {
          
         
@@ -328,9 +340,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/classifycheckboxbuttonmap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/classifycheckboxbuttonmap');
          
          
        
@@ -339,7 +352,7 @@ class ArcgisController extends Controller
    
     
     
-    public function classifyradiobuttonmap($area, $subject)
+    public function classifyradiobuttonmap($frontmap, $area, $subject)
     {
          
         
@@ -350,9 +363,10 @@ class ArcgisController extends Controller
          
          $data['subject'] = $subject;
          $data['area'] = $area;
+         $data['frontmap'] = $frontmap;
          
-         $side_panel_path = '_templates/arcgis/'.$area.'_side_panel'; 
-         $multifiles = array($side_panel_path,'arcgis/classifyradiobuttonmap');
+         $side_panel_path = '_templates/arcgis/'.$frontmap.'/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,'arcgis/'.$frontmap.'/classifyradiobuttonmap');
          
          
        
