@@ -1,7 +1,11 @@
 
     
     
-    
+     <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
  
     
  <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapjs/map_index.js"></script>
@@ -230,7 +234,7 @@
 					
 				</li>
                                 
-                                -->
+                               
                                 
                                  <hr>
                                 
@@ -317,7 +321,7 @@
 				</li>
                                 
                                 
-                                
+                                 -->
                           
 			</ul>
 		</div>

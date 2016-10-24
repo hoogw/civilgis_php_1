@@ -1,5 +1,5 @@
        
-    
+  <!--  
  <div class="row">
                                     <div class="col-xs-12 col-sm-12">
                                             <div class="box">
@@ -30,7 +30,7 @@
                         
                         </div>    
 
-
+-->
 
     
     <div class="row">
@@ -92,7 +92,37 @@
                                 
                                 
                         
-                        <li><a href="#"> Java </a></li>
+                        
+                                
+                                  <li>
+                                        <a class="fancybox"   title="This application may contain and/or utilize information which was originally compiled by individual government agency for governmental purposes. The information may subsequently been modified by entity/entities other than original individual government agency. The original individual government agency make no representation as to the accuracy or usefulness of the information provided by this application or the information's suitability for any purpose and disclaim any liability for omissions or errors that may be contained therein. The public is advised to observe posted signage for compliance with applicable laws and regulations. Permission for use of these proprietary data is granted by the original individual government agency.">
+                               
+
+                                   <img style="height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/disclaimer.jpg" />
+                               
+
+                              </a>
+                             </li>
+
+
+                       
+                        &nbsp&nbsp&nbsp&nbsp
+
+                         <li>
+                        <a class="fancybox" title="contact phone"><img style="height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/phone.png" alt="" /> 310-710-6501 </a>
+
+                        &nbsp&nbsp
+
+                        <a class="fancybox" title="email"><img  style="height:20px;"src="<?php echo Config::get('URL'); ?>public/images/logo/email.png" alt="" /> huguowen@gmail.com </a>
+                                
+                          </li>
+       
+                                
+                                
+                                
+                                
+                                
+                                
 		</ol>
 	</div>
 </div>
