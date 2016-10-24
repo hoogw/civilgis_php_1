@@ -251,6 +251,51 @@ class HomeController extends Controller
     
     
     
+    public function arcgisleaflet($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/arcgisleaflet/'.$area;
+        
+         $side_panel_path = '_templates/arcgisleaflet/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
+    
+    public function arcgisjavascriptapi($area)
+    {
+        
+           $data['area'] = $area;
+         
+        $local_home_page =   'home/arcgisjavascriptapi/'.$area;
+        
+         $side_panel_path = '_templates/arcgisjavascriptapi/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    
+    
     
     public function index()
     {

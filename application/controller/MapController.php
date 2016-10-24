@@ -169,6 +169,30 @@ class MapController extends Controller
     }
     
     
+    public function arcgisleaflet()
+    {
+        
+          $data['title'] = 'arcgisleaflet';
+         
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/arcgisleaflet','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+    
+    
+    public function arcgisjavascriptapi()
+    {
+        
+          $data['title'] = 'arcgisjavascriptapi';
+         
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/arcgisjavascriptapi','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
     
     
     

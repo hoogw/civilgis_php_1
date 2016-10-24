@@ -154,7 +154,7 @@
                                             
                                             <span class="hidden-xs">
 					 <img style= "height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Esri_logo.svg.png" alt=""/> 
-                                           &nbsp;&nbsp;&nbsp; Powered by ESRI ArcGIS Server Rest API
+                                           &nbsp;&nbsp;&nbsp; ArcGIS Server Rest API
                                              </span>
                                         </a>
                                     
@@ -163,8 +163,32 @@
                                 
                                 
                                 
-                             
+                             <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>map/arcgisleaflet/" class="dropdown-toggle">
+                                            
+                                            <span class="hidden-xs">
+					 <img style= "height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Esri_logo.svg.png" alt=""/> 
+                                           &nbsp;&nbsp;&nbsp; ArcGIS Leaflet API
+                                             </span>
+                                        </a>
+                                    
+                                        
+				</li>
                                 
+                                
+                                
+                                
+                                 <li class="dropdown">
+					<a href="<?php echo Config::get('URL'); ?>map/arcgisjavascriptapi/" class="dropdown-toggle">
+                                            
+                                            <span class="hidden-xs">
+					 <img style= "height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Esri_logo.svg.png" alt=""/> 
+                                           &nbsp;&nbsp;&nbsp; ArcGIS Javascript API
+                                             </span>
+                                        </a>
+                                    
+                                        
+				</li>
                                 
                                 
                                 

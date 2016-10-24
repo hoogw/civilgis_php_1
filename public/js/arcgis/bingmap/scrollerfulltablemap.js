@@ -1047,15 +1047,27 @@ function datatablesX() {
 
 
 
-function ajax_GeoJSON(gmap, _apiURI, _map_click_event) {
-
+function ajax_GeoJSON(gmap,_apiURI_returncountonly,_apiURI,_map_click_event) {
+    
     // Load a GeoJSON from the server 
+   
+   
+    $.get(_apiURI_returncountonly, function(data_count_only){
+                
+                
+              //{"type":"FeatureCollection","properties":{"count":24362},"features":[]}  
+               var data = JSON.parse(data_count_only).properties.count;
+                
+           if (parseInt(data) < max_return_feature_limit)
+                
+            {
+             
 
 
     // test url if return a number means too many polygon to show.otherwise add polygon to map.
     $.get(_apiURI, function (data) {
 
-        if (isNaN(data)) {
+      
 
 
 
@@ -1084,11 +1096,19 @@ function ajax_GeoJSON(gmap, _apiURI, _map_click_event) {
 
             var _features_array = _geojson_object['features'];
 
-            var _id_obj;
-            var _id_obj_id;
-            var _propty_obj;
+            //  var _id_obj;
+                                         var _id_obj_id =0;
+                                         var _propty_obj;
 
-            _features_array.forEach(function (eachFeatueItem) {
+
+                                         
+
+                                         _features_array.forEach( function (eachFeatueItem)
+                                             {
+                                                 // _id_obj = eachFeatueItem['_id'];
+                                                 // _id_obj_id = _id_obj['$id'];
+                                                  
+                                                  _id_obj_id = _id_obj_id + 1;
 
 
                 /*
@@ -1120,7 +1140,7 @@ function ajax_GeoJSON(gmap, _apiURI, _map_click_event) {
 
                 // for bing map only, because above replace _id with id
                 //_propty_obj['GeoFeatureID'] = eachFeatueItem['_id'];
-                _propty_obj['GeoFeatureID'] = eachFeatueItem['id'];
+                _propty_obj['GeoFeatureID'] = _id_obj_id;
 
             });// features_array_foreach
 
@@ -1197,11 +1217,14 @@ function ajax_GeoJSON(gmap, _apiURI, _map_click_event) {
 
 
 
-
-        }
-            // returning number of count
-        else {
-
+ });// get// end get process geojson
+                          
+                             
+                         } // if < limit
+                         
+                         
+                         // returning number of count  > limit
+                         else{ 
 
             // ---------- if return number, should remove last time geojson -----------
 

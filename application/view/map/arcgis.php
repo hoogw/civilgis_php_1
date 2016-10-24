@@ -16,9 +16,9 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/index">TransparentGov</a></li>
-                                                <li> <a href="<?php echo Config::get('URL'); ?>map/arcgis">arcgis</a></li> 
+                                                <li> <a href="<?php echo Config::get('URL'); ?>map/arcgis">Arcgis Server Rest Api</a></li> 
                                                 &nbsp;&nbsp; <img style= "height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Esri_logo.svg.png" alt=""/>
-                                                Backend powered by ArcGIS server rest API and ArcGIS online map service
+                                                
                                                
                                         </ol>
                                 </div>
