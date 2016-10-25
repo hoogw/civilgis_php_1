@@ -20,6 +20,22 @@ class DataController extends Controller
     }
     
     
+    public function tabular_data_home()
+    {
+        
+          $data['area'] = 'tabular_data_home';
+         $data['subject'] = 'default';
+          
+          
+           $tabular_data_sidebar = ['_templates/tabular_data_side_bar','data/tabular_data_home'];
+          
+        $this->View->renderMulti($tabular_data_sidebar, $data);
+          
+        
+    }
+    
+    
+    
      public function tablelistPaged($area)
     {
          // default route 
@@ -31,8 +47,13 @@ class DataController extends Controller
          
          
          $data['area'] = $area;
+         $data['subject'] = 'default';
          
-        $this->View->render('data/tablelistPaged', $data);
+         $tabular_data_sidebar = ['_templates/tabular_data_side_bar','data/tablelistPaged'];
+         
+          $this->View->renderMulti($tabular_data_sidebar, $data);
+         
+       // $this->View->render('data/tablelistPaged', $data);
     }
     
     
@@ -47,8 +68,16 @@ class DataController extends Controller
          
          
          $data['area'] = $area;
+         $data['subject'] = 'default';
          
-        $this->View->render('data/tablelistscroller', $data);
+         
+         
+         $tabular_data_sidebar = ['_templates/tabular_data_side_bar','data/tablelistscroller'];
+         
+          $this->View->renderMulti($tabular_data_sidebar, $data);
+         
+         
+       // $this->View->render('data/tablelistscroller', $data);
     }
     
     
@@ -70,7 +99,13 @@ class DataController extends Controller
          $data['subject'] = $subject;
          $data['area'] = $area;
          
-        $this->View->render('data/tablepaged', $data);
+         
+          $tabular_data_sidebar = ['_templates/tabular_data_side_bar','data/tablepaged'];
+         
+          $this->View->renderMulti($tabular_data_sidebar, $data);
+         
+         
+       // $this->View->render('data/tablepaged', $data);
     }
     
     
@@ -89,7 +124,14 @@ class DataController extends Controller
          $data['subject'] = $subject;
          $data['area'] =$area;
          
-        $this->View->render('data/tablescroller', $data);
+         
+          $tabular_data_sidebar = ['_templates/tabular_data_side_bar','data/tablescroller'];
+         
+          $this->View->renderMulti($tabular_data_sidebar, $data);
+         
+         
+         
+       // $this->View->render('data/tablescroller', $data);
     }
     
     

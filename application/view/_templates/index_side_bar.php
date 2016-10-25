@@ -194,10 +194,19 @@ $(document).ready(function(){
                                         
 				</li>
                                 
+                                <hr/>
                                 
+                                <li>
+                            <a href="<?php echo Config::get('URL'); ?>data/tabular_data_home/">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                Tabular Data
+
+                            </a>
+
+
+                        </li>
                                 
-                                
-                                
+                               <hr/>  
                                 
                                  <!--
                                 

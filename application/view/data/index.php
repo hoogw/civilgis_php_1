@@ -145,7 +145,7 @@
     <input type="hidden" id="base_url" value=<?php echo Config::get('URL'); ?>></input>
     
     
-    
+  
 <header class="navbar">
 	<div class="container-fluid expanded-panel">
 		<div class="row">
