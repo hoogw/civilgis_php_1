@@ -49,9 +49,9 @@
                             
                             
                             <li>
-					<a href="<?php echo Config::get('URL'); ?>home/heremap/<?php echo $data['area'] ?>">
+					<a href="<?php echo Config::get('URL'); ?>map/arcgis/">
 						
-						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/>&nbsp;&nbsp; Map</span>
+						<span class="hidden-xs">ESRI ArcGIS Server Rest API  &nbsp; &nbsp;&nbsp;+ &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/>&nbsp;&nbsp; Map</span>
                                         </a>
 					
 				</li>
@@ -60,7 +60,7 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/parcels" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/parcels" >
 						
 						<span class="hidden-xs">Parcels</span>
 					</a>
@@ -69,7 +69,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/address" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/address" >
 						
 						<span class="hidden-xs"> Address</span>
 					</a>
@@ -78,7 +78,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/streets" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/streets" >
 						
 						<span class="hidden-xs"> Streets</span>
 					</a>
@@ -90,7 +90,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/zoning" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/city/zoning" >
 						
 						<span class="hidden-xs">Zoning(check box)</span>
 					</a>
@@ -99,7 +99,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/zoning" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/city/zoning" >
 						
 						<span class="hidden-xs">Zoning(radio)</span>
 					</a>
@@ -107,7 +107,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/general_land_use" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/city/general_land_use" >
 						
 						<span class="hidden-xs">General land use (check box)</span>
 					</a>
@@ -115,7 +115,7 @@
                                 
                                 
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/general_land_use" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/city/general_land_use" >
 						
 						<span class="hidden-xs">General land use (radio)</span>
 					</a>
@@ -123,84 +123,11 @@
                                 
                                 
                                 
-                                	<li class="active dropdown">
-					<a href="#" class="active dropdown-toggle">
-						
-						 <span class="hidden-xs">Zones</span>
-                                        </a>
-					<ul class="active dropdown-menu">
-						                
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/c1">Local business (C1)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/c1s">Shopping center (C1S)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/c2">General business (C2)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/cl">Commercial limited (CL)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/tc">Town center (TC)</a>
-                                                                    </li>
-
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/mg">General industrial (MG)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/mp">Industrial park (MP)</a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/ir">Industrial and recreational and school (IRS)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/pdc">Planned development commercial (PDC)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/pdi">Planned development industrial (PDI)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/pdr_ld">Planned development residential low density (PDR-LD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/pdr_md">Planned development residential medium density (PDR-MD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/pdr_hd">Planned development residential high density (PDR-HD)</a>
-                                                                    </li>
-
-
-
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/ap">Administrative and professional</a>
-                                                                    </li>
-                                                                    
-                                                                    <li><a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/r1">Single family residential (R1)</a></li>
-								<li><a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/r2_md">Multiple family residential medium density (R2-MD)</a></li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/r2_hd">Multiple family residential high density (R2-HD)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/r3">Multiple family residential (R3)</a>
-                                                                    </li>
-
-                                                
-                                                
-						
-					</ul>
-				</li>
-                                
-                                
                                 
                                 
                                 
 				<li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/neighbor" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/neighbor" >
 						
 						<span class="hidden-xs"> Neighbor</span>
 					</a>
@@ -210,7 +137,7 @@
                                
                                 
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/city/parks" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/city/parks" >
 						
 						<span class="hidden-xs"> Parks</span>
 					</a>
@@ -219,7 +146,7 @@
 
                                    
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/city/schools" >
+					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/city/schools" >
 						
 						<span class="hidden-xs"> Schools</span>
 					</a>
@@ -236,37 +163,37 @@
 						
                                                 
                                                 <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_agency">Law agency</a>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_agency">Law agency</a>
                                                 </li>
                                                 <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_reportarea">Law report area</a>
-                                                </li>
-
-
-
-
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_geoproximity">Law geoproximity</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_district">Law district</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_beat">Law beat</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_station_boundary">Fire station boundary</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_geoproximity">Fire geoproximity</a>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_report_area">Law report area</a>
                                                 </li>
 
 
+
+
                                                 <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_district">Fire district</a>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_geoproximity">Law geoproximity</a>
                                                 </li>
                                                 <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_agency">Fire agency</a>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_district">Law district</a>
+                                                </li>
+                                                <li>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_beat">Law beat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_station_boundary">Fire station boundary</a>
+                                                </li>
+                                                <li>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_geoproximity">Fire geoproximity</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_district">Fire district</a>
+                                                </li>
+                                                <li>
+                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_agency">Fire agency</a>
                                                 </li>
                                                 
 					</ul>
