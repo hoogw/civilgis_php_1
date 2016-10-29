@@ -79,6 +79,8 @@
                                                 
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/arcgis/">Arcgis Rest API Home</a></li> 
                                                 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/arcgis/mapquest/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                
                                                 <li><a href="<?php echo Config::get('URL'); ?>arcgis/pagedfulltablemap/mapquest/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>

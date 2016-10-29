@@ -43,9 +43,9 @@
                             
                             
                             <li>
-					<a href="<?php echo Config::get('URL'); ?>home/mapbox/<?php echo $data['area'] ?>">
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/mapbox/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs">  <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/></span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>

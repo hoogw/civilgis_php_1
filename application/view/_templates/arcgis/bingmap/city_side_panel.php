@@ -47,16 +47,19 @@
 			<ul class="nav main-menu">
 				
                             
+                           
                             
-                            <li>
-					<a href="<?php echo Config::get('URL'); ?>map/arcgis/">
+                            
+                                
+                                <li>
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/bingmap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> ESRI ArcGIS Server Rest API  &nbsp; &nbsp;&nbsp;+ &nbsp; &nbsp;&nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map</span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>
-                            
-                            
+                                
+                                
                             
                             
                                 <li>

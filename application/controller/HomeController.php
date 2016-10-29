@@ -250,6 +250,33 @@ class HomeController extends Controller
     
     
     
+    //---------- arcgis hybrid-------------
+    
+    public function arcgis($frontmap, $area)
+    {
+        
+           $data['frontmap'] = $frontmap;
+            $data['area'] = $area;
+         
+        $local_home_page =   'home/arcgis/'.$frontmap . '/'.$area;
+        
+         $side_panel_path = '_templates/arcgis/'.$frontmap . '/'.$area.'_side_panel'; 
+         $multifiles = array($side_panel_path,$local_home_page);
+         
+         
+       
+          $this->View->renderMulti($multifiles, $data);
+        
+        
+        
+       
+    }
+    
+    
+    //--------- end arcgis hybrid-----
+    
+    
+    
     
     public function arcgisleaflet($area)
     {

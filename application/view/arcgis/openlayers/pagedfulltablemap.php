@@ -81,6 +81,8 @@
                                                 
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/arcgis/">Arcgis Rest API Home</a></li> 
                                                 
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/arcgis/openlayers/<?php echo $data['area'] ?>/"><?php echo $data['area'] ?></a></li>
+                                                
                                                 <li><a href="<?php echo Config::get('URL'); ?>arcgis/pagedfulltablemap/openlayers/<?php echo $data['area'] ?>/<?php echo $data['subject'] ?>"><?php echo $data['subject'] ?></a></li>
                                         </ol>
                                 </div>

@@ -29,9 +29,6 @@ function ajax_GeoJSON(gmap,_apiURI_returncountonly,_apiURI,_map_click_event) {
             {
              
             
-           
-            
-            
                    // test url if return a number means too many polygon to show.otherwise add polygon to map.
                     $.get(_apiURI, function(data){
            

@@ -40,15 +40,16 @@
 			<ul class="nav main-menu">
 				
                             
-                            
-                            <li>
-					<a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>">
+                             <li>
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/mapquest/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/mapquest.png" alt=""/> </span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/mapquest.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>
                             
+                            
+                        
                             
                             
                                 

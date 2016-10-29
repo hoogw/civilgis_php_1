@@ -49,10 +49,10 @@
                             
                             
                             
-                            <li>
-					<a href="<?php echo Config::get('URL'); ?>home/bingmap/<?php echo $data['area'] ?>">
+                             <li>
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/bingmap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs">  <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map</span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>

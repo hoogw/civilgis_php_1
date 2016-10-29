@@ -48,10 +48,10 @@
 				
                             
                             
-                            <li>
-					<a href="<?php echo Config::get('URL'); ?>map/arcgis/">
+                             <li>
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/googlemap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> ESRI ArcGIS Server Rest API  &nbsp; &nbsp;&nbsp;+ &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/google-maps-icon.png" alt=""/> </span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/google-maps-icon.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>

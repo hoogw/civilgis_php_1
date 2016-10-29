@@ -47,14 +47,16 @@
 			<ul class="nav main-menu">
 				
                             
-                            
-                            <li>
-					<a href="<?php echo Config::get('URL'); ?>home/heremap/<?php echo $data['area'] ?>">
+                             <li>
+					<a href="<?php echo Config::get('URL'); ?>home/arcgis/heremap/<?php echo $data['area'] ?>">
 						
-						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;&nbsp;<img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/>&nbsp;&nbsp; Map </span>
+						<span class="hidden-xs"> <?php echo $data['area'] ?>  &nbsp; &nbsp;ESRI ArcGIS Server Rest API + &nbsp; <img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/>  Map </span>
                                         </a>
 					
 				</li>
+                            
+                            
+                            
                             
                             
                             
