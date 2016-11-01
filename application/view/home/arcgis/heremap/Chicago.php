@@ -48,53 +48,53 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Chicago/Zoning'"> Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Chicago/Zoning'"> Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Chicago/Zoning'"> Zoning [radio button]</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Chicago/Zoning'"> Zoning [radio button]</button>
                             &nbsp;&nbsp;
                             
                             
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Planning_Districts'">Planning Districts</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Planning_Districts'">Planning Districts</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Planning_Regions'">Planning Regions</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Planning_Regions'">Planning Regions</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Community'">Community</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Community'">Community</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Neighborhoods'">Neighborhoods</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Neighborhoods'">Neighborhoods</button>
 
                             &nbsp;&nbsp;
                             <br/>
                             <br />
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Industrial_Corridors'">Industrial Corridors</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Industrial_Corridors'">Industrial Corridors</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Enterprises_Communities'">Enterprises Communities</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Enterprises_Communities'">Enterprises Communities</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Landmark_Districts'">Landmark Districts</button>
-
-                            &nbsp;&nbsp;
-
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Conservation_Areas'">Conservation Areas</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Landmark_Districts'">Landmark Districts</button>
 
                             &nbsp;&nbsp;
 
 
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Conservation_Areas'">Conservation Areas</button>
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Empowerment_Zones'">Empowerment Zones</button>
+                            &nbsp;&nbsp;
+
+
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Empowerment_Zones'">Empowerment Zones</button>
 
                             &nbsp;&nbsp;
                             
@@ -124,10 +124,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Police_Beat'">Police Beat</button>
+                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Police_Beat'">Police Beat</button>
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Police_District'">Police District</button>
+                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Police_District'">Police District</button>
                 &nbsp;&nbsp;
 
                                                         
@@ -158,15 +158,15 @@
                                                             
                                                         
                                                        &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Chicago/Major_Streets'">Major Streets</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Chicago/Major_Streets'">Major Streets</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Railroads'">Railroads</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Railroads'">Railroads</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Chicago/Bike_Routes'">Bike Routes</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Chicago/Bike_Routes'">Bike Routes</button>
                             &nbsp;&nbsp;
                            
 
@@ -195,26 +195,26 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Census_Tracts'">Census Tracts</button>
+                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Census_Tracts'">Census Tracts</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Hospitals'">Hospitals</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Hospitals'">Hospitals</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Schools'">Schools</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Schools'">Schools</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Parks'">Parks</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Parks'">Parks</button>
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Hydro'">Hydro</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Hydro'">Hydro</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Forestry'">Forestry</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Forestry'">Forestry</button>
                             &nbsp;&nbsp;
 
                                                     </div>

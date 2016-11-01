@@ -51,75 +51,39 @@
                             
                             
                             
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/county/cities" >
-						
-						<span class="hidden-xs">Cities</span>
-					</a>
-					
-				</li>
-                                
-                                
-                               
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/county/rails" >
-						
-						<span class="hidden-xs">Rails</span>
-					</a>
-					
-				</li>
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/county/parks" >
-						
-						<span class="hidden-xs">Parks</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/county/water" >
-						
-						<span class="hidden-xs">Water</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/county/education_facility" >
-						
-						<span class="hidden-xs">Education Facility</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/county/hospitals" >
-						
-						<span class="hidden-xs"> Hospitals</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/county/fire_stations" >
-						
-						<span class="hidden-xs">Fire station</span>
-					</a>
-					
-				</li>
+                    <a href="/arcgis/scrollerclienttablemap/leaflet/county/cities"> Cities</a>
+                </li>
+
+
+                <li>
+                    <a href="/arcgis/simplemap/leaflet/county/rails"> Rails</a>
+                </li>
+
+
+                <li>
+                    <a href="/arcgis/scrollerclienttablemap/leaflet/county/parks"> Parks</a>
+                </li>
+
+                <li>
+                    <a href="/arcgis/simplemap/leaflet/county/water"> Water</a>
+                </li>
+
+
+                <li>
+                    <a href="/arcgis/clusterscrollerclienttablemap/leaflet/county/education_facility"> Education Facility</a>
+                </li>
+
+
+                <li>
+                    <a href="/arcgis/simplemap/leaflet/county/hospitals"> Hospitals</a>
+                </li>
+
+
+                <li>
+                    <a href="/arcgis/clusterscrollerclienttablemap/leaflet/county/fire_stations"> Fire station</a>
+                </li>
+
 
                                    
                                 

@@ -47,13 +47,13 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Newport_Beach/Address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Newport_Beach/Address'">Address</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Newport_Beach/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Newport_Beach/Streets'">Streets</button>
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/justtiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/bingmap/Newport_Beach/Right_Of_Way'">Right of Way</button>
                                                         
                                                     </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Newport_Beach/Parks'">Parks</button>
                                                          
                                                             
                                                         
@@ -108,11 +108,11 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
                                                         
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
                                                     
                                                     </div>
                                             </div>

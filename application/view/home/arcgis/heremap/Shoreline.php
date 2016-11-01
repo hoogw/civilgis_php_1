@@ -49,13 +49,13 @@
                                                         
                                                         
                                                          
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Shoreline/Zoning'">Zoning [check box button]</button>
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Shoreline/Zoning'">Zoning [check box button]</button>
                                                             &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Shoreline/Zoning'">Zoning [radio button]</button>
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Shoreline/Zoning'">Zoning [radio button]</button>
                                                             &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Shoreline/Land_Use_Comp_Plan'">Land Use Comp Plan [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Shoreline/Land_Use_Comp_Plan'">Land Use Comp Plan [check box button]</button>
                                                             &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Shoreline/Land_Use_Comp_Plan'">Land Use Comp Plan [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Shoreline/Land_Use_Comp_Plan'">Land Use Comp Plan [radio button]</button>
 
 
                                                          
@@ -86,36 +86,36 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Address_Central'">Address Central</button>
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Shoreline/Address_Central'">Address Central</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Tax_Parcel_Central'">Tax Parcel Central</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Shoreline/Tax_Parcel_Central'">Tax Parcel Central</button>
                             &nbsp;&nbsp;
                            
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Shoreline/Buildings'">Buildings</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/heremap/Shoreline/Buildings'">Buildings</button>
                             &nbsp;&nbsp;
 
 
-                                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Park'">Park</button>
+                                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Park'">Park</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Neighborhood'">Neighborhood</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Neighborhood'">Neighborhood</button>
 
-
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Monument'">Monument</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Land_Mark'">Land Mark</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/heremap/Shoreline/Monument'">Monument</button>
+
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Land_Mark'">Land Mark</button>
                             
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Encumbrance'">Encumbrance</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Encumbrance'">Encumbrance</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Art'">Art</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Art'">Art</button>
                                                         
                                                         
                                                     </div>
@@ -143,63 +143,63 @@
                                                         
                                                             
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Street'">Street</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Shoreline/Street'">Street</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Street_Light'">Street_Light</button>
-
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Sidewalk'">Sidewalk</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/heremap/Shoreline/Street_Light'">Street_Light</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Pavement_Condition'">Pavement_Condition</button>
-                            &nbsp;&nbsp;
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Shoreline/Pavement'">Pavement</button>
-                            &nbsp;&nbsp;
-
-
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Intersections'">Intersections</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Guard_Rail'">Guard_Rail</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Fence'">Fence</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Curb_Ramp'">Curb_Ramp</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Sidewalk'">Sidewalk</button>
 
                             &nbsp;&nbsp;
 
-
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Curb'">Curb</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Shoreline/Pavement_Condition'">Pavement_Condition</button>
+                            &nbsp;&nbsp;
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Shoreline/Pavement'">Pavement</button>
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Bridge'">Bridge</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Intersections'">Intersections</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Bike_Facility'">Bike_Facility</button>
-
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Guard_Rail'">Guard_Rail</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Railroad'">Railroad</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Fence'">Fence</button>
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/heremap/Shoreline/Curb_Ramp'">Curb_Ramp</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Shoreline/Trail'">Trail</button>
-
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simpleclustermap/Shoreline/Signal'">Signal</button>
-
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Curb'">Curb</button>
                             &nbsp;&nbsp;
 
 
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Bridge'">Bridge</button>
+                            &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Shoreline/Crosswalk_Driveways'">Crosswalk_Driveways</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Bike_Facility'">Bike_Facility</button>
+
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Railroad'">Railroad</button>
+
+                            &nbsp;&nbsp;
+
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Shoreline/Trail'">Trail</button>
+
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/heremap/Shoreline/Signal'">Signal</button>
+
+                            &nbsp;&nbsp;
+
+
+
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/heremap/Shoreline/Crosswalk_Driveways'">Crosswalk_Driveways</button>
                             &nbsp;&nbsp;
                                                         
                                                         
@@ -231,66 +231,66 @@
                                                         
                                                             
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Cable'">Traffic_Cable</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Cable'">Traffic_Cable</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Cam'">Traffic_Cam</button>
-
-                &nbsp;&nbsp;
-
-
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Circle'">Traffic_Circle</button>
-
-                &nbsp;&nbsp;
-
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_EV_Device'">Traffic_EV_Device</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Cam'">Traffic_Cam</button>
 
                 &nbsp;&nbsp;
 
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Flashing_Beacon'">Traffic_Flashing_Beacon</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Circle'">Traffic_Circle</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Pave_Striping'">Traffic_Pave_Striping</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_EV_Device'">Traffic_EV_Device</button>
 
                 &nbsp;&nbsp;
 
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Ped_Push_Button'">Traffic_Ped_Push_Button</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Flashing_Beacon'">Traffic_Flashing_Beacon</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Ped_Signal_Display'">Traffic_Ped_Signal_Display</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Pave_Striping'">Traffic_Pave_Striping</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Radar_Sign'">Traffic_Radar_Sign</button>
+
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Ped_Push_Button'">Traffic_Ped_Push_Button</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_School_Flasher'">Traffic_School_Flasher</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Ped_Signal_Display'">Traffic_Ped_Signal_Display</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Signal_Cabinet'">Traffic_Signal_Cabinet</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Radar_Sign'">Traffic_Radar_Sign</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Signal_Head'">Traffic_Signal_Head</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_School_Flasher'">Traffic_School_Flasher</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Signal_Loop'">Traffic_Signal_Loop</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Signal_Cabinet'">Traffic_Signal_Cabinet</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Signalized_Intersection'">Traffic_Signalized_Intersection</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Signal_Head'">Traffic_Signal_Head</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Shoreline/Traffic_Support_Structure'">Traffic_Support_Structure</button>
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Signal_Loop'">Traffic_Signal_Loop</button>
+
+                &nbsp;&nbsp;
+
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Signalized_Intersection'">Traffic_Signalized_Intersection</button>
+
+                &nbsp;&nbsp;
+
+                <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Shoreline/Traffic_Support_Structure'">Traffic_Support_Structure</button>
 
                 &nbsp;&nbsp;
                                                         

@@ -52,9 +52,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/address'">Address</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/parcels'">Parcels</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/city/streets'">Streets</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/city/address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/city/parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/city/streets'">Streets</button>
                                                        
                                                         
                                                     </div>
@@ -85,13 +85,13 @@
                                                            
                                                              
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/city/zoning'">Zoning [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/city/zoning'">Zoning [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/city/general_land_use'">General Land Use [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/city/general_land_use'">General Land Use [radio button]</button>
                                                             
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/neighbor'">Neighbor</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/neighbor'">Neighbor</button>
                                                             
                                                             
                                                     </div>
@@ -117,7 +117,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/city/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/city/parks'">Parks</button>
                                                             
                                                             
                                                         
@@ -145,7 +145,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/city/schools'">Schools</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/city/schools'">Schools</button>
                                                         
                                                     </div>
                                             </div>
@@ -169,12 +169,12 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/law_agency'">Law agency</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/law_reportarea'">Law report area</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/law_agency'">Law agency</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/law_reportarea'">Law report area</button>
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/law_geoproximity'">Law geoproximity</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/law_district'">Law district</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/law_beat'">Law beat</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/law_geoproximity'">Law geoproximity</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/law_district'">Law district</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/law_beat'">Law beat</button>
                                                         
                                                         
                                                     </div>
@@ -203,10 +203,10 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/fire_station_boundary'">Fire station boundary</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/fire_geoproximity'">Fire geoproximity</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/fire_district'">Fire district</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/simplemap/city/fire_agency'">Fire agency</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/fire_station_boundary'">Fire station boundary</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/fire_geoproximity'">Fire geoproximity</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/fire_district'">Fire district</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/city/fire_agency'">Fire agency</button>
                                                     </div>
                                             </div>
                                     </div>

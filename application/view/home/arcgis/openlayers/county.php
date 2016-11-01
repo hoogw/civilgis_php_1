@@ -47,9 +47,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/county/cities'">Cities</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/openlayers/county/cities'">Cities</button>
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/county/rails'">Rails</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/openlayers/county/rails'">Rails</button>
                                                         
                                                         <button disabled="disabled" type="button" class="btn  btn-default"   onclick="location.href = '#'">Address</button>
                                                        
@@ -79,8 +79,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/county/parks'">Parks</button>
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/county/water'">Water</button>    
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/openlayers/county/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/openlayers/county/water'">Water</button>    
                                                             
                                                         
                                                         
@@ -107,8 +107,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/clusterscrollerclienttablemap/county/education_facility'">Education Facility</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/county/hospitals'">Hospitals</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/openlayers/county/education_facility'">Education Facility</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/openlayers/county/hospitals'">Hospitals</button>
                                                         
                                                     </div>
                                             </div>
@@ -136,7 +136,7 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/clusterscrollerclienttablemap/county/fire_stations'">Fire station</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/openlayers/county/fire_stations'">Fire station</button>
                                                         
                                                         
                                                     </div>

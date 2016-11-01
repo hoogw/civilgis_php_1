@@ -62,7 +62,7 @@
                             
                                 
                                  <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Chicago/Zoning">
 
                        Zoning [check box button]
                     </a>
@@ -79,7 +79,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Chicago/Zoning">
 
                        Zoning [radio button]
                     </a>
@@ -88,7 +88,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Planning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Planning_Districts">
 
                         Planning Districts
                     </a>
@@ -96,7 +96,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Planning_Regions">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Planning_Regions">
 
                         Planning Regions
                     </a>
@@ -104,7 +104,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Community">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Community">
                         Community
 
                     </a>
@@ -112,7 +112,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Neighborhoods">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Neighborhoods">
                         Neighborhoods
 
                     </a>
@@ -120,7 +120,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Industrial_Corridors">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Industrial_Corridors">
 
                         Industrial Corridors
                     </a>
@@ -130,7 +130,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Enterprises_Communities">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Enterprises_Communities">
 
                         Enterprises Communities
                     </a>
@@ -138,7 +138,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Landmark_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Landmark_Districts">
 
                         Landmark Districts
                     </a>
@@ -146,7 +146,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Conservation_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Conservation_Areas">
 
                         Conservation Areas
                     </a>
@@ -154,7 +154,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Empowerment_Zones">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Empowerment_Zones">
                         Empowerment Zones
 
                     </a>
@@ -163,7 +163,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Police_Beat">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Police_Beat">
 
                         Police Beat
                     </a>
@@ -171,7 +171,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Police_District">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Police_District">
 
                         Police District
                     </a>
@@ -179,7 +179,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Chicago/Major_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Chicago/Major_Streets">
                         Major Streets
 
                     </a>
@@ -187,7 +187,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Railroads">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Railroads">
 
                         Railroads
                     </a>
@@ -197,7 +197,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Streets_Sweeping">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Streets_Sweeping">
                         Streets Sweeping
 
                     </a>
@@ -205,7 +205,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Chicago/Bike_Routes">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Chicago/Bike_Routes">
 
                         Bike Routes
                     </a>
@@ -213,7 +213,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Census_Tracts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Census_Tracts">
 
                         Census Tracts
                     </a>
@@ -221,7 +221,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Hospitals">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Hospitals">
                         Hospitals
 
                     </a>
@@ -231,7 +231,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Schools">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Schools">
                         Schools
 
                     </a>
@@ -239,7 +239,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/High_School_Attendance_Boundaries">
                         High School Attendance Boundaries
 
                     </a>
@@ -247,7 +247,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Chicago/Parks">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Chicago/Parks">
 
                         Parks
                     </a>
@@ -255,7 +255,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Hydro">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Hydro">
                         Hydro
 
                     </a>
@@ -264,7 +264,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/simplemap/Chicago/Forestry">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Chicago/Forestry">
                         Forestry
 
                     </a>

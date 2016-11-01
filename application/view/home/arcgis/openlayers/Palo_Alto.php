@@ -47,14 +47,14 @@
                                                         
                                                         
                                                         
-                                                       <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/Palo_Alto/Zoning'">Zoning [check box button]</button>
+                                                       <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/openlayers/Palo_Alto/Zoning'">Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/Palo_Alto/Zoning'">Zoning [radio button]</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/openlayers/Palo_Alto/Zoning'">Zoning [radio button]</button>
 
 
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Palo_Alto/PAN_Areas'">PAN Areas</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/openlayers/Palo_Alto/PAN_Areas'">PAN Areas</button>
                             &nbsp;&nbsp;
                                                         
                                                         
@@ -82,14 +82,14 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Addresses'">Addresses</button>
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Addresses'">Addresses</button>
                             &nbsp;&nbsp;
                             
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Parcels'">Parcels</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Parcels'">Parcels</button>
                             &nbsp;&nbsp;
                            
                             
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Palo_Alto/Building'">Building</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/openlayers/Palo_Alto/Building'">Building</button>
      
                                                         
                                                         
@@ -116,10 +116,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Streets'">Streets</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/justtiles/Palo_Alto/Right_of_way'">Right of way</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/openlayers/Palo_Alto/Right_of_way'">Right of way</button>
                             &nbsp;&nbsp;
                                                     </div>
                                             </div>

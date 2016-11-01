@@ -47,15 +47,15 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/justtiles/Santa_Monica/Buildings'">Buildings</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/heremap/Santa_Monica/Buildings'">Buildings</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Santa_Monica/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Santa_Monica/Streets'">Streets</button>
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Speed_Limit'">Speed Limit</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Santa_Monica/Speed_Limit'">Speed Limit</button>
                                                          
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Santa_Monica/Streets_Sweeping'">Streets Sweeping</button>
                                                         
                                                     </div>
                                             </div>
@@ -80,7 +80,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Santa_Monica/Bike_Route'">Bike Route</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Santa_Monica/Bike_Route'">Bike Route</button>
                                                          
                                                             
                                                         
@@ -108,8 +108,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Santa_Monica/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Santa_Monica/Zoning'">Zoning [radio button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Santa_Monica/Zoning'">Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Santa_Monica/Zoning'">Zoning [radio button]</button>
                                                          
                                                     </div>
                                             </div>

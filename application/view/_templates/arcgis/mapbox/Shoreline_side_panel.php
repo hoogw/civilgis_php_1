@@ -54,16 +54,16 @@
                             
                                
                                  <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/classifycheckboxbuttonmap/Shoreline/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapbox/Shoreline/Zoning">
                         Zoning [check box button]
-                        
+
                     </a>
 
                 </li>
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/classifyradiobuttonmap/Shoreline/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapbox/Shoreline/Zoning">
                         Zoning [radio button]
 
                     </a>
@@ -72,7 +72,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/classifycheckboxbuttonmap/Shoreline/Land_Use_Comp_Plan">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapbox/Shoreline/Land_Use_Comp_Plan">
                         Land Use Comp Plan [check box button]
 
                     </a>
@@ -81,7 +81,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/classifyradiobuttonmap/Shoreline/Land_Use_Comp_Plan">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapbox/Shoreline/Land_Use_Comp_Plan">
                         Land Use Comp Plan [radio button]
 
                     </a>
@@ -90,7 +90,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Shoreline/Address_Central">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapbox/Shoreline/Address_Central">
                         Address Central
 
                     </a>
@@ -99,7 +99,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Shoreline/Tax_Parcel_Central">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapbox/Shoreline/Tax_Parcel_Central">
                         Tax Parcel Central
 
                     </a>
@@ -109,7 +109,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/justtiles/Shoreline/Buildings">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/mapbox/Shoreline/Buildings">
                         Buildings
 
                     </a>
@@ -118,7 +118,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Park">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Park">
 
                         Park
                     </a>
@@ -127,7 +127,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Neighborhood">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Neighborhood">
                         Neighborhood
 
                     </a>
@@ -136,7 +136,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simpleclustermap/Shoreline/Monument">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/mapbox/Shoreline/Monument">
                         Monument
 
                     </a>
@@ -145,7 +145,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Land_Mark">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Land_Mark">
 
                         Land Mark
                     </a>
@@ -154,7 +154,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Encumbrance">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Encumbrance">
                         Encumbrance
 
                     </a>
@@ -164,7 +164,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Art">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Art">
                         Art
 
                     </a>
@@ -173,7 +173,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Shoreline/Street">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapbox/Shoreline/Street">
                         Street
 
                     </a>
@@ -182,7 +182,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simpleclustermap/Shoreline/Street_Light">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/mapbox/Shoreline/Street_Light">
                         Street Light
 
                     </a>
@@ -191,7 +191,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Sidewalk">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Sidewalk">
                         Sidewalk
 
                     </a>
@@ -200,7 +200,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Shoreline/Pavement_Condition">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapbox/Shoreline/Pavement_Condition">
                         Pavement Condition
 
                     </a>
@@ -209,7 +209,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerfulltablemap/Shoreline/Pavement">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapbox/Shoreline/Pavement">
                         Pavement
 
                     </a>
@@ -219,7 +219,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Intersections">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Intersections">
                         Intersections
 
                     </a>
@@ -228,7 +228,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Guard_Rail">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Guard_Rail">
                         Guard Rail
 
                     </a>
@@ -237,7 +237,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Fence">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Fence">
                         Fence
 
                     </a>
@@ -246,7 +246,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simpleclustermap/Shoreline/Curb_Ramp">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/mapbox/Shoreline/Curb_Ramp">
                         Curb Ramp
 
                     </a>
@@ -255,7 +255,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Curb">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Curb">
                         Curb
 
                     </a>
@@ -264,7 +264,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/scrollerclienttablemap/Shoreline/Bridge">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Bridge">
                         Bridge
 
                     </a>
@@ -274,7 +274,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Bike_Facility">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Bike_Facility">
                         Bike Facility
 
                     </a>
@@ -283,7 +283,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Railroad">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Railroad">
 
                         Railroad
                     </a>
@@ -292,7 +292,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simplemap/Shoreline/Trail">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapbox/Shoreline/Trail">
 
                         Trail
                     </a>
@@ -301,7 +301,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/simpleclustermap/Shoreline/Signal">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/mapbox/Shoreline/Signal">
                         Signal
 
                     </a>
@@ -310,7 +310,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapbox/justtiles/Shoreline/Crosswalk_Driveways">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/mapbox/Shoreline/Crosswalk_Driveways">
                         Crosswalk Driveways
 
                     </a>
@@ -318,35 +318,37 @@
                 </li>
 
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Cable'>Traffic_Cable</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Cable">Traffic_Cable</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Cam'>Traffic_Cam</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Cam">Traffic_Cam</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Circle'>Traffic_Circle</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Circle">Traffic_Circle</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_EV_Device'>Traffic_EV_Device</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_EV_Device">Traffic_EV_Device</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Flashing_Beacon'>Traffic_Flashing_Beacon</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Flashing_Beacon">Traffic_Flashing_Beacon</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Pave_Striping'>Traffic_Pave_Striping</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Pave_Striping">Traffic_Pave_Striping</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Ped_Push_Button'>Traffic_Ped_Push_Button</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Ped_Push_Button">Traffic_Ped_Push_Button</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Ped_Signal_Display'>Traffic_Ped_Signal_Display</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Ped_Signal_Display">Traffic_Ped_Signal_Display</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Radar_Sign'>Traffic_Radar_Sign</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Radar_Sign">Traffic_Radar_Sign</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_School_Flasher'>Traffic_School_Flasher</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_School_Flasher">Traffic_School_Flasher</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Signal_Cabinet'>Traffic_Signal_Cabinet</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Signal_Cabinet">Traffic_Signal_Cabinet</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Signal_Head'>Traffic_Signal_Head</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Signal_Head">Traffic_Signal_Head</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Signal_Loop'>Traffic_Signal_Loop</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Signal_Loop">Traffic_Signal_Loop</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Signalized_Intersection'>Traffic_Signalized_Intersection</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Signalized_Intersection">Traffic_Signalized_Intersection</a></li>
 
-                <li> <a href='/mapbox/scrollerclienttablemap/Shoreline/Traffic_Support_Structure'>Traffic_Support_Structure</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapbox/Shoreline/Traffic_Support_Structure">Traffic_Support_Structure</a></li>
+
+
 
                                 
                                 

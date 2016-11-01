@@ -47,13 +47,13 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Newport_Beach/Address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Newport_Beach/Address'">Address</button>
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Newport_Beach/Parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Newport_Beach/Parcels'">Parcels</button>
                                                         
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Newport_Beach/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/openlayers/Newport_Beach/Streets'">Streets</button>
                                                        
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/justtiles/Newport_Beach/Right_Of_Way'">Right of Way</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/openlayers/Newport_Beach/Right_Of_Way'">Right of Way</button>
                                                         
                                                     </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Newport_Beach/Parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/openlayers/Newport_Beach/Parks'">Parks</button>
                                                          
                                                             
                                                         
@@ -108,11 +108,11 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/Newport_Beach/Zoning'">Zoning [check box button]</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/Newport_Beach/Zoning'">Zoning [radio button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/openlayers/Newport_Beach/Zoning'">Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/openlayers/Newport_Beach/Zoning'">Zoning [radio button]</button>
                                                         
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
-                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/openlayers/Newport_Beach/General_Land_Use'">General Land Use [check box button]</button>
+                                                         <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/openlayers/Newport_Beach/General_Land_Use'">General Land Use [radio button]</button>
                                                     
                                                     </div>
                                             </div>

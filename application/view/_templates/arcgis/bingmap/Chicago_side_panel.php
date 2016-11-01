@@ -9,12 +9,12 @@
 	<div class="container-fluid expanded-panel">
 		<div class="row">
 			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
+				<a href="<?php echo Config::get('URL'); ?><?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">
 					<div class="col-xs-8 col-sm-4">
-						<a href="#" class="show-sidebar">
+						<a href="<?php echo Config::get('URL'); ?>#" class="show-sidebar">
 						  <i class="fa fa-bars"></i>
 						</a>
 						<div id="search">
@@ -60,7 +60,7 @@
                             
                                 
                                  <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Chicago/Zoning">
 
                        Zoning [check box button]
                     </a>
@@ -77,7 +77,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Chicago/Zoning">
 
                        Zoning [radio button]
                     </a>
@@ -86,7 +86,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Planning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Planning_Districts">
 
                         Planning Districts
                     </a>
@@ -94,7 +94,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Planning_Regions">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Planning_Regions">
 
                         Planning Regions
                     </a>
@@ -102,7 +102,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Community">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Community">
                         Community
 
                     </a>
@@ -110,7 +110,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Neighborhoods">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Neighborhoods">
                         Neighborhoods
 
                     </a>
@@ -118,7 +118,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Industrial_Corridors">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Industrial_Corridors">
 
                         Industrial Corridors
                     </a>
@@ -128,7 +128,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Enterprises_Communities">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Enterprises_Communities">
 
                         Enterprises Communities
                     </a>
@@ -136,7 +136,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Landmark_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Landmark_Districts">
 
                         Landmark Districts
                     </a>
@@ -144,7 +144,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Conservation_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Conservation_Areas">
 
                         Conservation Areas
                     </a>
@@ -152,7 +152,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Empowerment_Zones">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Empowerment_Zones">
                         Empowerment Zones
 
                     </a>
@@ -161,7 +161,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Police_Beat">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Police_Beat">
 
                         Police Beat
                     </a>
@@ -169,7 +169,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Police_District">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Police_District">
 
                         Police District
                     </a>
@@ -177,7 +177,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Chicago/Major_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Chicago/Major_Streets">
                         Major Streets
 
                     </a>
@@ -185,7 +185,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Railroads">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Railroads">
 
                         Railroads
                     </a>
@@ -195,7 +195,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Streets_Sweeping">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Streets_Sweeping">
                         Streets Sweeping
 
                     </a>
@@ -203,7 +203,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Chicago/Bike_Routes">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Chicago/Bike_Routes">
 
                         Bike Routes
                     </a>
@@ -211,7 +211,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Census_Tracts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Census_Tracts">
 
                         Census Tracts
                     </a>
@@ -219,7 +219,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Hospitals">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Hospitals">
                         Hospitals
 
                     </a>
@@ -229,7 +229,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Schools">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Schools">
                         Schools
 
                     </a>
@@ -237,7 +237,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/High_School_Attendance_Boundaries">
                         High School Attendance Boundaries
 
                     </a>
@@ -245,7 +245,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Chicago/Parks">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Chicago/Parks">
 
                         Parks
                     </a>
@@ -253,7 +253,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Hydro">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Hydro">
                         Hydro
 
                     </a>
@@ -262,12 +262,11 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Chicago/Forestry">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Chicago/Forestry">
                         Forestry
 
                     </a>
-                </li>
-                                
+                </li>  
                                 
                             
                              

@@ -60,7 +60,7 @@
                             
                             
                                <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/San_Francisco/Downtown_Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/San_Francisco/Downtown_Zoning">
 
                         Downtown Zoning [check box button]
                     </a>
@@ -77,7 +77,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/San_Francisco/Downtown_Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/San_Francisco/Downtown_Zoning">
 
                         Downtown Zoning [radio button]
                     </a>
@@ -86,7 +86,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/San_Francisco/Downtown_Land_Use">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/San_Francisco/Downtown_Land_Use">
 
                         Downtown Land Use [check box button]
                     </a>
@@ -94,7 +94,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/San_Francisco/Downtown_Land_Use">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/San_Francisco/Downtown_Land_Use">
 
                         Downtown Land Use [radio button]
                     </a>
@@ -106,7 +106,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/San_Francisco/Downtown_Address">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/San_Francisco/Downtown_Address">
 
                         Downtown Address
                     </a>
@@ -116,7 +116,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/San_Francisco/Downtown_Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/San_Francisco/Downtown_Zoning">
 
                         Downtown Parcels
                     </a>
@@ -125,7 +125,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/San_Francisco/Zoning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/San_Francisco/Zoning_Districts">
 
                         Zoning Districts [check box button]
                     </a>
@@ -133,7 +133,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/San_Francisco/Zoning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/San_Francisco/Zoning_Districts">
 
                         Zoning Districts [radio button]
                     </a>
@@ -142,7 +142,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Height_And_Bulk_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Height_And_Bulk_Districts">
 
                         Height And Bulk Districts
                     </a>
@@ -150,15 +150,15 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Blocks">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Blocks">
                         Blocks
-                        
+
                     </a>
 
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Special_Sign_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Special_Sign_Districts">
                         Special Sign Districts
 
                     </a>
@@ -166,7 +166,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Special_Sign_Districts_Scenic_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Special_Sign_Districts_Scenic_Streets">
                         Special Sign Districts Scenic Streets
 
                     </a>
@@ -177,7 +177,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Special_Use_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Special_Use_Districts">
                         Special Use Districts
 
                     </a>
@@ -185,7 +185,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/San_Francisco/Major_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/San_Francisco/Major_Streets">
                         Major Streets
 
                     </a>
@@ -193,7 +193,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/San_Francisco/Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/San_Francisco/Streets">
                         Streets
 
                     </a>
@@ -205,7 +205,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Street_Structures">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Street_Structures">
 
                         Street Structures
                     </a>
@@ -213,7 +213,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/San_Francisco/Curb_Island">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/googlemap/San_Francisco/Curb_Island">
                         Curb and Island
 
                     </a>
@@ -221,7 +221,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/San_Francisco/Building">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/googlemap/San_Francisco/Building">
                         Building Footprint
 
                     </a>
@@ -233,7 +233,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Zipcode">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Zipcode">
 
                         Zipcode
                     </a>
@@ -241,7 +241,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/Realtor_Neighborhoods">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/Realtor_Neighborhoods">
 
                         Realtor Neighborhoods
                     </a>
@@ -249,7 +249,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/San_Francisco/Schools_Public">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/San_Francisco/Schools_Public">
                         Schools Public
 
                     </a>
@@ -261,7 +261,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simpleclustermap/San_Francisco/Schools_Public_Address">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/googlemap/San_Francisco/Schools_Public_Address">
 
                         Schools Public Address
                     </a>
@@ -269,7 +269,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/San_Francisco/City_Land">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/San_Francisco/City_Land">
                         City Land
 
                     </a>
@@ -277,7 +277,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>googlemap/simpleclustermap/San_Francisco/City_Facility">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/googlemap/San_Francisco/City_Facility">
                         City Facility
 
                     </a>

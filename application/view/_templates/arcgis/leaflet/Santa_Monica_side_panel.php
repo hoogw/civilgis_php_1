@@ -54,88 +54,88 @@
                             
                             
                             
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/justtiles/Santa_Monica/Buildings" >
-						
-						<span class="hidden-xs">Buildings</span>
-					</a>
-					
-				</li>
-                                
-                                
-                               
-                                
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Santa_Monica/Parcels" >
-						
-						<span class="hidden-xs">Parcels</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Santa_Monica/Streets" >
-						
-						<span class="hidden-xs">Streets</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Santa_Monica/Speed_Limit" >
-						
-						<span class="hidden-xs">Speed Limit</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Santa_Monica/Streets_Sweeping" >
-						
-						<span class="hidden-xs">Street Sweeping</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Santa_Monica/Bike_Route" >
-						
-						<span class="hidden-xs">Bike Route</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/Santa_Monica/Zoning" >
-						
-						<span class="hidden-xs">Zoning [check box button]</span>
-					</a>
-					
-				</li>
+                               <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/leaflet/Santa_Monica/Buildings">
 
-                                   
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/Santa_Monica/Zoning" >
-						
-						<span class="hidden-xs">Zoning [radio button]</span>
-					</a>
-					
-				</li>
+                        Buildings
+                    </a>
+
+                </li>
+
+
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Santa_Monica/Parcels">
+
+                        Parcels
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Santa_Monica/Streets">
+
+                        Streets
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Santa_Monica/Speed_Limit">
+
+                        Speed Limit
+                    </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Santa_Monica/Streets_Sweeping">
+
+                        Street Sweeping
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Santa_Monica/Bike_Route">
+
+                        Bike Route
+                    </a>
+
+                </li>
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/leaflet/Santa_Monica/Zoning">
+
+                        Zoning [check box button]
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/leaflet/Santa_Monica/Zoning">
+
+                        Zoning [radio button]
+                    </a>
+
+                </li>
 
                                
                                 

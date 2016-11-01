@@ -55,13 +55,8 @@
                             
                             
                                
-                                
-                               
-                                
-                                
-                                
-                             <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/Palo_Alto/Zoning">
+                            <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/Palo_Alto/Zoning">
 
                         Zoning [check box button]
                     </a>
@@ -70,42 +65,42 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/Palo_Alto/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapquest/Palo_Alto/Zoning">
 
                         Zoning [radio button]
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Palo_Alto/PAN_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Palo_Alto/PAN_Areas">
                         PAN Areas
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Palo_Alto/Addresses">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/Palo_Alto/Addresses">
 
                         Addresses
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Palo_Alto/Parcels">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/Palo_Alto/Parcels">
 
                         Parcels
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Palo_Alto/Building">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Palo_Alto/Building">
                         Building
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Palo_Alto/Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/Palo_Alto/Streets">
 
                         Streets
                     </a>
@@ -113,13 +108,13 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/justtiles/Palo_Alto/Right_of_way">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/mapquest/Palo_Alto/Right_of_way">
 
                         Right of way
                     </a>
 
                 </li>
-                                
+
                                
 
                                

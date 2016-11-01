@@ -59,74 +59,37 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/county/cities" >
-						
-						<span class="hidden-xs">Cities</span>
-					</a>
-					
-				</li>
-                                
-                                
-                               
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/simplemap/county/rails" >
-						
-						<span class="hidden-xs">Rails</span>
-					</a>
-					
-				</li>
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/county/parks" >
-						
-						<span class="hidden-xs">Parks</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/simplemap/county/water" >
-						
-						<span class="hidden-xs">Water</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/education_facility" >
-						
-						<span class="hidden-xs">Education Facility</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/simplemap/county/hospitals" >
-						
-						<span class="hidden-xs"> Hospitals</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>heremap/clusterscrollerclienttablemap/county/fire_stations" >
-						
-						<span class="hidden-xs">Fire station</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/county/cities"> Cities</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/county/rails"> Rails</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/county/parks"> Parks</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/county/water"> Water</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/heremap/county/education_facility"> Education Facility</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/county/hospitals"> Hospitals</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/heremap/county/fire_stations"> Fire station</a>
+                </li>
 
                                    
                                 

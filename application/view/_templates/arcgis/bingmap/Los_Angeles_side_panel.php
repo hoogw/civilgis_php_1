@@ -9,12 +9,12 @@
 	<div class="container-fluid expanded-panel">
 		<div class="row">
 			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
+				<a href="<?php echo Config::get('URL'); ?><?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">
 					<div class="col-xs-8 col-sm-4">
-						<a href="#" class="show-sidebar">
+						<a href="<?php echo Config::get('URL'); ?>#" class="show-sidebar">
 						  <i class="fa fa-bars"></i>
 						</a>
 						<div id="search">
@@ -61,148 +61,79 @@
                                
                                
                                 
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Los_Angeles/Zoning" >
-						
-						<span class="hidden-xs">Zoning - check box</span>
-					</a>
-				</li>
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Los_Angeles/Zoning" >
-						
-						<span class="hidden-xs">Zoning - radio</span>
-					</a>
-				</li>
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Los_Angeles/General_Land_Use" >
-						
-						<span class="hidden-xs">General Land Use  - check box</span>
-					</a>
-					
-				</li>
-
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Los_Angeles/General_Land_Use" >
-						
-						<span class="hidden-xs">General Land Use  - radio</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Communities" >
-						
-						<span class="hidden-xs">Communities</span>
-					</a>
-					
-				</li>
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Neighborhood_Councils" >
-						
-						<span class="hidden-xs">Neighborhood Councils</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                   
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Area_Planning_Commissions" >
-						
-						<span class="hidden-xs">Area Planning Commissions</span>
-					</a>
-					
-				</li>
-
                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas" >
-						
-						<span class="hidden-xs">Communities and Planning Areas</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Specific_Plans" >
-						
-						<span class="hidden-xs">Specific Plans</span>
-					</a>
-					
-				</li>
-                                 
-                                
-                                
-                               
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Other_Districts" >
-						
-						<span class="hidden-xs">Other Districts</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone" >
-						
-						<span class="hidden-xs">Historic Preservation Overlay Zone</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments" >
-						
-						<span class="hidden-xs">Historic Cultural Monuments</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Los_Angeles/Federal_Renewal_Community" >
-						
-						<span class="hidden-xs">Federal Renewal Community</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Los_Angeles/State_Enterprise_Zone" >
-						
-						<span class="hidden-xs">State Enterprise Zone</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Los_Angeles/Business_Improvement_District" >
-						
-						<span class="hidden-xs">Business Improvement District</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Los_Angeles/Targeted_Neighborhood_Initiative" >
-						
-						<span class="hidden-xs">Targeted Neighborhood Initiative</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Los_Angeles/Zoning"> Zoning - check box</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Los_Angeles/Zoning"> Zoning - radio</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Los_Angeles/General_Land_Use"> General Land Use  - check box</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Los_Angeles/General_Land_Use"> General Land Use  - radio</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Communities"> Communities </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Neighborhood_Councils"> Neighborhood_Councils </a>
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Area_Planning_Commissions"> Area Planning Commissions </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Communities_And_Planning_Areas"> Communities and Planning Areas</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Specific_Plans">Specific Plans </a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Other_Districts">Other Districts </a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Historic_Preservation_Overlay_Zone"> Historic Preservation Overlay Zone</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Los_Angeles/Historic_Cultural_Monuments"> Historic Cultural Monuments</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Los_Angeles/Federal_Renewal_Community"> Federal Renewal Community</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Los_Angeles/State_Enterprise_Zone">State Enterprise Zone </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Los_Angeles/Business_Improvement_District"> Business Improvement District</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Los_Angeles/Targeted_Neighborhood_Initiative">Targeted Neighborhood Initiative </a>
+                </li>
+
                                 
                                 
                                 

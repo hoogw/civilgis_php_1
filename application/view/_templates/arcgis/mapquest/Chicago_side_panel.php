@@ -54,9 +54,9 @@
                             
                                 
                                  <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/Chicago/Zoning">
 
-                       Zoning [check box button]
+                        Zoning [check box button]
                     </a>
 
                 </li>
@@ -71,16 +71,16 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapquest/Chicago/Zoning">
 
-                       Zoning [radio button]
+                        Zoning [radio button]
                     </a>
                 </li>
 
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Planning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Planning_Districts">
 
                         Planning Districts
                     </a>
@@ -88,7 +88,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Planning_Regions">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Planning_Regions">
 
                         Planning Regions
                     </a>
@@ -96,7 +96,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Community">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Community">
                         Community
 
                     </a>
@@ -104,7 +104,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Neighborhoods">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Neighborhoods">
                         Neighborhoods
 
                     </a>
@@ -112,7 +112,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Industrial_Corridors">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Industrial_Corridors">
 
                         Industrial Corridors
                     </a>
@@ -122,7 +122,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Enterprises_Communities">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Enterprises_Communities">
 
                         Enterprises Communities
                     </a>
@@ -130,7 +130,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Landmark_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Landmark_Districts">
 
                         Landmark Districts
                     </a>
@@ -138,7 +138,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Conservation_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Conservation_Areas">
 
                         Conservation Areas
                     </a>
@@ -146,7 +146,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Empowerment_Zones">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Empowerment_Zones">
                         Empowerment Zones
 
                     </a>
@@ -155,7 +155,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Police_Beat">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Police_Beat">
 
                         Police Beat
                     </a>
@@ -163,7 +163,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Police_District">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Police_District">
 
                         Police District
                     </a>
@@ -171,7 +171,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Chicago/Major_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/Chicago/Major_Streets">
                         Major Streets
 
                     </a>
@@ -179,7 +179,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Railroads">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Railroads">
 
                         Railroads
                     </a>
@@ -189,7 +189,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Streets_Sweeping">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Streets_Sweeping">
                         Streets Sweeping
 
                     </a>
@@ -197,7 +197,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Chicago/Bike_Routes">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/Chicago/Bike_Routes">
 
                         Bike Routes
                     </a>
@@ -205,7 +205,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Census_Tracts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Census_Tracts">
 
                         Census Tracts
                     </a>
@@ -213,7 +213,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Hospitals">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Hospitals">
                         Hospitals
 
                     </a>
@@ -223,7 +223,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Schools">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Schools">
                         Schools
 
                     </a>
@@ -231,7 +231,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/High_School_Attendance_Boundaries">
                         High School Attendance Boundaries
 
                     </a>
@@ -239,7 +239,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Parks">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/Chicago/Parks">
 
                         Parks
                     </a>
@@ -247,7 +247,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Hydro">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Hydro">
                         Hydro
 
                     </a>
@@ -256,11 +256,12 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Forestry">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/Chicago/Forestry">
                         Forestry
 
                     </a>
                 </li>
+
                                 
                                 
                             

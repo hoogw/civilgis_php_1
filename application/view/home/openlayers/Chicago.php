@@ -23,7 +23,7 @@
                                 <div id="breadcrumb" class="col-md-12">
                                         <ol class="breadcrumb">
                                                 <li><a href="<?php echo Config::get('URL'); ?>map/openlayers/">Transparent Gov</a></li>
-                                                <li><a href="<?php echo Config::get('URL'); ?>home/mapquest/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
+                                                <li><a href="<?php echo Config::get('URL'); ?>home/openlayers/<?php echo $data['area'] ?>"><?php echo $data['area'] ?></a></li>
                                                
                                         </ol>
                                 </div>
@@ -46,53 +46,53 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/Chicago/Zoning'"> Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/Chicago/Zoning'"> Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/Chicago/Zoning'"> Zoning [radio button]</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/Chicago/Zoning'"> Zoning [radio button]</button>
                             &nbsp;&nbsp;
                             
                             
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Planning_Districts'">Planning Districts</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Planning_Districts'">Planning Districts</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Planning_Regions'">Planning Regions</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Planning_Regions'">Planning Regions</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Community'">Community</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Community'">Community</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Neighborhoods'">Neighborhoods</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Neighborhoods'">Neighborhoods</button>
 
                             &nbsp;&nbsp;
                             <br/>
                             <br />
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Industrial_Corridors'">Industrial Corridors</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Industrial_Corridors'">Industrial Corridors</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Enterprises_Communities'">Enterprises Communities</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Enterprises_Communities'">Enterprises Communities</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Landmark_Districts'">Landmark Districts</button>
-
-                            &nbsp;&nbsp;
-
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Conservation_Areas'">Conservation Areas</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Landmark_Districts'">Landmark Districts</button>
 
                             &nbsp;&nbsp;
 
 
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Conservation_Areas'">Conservation Areas</button>
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Empowerment_Zones'">Empowerment Zones</button>
+                            &nbsp;&nbsp;
+
+
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Empowerment_Zones'">Empowerment Zones</button>
 
                             &nbsp;&nbsp;
                             
@@ -122,10 +122,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Police_Beat'">Police Beat</button>
+                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Police_Beat'">Police Beat</button>
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Police_District'">Police District</button>
+                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Police_District'">Police District</button>
                 &nbsp;&nbsp;
 
                                                         
@@ -156,15 +156,15 @@
                                                             
                                                         
                                                        &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Chicago/Major_Streets'">Major Streets</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Chicago/Major_Streets'">Major Streets</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Railroads'">Railroads</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Railroads'">Railroads</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/Chicago/Bike_Routes'">Bike Routes</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Chicago/Bike_Routes'">Bike Routes</button>
                             &nbsp;&nbsp;
                            
 
@@ -193,26 +193,26 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Census_Tracts'">Census Tracts</button>
+                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Census_Tracts'">Census Tracts</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Hospitals'">Hospitals</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Hospitals'">Hospitals</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Schools'">Schools</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Schools'">Schools</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/Chicago/Parks'">Parks</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Chicago/Parks'">Parks</button>
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Hydro'">Hydro</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Hydro'">Hydro</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/Chicago/Forestry'">Forestry</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/Chicago/Forestry'">Forestry</button>
                             &nbsp;&nbsp;
 
                                                     </div>

@@ -60,8 +60,8 @@
                             
                             
                                
-                                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Shoreline/Zoning">
+                                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Shoreline/Zoning">
                         Zoning [check box button]
                         
                     </a>
@@ -70,7 +70,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Shoreline/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Shoreline/Zoning">
                         Zoning [radio button]
 
                     </a>
@@ -79,7 +79,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Shoreline/Land_Use_Comp_Plan">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Shoreline/Land_Use_Comp_Plan">
                         Land Use Comp Plan [check box button]
 
                     </a>
@@ -88,7 +88,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Shoreline/Land_Use_Comp_Plan">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Shoreline/Land_Use_Comp_Plan">
                         Land Use Comp Plan [radio button]
 
                     </a>
@@ -97,7 +97,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Shoreline/Address_Central">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Shoreline/Address_Central">
                         Address Central
 
                     </a>
@@ -106,7 +106,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Shoreline/Tax_Parcel_Central">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Shoreline/Tax_Parcel_Central">
                         Tax Parcel Central
 
                     </a>
@@ -116,7 +116,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/justtiles/Shoreline/Buildings">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/bingmap/Shoreline/Buildings">
                         Buildings
 
                     </a>
@@ -125,7 +125,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Park">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Park">
 
                         Park
                     </a>
@@ -134,7 +134,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Neighborhood">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Neighborhood">
                         Neighborhood
 
                     </a>
@@ -143,7 +143,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simpleclustermap/Shoreline/Monument">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/bingmap/Shoreline/Monument">
                         Monument
 
                     </a>
@@ -152,7 +152,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Land_Mark">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Land_Mark">
 
                         Land Mark
                     </a>
@@ -161,7 +161,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Encumbrance">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Encumbrance">
                         Encumbrance
 
                     </a>
@@ -171,7 +171,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Art">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Art">
                         Art
 
                     </a>
@@ -180,7 +180,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Shoreline/Street">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Shoreline/Street">
                         Street
 
                     </a>
@@ -189,7 +189,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simpleclustermap/Shoreline/Street_Light">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/bingmap/Shoreline/Street_Light">
                         Street Light
 
                     </a>
@@ -198,7 +198,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Sidewalk">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Sidewalk">
                         Sidewalk
 
                     </a>
@@ -207,7 +207,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Shoreline/Pavement_Condition">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Shoreline/Pavement_Condition">
                         Pavement Condition
 
                     </a>
@@ -216,7 +216,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Shoreline/Pavement">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Shoreline/Pavement">
                         Pavement
 
                     </a>
@@ -226,7 +226,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Intersections">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Intersections">
                         Intersections
 
                     </a>
@@ -235,7 +235,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Guard_Rail">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Guard_Rail">
                         Guard Rail
 
                     </a>
@@ -244,7 +244,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Fence">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Fence">
                         Fence
 
                     </a>
@@ -253,7 +253,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simpleclustermap/Shoreline/Curb_Ramp">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/bingmap/Shoreline/Curb_Ramp">
                         Curb Ramp
 
                     </a>
@@ -262,7 +262,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Curb">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Curb">
                         Curb
 
                     </a>
@@ -271,7 +271,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Shoreline/Bridge">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Bridge">
                         Bridge
 
                     </a>
@@ -281,7 +281,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Bike_Facility">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Bike_Facility">
                         Bike Facility
 
                     </a>
@@ -290,7 +290,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Railroad">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Railroad">
 
                         Railroad
                     </a>
@@ -299,7 +299,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simplemap/Shoreline/Trail">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/bingmap/Shoreline/Trail">
 
                         Trail
                     </a>
@@ -308,7 +308,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/simpleclustermap/Shoreline/Signal">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simpleclustermap/bingmap/Shoreline/Signal">
                         Signal
 
                     </a>
@@ -317,7 +317,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/justtiles/Shoreline/Crosswalk_Driveways">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/bingmap/Shoreline/Crosswalk_Driveways">
                         Crosswalk Driveways
 
                     </a>
@@ -325,35 +325,36 @@
                 </li>
 
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Cable'>Traffic_Cable</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Cable">Traffic_Cable</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Cam'>Traffic_Cam</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Cam">Traffic_Cam</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Circle'>Traffic_Circle</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Circle">Traffic_Circle</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_EV_Device'>Traffic_EV_Device</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_EV_Device">Traffic_EV_Device</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Flashing_Beacon'>Traffic_Flashing_Beacon</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Flashing_Beacon">Traffic_Flashing_Beacon</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Pave_Striping'>Traffic_Pave_Striping</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Pave_Striping">Traffic_Pave_Striping</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Ped_Push_Button'>Traffic_Ped_Push_Button</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Ped_Push_Button">Traffic_Ped_Push_Button</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Ped_Signal_Display'>Traffic_Ped_Signal_Display</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Ped_Signal_Display">Traffic_Ped_Signal_Display</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Radar_Sign'>Traffic_Radar_Sign</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Radar_Sign">Traffic_Radar_Sign</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_School_Flasher'>Traffic_School_Flasher</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_School_Flasher">Traffic_School_Flasher</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Signal_Cabinet'>Traffic_Signal_Cabinet</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Signal_Cabinet">Traffic_Signal_Cabinet</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Signal_Head'>Traffic_Signal_Head</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Signal_Head">Traffic_Signal_Head</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Signal_Loop'>Traffic_Signal_Loop</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Signal_Loop">Traffic_Signal_Loop</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Signalized_Intersection'>Traffic_Signalized_Intersection</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Signalized_Intersection">Traffic_Signalized_Intersection</a></li>
 
-                <li> <a href='/bingmap/scrollerclienttablemap/Shoreline/Traffic_Support_Structure'>Traffic_Support_Structure</a></li>
+                <li> <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Shoreline/Traffic_Support_Structure">Traffic_Support_Structure</a></li>
+
 
                                 
                                 

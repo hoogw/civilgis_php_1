@@ -53,145 +53,92 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/parcels" >
-						
-						<span class="hidden-xs">Parcels</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/address" >
-						
-						<span class="hidden-xs"> Address</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/streets" >
-						
-						<span class="hidden-xs"> Streets</span>
-					</a>
-					
-				</li>
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/city/zoning" >
-						
-						<span class="hidden-xs">Zoning(check box)</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapquest/city/zoning" >
-						
-						<span class="hidden-xs">Zoning(radio)</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/city/general_land_use" >
-						
-						<span class="hidden-xs">General land use (check box)</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapquest/city/general_land_use" >
-						
-						<span class="hidden-xs">General land use (radio)</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/neighbor" >
-						
-						<span class="hidden-xs"> Neighbor</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/city/parks" >
-						
-						<span class="hidden-xs"> Parks</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/parcels"> Parcels</a>
+                </li>
 
-                                   
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/city/schools" >
-						
-						<span class="hidden-xs"> Schools</span>
-					</a>
-					
-				</li>
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/address"> Address</a>
+                </li>
 
-                                
-				<li class="active dropdown">
-					<a href="#" class="active dropdown-toggle">
-						
-						 <span class="hidden-xs"> Police and Fire</span>
-					</a>
-					<ul class="active dropdown-menu">
-						
-                                                
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_agency">Law agency</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_report_area">Law report area</a>
-                                                </li>
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/mapquest/city/streets"> Streets</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/city/zoning"> Zoning [check box button]</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/mapquest/city/zoning"> Zoning [radio button]</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/mapquest/city/general_landuse"> General Land Use</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/neighbor"> Neighbor</a>
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/city/parks"> Parks</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/mapquest/city/schools"> Schools</a>
+                </li>
+
+                
 
 
 
 
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_geoproximity">Law geoproximity</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_district">Law district</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_beat">Law beat</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_station_boundary">Fire station boundary</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_geoproximity">Fire geoproximity</a>
-                                                </li>
+
+                <li>
+                    <a href="#"> Police Fire <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_agency">Law agency</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_report_area">Law report area</a>
+                        </li>
 
 
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_district">Fire district</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_agency">Fire agency</a>
-                                                </li>
-                                                
-					</ul>
-				</li>
-                                
+
+
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_geoproximity">Law geoproximity</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_district">Law district</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/law_beat">Law beat</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_station_boundary">Fire station boundary</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_geoproximity">Fire geoproximity</a>
+                        </li>
+
+
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_district">Fire district</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/mapquest/city/fire_agency">Fire agency</a>
+                        </li>
+                    </ul>
+
+                </li>
                                 
                                  
 			

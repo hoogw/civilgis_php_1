@@ -65,9 +65,9 @@
                             
                                 
                                  <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/leaflet/Chicago/Zoning">
 
-                       Zoning [check box button]
+                        Zoning [check box button]
                     </a>
 
                 </li>
@@ -82,16 +82,16 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/Chicago/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/leaflet/Chicago/Zoning">
 
-                       Zoning [radio button]
+                        Zoning [radio button]
                     </a>
                 </li>
 
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Planning_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Planning_Districts">
 
                         Planning Districts
                     </a>
@@ -99,7 +99,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Planning_Regions">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Planning_Regions">
 
                         Planning Regions
                     </a>
@@ -107,7 +107,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Community">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Community">
                         Community
 
                     </a>
@@ -115,7 +115,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Neighborhoods">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Neighborhoods">
                         Neighborhoods
 
                     </a>
@@ -123,7 +123,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Industrial_Corridors">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Industrial_Corridors">
 
                         Industrial Corridors
                     </a>
@@ -133,7 +133,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Enterprises_Communities">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Enterprises_Communities">
 
                         Enterprises Communities
                     </a>
@@ -141,7 +141,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Landmark_Districts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Landmark_Districts">
 
                         Landmark Districts
                     </a>
@@ -149,7 +149,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Conservation_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Conservation_Areas">
 
                         Conservation Areas
                     </a>
@@ -157,7 +157,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Empowerment_Zones">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Empowerment_Zones">
                         Empowerment Zones
 
                     </a>
@@ -166,7 +166,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Police_Beat">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Police_Beat">
 
                         Police Beat
                     </a>
@@ -174,7 +174,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Police_District">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Police_District">
 
                         Police District
                     </a>
@@ -182,7 +182,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Chicago/Major_Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Chicago/Major_Streets">
                         Major Streets
 
                     </a>
@@ -190,7 +190,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Railroads">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Railroads">
 
                         Railroads
                     </a>
@@ -200,7 +200,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Streets_Sweeping">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Streets_Sweeping">
                         Streets Sweeping
 
                     </a>
@@ -208,7 +208,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Chicago/Bike_Routes">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Chicago/Bike_Routes">
 
                         Bike Routes
                     </a>
@@ -216,7 +216,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Census_Tracts">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Census_Tracts">
 
                         Census Tracts
                     </a>
@@ -224,7 +224,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Hospitals">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Hospitals">
                         Hospitals
 
                     </a>
@@ -234,7 +234,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Schools">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Schools">
                         Schools
 
                     </a>
@@ -242,7 +242,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/High_School_Attendance_Boundaries">
                         High School Attendance Boundaries
 
                     </a>
@@ -250,7 +250,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Parks">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Parks">
 
                         Parks
                     </a>
@@ -258,7 +258,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Hydro">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Hydro">
                         Hydro
 
                     </a>
@@ -267,7 +267,7 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Forestry">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Forestry">
                         Forestry
 
                     </a>

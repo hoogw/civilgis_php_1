@@ -47,9 +47,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/county/cities'">Cities</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/county/cities'">Cities</button>
                                                         
-                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/county/rails'">Rails</button>
+                                                        <button type="button" class="btn  btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/county/rails'">Rails</button>
                                                         
                                                         <button disabled="disabled" type="button" class="btn  btn-default"   onclick="location.href = '#'">Address</button>
                                                        
@@ -79,8 +79,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/county/parks'">Parks</button>
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/county/water'">Water</button>    
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/county/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/county/water'">Water</button>    
                                                             
                                                         
                                                         
@@ -107,8 +107,8 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/county/education_facility'">Education Facility</button>
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/county/hospitals'">Hospitals</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/leaflet/county/education_facility'">Education Facility</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/county/hospitals'">Hospitals</button>
                                                         
                                                     </div>
                                             </div>
@@ -136,7 +136,7 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/clusterscrollerclienttablemap/county/fire_stations'">Fire station</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/leaflet/county/fire_stations'">Fire station</button>
                                                         
                                                         
                                                     </div>

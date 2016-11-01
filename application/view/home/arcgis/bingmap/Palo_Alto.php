@@ -47,14 +47,14 @@
                                                         
                                                         
                                                         
-                                                       <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Palo_Alto/Zoning'">Zoning [check box button]</button>
+                                                       <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Palo_Alto/Zoning'">Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Palo_Alto/Zoning'">Zoning [radio button]</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Palo_Alto/Zoning'">Zoning [radio button]</button>
 
 
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Palo_Alto/PAN_Areas'">PAN Areas</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Palo_Alto/PAN_Areas'">PAN Areas</button>
                             &nbsp;&nbsp;
                                                         
                                                         
@@ -82,14 +82,14 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Addresses'">Addresses</button>
+                                                        <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Addresses'">Addresses</button>
                             &nbsp;&nbsp;
                             
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Parcels'">Parcels</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Parcels'">Parcels</button>
                             &nbsp;&nbsp;
                            
                             
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Palo_Alto/Building'">Building</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Palo_Alto/Building'">Building</button>
      
                                                         
                                                         
@@ -116,10 +116,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Streets'">Streets</button>
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Streets'">Streets</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>bingmap/justtiles/Palo_Alto/Right_of_way'">Right of way</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/bingmap/Palo_Alto/Right_of_way'">Right of way</button>
                             &nbsp;&nbsp;
                                                     </div>
                                             </div>

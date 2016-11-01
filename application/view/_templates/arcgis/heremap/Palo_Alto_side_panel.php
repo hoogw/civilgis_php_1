@@ -67,8 +67,8 @@
                                 
                                 
                                 
-                             <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Palo_Alto/Zoning">
+                              <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Palo_Alto/Zoning">
 
                         Zoning [check box button]
                     </a>
@@ -77,42 +77,42 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Palo_Alto/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Palo_Alto/Zoning">
 
                         Zoning [radio button]
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Palo_Alto/PAN_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Palo_Alto/PAN_Areas">
                         PAN Areas
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Palo_Alto/Addresses">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Palo_Alto/Addresses">
 
                         Addresses
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Palo_Alto/Parcels">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Palo_Alto/Parcels">
 
                         Parcels
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Palo_Alto/Building">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Palo_Alto/Building">
                         Building
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/Palo_Alto/Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/Palo_Alto/Streets">
 
                         Streets
                     </a>
@@ -120,12 +120,13 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>heremap/justtiles/Palo_Alto/Right_of_way">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/heremap/Palo_Alto/Right_of_way">
 
                         Right of way
                     </a>
 
                 </li>
+
                                 
                                
 

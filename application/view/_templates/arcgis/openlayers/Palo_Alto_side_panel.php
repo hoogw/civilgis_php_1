@@ -58,10 +58,8 @@
                                 
                                
                                 
-                                
-                                
                              <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/Palo_Alto/Zoning">
+                    <a href="/arcgis/classifycheckboxbuttonmap/openlayers/Palo_Alto/Zoning">
 
                         Zoning [check box button]
                     </a>
@@ -70,42 +68,42 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/Palo_Alto/Zoning">
+                    <a href="/arcgis/classifyradiobuttonmap/openlayers/Palo_Alto/Zoning">
 
                         Zoning [radio button]
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Palo_Alto/PAN_Areas">
+                    <a href="/arcgis/scrollerclienttablemap/openlayers/Palo_Alto/PAN_Areas">
                         PAN Areas
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Addresses">
+                    <a href="/arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Addresses">
 
                         Addresses
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Parcels">
+                    <a href="/arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Parcels">
 
                         Parcels
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/Palo_Alto/Building">
+                    <a href="/arcgis/scrollerclienttablemap/openlayers/Palo_Alto/Building">
                         Building
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/Palo_Alto/Streets">
+                    <a href="/arcgis/scrollerfulltablemap/openlayers/Palo_Alto/Streets">
 
                         Streets
                     </a>
@@ -113,12 +111,13 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>openlayers/justtiles/Palo_Alto/Right_of_way">
+                    <a href="/arcgis/justtiles/openlayers/Palo_Alto/Right_of_way">
 
                         Right of way
                     </a>
 
                 </li>
+
                                 
                                
 

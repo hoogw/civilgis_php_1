@@ -62,88 +62,87 @@
                             
                             
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/Santa_Monica/Buildings" >
-						
-						<span class="hidden-xs">Buildings</span>
-					</a>
-					
-				</li>
-                                
-                                
-                               
-                                
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Parcels" >
-						
-						<span class="hidden-xs">Parcels</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Streets" >
-						
-						<span class="hidden-xs">Streets</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Speed_Limit" >
-						
-						<span class="hidden-xs">Speed Limit</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/Santa_Monica/Streets_Sweeping" >
-						
-						<span class="hidden-xs">Street Sweeping</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/Santa_Monica/Bike_Route" >
-						
-						<span class="hidden-xs">Bike Route</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/Santa_Monica/Zoning" >
-						
-						<span class="hidden-xs">Zoning [check box button]</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/googlemap/Santa_Monica/Buildings">
 
-                                   
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/Santa_Monica/Zoning" >
-						
-						<span class="hidden-xs">Zoning [radio button]</span>
-					</a>
-					
-				</li>
+                        Buildings
+                    </a>
 
+                </li>
+
+
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/Santa_Monica/Parcels">
+
+                        Parcels
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/Santa_Monica/Streets">
+
+                        Streets
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/Santa_Monica/Speed_Limit">
+
+                        Speed Limit
+                    </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/Santa_Monica/Streets_Sweeping">
+
+                        Street Sweeping
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/Santa_Monica/Bike_Route">
+
+                        Bike Route
+                    </a>
+
+                </li>
+
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/Santa_Monica/Zoning">
+
+                        Zoning [check box button]
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/Santa_Monica/Zoning">
+
+                        Zoning [radio button]
+                    </a>
+
+                </li>
                                
                                 
                                  

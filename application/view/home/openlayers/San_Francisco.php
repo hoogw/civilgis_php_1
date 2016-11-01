@@ -47,17 +47,17 @@
                                                         
                                                         
                                                         
-                                                          <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/San_Francisco/Downtown_Zoning'">Downtown Zoning [check box button]</button>
+                                                          <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/San_Francisco/Downtown_Zoning'">Downtown Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/San_Francisco/Downtown_Zoning'">Downtown Zoning [radio button]</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/San_Francisco/Downtown_Zoning'">Downtown Zoning [radio button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/San_Francisco/Downtown_Land_Use'">Downtown Land Use [check box button]</button>
+                            <button type="button" class="btn  btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/San_Francisco/Downtown_Land_Use'">Downtown Land Use [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/San_Francisco/Downtown_Land_Use'">Downtown Land Use [radio button]</button>
+                            <button type="button" class="btn  btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/San_Francisco/Downtown_Land_Use'">Downtown Land Use [radio button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/San_Francisco/Downtown_Address'">Downtown Address</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/San_Francisco/Downtown_Address'">Downtown Address</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/San_Francisco/Downtown_Zoning'">Downtown Parcels</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/San_Francisco/Downtown_Zoning'">Downtown Parcels</button>
 
                             
                                                         
@@ -86,30 +86,30 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                          <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifycheckboxbuttonmap/San_Francisco/Zoning_Districts'">Zoning Districts [check box button]</button>
+                                                          <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifycheckboxbuttonmap/San_Francisco/Zoning_Districts'">Zoning Districts [check box button]</button>
                 &nbsp;&nbsp;
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/classifyradiobuttonmap/San_Francisco/Zoning_Districts'">Zoning Districts [radio button]</button>
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/classifyradiobuttonmap/San_Francisco/Zoning_Districts'">Zoning Districts [radio button]</button>
                 &nbsp;&nbsp;
 
 
                 <br />
 
               
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Height_And_Bulk_Districts'">Height And Bulk Districts</button>
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Height_And_Bulk_Districts'">Height And Bulk Districts</button>
                 &nbsp;&nbsp;
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Blocks'">Blocks</button>
-
-                &nbsp;&nbsp;
-
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Special_Sign_Districts'">Special Sign Districts</button>
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Blocks'">Blocks</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Special_Sign_Districts_Scenic_Streets'">Special Sign Districts Scenic Streets</button>
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Special_Sign_Districts'">Special Sign Districts</button>
 
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Special_Use_Districts'">Special Use Districts</button>
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Special_Sign_Districts_Scenic_Streets'">Special Sign Districts Scenic Streets</button>
+
+                &nbsp;&nbsp;
+
+                <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Special_Use_Districts'">Special Use Districts</button>
 
                 &nbsp;&nbsp;   
                                                         
@@ -140,18 +140,18 @@
                                                             
                                                         
                                                        &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/San_Francisco/Major_Streets'">Major Streets</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/San_Francisco/Major_Streets'">Major Streets</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerfulltablemap/San_Francisco/Streets'">Streets</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Street_Structures'">Street Structures</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerfulltablemap/San_Francisco/Streets'">Streets</button>
                             &nbsp;&nbsp;
 
-
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/justtiles/San_Francisco/Curb_Island'">Curb and Island</button>
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Street_Structures'">Street Structures</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/justtiles/San_Francisco/Building'">Building Footprint</button>
+
+
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/justtiles/San_Francisco/Curb_Island'">Curb and Island</button>
+                            &nbsp;&nbsp;
+                            <button type="button" class="btn  btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/justtiles/San_Francisco/Building'">Building Footprint</button>
                             &nbsp;&nbsp;
 
                                                     </div>
@@ -179,22 +179,22 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                      <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Zipcode'">Zipcode</button>
+                                                      <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Zipcode'">Zipcode</button>
                             &nbsp;&nbsp;
                                 
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/Realtor_Neighborhoods'">Realtor Neighborhoods</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/Realtor_Neighborhoods'">Realtor Neighborhoods</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/scrollerclienttablemap/San_Francisco/Schools_Public'">Schools Public</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/scrollerclienttablemap/San_Francisco/Schools_Public'">Schools Public</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simpleclustermap/San_Francisco/Schools_Public_Address'">Schools Public Address</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simpleclustermap/San_Francisco/Schools_Public_Address'">Schools Public Address</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simplemap/San_Francisco/City_Land'">City Land</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simplemap/San_Francisco/City_Land'">City Land</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>mapquest/simpleclustermap/San_Francisco/City_Facility'">City Facility</button>
+                            <button type="button" class="btn  btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>openlayers/simpleclustermap/San_Francisco/City_Facility'">City Facility</button>
                             &nbsp;&nbsp;
 
                                                     </div>

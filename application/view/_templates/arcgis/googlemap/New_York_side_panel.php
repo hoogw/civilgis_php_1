@@ -62,163 +62,163 @@
                                 
                                 
                                 
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Zone_Districts" >
-						
-						<span class="hidden-xs">New York Zone Districts - check box</span>
-					</a>
-					
-				</li>
-                                
                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Zone_Districts" >
-						
-						<span class="hidden-xs">New York Zone Districts - radio</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Commercial_Zone" >
-						
-						<span class="hidden-xs">New York Commercial Zone - check box</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Commercial_Zone" >
-						
-						<span class="hidden-xs">New York Commercial Zone - radio</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York_Manhattan/Zoning" >
-						
-						<span class="hidden-xs">Manhattan Zoning - check box</span>
-					</a>
-					
-				</li>
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York_Manhattan/Zoning" >
-						
-						<span class="hidden-xs">Manhattan Zoning - radio</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Manhattan/Zoning" >
-						
-						<span class="hidden-xs">Parcels - Manhattan</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Project_Zone" >
-						
-						<span class="hidden-xs">New York Project Zone</span>
-					</a>
-					
-				</li>
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Limited_Height_District" >
-						
-						<span class="hidden-xs">New York Limited Height District</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Districts" >
-						
-						<span class="hidden-xs">New York Special Districts</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Subdistricts" >
-						
-						<span class="hidden-xs">New York Special Subdistricts</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Boroughs" >
-						
-						<span class="hidden-xs">New York Boroughs</span>
-					</a>
-					
-				</li>
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Neighborhoods" >
-						
-						<span class="hidden-xs">New York Neighborhoods</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Community_Districts" >
-						
-						<span class="hidden-xs">New York Community Districts</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Building_Demolition" >
-						
-						<span class="hidden-xs">New York Building Demolition</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                 <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/justtiles/New_York/Building" >
-						
-						<span class="hidden-xs">New York Building</span>
-					</a>
-					
-				</li>
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Parks" >
-						
-						<span class="hidden-xs">New York Parks</span>
-					</a>
-					
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Parking_Lots" >
-						
-						<span class="hidden-xs">New York Parking Lots</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York/Zone_Districts">
+
+                        New York Zone Districts - check box
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York/Zone_Districts">
+
+                        New York Zone Districts - radio
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York/Commercial_Zone">
+
+                        New York Commercial Zone - check box
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York/Commercial_Zone">
+
+                        New York Commercial Zone - radio
+                    </a>
+
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York_Manhattan/Zoning">
+
+                        Manhattan Zoning - check box
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York_Manhattan/Zoning">
+
+                        Manhattan Zoning - radio
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York_Manhattan/Zoning">
+
+                        Parcels - Manhattan
+                    </a>
+
+                </li>
+
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Project_Zone">
+
+                        New York Project Zone
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Limited_Height_District">
+
+                        New York Limited Height District
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Special_Districts">
+
+                        New York Special Districts
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Special_Subdistricts">
+
+                        New York Special Subdistricts
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Boroughs">
+
+                        New York Boroughs
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/New_York/Neighborhoods">
+
+                        New York Neighborhoods
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/New_York/Community_Districts">
+
+                        New York Community Districts
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Building_Demolition">
+
+                        New York Building Demolition
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/googlemap/New_York/Building">
+
+                        New York Building
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Parks">
+
+                        New York Parks
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Parking_Lots">
+
+                        New York Parking Lots
+                    </a>
+
+                </li>
                                 
                                 
                                 

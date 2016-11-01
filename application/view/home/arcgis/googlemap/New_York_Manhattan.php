@@ -47,21 +47,21 @@
                                                     </div>
                                                     <div class="box-content">
                                                         
-                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Zone_Districts'">New York Zone Districts - check box </button>
+                                                         <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York/Zone_Districts'">New York Zone Districts - check box </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Zone_Districts'">New York Zone Districts - radio </button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York/Zone_Districts'">New York Zone Districts - radio </button>
                                                         
                                                             &nbsp;&nbsp;
                                                         
                                                             
                                                             
-                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York/Commercial_Zone'">New York Commercial Zone - check box </button>
+                                                             <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York/Commercial_Zone'">New York Commercial Zone - check box </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York/Commercial_Zone'">New York Commercial Zone - radio </button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York/Commercial_Zone'">New York Commercial Zone - radio </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
@@ -69,29 +69,29 @@
                                                             
                                                         <br>
                                                         
-                                                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York_Manhattan/Zoning'">Manhattan Zoning - check box </button>
+                                                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York_Manhattan/Zoning'">Manhattan Zoning - check box </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
                                                             
-                                                             <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York_Manhattan/Zoning'">Manhattan Zoning - radio </button>
+                                                             <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York_Manhattan/Zoning'">Manhattan Zoning - radio </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
                                                             
                                                        
-                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York_Bronx/Zoning'">Bronx Zoning </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York_Bronx/Zoning'">Bronx Zoning </button>
                                                             
                                                             &nbsp;&nbsp;
                                                             
-                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York_Brooklyn/Zoning'">Brooklyn Zoning  </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York_Brooklyn/Zoning'">Brooklyn Zoning  </button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifyradiobuttonmap/New_York_Queens/Zoning'">Queens Zoning  </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/googlemap/New_York_Queens/Zoning'">Queens Zoning  </button>
                                                        
                                                             &nbsp;&nbsp;
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/classifycheckboxbuttonmap/New_York_Staten_Island/Zoning'">Staten Island Zoning </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/googlemap/New_York_Staten_Island/Zoning'">Staten Island Zoning </button>
                                                         
                                                     </div>
                                             </div>
@@ -634,22 +634,22 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                               
                                                         
                                                          
-                                                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Manhattan/Zoning'">Parcels - Manhattan </button>
+                                                            <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York_Manhattan/Zoning'">Parcels - Manhattan </button>
                                                              &nbsp;&nbsp;
                                                              
-                                                           <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/pagedfulltablemap/New_York_Bronx/Zoning'">Parcels - Bronx </button>
+                                                           <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/pagedfulltablemap/googlemap/New_York_Bronx/Zoning'">Parcels - Bronx </button>
                                                             
                                                            
                                                             &nbsp;&nbsp;
-                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Brooklyn/Zoning'">Parcels - Brooklyn </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York_Brooklyn/Zoning'">Parcels - Brooklyn </button>
                                                         
                                                             
                                                         
                                                             &nbsp;&nbsp;
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Queens/Zoning'">Parcels - Queens  </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York_Queens/Zoning'">Parcels - Queens  </button>
                                                        
                                                             &nbsp;&nbsp;
-                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York_Staten_Island/Zoning'">Parcels - Staten Island  </button>
+                                                            <button disabled="disabled" type="button" class="btn btn-default" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York_Staten_Island/Zoning'">Parcels - Staten Island  </button>
                                                         
                                                         
                                                       
@@ -678,21 +678,21 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                     </div>
                                                     <div class="box-content">
                                                               
-                                                        <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Project_Zone'">New York Project Zone </button>
+                                                        <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Project_Zone'">New York Project Zone </button>
                                                             
                                                            
                                                             &nbsp;&nbsp;
                                                          
-                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Limited_Height_District'">New York Limited Height District </button>
+                                                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Limited_Height_District'">New York Limited Height District </button>
                                                              &nbsp;&nbsp;
                                                              
                                                            
-                                                            <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Districts'">New York Special Districts </button>
+                                                            <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Special_Districts'">New York Special Districts </button>
                                                         
                                                             
                                                         
                                                             &nbsp;&nbsp;
-                                                            <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Special_Subdistricts'">New York Special Subdistricts  </button>
+                                                            <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Special_Subdistricts'">New York Special Subdistricts  </button>
                                                        
                                                             
                                                         
@@ -720,28 +720,28 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                     </div>
                                                     <div class="box-content">
                                                               
-                                                        <button  type="button" class="btn btn-primary"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Boroughs'">New York Boroughs </button>
+                                                        <button  type="button" class="btn btn-primary"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Boroughs'">New York Boroughs </button>
                                                             
                                                            
                                                             &nbsp;&nbsp;
                                                          
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Neighborhoods'">New York Neighborhoods</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/New_York/Neighborhoods'">New York Neighborhoods</button>
                                                              &nbsp;&nbsp;
                                                              
                                                            
-                                                            <button  type="button" class="btn btn-primary"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/New_York/Community_Districts'">New York Community Districts </button>
+                                                            <button  type="button" class="btn btn-primary"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/New_York/Community_Districts'">New York Community Districts </button>
                                                         &nbsp;&nbsp;
                                                         
                                                         
                                                         <br>
                                                         
-                                                        <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Building_Demolition'">New York Building Demolition </button>
+                                                        <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Building_Demolition'">New York Building Demolition </button>
                                                             
                                                            
                                                             &nbsp;&nbsp;
                                                         
                                                             
-                                                            <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/justtiles/New_York/Building'">New York Building </button>
+                                                            <button  type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/justtiles/googlemap/New_York/Building'">New York Building </button>
                                                             
                                                            
                                                             &nbsp;&nbsp;
@@ -751,24 +751,24 @@ Residential uses are generally subject to the bulk controls of the governing res
                                                         
                                                         
                                                             
-                                                            <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Parks'">New York Parks  </button>
+                                                            <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Parks'">New York Parks  </button>
                                                         &nbsp;&nbsp;
                                                         
-                                                        <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/simplemap/New_York/Parking_Lots'">New York Parking Lots  </button>
+                                                        <button  type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/New_York/Parking_Lots'">New York Parking Lots  </button>
                                                         &nbsp;&nbsp;
                                                             
                                                         
                                                         
-                                                         <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Address'"> New York Address</button>
+                                                         <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Address'"> New York Address</button>
                                                         
                                                             &nbsp;&nbsp;
                                                         
-                                                        <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Streets'"> New York Streets</button>
+                                                        <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Streets'"> New York Streets</button>
                                                         
                                                             &nbsp;&nbsp;
                                                             
                                                             
-                                                             <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>googlemap/scrollerfulltablemap/New_York/Sidewalk'"> New York Sidewalk</button>
+                                                             <button disabled="disabled" type="button" class="btn btn-default"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/googlemap/New_York/Sidewalk'"> New York Sidewalk</button>
                                                         
                                                             &nbsp;&nbsp;
                                                             

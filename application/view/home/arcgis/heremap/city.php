@@ -52,9 +52,9 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/address'">Address</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/parcels'">Parcels</button>
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerfulltablemap/city/streets'">Streets</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/address'">Address</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/parcels'">Parcels</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/heremap/city/streets'">Streets</button>
                                                        
                                                         
                                                     </div>
@@ -85,13 +85,13 @@
                                                            
                                                              
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/zoning'">Zoning [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/zoning'">Zoning [radio button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/city/general_land_use'">General Land Use [check box button]</button>
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/city/general_land_use'">General Land Use [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/city/zoning'">Zoning [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/city/zoning'">Zoning [radio button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/city/general_land_use'">General Land Use [check box button]</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/city/general_land_use'">General Land Use [radio button]</button>
                                                             
                                                             
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/neighbor'">Neighbor</button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/neighbor'">Neighbor</button>
                                                             
                                                             
                                                     </div>
@@ -117,7 +117,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/city/parks'">Parks</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/city/parks'">Parks</button>
                                                             
                                                             
                                                         
@@ -145,7 +145,7 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/city/schools'">Schools</button>
+                                                        <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/city/schools'">Schools</button>
                                                         
                                                     </div>
                                             </div>
@@ -169,12 +169,12 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_agency'">Law agency</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_reportarea'">Law report area</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_agency'">Law agency</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_reportarea'">Law report area</button>
                                                         
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_geoproximity'">Law geoproximity</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_district'">Law district</button>
-                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/law_beat'">Law beat</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_geoproximity'">Law geoproximity</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_district'">Law district</button>
+                                                        <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/law_beat'">Law beat</button>
                                                         
                                                         
                                                     </div>
@@ -203,10 +203,10 @@
                                                             
                                                         
                                                         
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_station_boundary'">Fire station boundary</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_geoproximity'">Fire geoproximity</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_district'">Fire district</button>
-                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/city/fire_agency'">Fire agency</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_station_boundary'">Fire station boundary</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_geoproximity'">Fire geoproximity</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_district'">Fire district</button>
+                                                        <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/city/fire_agency'">Fire agency</button>
                                                     </div>
                                             </div>
                                     </div>

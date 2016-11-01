@@ -9,12 +9,12 @@
 	<div class="container-fluid expanded-panel">
 		<div class="row">
 			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="<?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
+				<a href="<?php echo Config::get('URL'); ?><?php echo Config::get('URL'); ?>map/index/">Transparent Gov</a>
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">
 					<div class="col-xs-8 col-sm-4">
-						<a href="#" class="show-sidebar">
+						<a href="<?php echo Config::get('URL'); ?>#" class="show-sidebar">
 						  <i class="fa fa-bars"></i>
 						</a>
 						<div id="search">
@@ -59,16 +59,8 @@
                             
                             
                             
-                            
-                            
-                               
-                                
-                               
-                                
-                                
-                                
                              <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifycheckboxbuttonmap/Palo_Alto/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/bingmap/Palo_Alto/Zoning">
 
                         Zoning [check box button]
                     </a>
@@ -77,42 +69,42 @@
 
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/classifyradiobuttonmap/Palo_Alto/Zoning">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/bingmap/Palo_Alto/Zoning">
 
                         Zoning [radio button]
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Palo_Alto/PAN_Areas">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Palo_Alto/PAN_Areas">
                         PAN Areas
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Addresses">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Addresses">
 
                         Addresses
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Parcels">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Parcels">
 
                         Parcels
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerclienttablemap/Palo_Alto/Building">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/bingmap/Palo_Alto/Building">
                         Building
 
                     </a>
 
                 </li>
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/scrollerfulltablemap/Palo_Alto/Streets">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/bingmap/Palo_Alto/Streets">
 
                         Streets
                     </a>
@@ -120,7 +112,7 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo Config::get('URL'); ?>bingmap/justtiles/Palo_Alto/Right_of_way">
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/justtiles/bingmap/Palo_Alto/Right_of_way">
 
                         Right of way
                     </a>

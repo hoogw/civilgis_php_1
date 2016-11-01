@@ -58,75 +58,39 @@
                             
                             
                             
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/cities" >
-						
-						<span class="hidden-xs">Cities</span>
-					</a>
-					
-				</li>
-                                
-                                
-                               
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/rails" >
-						
-						<span class="hidden-xs">Rails</span>
-					</a>
-					
-				</li>
-                                
-                                
-                            
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/scrollerclienttablemap/county/parks" >
-						
-						<span class="hidden-xs">Parks</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/water" >
-						
-						<span class="hidden-xs">Water</span>
-					</a>
-				</li>
-                                
-                                
-                                <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/education_facility" >
-						
-						<span class="hidden-xs">Education Facility</span>
-					</a>
-				</li>
-                                
-                                
-                                
-                                
-                                
-                                
-				<li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/simplemap/county/hospitals" >
-						
-						<span class="hidden-xs"> Hospitals</span>
-					</a>
-					
-				</li>
-                                
-                               
-                                
                                  <li>
-					<a href="<?php echo Config::get('URL'); ?>googlemap/clusterscrollerclienttablemap/county/fire_stations" >
-						
-						<span class="hidden-xs">Fire station</span>
-					</a>
-					
-				</li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/county/cities"> Cities</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/county/rails"> Rails</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/googlemap/county/parks"> Parks</a>
+                </li>
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/county/water"> Water</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/googlemap/county/education_facility"> Education Facility</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/googlemap/county/hospitals"> Hospitals</a>
+                </li>
+
+
+                <li>
+                    <a href="<?php echo Config::get('URL'); ?>arcgis/clusterscrollerclienttablemap/googlemap/county/fire_stations"> Fire station</a>
+                </li>
+
 
                                    
                                 

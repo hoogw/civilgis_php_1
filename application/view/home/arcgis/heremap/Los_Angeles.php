@@ -61,14 +61,14 @@
                                                     <div class="box-content">
                                                         
                                                        
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Los_Angeles/Zoning'">Zoning - check box </button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Los_Angeles/Zoning'">Zoning - check box </button>
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Los_Angeles/Zoning'">Zoning - radio </button>
+                                                            <button type="button" class="btn btn-info"    onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Los_Angeles/Zoning'">Zoning - radio </button>
                                                         
                                                              &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifycheckboxbuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - check box </button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/heremap/Los_Angeles/General_Land_Use'">General Land Use  - check box </button>
                                                          &nbsp;&nbsp;
-                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/classifyradiobuttonmap/Los_Angeles/General_Land_Use'">General Land Use  - radio </button>
+                                                            <button type="button" class="btn btn-primary" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/heremap/Los_Angeles/General_Land_Use'">General Land Use  - radio </button>
                                                        
                                                         
                                                     </div>
@@ -2503,23 +2503,23 @@
                                                     </div>
                                                     <div class="box-content">
                                                             
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Communities'">Communities</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Communities'">Communities</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Neighborhood_Councils'">Neighborhood Councils</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Neighborhood_Councils'">Neighborhood Councils</button>
                                                          &nbsp;&nbsp;
                                                          
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Area_Planning_Commissions'">Area Planning Commissions</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Area_Planning_Commissions'">Area Planning Commissions</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Communities_And_Planning_Areas'">Communities and Planning Areas</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Communities_And_Planning_Areas'">Communities and Planning Areas</button>
                                                          &nbsp;&nbsp;
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Specific_Plans'">Specific Plans</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Specific_Plans'">Specific Plans</button>
                                                         &nbsp;&nbsp;
-                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Other_Districts'">Other Districts</button>
+                                                         <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Other_Districts'">Other Districts</button>
                                                         &nbsp;&nbsp;
                                                         
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Historic_Preservation_Overlay_Zone'">Historic Preservation Overlay Zone</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Historic_Preservation_Overlay_Zone'">Historic Preservation Overlay Zone</button>
                                                          &nbsp;&nbsp;
-                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/scrollerclienttablemap/Los_Angeles/Historic_Cultural_Monuments'">Historic Cultural Monuments</button>
+                                                        <button type="button" class="btn btn-success"  onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/heremap/Los_Angeles/Historic_Cultural_Monuments'">Historic Cultural Monuments</button>
                                                         
                                                         
                                                     </div>
@@ -2543,10 +2543,10 @@
                                                     </div>
                                                     <div class="box-content">
                                                               
-                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Los_Angeles/Federal_Renewal_Community'">Federal Renewal Community</button>
-                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Los_Angeles/State_Enterprise_Zone'">State Enterprise Zone</button>
-                                                         &nbsp;&nbsp; <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Los_Angeles/Business_Improvement_District'">Business Improvement District</button>
-                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>heremap/simplemap/Los_Angeles/Targeted_Neighborhood_Initiative'">Targeted Neighborhood Initiative</button>
+                                                         <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Los_Angeles/Federal_Renewal_Community'">Federal Renewal Community</button>
+                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Los_Angeles/State_Enterprise_Zone'">State Enterprise Zone</button>
+                                                         &nbsp;&nbsp; <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Los_Angeles/Business_Improvement_District'">Business Improvement District</button>
+                                                          &nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/heremap/Los_Angeles/Targeted_Neighborhood_Initiative'">Targeted Neighborhood Initiative</button>
                                                             
                                                         
                                                         

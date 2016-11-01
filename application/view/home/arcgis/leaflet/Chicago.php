@@ -48,53 +48,53 @@
                                                         
                                                         
                                                         
-                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifycheckboxbuttonmap/Chicago/Zoning'"> Zoning [check box button]</button>
+                                                        <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifycheckboxbuttonmap/leaflet/Chicago/Zoning'"> Zoning [check box button]</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/classifyradiobuttonmap/Chicago/Zoning'"> Zoning [radio button]</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/classifyradiobuttonmap/leaflet/Chicago/Zoning'"> Zoning [radio button]</button>
                             &nbsp;&nbsp;
                             
                             
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Planning_Districts'">Planning Districts</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Planning_Districts'">Planning Districts</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Planning_Regions'">Planning Regions</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Planning_Regions'">Planning Regions</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Community'">Community</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Community'">Community</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Neighborhoods'">Neighborhoods</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Neighborhoods'">Neighborhoods</button>
 
                             &nbsp;&nbsp;
                             <br/>
                             <br />
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Industrial_Corridors'">Industrial Corridors</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Industrial_Corridors'">Industrial Corridors</button>
 
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Enterprises_Communities'">Enterprises Communities</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Enterprises_Communities'">Enterprises Communities</button>
 
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Landmark_Districts'">Landmark Districts</button>
-
-                            &nbsp;&nbsp;
-
-
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Conservation_Areas'">Conservation Areas</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Landmark_Districts'">Landmark Districts</button>
 
                             &nbsp;&nbsp;
 
 
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Conservation_Areas'">Conservation Areas</button>
 
-                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Empowerment_Zones'">Empowerment Zones</button>
+                            &nbsp;&nbsp;
+
+
+
+                            <button type="button" class="btn btn-info" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Empowerment_Zones'">Empowerment Zones</button>
 
                             &nbsp;&nbsp;
                             
@@ -124,10 +124,10 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Police_Beat'">Police Beat</button>
+                                                           <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Police_Beat'">Police Beat</button>
                 &nbsp;&nbsp;
 
-                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Police_District'">Police District</button>
+                <button type="button" class="btn btn-warning" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Police_District'">Police District</button>
                 &nbsp;&nbsp;
 
                                                         
@@ -158,15 +158,15 @@
                                                             
                                                         
                                                        &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Chicago/Major_Streets'">Major Streets</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Chicago/Major_Streets'">Major Streets</button>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Railroads'">Railroads</button>
-                            &nbsp;&nbsp;
-
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Railroads'">Railroads</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerfulltablemap/Chicago/Bike_Routes'">Bike Routes</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Streets_Sweeping'">Streets Sweeping</button>
+                            &nbsp;&nbsp;
+
+                            <button type="button" class="btn btn-danger" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerfulltablemap/leaflet/Chicago/Bike_Routes'">Bike Routes</button>
                             &nbsp;&nbsp;
                            
 
@@ -195,26 +195,26 @@
                                                     <div class="box-content">
                                                             
                                                         
-                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Census_Tracts'">Census Tracts</button>
+                                                       <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Census_Tracts'">Census Tracts</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Hospitals'">Hospitals</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Hospitals'">Hospitals</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Schools'">Schools</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Schools'">Schools</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/High_School_Attendance_Boundaries'">High School Attendance Boundaries</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/scrollerclienttablemap/Chicago/Parks'">Parks</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/scrollerclienttablemap/leaflet/Chicago/Parks'">Parks</button>
                             &nbsp;&nbsp;
 
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Hydro'">Hydro</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Hydro'">Hydro</button>
                             &nbsp;&nbsp;
 
-                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>leaflet/simplemap/Chicago/Forestry'">Forestry</button>
+                            <button type="button" class="btn btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>arcgis/simplemap/leaflet/Chicago/Forestry'">Forestry</button>
                             &nbsp;&nbsp;
 
                                                     </div>
