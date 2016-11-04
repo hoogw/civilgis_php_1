@@ -101,9 +101,16 @@
 
 
 
-                <li>
-                    <a href="#"> Police Fire <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
+                <li class="active dropdown">
+					<a href="#" class="active dropdown-toggle">
+						
+						 <span class="hidden-xs"> Police and Fire</span>
+					</a>
+					<ul class="active dropdown-menu">
+                
+                
+                
+                
                         <li>
                             <a href="<?php echo Config::get('URL'); ?>arcgis/simplemap/openlayers/city/law_agency">Law agency</a>
                         </li>

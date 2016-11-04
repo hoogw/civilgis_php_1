@@ -54,7 +54,7 @@ $(document).ready(function(){
                             
                               
                                 
-                                <li class="dropdown">
+                                <li >
 					<a href="<?php echo Config::get('URL'); ?>map/googlemap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">
@@ -67,11 +67,11 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/bingmap" class="dropdown-toggle">
 						
 						<span class="hidden-xs">
-                                                    <img src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map </span>
+                                                    <img style= "height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/bing-map-icon.png" alt=""/>  Map </span>
 					</a>
                                     
                                         
@@ -79,7 +79,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/leaflet" class="dropdown-toggle">
 						
 						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/leaflet-logo.png" alt=""/> </span>
@@ -89,10 +89,10 @@ $(document).ready(function(){
 				</li>
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/openlayers" class="dropdown-toggle">
 						
-						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/openlayers.png" alt=""/> </span>
+						<span class="hidden-xs"><img style= "height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/openlayers.png" alt=""/> </span>
 					</a>
                                     
                                         
@@ -100,17 +100,17 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                <li class="dropdown">
+                                <li >
 					<a href="<?php echo Config::get('URL'); ?>map/mapbox/" class="dropdown-toggle">
 						
-						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/> &nbsp; Mapbox</span>
+						<span class="hidden-xs"><img style= "height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/> </span>
 					</a>
                                     
                                         
 				</li>
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/mapquest/" class="dropdown-toggle">
 						
 						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/mapquest.png" alt=""/></span>
@@ -120,10 +120,10 @@ $(document).ready(function(){
 				</li>
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/heremap" class="dropdown-toggle">
 						
-						<span class="hidden-xs"><img src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/> Map</span>
+						<span class="hidden-xs"><img style= "height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/here-logo.png" alt=""/> map </span>
 					</a>
                                     
                                         
@@ -138,10 +138,10 @@ $(document).ready(function(){
                                
                                 
                                 
-                                <li class="dropdown">
+                                <li >
 					<a href="<?php echo Config::get('URL'); ?>map/mapboxgl/" class="dropdown-toggle">
 						
-						<span class="hidden-xs">  <img src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  &nbsp; Mapbox GL Powered by Vector Tile</span>
+						<span class="hidden-xs">  <img style= "height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox-logo.png" alt=""/>  &nbsp; GL Powered by Vector Tile</span>
 					</a>
                                     
                                         
@@ -153,7 +153,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/arcgis/" class="dropdown-toggle">
                                             
                                             <span class="hidden-xs">
@@ -167,7 +167,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-                             <li class="dropdown">
+                             <li >
 					<a href="<?php echo Config::get('URL'); ?>map/arcgisleaflet/" class="dropdown-toggle">
                                             
                                             <span class="hidden-xs">
@@ -182,7 +182,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="<?php echo Config::get('URL'); ?>map/arcgisjavascriptapi/" class="dropdown-toggle">
                                             
                                             <span class="hidden-xs">
@@ -195,6 +195,42 @@ $(document).ready(function(){
 				</li>
                                 
                                 <hr/>
+                                
+                                
+                                
+                                <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/carto/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Carto.png" alt="" /> Dynamic Mapnik Tiles </a>
+
+
+                        </li>
+
+                        
+                         <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/mapboxvt/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox_2.png" alt="" /> Vector Tiles </a>
+
+
+                        </li>
+                        
+                        
+
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/postgis/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/postgis.png" alt="" /> Spatial Web Server </a>
+
+
+                        </li>
+
+
+                        <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/mongodb/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/mongodb.svg" alt="" /> Spatial Web Server </a>
+
+
+                        </li>
+                                
+                                
+                                
+                                
+                             <hr/>   
+                                
                                 
                                 <li>
                             <a href="<?php echo Config::get('URL'); ?>data/tabular_data_home/">
@@ -210,7 +246,7 @@ $(document).ready(function(){
                                 
                                  <!--
                                 
-                                 <li class="dropdown">
+                                 <li >
 					<a href="#" class="dropdown-toggle">
 						
                                             <h1>&nbsp;</h1>
@@ -223,7 +259,7 @@ $(document).ready(function(){
                                 
                                
                                 
-                                <li class="dropdown">
+                                <li >
 					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#price" class="dropdown-toggle">
 						<i class="fa fa-usd"></i>
 						<span class="hidden-xs">Pricing</span>
@@ -235,7 +271,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-				<li class="dropdown">
+				<li >
 					<a href="<?php echo Config::get('URL'); ?>/home/corporate/blue#contact" class="dropdown-toggle">
 						<i class="fa fa-phone-square"></i>
 						<span class="hidden-xs">Contact</span>
@@ -250,7 +286,7 @@ $(document).ready(function(){
                                  
                                  
                                  
-                                 <li class="dropdown">
+                                 <li >
                                      
                                      
 					<a target="_blank" href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_1&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -262,7 +298,7 @@ $(document).ready(function(){
 				</li>
                                  
                                 
-                                <li class="dropdown">
+                                <li >
                                      
                                      
 					<a target="_blank" href='https://play.google.com/store/apps/details?id=net.transparentgov.android.trgv_2'>
@@ -275,7 +311,7 @@ $(document).ready(function(){
                                 
                                 
                                
-                                 <li class="dropdown">
+                                 <li >
                                      
                                      
 					<a target="_blank" href='https://itunes.apple.com/ca/app/transparentgov-googlemap/id1153167141?mt=8&ign-mpt=uo%3D4'>
@@ -286,7 +322,7 @@ $(document).ready(function(){
 				</li>
                                 
                                 
-                                <li class="dropdown">
+                                <li >
                                      
                                      
 					<a target="_blank" href='https://itunes.apple.com/us/app/transparentgov-mapbox/id1159510937'>
@@ -297,7 +333,7 @@ $(document).ready(function(){
 				</li>
                                 
                                 
-                                <li class="dropdown">
+                                <li >
                                     
                                      
 					<a target="_blank" href='https://itunes.apple.com/us/app/transparentgov-mapkit/id1153309156?ls=1&mt=8'>
@@ -309,7 +345,7 @@ $(document).ready(function(){
                                  
                                  
                                  <hr>
-                                <li class="dropdown">
+                                <li >
 					<a href="#" class="dropdown-toggle">
 						<img src="<?php echo Config::get('URL'); ?>public/images/logo/phone.png" alt=""/> 
 						<span class="hidden-xs">310-710-6501</span>
@@ -321,7 +357,7 @@ $(document).ready(function(){
                                 
                                 
                                 
-				<li class="dropdown">
+				<li >
 					<a href="#" class="dropdown-toggle">
 						<img src="<?php echo Config::get('URL'); ?>public/images/logo/email.png" alt=""/> 
 						<span class="hidden-xs">huguowen@gmail.com</span>

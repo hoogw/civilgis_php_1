@@ -72,7 +72,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/googlemap/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -120,7 +120,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                    
                                                        
                                                     </div>
                                             </div>
@@ -169,7 +169,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/bingmap/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -217,7 +217,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                      
                         
                                                         
                                                         
@@ -270,7 +270,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/heremap/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -318,7 +318,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                     
                      
                                                     </div>
                                             </div>
@@ -369,7 +369,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/leaflet/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -417,7 +417,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                      
                      
                                                     </div>
                                             </div>
@@ -470,7 +470,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/mapbox/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -518,7 +518,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                     
                      
                                                     </div>
                                             </div>
@@ -566,7 +566,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/mapquest/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -614,7 +614,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                      
                      
                                                     </div>
                                             </div>
@@ -661,7 +661,7 @@
 
                             &nbsp;&nbsp;
 
-<!--
+
 
                             <button type="button" class="btn btn-xs btn-success" onclick="location.href = '<?php echo Config::get('URL'); ?>home/arcgis/openlayers/Palo_Alto/'">
                                 <img src="<?php echo Config::get('URL'); ?>public/images/logo/Palo_Alto_logo.png" alt="" />
@@ -709,7 +709,7 @@
                             </button>
                                                             
                                                         
-  -->                                                      
+                                                       
                      
                                                     </div>
                                             </div>

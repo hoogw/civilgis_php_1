@@ -1,4 +1,4 @@
-
+var arcgis_online_account = "http://services7.arcgis.com/DAhMOhkEzKuwPt1x/arcgis/rest/services/";
 var google_map_api_key = 'AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE';
 
 var _tile_baseURL = 'http://166.62.80.50:8887/v2/';
@@ -702,8 +702,8 @@ function get_map_bound(){
             
              
              // Note: must specify outFields=*, in order to get all properties, without this, properties= null
-            var _url='http://services3.arcgis.com/VILr8UqX00eNAkeO/arcgis/rest/services/'+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=true&outSR=4326&f=pgeojson&outFields=*&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
-            var _url_returncountonly ='http://services3.arcgis.com/VILr8UqX00eNAkeO/arcgis/rest/services/'+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=false&returnCountOnly=true&outSR=4326&f=geojson&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
+            var _url=arcgis_online_account+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=true&outSR=4326&f=pgeojson&outFields=*&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
+            var _url_returncountonly =arcgis_online_account+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=false&returnCountOnly=true&outSR=4326&f=geojson&geometryType=esriGeometryEnvelope&geometry='+ _envelope;
             
             
         //--------- End ----- arcgis online server, rest API --------------------------------
@@ -743,12 +743,20 @@ function get_click_latlng(_click_event_lat, _click_event_lng) {
         NElat = _click_event_lat + _square_house_length;
 
        
-
-         var _url_click_event=base_url+ 'api/loadall/'+ $("#areaID").val() + '/'+$("#subjectID").val()+'/'+SWlong+'/'+SWlat+'/'+NElong+'/'+NElat+'/';
-        //var _url_click_event = "/api/geojson/feature/" + $("#areaID").val() + '/' + $("#subjectID").val() + "/" + SWlong + "/" + SWlat + "/" + NElong + "/" + NElat + "/";
-
+//............... arcgis online ......................
+       
+       var _envelope_click = '{"xmin" : '+ SWlong +', "ymin" : '+ SWlat + ', "xmax" : '+NElong +', "ymax" : '+ NElat + ',"spatialReference" : {"wkid" : 4326}}';
+             
+             // Note: must specify outFields=*, in order to get all properties, without this, properties= null
+            var _url_click_event=arcgis_online_account+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=true&outSR=4326&f=pgeojson&outFields=*&geometryType=esriGeometryEnvelope&geometry='+ _envelope_click;
+            var _url_click_returncountonly =arcgis_online_account+ $("#areaID").val() + '_'+ $("#subjectID").val() +'/FeatureServer/0/query?returnGeometry=false&returnCountOnly=true&outSR=4326&f=geojson&geometryType=esriGeometryEnvelope&geometry='+ _envelope_click;
+           
         document.getElementById("ajaxload").style.display = "block";
-        ajax_GeoJSON(map, _url_click_event,true);
+        ajax_GeoJSON(map, _url_click_returncountonly,_url_click_event,true);
+        
+        //..............End......... arcgis online ......................
+        
+        
         
     }
     
