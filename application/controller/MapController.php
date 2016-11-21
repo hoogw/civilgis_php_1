@@ -196,22 +196,60 @@ class MapController extends Controller
     
     
     
-     // -------------   below are old, testing only, not in use --------------------------  
     
-     public function city($subject)
+     public function carto()
     {
-         // default route 
         
-         if (!isset($subject) || trim($subject)==='')
-         {
-             $subject = 'zoning';
-         }
+          $data['title'] = 'carto';
          
-         $data['subject'] = $subject;
-         $data['area'] = 'city';
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/carto','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+     public function vg()
+    {
+        
+          $data['title'] = '5g';
          
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/vg','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+     public function iot()
+    {
+        
+          $data['title'] = 'iot';
          
-        $this->View->render('map/city', $data);
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/iot','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+    
+     public function postgis()
+    {
+        
+          $data['title'] = 'postgis';
+         
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/postgis','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
+    }
+    
+    
+    public function mongodb()
+    {
+        
+          $data['title'] = 'mongodb';
+         
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/mongodb','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
     }
     
     
@@ -219,172 +257,15 @@ class MapController extends Controller
     
     
     
-    public function county($subject)
+     public function material_desgin()
     {
         
-         // default route 
-         if (!isset($subject) || trim($subject)==='')
-         {
-             $subject = 'cities';
-         }
-        
-          $data['subject'] = $subject;
-         $data['area'] = 'county';
+          $data['title'] = 'material_desgin';
          
-         
-         
-        $this->View->render('map/county', $data);
+         $index_map_with_header_footer = ['_templates/index_side_bar','map/material_desgin','_templates/disclaimer'];
+          
+        $this->View->renderMulti($index_map_with_header_footer, $data);
     }
-    
-    public function maplistpaged($area)
-    {
-        
-         // default route 
-        if (!isset($area) || trim($area)==='')
-         {
-             $area = 'newyork';
-         }
-        
-         
-         
-         $data['area'] = $area;
-       
-         
-        $this->View->render('map/maplistpaged', $data);
-    }
-    
-    
-    public function maplistscroller($area)
-    {
-        
-         // default route 
-         if (!isset($area) || trim($area)==='')
-         {
-             $area = 'newyork';
-         }
-        
-         $data['area'] = $area;
-       
-         
-        $this->View->render('map/maplistscroller', $data);
-    }
-    
-    
-    
-    public function mappaged($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mappaged', $data);
-    }
-    
-    
-   
-    
-    
-    public function mapsmpp($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mapsmpp', $data);
-    }
-    
-    
-    
-    
-    
-    public function mapsmps($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mapsmps', $data);
-    }
-    
-    
-    
-    
-    public function mapscroller($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mapscroller', $data);
-    }
-    
-    
-    public function mapadvs($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mapadvs', $data);
-    }
-    
-    public function mapadvp($area, $subject)
-    {
-         // default route 
-        
-         if (!isset($subject) || trim($subject)==='')
-         {
-             //$subject = 'zoning';
-         }
-         
-         $data['subject'] = $subject;
-         $data['area'] = $area;
-         
-        $this->View->render('map/mapadvp', $data);
-    }
-    
-    
-    
-    
-    
-     //--------------------above testing only, not in use --------------------------------------
-    
-    
-    
-    
-    
-    
-    
     
     
     

@@ -148,6 +148,12 @@ $(document).ready(function(){
 				</li>
                                 
                                 
+                                 <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/carto/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Carto.png" alt="" /> Dynamic Mapnik Tiles </a>
+
+
+                        </li>
+                                
                                
                                 <hr>
                                 
@@ -198,18 +204,35 @@ $(document).ready(function(){
                                 
                                 
                                 
-                                <li>
-                            <a href="<?php echo Config::get('URL'); ?>map/carto/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/Carto.png" alt="" /> Dynamic Mapnik Tiles </a>
+                               
 
-
-                        </li>
-
-                        
+                        <!--
                          <li>
                             <a href="<?php echo Config::get('URL'); ?>map/mapboxvt/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/mapbox_2.png" alt="" /> Vector Tiles </a>
 
 
                         </li>
+                        -->
+                        
+                         <li>
+                           <a href="<?php echo Config::get('URL'); ?>map/vg/">
+                               Future GIS Powered by  <img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/5g.jpg" alt="" />
+                           </a>
+
+
+                        </li>
+                        
+                        
+                        
+                        
+                         <li>
+                           <a href="<?php echo Config::get('URL'); ?>map/iot/">
+                               Future GIS Powered by  <img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/iot.jpg" alt="" />
+                           </a>
+
+
+                        </li>
+                        
                         
                         
 
@@ -227,7 +250,9 @@ $(document).ready(function(){
                         </li>
                                 
                                 
-                                
+                               
+                        
+                        
                                 
                              <hr/>   
                                 
@@ -243,6 +268,17 @@ $(document).ready(function(){
                         </li>
                                 
                                <hr/>  
+                               
+                               
+                               <li>
+                            <a href="<?php echo Config::get('URL'); ?>map/material_desgin/"><img style="height:30px;" src="<?php echo Config::get('URL'); ?>public/images/logo/material_design_logo.png" alt="" /> Google Material Design  </a>
+
+
+                        </li>
+                               
+                                <hr/>  
+                               
+                               
                                 
                                  <!--
                                 
