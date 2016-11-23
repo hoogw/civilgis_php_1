@@ -1,7 +1,7 @@
 
 
 
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary/initial_location/initial_location.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/map_init/googlemap.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/googlemap/classifyradiobuttonmap.js"></script>

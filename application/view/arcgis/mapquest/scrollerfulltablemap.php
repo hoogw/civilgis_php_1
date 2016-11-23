@@ -35,6 +35,8 @@
           
           <script src="<?php echo Config::get('URL'); ?>public/js/map_api/Leaflet_utfgrid/leaflet.utfgrid-src.js" type="text/javascript"></script>
          
+          
+          <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary/initial_location/initial_location.js"></script>
         <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/map_init/mapquest.js"></script>
        
         

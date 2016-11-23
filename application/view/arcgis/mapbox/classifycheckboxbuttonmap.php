@@ -2,7 +2,7 @@
 <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary/initial_location/initial_location.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/map_init/mapbox.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/mapbox/classifycheckboxbuttonmap.js"></script>

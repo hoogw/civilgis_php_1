@@ -12,7 +12,7 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/dataTables.scroller.min.js"></script>
           <link href="<?php echo Config::get('URL'); ?>public/css/scroller.dataTables.min.css" rel="stylesheet">
 
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary/initial_location/initial_location.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_init/mapboxgl.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/mapboxgl/singlelayerrenderedfeaturescrollertablehighlightlayermap.js"></script>

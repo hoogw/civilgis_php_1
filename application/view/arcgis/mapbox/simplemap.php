@@ -6,7 +6,7 @@
 <script src="<?php echo Config::get('URL'); ?>public/js/map_api/leaflet_slider/leaflet-slider.js" type="text/javascript"></script>
 
 
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/area_boundary/initial_location/initial_location.js"></script>
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/map_init/mapbox.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/arcgis/mapbox/simplemap.js"></script>
