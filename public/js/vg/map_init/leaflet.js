@@ -470,6 +470,132 @@ function add_map_data(){
     
     
     
+    
+    
+    //=================  oboe progressive loading geojson  =====================
+    
+          oboe(_apiURI)
+          
+                       .node('features.*', function( loaded_feature ){
+
+                            // This callback will be called everytime a new object is found
+                       // alert(JSON.stringify(feature));
+
+                        
+                          L.geoJson(loaded_feature, {
+
+
+                // for point feature, by default it use marker, but instead of use marker, here change marker to polygon (circle marker) 
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, geojson_Marker_style_Options);
+                },
+
+
+                style: geojson_default_style,
+
+                onEachFeature: function onEachFeature(feature, layer) {
+
+
+
+                    //bind click
+                    layer.on('mouseover', function (e) {
+                        // e = event
+                        // console.log(e); 
+
+                        // You can make your ajax call declaration here
+                        //$.ajax(... 
+
+
+                        layer.setStyle(geojson_mouseover_highlight_style);
+
+
+
+                        var instant_info = "<ul>";
+
+
+                        for (var _key in layer.feature.properties) {
+                            var _value = String(layer.feature.properties[_key]);
+                            instant_info = instant_info + "<li style=\"float:left; list-style: none;\"><span style=\"background-color: #454545;\"><font color=\"white\">&nbsp;" + _key + "&nbsp;</font></span>" + "&nbsp;&nbsp;" + _value + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</li>";
+
+                        }
+
+
+                        instant_info = instant_info + "</ul>";
+
+
+                        // update bottom <div>
+                        document.getElementById("info-table").innerHTML = instant_info;
+                        // hide 'utfgrid_info' <div>
+                        $('#utfgrid_info').hide();
+
+
+                    });// layer.on mouseover
+
+
+                    layer.on('mouseout', function (e) {
+
+                        layer.setStyle(geojson_default_style);
+
+                        // empty bottom <div>
+                        document.getElementById("info-table").innerHTML = "";
+                        //infowindow.close();
+
+                    });// layer.on mouseout
+
+                }// oneach function
+
+            }).bindPopup(function (layer) {
+
+
+                // when user click each feature, it will popup a info window by the feature.
+
+
+                var popup = "<table>";
+                for (var _key in layer.feature.properties) {
+                    var _value = String(layer.feature.properties[_key]);
+                    // popup = popup + "<tr><td>" + _key + "</td><td>" + _value + "</td></tr>";
+
+                    popup = popup + "<tr><td><span style=\'background-color: #454545;\'><font color=\'white\'>" + _key + "</span>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;" + _value + "</td></tr>";
+
+                }
+                popup = popup + "</table>";
+
+
+                return popup;
+
+
+            }).addTo(map);
+                            
+                                             
+                    }) //oboe,  node
+          
+          
+//                   .done(function(data) {
+//                   // completely load all data
+//                     // alert(JSON.stringify(data));
+//                      
+//                     //   _geojson_object = data;
+//
+//                     //   map.data.addGeoJson(_geojson_object);
+//                     
+//                    })
+                    
+                    
+                    .fail(function() {
+
+
+
+                        alert("failing");
+                    });                  
+                            
+                           
+      //===========      End   oboe progressive loading geojson  ==================   
+    
+    
+    
+    
+    
+    
   
                     $.get(_apiURI, function(data){
            

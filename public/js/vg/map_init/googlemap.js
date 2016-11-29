@@ -274,29 +274,16 @@ function add_map_data(){
     
  
     
-  /*    
-   * //  ---- old jquery way to get geojson ------------
-   * 
-                    $.get(_apiURI, function(data){         
-                              _geojson_object = JSON.parse(data);                
-                            map.data.addGeoJson(_geojson_object);
-                            });// get// end get process geojson
-                            
-        //-----------------------------------------------
-     */                        
-      
- 
-    
     //=================  oboe progressive loading geojson  =====================
     
           oboe(_apiURI)
           
-                       .node('features.*', function( feature ){
+                       .node('features.*', function( loaded_feature ){
 
                             // This callback will be called everytime a new object is found
                        // alert(JSON.stringify(feature));
 
-                        map.data.addGeoJson(feature);
+                        map.data.addGeoJson(loaded_feature);
                                              
                     })
           
