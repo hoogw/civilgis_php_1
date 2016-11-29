@@ -4,7 +4,7 @@ var google_map_api_key = 'AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE';
 
 
 
-
+var oboe;
 
 
 var _addr_info;
@@ -267,40 +267,60 @@ function add_area_boundary(_area){
 
 function add_map_data(){
     
+   
     
   
    var _apiURI = 'http://localhost:10/data/geojson/'+ $("#areaID").val() +'/' + $("#areaID").val()+ '_'+$("#subjectID").val()+'.geojson';
     
+ 
     
-    
-  
-                    $.get(_apiURI, function(data){
-           
-           
-                        
-                         
-                         
-                              _geojson_object = JSON.parse(data);
-
-                            //----------------  add new geojson, then remove last geojson --------------------
-
-/*
-                              map.data.setStyle({
-                                  fillOpacity: _default_fillOpacity,
-                                  strokeColor: _default_strokeColor,
-                                  strokeWeight: _default_strokeWeight
-
-                              });
-*/
-                             
-
-                              map.data.addGeoJson(_geojson_object);
-
-                           
-                       
-                           
+  /*    
+   * //  ---- old jquery way to get geojson ------------
+   * 
+                    $.get(_apiURI, function(data){         
+                              _geojson_object = JSON.parse(data);                
+                            map.data.addGeoJson(_geojson_object);
                             });// get// end get process geojson
-                          
+                            
+        //-----------------------------------------------
+     */                        
+      
+ 
+    
+    //=================  oboe progressive loading geojson  =====================
+    
+          oboe(_apiURI)
+          
+                       .node('features.*', function( feature ){
+
+                            // This callback will be called everytime a new object is found
+                       // alert(JSON.stringify(feature));
+
+                        map.data.addGeoJson(feature);
+                                             
+                    })
+          
+          
+//                   .done(function(data) {
+//                   // completely load all data
+//                     // alert(JSON.stringify(data));
+//                      
+//                     //   _geojson_object = data;
+//
+//                     //   map.data.addGeoJson(_geojson_object);
+//                     
+//                    })
+                    
+                    
+                    .fail(function() {
+
+
+
+                        alert("failing");
+                    });                  
+                            
+                           
+      //===========      End   oboe progressive loading geojson  ==================                
     
     
 }

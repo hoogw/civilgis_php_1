@@ -5,9 +5,11 @@
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/vg/map_init/googlemap.js"></script>
 
 <script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/vg/googlemap/simplemap.js"></script>
-
-
-
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_api/oboe/oboe.js" ></script>
+<!--
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_api/oboe/oboe-browser.js" ></script>
+<script type="text/javascript" src="<?php echo Config::get('URL'); ?>public/js/map_api/oboe/require.js" ></script>
+-->
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIFVL6oxxXNT7NToJjfU4J9TV2J8m4vE&callback=initialize" async defer></script>
 
