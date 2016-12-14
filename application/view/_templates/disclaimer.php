@@ -37,9 +37,13 @@
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
 			<li><a href="#"> Copyright<i class="fa fa-copyright"></i> &copy;<?php echo date("Y"); ?> - TransparentGov </a></li>
+                        
+                        
+                  <!--      
+                        
 			<li><a href="http://transparentgov.net"><i class="fa fa-windows"></i> .Net</a></li>
 			<li><a href="http://phpmap.transparentgov.net"> PHP</a></li>
-                       <!-- <li><a href="#"><i class="fa fa-apple"></i> ios</a></li>  -->
+                       
                         
                         <li>
                             
@@ -106,7 +110,7 @@
 
 
                        
-                        &nbsp&nbsp&nbsp&nbsp
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                          <li>
                         <a class="fancybox" title="contact phone"><img style="height:20px;" src="<?php echo Config::get('URL'); ?>public/images/logo/phone.png" alt="" /> 310-710-6501 </a>
@@ -117,7 +121,7 @@
                                 
                           </li>
        
-                                
+                       -->         
                                 
                                 
                                 
