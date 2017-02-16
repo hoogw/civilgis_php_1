@@ -64,7 +64,7 @@ return array(
         'MongoDB_TYPE' => 'mongodb',
 	'MongoDB_HOST' => '127.0.0.1',
 	'MongoDB_NAME' => 'civilgis',
-	'MongoDB_USER' => '',
+	'MongoDB_USER' => 'civilgis_user',
 	'MongoDB_PASS' => 'aaaa1111',
 	'MongoDB_PORT' => '12701',
         'Max_Row_Count' => 3000,

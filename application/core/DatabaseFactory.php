@@ -39,9 +39,12 @@ class DatabaseFactory
         public function getGeoConnection() {
             
             if (!$this->geodatabase) {
-			
-			         $m = new MongoClient();
+			         $username = Config::get('MongoDB_USER');
+                                 $password = Config::get('MongoDB_PASS');
                                  $mDB_name = Config::get('MongoDB_NAME');
+                                 
+			         $m = new MongoClient("mongodb://$username:$password@localhost", array("db" => $mDB_name));
+                                 
 				$this->geodatabase = $m->$mDB_name;
 		}
 		return $this->geodatabase;
